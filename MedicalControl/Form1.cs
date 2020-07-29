@@ -86,6 +86,7 @@ namespace MedicalControl
         {
             ActivateButton(sender, RGBColors.color1);
             OpenChildForm(new FrmPPrincipal());
+            menuStrip1.Visible = false;
 
         }
 
@@ -93,6 +94,7 @@ namespace MedicalControl
         {
             ActivateButton(sender, RGBColors.color2);
             OpenChildForm(new FrmCitasMedicas());
+            menuStrip1.Visible = false;
 
         }
 
@@ -100,12 +102,14 @@ namespace MedicalControl
         {
             ActivateButton(sender, RGBColors.color3);
             OpenChildForm(new FrmPacientes());
+            menuStrip1.Visible = false;
 
         }
 
         private void iconButton4_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color4);
+            menuStrip1.Visible = false;
         }
 
         private void ibsalir_Click(object sender, EventArgs e)
@@ -136,6 +140,7 @@ namespace MedicalControl
 
         private void btnHome_Click(object sender, EventArgs e)
         {
+            menuStrip1.Visible = true;
             if (currentChildForm != null)
             {
                 currentChildForm.Close();
@@ -217,6 +222,24 @@ namespace MedicalControl
         {
             WindowState = FormWindowState.Minimized;
 
+        }
+
+        private void doctorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmDoctorcs form = new FrmDoctorcs();
+            form.ShowDialog();
+        }
+
+        private void alergiaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmAlergia form = new FrmAlergia();
+            form.ShowDialog();
+        }
+
+        private void seguroToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmSeguro form = new FrmSeguro();
+            form.ShowDialog();
         }
     }
 }

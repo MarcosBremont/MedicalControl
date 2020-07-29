@@ -29,29 +29,36 @@
         private void InitializeComponent()
         {
             this.panelMenu = new System.Windows.Forms.Panel();
-            this.panelLogo = new System.Windows.Forms.Panel();
-            this.panelTitleBar = new System.Windows.Forms.Panel();
-            this.lblTitleChildForm = new System.Windows.Forms.Label();
-            this.panelShadow = new System.Windows.Forms.Panel();
-            this.panelDesktop = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.iconButton3 = new FontAwesome.Sharp.IconButton();
-            this.ibminimize = new FontAwesome.Sharp.IconButton();
-            this.ibmaximize = new FontAwesome.Sharp.IconButton();
-            this.iconCurrentChildForm = new FontAwesome.Sharp.IconPictureBox();
             this.ibsalir = new FontAwesome.Sharp.IconButton();
             this.ibajustes = new FontAwesome.Sharp.IconButton();
             this.ibpacientes = new FontAwesome.Sharp.IconButton();
             this.ibcitasmedicas = new FontAwesome.Sharp.IconButton();
             this.ibpaginaprincipal = new FontAwesome.Sharp.IconButton();
+            this.panelLogo = new System.Windows.Forms.Panel();
             this.btnHome = new System.Windows.Forms.PictureBox();
+            this.panelTitleBar = new System.Windows.Forms.Panel();
+            this.iconButton3 = new FontAwesome.Sharp.IconButton();
+            this.ibminimize = new FontAwesome.Sharp.IconButton();
+            this.ibmaximize = new FontAwesome.Sharp.IconButton();
+            this.lblTitleChildForm = new System.Windows.Forms.Label();
+            this.iconCurrentChildForm = new FontAwesome.Sharp.IconPictureBox();
+            this.panelShadow = new System.Windows.Forms.Panel();
+            this.panelDesktop = new System.Windows.Forms.Panel();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.agregarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.doctorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.alergiaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.seguroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.citaMedicaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
-            this.panelTitleBar.SuspendLayout();
-            this.panelDesktop.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconCurrentChildForm)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnHome)).BeginInit();
+            this.panelTitleBar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconCurrentChildForm)).BeginInit();
+            this.panelDesktop.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panelMenu
@@ -66,141 +73,9 @@
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(220, 661);
+            this.panelMenu.Size = new System.Drawing.Size(220, 662);
             this.panelMenu.TabIndex = 0;
             this.panelMenu.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelMenu_MouseDown);
-            // 
-            // panelLogo
-            // 
-            this.panelLogo.Controls.Add(this.btnHome);
-            this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelLogo.Location = new System.Drawing.Point(0, 0);
-            this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(220, 140);
-            this.panelLogo.TabIndex = 1;
-            this.panelLogo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelLogo_MouseDown);
-            // 
-            // panelTitleBar
-            // 
-            this.panelTitleBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
-            this.panelTitleBar.Controls.Add(this.iconButton3);
-            this.panelTitleBar.Controls.Add(this.ibminimize);
-            this.panelTitleBar.Controls.Add(this.ibmaximize);
-            this.panelTitleBar.Controls.Add(this.lblTitleChildForm);
-            this.panelTitleBar.Controls.Add(this.iconCurrentChildForm);
-            this.panelTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelTitleBar.Location = new System.Drawing.Point(220, 0);
-            this.panelTitleBar.Name = "panelTitleBar";
-            this.panelTitleBar.Size = new System.Drawing.Size(938, 75);
-            this.panelTitleBar.TabIndex = 1;
-            this.panelTitleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitleBar_MouseDown);
-            // 
-            // lblTitleChildForm
-            // 
-            this.lblTitleChildForm.AutoSize = true;
-            this.lblTitleChildForm.Font = new System.Drawing.Font("Bahnschrift Light Condensed", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitleChildForm.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.lblTitleChildForm.Location = new System.Drawing.Point(63, 30);
-            this.lblTitleChildForm.Name = "lblTitleChildForm";
-            this.lblTitleChildForm.Size = new System.Drawing.Size(44, 23);
-            this.lblTitleChildForm.TabIndex = 1;
-            this.lblTitleChildForm.Text = "Inicio";
-            // 
-            // panelShadow
-            // 
-            this.panelShadow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(24)))), ((int)(((byte)(58)))));
-            this.panelShadow.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelShadow.Location = new System.Drawing.Point(220, 75);
-            this.panelShadow.Name = "panelShadow";
-            this.panelShadow.Size = new System.Drawing.Size(938, 9);
-            this.panelShadow.TabIndex = 2;
-            // 
-            // panelDesktop
-            // 
-            this.panelDesktop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.panelDesktop.Controls.Add(this.pictureBox1);
-            this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelDesktop.Location = new System.Drawing.Point(220, 84);
-            this.panelDesktop.Name = "panelDesktop";
-            this.panelDesktop.Size = new System.Drawing.Size(938, 577);
-            this.panelDesktop.TabIndex = 3;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox1.Image = global::MedicalControl.Properties.Resources.MEDICAL_CONTROL__1__removebg1;
-            this.pictureBox1.Location = new System.Drawing.Point(367, 248);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(205, 81);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
-            // iconButton3
-            // 
-            this.iconButton3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.iconButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
-            this.iconButton3.FlatAppearance.BorderSize = 0;
-            this.iconButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton3.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.Backspace;
-            this.iconButton3.IconColor = System.Drawing.Color.White;
-            this.iconButton3.IconSize = 20;
-            this.iconButton3.Location = new System.Drawing.Point(906, 2);
-            this.iconButton3.Name = "iconButton3";
-            this.iconButton3.Rotation = 0D;
-            this.iconButton3.Size = new System.Drawing.Size(29, 23);
-            this.iconButton3.TabIndex = 5;
-            this.iconButton3.UseVisualStyleBackColor = false;
-            this.iconButton3.Click += new System.EventHandler(this.iconButton3_Click_1);
-            // 
-            // ibminimize
-            // 
-            this.ibminimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.ibminimize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
-            this.ibminimize.FlatAppearance.BorderSize = 0;
-            this.ibminimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ibminimize.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.ibminimize.IconChar = FontAwesome.Sharp.IconChar.MinusCircle;
-            this.ibminimize.IconColor = System.Drawing.Color.White;
-            this.ibminimize.IconSize = 16;
-            this.ibminimize.Location = new System.Drawing.Point(840, 1);
-            this.ibminimize.Name = "ibminimize";
-            this.ibminimize.Rotation = 0D;
-            this.ibminimize.Size = new System.Drawing.Size(29, 23);
-            this.ibminimize.TabIndex = 4;
-            this.ibminimize.UseVisualStyleBackColor = false;
-            this.ibminimize.Click += new System.EventHandler(this.ibminimize_Click);
-            // 
-            // ibmaximize
-            // 
-            this.ibmaximize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.ibmaximize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
-            this.ibmaximize.FlatAppearance.BorderSize = 0;
-            this.ibmaximize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ibmaximize.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.ibmaximize.IconChar = FontAwesome.Sharp.IconChar.PlusCircle;
-            this.ibmaximize.IconColor = System.Drawing.Color.White;
-            this.ibmaximize.IconSize = 16;
-            this.ibmaximize.Location = new System.Drawing.Point(873, 1);
-            this.ibmaximize.Name = "ibmaximize";
-            this.ibmaximize.Rotation = 0D;
-            this.ibmaximize.Size = new System.Drawing.Size(29, 23);
-            this.ibmaximize.TabIndex = 3;
-            this.ibmaximize.UseVisualStyleBackColor = false;
-            this.ibmaximize.Click += new System.EventHandler(this.ibmaximize_Click);
-            // 
-            // iconCurrentChildForm
-            // 
-            this.iconCurrentChildForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
-            this.iconCurrentChildForm.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.iconCurrentChildForm.IconChar = FontAwesome.Sharp.IconChar.Home;
-            this.iconCurrentChildForm.IconColor = System.Drawing.SystemColors.ControlLightLight;
-            this.iconCurrentChildForm.Location = new System.Drawing.Point(23, 25);
-            this.iconCurrentChildForm.Name = "iconCurrentChildForm";
-            this.iconCurrentChildForm.Size = new System.Drawing.Size(38, 32);
-            this.iconCurrentChildForm.TabIndex = 0;
-            this.iconCurrentChildForm.TabStop = false;
             // 
             // ibsalir
             // 
@@ -214,7 +89,7 @@
             this.ibsalir.IconColor = System.Drawing.Color.White;
             this.ibsalir.IconSize = 40;
             this.ibsalir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ibsalir.Location = new System.Drawing.Point(0, 590);
+            this.ibsalir.Location = new System.Drawing.Point(0, 591);
             this.ibsalir.Name = "ibsalir";
             this.ibsalir.Padding = new System.Windows.Forms.Padding(10, 0, 5, 0);
             this.ibsalir.Rotation = 0D;
@@ -236,7 +111,7 @@
             this.ibajustes.IconColor = System.Drawing.Color.White;
             this.ibajustes.IconSize = 40;
             this.ibajustes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ibajustes.Location = new System.Drawing.Point(0, 380);
+            this.ibajustes.Location = new System.Drawing.Point(0, 449);
             this.ibajustes.Name = "ibajustes";
             this.ibajustes.Padding = new System.Windows.Forms.Padding(10, 0, 5, 0);
             this.ibajustes.Rotation = 0D;
@@ -258,7 +133,7 @@
             this.ibpacientes.IconColor = System.Drawing.Color.White;
             this.ibpacientes.IconSize = 40;
             this.ibpacientes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ibpacientes.Location = new System.Drawing.Point(0, 300);
+            this.ibpacientes.Location = new System.Drawing.Point(0, 356);
             this.ibpacientes.Name = "ibpacientes";
             this.ibpacientes.Padding = new System.Windows.Forms.Padding(10, 0, 5, 0);
             this.ibpacientes.Rotation = 0D;
@@ -280,7 +155,7 @@
             this.ibcitasmedicas.IconColor = System.Drawing.Color.White;
             this.ibcitasmedicas.IconSize = 40;
             this.ibcitasmedicas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ibcitasmedicas.Location = new System.Drawing.Point(0, 220);
+            this.ibcitasmedicas.Location = new System.Drawing.Point(0, 263);
             this.ibcitasmedicas.Name = "ibcitasmedicas";
             this.ibcitasmedicas.Padding = new System.Windows.Forms.Padding(10, 0, 5, 0);
             this.ibcitasmedicas.Rotation = 0D;
@@ -302,7 +177,7 @@
             this.ibpaginaprincipal.IconColor = System.Drawing.Color.White;
             this.ibpaginaprincipal.IconSize = 40;
             this.ibpaginaprincipal.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ibpaginaprincipal.Location = new System.Drawing.Point(0, 140);
+            this.ibpaginaprincipal.Location = new System.Drawing.Point(0, 170);
             this.ibpaginaprincipal.Name = "ibpaginaprincipal";
             this.ibpaginaprincipal.Padding = new System.Windows.Forms.Padding(10, 0, 5, 0);
             this.ibpaginaprincipal.Rotation = 0D;
@@ -312,6 +187,16 @@
             this.ibpaginaprincipal.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.ibpaginaprincipal.UseVisualStyleBackColor = true;
             this.ibpaginaprincipal.Click += new System.EventHandler(this.iconButton1_Click);
+            // 
+            // panelLogo
+            // 
+            this.panelLogo.Controls.Add(this.btnHome);
+            this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelLogo.Location = new System.Drawing.Point(0, 0);
+            this.panelLogo.Name = "panelLogo";
+            this.panelLogo.Size = new System.Drawing.Size(220, 140);
+            this.panelLogo.TabIndex = 1;
+            this.panelLogo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelLogo_MouseDown);
             // 
             // btnHome
             // 
@@ -324,27 +209,205 @@
             this.btnHome.TabStop = false;
             this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
+            // panelTitleBar
+            // 
+            this.panelTitleBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
+            this.panelTitleBar.Controls.Add(this.iconButton3);
+            this.panelTitleBar.Controls.Add(this.ibminimize);
+            this.panelTitleBar.Controls.Add(this.ibmaximize);
+            this.panelTitleBar.Controls.Add(this.lblTitleChildForm);
+            this.panelTitleBar.Controls.Add(this.iconCurrentChildForm);
+            this.panelTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelTitleBar.Location = new System.Drawing.Point(220, 0);
+            this.panelTitleBar.Name = "panelTitleBar";
+            this.panelTitleBar.Size = new System.Drawing.Size(1050, 75);
+            this.panelTitleBar.TabIndex = 1;
+            this.panelTitleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitleBar_MouseDown);
+            // 
+            // iconButton3
+            // 
+            this.iconButton3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.iconButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
+            this.iconButton3.FlatAppearance.BorderSize = 0;
+            this.iconButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton3.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.Backspace;
+            this.iconButton3.IconColor = System.Drawing.Color.White;
+            this.iconButton3.IconSize = 20;
+            this.iconButton3.Location = new System.Drawing.Point(1018, 2);
+            this.iconButton3.Name = "iconButton3";
+            this.iconButton3.Rotation = 0D;
+            this.iconButton3.Size = new System.Drawing.Size(29, 23);
+            this.iconButton3.TabIndex = 5;
+            this.iconButton3.UseVisualStyleBackColor = false;
+            this.iconButton3.Click += new System.EventHandler(this.iconButton3_Click_1);
+            // 
+            // ibminimize
+            // 
+            this.ibminimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.ibminimize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
+            this.ibminimize.FlatAppearance.BorderSize = 0;
+            this.ibminimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ibminimize.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.ibminimize.IconChar = FontAwesome.Sharp.IconChar.MinusCircle;
+            this.ibminimize.IconColor = System.Drawing.Color.White;
+            this.ibminimize.IconSize = 16;
+            this.ibminimize.Location = new System.Drawing.Point(952, 1);
+            this.ibminimize.Name = "ibminimize";
+            this.ibminimize.Rotation = 0D;
+            this.ibminimize.Size = new System.Drawing.Size(29, 23);
+            this.ibminimize.TabIndex = 4;
+            this.ibminimize.UseVisualStyleBackColor = false;
+            this.ibminimize.Click += new System.EventHandler(this.ibminimize_Click);
+            // 
+            // ibmaximize
+            // 
+            this.ibmaximize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.ibmaximize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
+            this.ibmaximize.FlatAppearance.BorderSize = 0;
+            this.ibmaximize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ibmaximize.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.ibmaximize.IconChar = FontAwesome.Sharp.IconChar.PlusCircle;
+            this.ibmaximize.IconColor = System.Drawing.Color.White;
+            this.ibmaximize.IconSize = 16;
+            this.ibmaximize.Location = new System.Drawing.Point(985, 1);
+            this.ibmaximize.Name = "ibmaximize";
+            this.ibmaximize.Rotation = 0D;
+            this.ibmaximize.Size = new System.Drawing.Size(29, 23);
+            this.ibmaximize.TabIndex = 3;
+            this.ibmaximize.UseVisualStyleBackColor = false;
+            this.ibmaximize.Click += new System.EventHandler(this.ibmaximize_Click);
+            // 
+            // lblTitleChildForm
+            // 
+            this.lblTitleChildForm.AutoSize = true;
+            this.lblTitleChildForm.Font = new System.Drawing.Font("Bahnschrift Light Condensed", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitleChildForm.ForeColor = System.Drawing.SystemColors.ButtonShadow;
+            this.lblTitleChildForm.Location = new System.Drawing.Point(63, 30);
+            this.lblTitleChildForm.Name = "lblTitleChildForm";
+            this.lblTitleChildForm.Size = new System.Drawing.Size(44, 23);
+            this.lblTitleChildForm.TabIndex = 1;
+            this.lblTitleChildForm.Text = "Inicio";
+            // 
+            // iconCurrentChildForm
+            // 
+            this.iconCurrentChildForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
+            this.iconCurrentChildForm.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.iconCurrentChildForm.IconChar = FontAwesome.Sharp.IconChar.Home;
+            this.iconCurrentChildForm.IconColor = System.Drawing.SystemColors.ControlLightLight;
+            this.iconCurrentChildForm.Location = new System.Drawing.Point(23, 25);
+            this.iconCurrentChildForm.Name = "iconCurrentChildForm";
+            this.iconCurrentChildForm.Size = new System.Drawing.Size(38, 32);
+            this.iconCurrentChildForm.TabIndex = 0;
+            this.iconCurrentChildForm.TabStop = false;
+            // 
+            // panelShadow
+            // 
+            this.panelShadow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(24)))), ((int)(((byte)(58)))));
+            this.panelShadow.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelShadow.Location = new System.Drawing.Point(220, 75);
+            this.panelShadow.Name = "panelShadow";
+            this.panelShadow.Size = new System.Drawing.Size(1050, 9);
+            this.panelShadow.TabIndex = 2;
+            // 
+            // panelDesktop
+            // 
+            this.panelDesktop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.panelDesktop.Controls.Add(this.menuStrip1);
+            this.panelDesktop.Controls.Add(this.pictureBox1);
+            this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelDesktop.Location = new System.Drawing.Point(220, 84);
+            this.panelDesktop.Name = "panelDesktop";
+            this.panelDesktop.Size = new System.Drawing.Size(1050, 578);
+            this.panelDesktop.TabIndex = 3;
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.agregarToolStripMenuItem});
+            this.menuStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(1050, 24);
+            this.menuStrip1.TabIndex = 37;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // agregarToolStripMenuItem
+            // 
+            this.agregarToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.doctorToolStripMenuItem,
+            this.alergiaToolStripMenuItem,
+            this.seguroToolStripMenuItem,
+            this.citaMedicaToolStripMenuItem});
+            this.agregarToolStripMenuItem.Name = "agregarToolStripMenuItem";
+            this.agregarToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
+            this.agregarToolStripMenuItem.Text = "Agregar";
+            // 
+            // doctorToolStripMenuItem
+            // 
+            this.doctorToolStripMenuItem.Name = "doctorToolStripMenuItem";
+            this.doctorToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
+            this.doctorToolStripMenuItem.Text = "Doctor";
+            this.doctorToolStripMenuItem.Click += new System.EventHandler(this.doctorToolStripMenuItem_Click);
+            // 
+            // alergiaToolStripMenuItem
+            // 
+            this.alergiaToolStripMenuItem.Name = "alergiaToolStripMenuItem";
+            this.alergiaToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
+            this.alergiaToolStripMenuItem.Text = "Alergia";
+            this.alergiaToolStripMenuItem.Click += new System.EventHandler(this.alergiaToolStripMenuItem_Click);
+            // 
+            // seguroToolStripMenuItem
+            // 
+            this.seguroToolStripMenuItem.Name = "seguroToolStripMenuItem";
+            this.seguroToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
+            this.seguroToolStripMenuItem.Text = "Seguro";
+            this.seguroToolStripMenuItem.Click += new System.EventHandler(this.seguroToolStripMenuItem_Click);
+            // 
+            // citaMedicaToolStripMenuItem
+            // 
+            this.citaMedicaToolStripMenuItem.Name = "citaMedicaToolStripMenuItem";
+            this.citaMedicaToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
+            this.citaMedicaToolStripMenuItem.Text = "Cita Medica";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox1.Image = global::MedicalControl.Properties.Resources.MEDICAL_CONTROL__1__removebg1;
+            this.pictureBox1.Location = new System.Drawing.Point(423, 249);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(205, 81);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
             // FrmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1158, 661);
+            this.ClientSize = new System.Drawing.Size(1270, 662);
             this.Controls.Add(this.panelDesktop);
             this.Controls.Add(this.panelShadow);
             this.Controls.Add(this.panelTitleBar);
             this.Controls.Add(this.panelMenu);
             this.MinimumSize = new System.Drawing.Size(1032, 680);
             this.Name = "FrmPrincipal";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmHome";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.FrmPrincipal_MouseDown);
             this.panelMenu.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.btnHome)).EndInit();
             this.panelTitleBar.ResumeLayout(false);
             this.panelTitleBar.PerformLayout();
-            this.panelDesktop.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconCurrentChildForm)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnHome)).EndInit();
+            this.panelDesktop.ResumeLayout(false);
+            this.panelDesktop.PerformLayout();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -368,6 +431,12 @@
         private FontAwesome.Sharp.IconButton iconButton3;
         private FontAwesome.Sharp.IconButton ibminimize;
         private FontAwesome.Sharp.IconButton ibmaximize;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem agregarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem doctorToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem alergiaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem seguroToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem citaMedicaToolStripMenuItem;
     }
 }
 

@@ -13,3 +13,63 @@ C:\Users\MarcosB\source\repos\MedicalControl\MedicalControl\obj\Debug\MedicalCon
 C:\Users\MarcosB\source\repos\MedicalControl\MedicalControl\obj\Debug\MedicalControl.FrmPPrincipal.resources
 C:\Users\MarcosB\source\repos\MedicalControl\MedicalControl\obj\Debug\MedicalControl.FrmCitasMedicas.resources
 C:\Users\MarcosB\source\repos\MedicalControl\MedicalControl\obj\Debug\MedicalControl.FrmPacientes.resources
+C:\Users\User\Desktop\Practica Marcos\MedicalControl\MedicalControl\MedicalControl\bin\Debug\MedicalControl.exe.config
+C:\Users\User\Desktop\Practica Marcos\MedicalControl\MedicalControl\MedicalControl\bin\Debug\MedicalControl.exe
+C:\Users\User\Desktop\Practica Marcos\MedicalControl\MedicalControl\MedicalControl\bin\Debug\MedicalControl.pdb
+C:\Users\User\Desktop\Practica Marcos\MedicalControl\MedicalControl\MedicalControl\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\User\Desktop\Practica Marcos\MedicalControl\MedicalControl\MedicalControl\bin\Debug\MySql.Data.dll
+C:\Users\User\Desktop\Practica Marcos\MedicalControl\MedicalControl\MedicalControl\bin\Debug\MySql.Data.xml
+C:\Users\User\Desktop\Practica Marcos\MedicalControl\MedicalControl\MedicalControl\obj\Debug\MedicalControl.csprojAssemblyReference.cache
+C:\Users\User\Desktop\Practica Marcos\MedicalControl\MedicalControl\MedicalControl\obj\Debug\MedicalControl.FrmPrincipal.resources
+C:\Users\User\Desktop\Practica Marcos\MedicalControl\MedicalControl\MedicalControl\obj\Debug\MedicalControl.FrmCitasMedicas.resources
+C:\Users\User\Desktop\Practica Marcos\MedicalControl\MedicalControl\MedicalControl\obj\Debug\MedicalControl.FrmPacientes.resources
+C:\Users\User\Desktop\Practica Marcos\MedicalControl\MedicalControl\MedicalControl\obj\Debug\MedicalControl.FrmPPrincipal.resources
+C:\Users\User\Desktop\Practica Marcos\MedicalControl\MedicalControl\MedicalControl\obj\Debug\MedicalControl.Properties.Resources.resources
+C:\Users\User\Desktop\Practica Marcos\MedicalControl\MedicalControl\MedicalControl\obj\Debug\MedicalControl.csproj.GenerateResource.cache
+C:\Users\User\Desktop\Practica Marcos\MedicalControl\MedicalControl\MedicalControl\obj\Debug\MedicalControl.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Practica Marcos\MedicalControl\MedicalControl\MedicalControl\obj\Debug\MedicalControl.csproj.CopyComplete
+C:\Users\User\Desktop\Practica Marcos\MedicalControl\MedicalControl\MedicalControl\obj\Debug\MedicalControl.exe
+C:\Users\User\Desktop\Practica Marcos\MedicalControl\MedicalControl\MedicalControl\obj\Debug\MedicalControl.pdb
+C:\Users\User\Desktop\Practica Marcos\MedicalControl\MedicalControl\MedicalControl\obj\Debug\MedicalControl.FrmDoctorcs.resources
+C:\Users\User\Desktop\Practica Marcos\MedicalControl\MedicalControl\MedicalControl\obj\Debug\MedicalControl.FrmAlergia.resources
+C:\Users\User\Desktop\Practica Marcos\MedicalControl\MedicalControl\MedicalControl\obj\Debug\MedicalControl.FrmSeguro.resources
+E:\Series\MedicalControlV4.1\MedicalControl\MedicalControl\MedicalControl\bin\Debug\MedicalControl.exe.config
+E:\Series\MedicalControlV4.1\MedicalControl\MedicalControl\MedicalControl\bin\Debug\MedicalControl.exe
+E:\Series\MedicalControlV4.1\MedicalControl\MedicalControl\MedicalControl\bin\Debug\MedicalControl.pdb
+E:\Series\MedicalControlV4.1\MedicalControl\MedicalControl\MedicalControl\bin\Debug\FontAwesome.Sharp.dll
+E:\Series\MedicalControlV4.1\MedicalControl\MedicalControl\MedicalControl\bin\Debug\MySql.Data.dll
+E:\Series\MedicalControlV4.1\MedicalControl\MedicalControl\MedicalControl\bin\Debug\MySql.Data.xml
+E:\Series\MedicalControlV4.1\MedicalControl\MedicalControl\MedicalControl\obj\Debug\MedicalControl.csprojAssemblyReference.cache
+E:\Series\MedicalControlV4.1\MedicalControl\MedicalControl\MedicalControl\obj\Debug\MedicalControl.FrmPrincipal.resources
+E:\Series\MedicalControlV4.1\MedicalControl\MedicalControl\MedicalControl\obj\Debug\MedicalControl.FrmAlergia.resources
+E:\Series\MedicalControlV4.1\MedicalControl\MedicalControl\MedicalControl\obj\Debug\MedicalControl.FrmCitasMedicas.resources
+E:\Series\MedicalControlV4.1\MedicalControl\MedicalControl\MedicalControl\obj\Debug\MedicalControl.FrmDoctorcs.resources
+E:\Series\MedicalControlV4.1\MedicalControl\MedicalControl\MedicalControl\obj\Debug\MedicalControl.FrmPacientes.resources
+E:\Series\MedicalControlV4.1\MedicalControl\MedicalControl\MedicalControl\obj\Debug\MedicalControl.FrmPPrincipal.resources
+E:\Series\MedicalControlV4.1\MedicalControl\MedicalControl\MedicalControl\obj\Debug\MedicalControl.FrmSeguro.resources
+E:\Series\MedicalControlV4.1\MedicalControl\MedicalControl\MedicalControl\obj\Debug\MedicalControl.Properties.Resources.resources
+E:\Series\MedicalControlV4.1\MedicalControl\MedicalControl\MedicalControl\obj\Debug\MedicalControl.csproj.GenerateResource.cache
+E:\Series\MedicalControlV4.1\MedicalControl\MedicalControl\MedicalControl\obj\Debug\MedicalControl.csproj.CoreCompileInputs.cache
+E:\Series\MedicalControlV4.1\MedicalControl\MedicalControl\MedicalControl\obj\Debug\MedicalControl.csproj.CopyComplete
+E:\Series\MedicalControlV4.1\MedicalControl\MedicalControl\MedicalControl\obj\Debug\MedicalControl.exe
+E:\Series\MedicalControlV4.1\MedicalControl\MedicalControl\MedicalControl\obj\Debug\MedicalControl.pdb
+C:\Users\MarcosB\Desktop\GIT\MedicalControl\MedicalControl\bin\Debug\MedicalControl.exe.config
+C:\Users\MarcosB\Desktop\GIT\MedicalControl\MedicalControl\bin\Debug\MedicalControl.exe
+C:\Users\MarcosB\Desktop\GIT\MedicalControl\MedicalControl\bin\Debug\MedicalControl.pdb
+C:\Users\MarcosB\Desktop\GIT\MedicalControl\MedicalControl\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\MarcosB\Desktop\GIT\MedicalControl\MedicalControl\bin\Debug\MySql.Data.dll
+C:\Users\MarcosB\Desktop\GIT\MedicalControl\MedicalControl\bin\Debug\MySql.Data.xml
+C:\Users\MarcosB\Desktop\GIT\MedicalControl\MedicalControl\obj\Debug\MedicalControl.csprojAssemblyReference.cache
+C:\Users\MarcosB\Desktop\GIT\MedicalControl\MedicalControl\obj\Debug\MedicalControl.FrmPrincipal.resources
+C:\Users\MarcosB\Desktop\GIT\MedicalControl\MedicalControl\obj\Debug\MedicalControl.FrmAlergia.resources
+C:\Users\MarcosB\Desktop\GIT\MedicalControl\MedicalControl\obj\Debug\MedicalControl.FrmCitasMedicas.resources
+C:\Users\MarcosB\Desktop\GIT\MedicalControl\MedicalControl\obj\Debug\MedicalControl.FrmDoctorcs.resources
+C:\Users\MarcosB\Desktop\GIT\MedicalControl\MedicalControl\obj\Debug\MedicalControl.FrmPacientes.resources
+C:\Users\MarcosB\Desktop\GIT\MedicalControl\MedicalControl\obj\Debug\MedicalControl.FrmPPrincipal.resources
+C:\Users\MarcosB\Desktop\GIT\MedicalControl\MedicalControl\obj\Debug\MedicalControl.FrmSeguro.resources
+C:\Users\MarcosB\Desktop\GIT\MedicalControl\MedicalControl\obj\Debug\MedicalControl.Properties.Resources.resources
+C:\Users\MarcosB\Desktop\GIT\MedicalControl\MedicalControl\obj\Debug\MedicalControl.csproj.GenerateResource.cache
+C:\Users\MarcosB\Desktop\GIT\MedicalControl\MedicalControl\obj\Debug\MedicalControl.csproj.CoreCompileInputs.cache
+C:\Users\MarcosB\Desktop\GIT\MedicalControl\MedicalControl\obj\Debug\MedicalControl.csproj.CopyComplete
+C:\Users\MarcosB\Desktop\GIT\MedicalControl\MedicalControl\obj\Debug\MedicalControl.exe
+C:\Users\MarcosB\Desktop\GIT\MedicalControl\MedicalControl\obj\Debug\MedicalControl.pdb

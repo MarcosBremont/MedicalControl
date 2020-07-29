@@ -36,8 +36,18 @@
     <Reference Include="FontAwesome.Sharp, Version=5.13.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\FontAwesome.Sharp.5.13.0\lib\net45\FontAwesome.Sharp.dll</HintPath>
     </Reference>
+    <Reference Include="MySql.Data, Version=6.10.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.6.10.9\lib\net452\MySql.Data.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Transactions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -49,6 +59,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Conexioncs.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -61,11 +72,23 @@
     <Compile Include="FrmAjustes.Designer.cs">
       <DependentUpon>FrmAjustes.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmAlergia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAlergia.Designer.cs">
+      <DependentUpon>FrmAlergia.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmCitasMedicas.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmCitasMedicas.Designer.cs">
       <DependentUpon>FrmCitasMedicas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDoctorcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDoctorcs.Designer.cs">
+      <DependentUpon>FrmDoctorcs.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmPacientes.cs">
       <SubType>Form</SubType>
@@ -79,6 +102,12 @@
     <Compile Include="FrmPPrincipal.Designer.cs">
       <DependentUpon>FrmPPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmSeguro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSeguro.Designer.cs">
+      <DependentUpon>FrmSeguro.cs</DependentUpon>
+    </Compile>
     <Compile Include="MedicalControlDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -86,6 +115,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="Resources\insurance.png" />
+    <None Include="Resources\flu.png" />
+    <None Include="Resources\doctor.png" />
     <None Include="MedicalControlDataSet.xsc">
       <DependentUpon>MedicalControlDataSet.xsd</DependentUpon>
     </None>
@@ -104,14 +136,23 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmAlergia.resx">
+      <DependentUpon>FrmAlergia.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmCitasMedicas.resx">
       <DependentUpon>FrmCitasMedicas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDoctorcs.resx">
+      <DependentUpon>FrmDoctorcs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmPacientes.resx">
       <DependentUpon>FrmPacientes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmPPrincipal.resx">
       <DependentUpon>FrmPPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSeguro.resx">
+      <DependentUpon>FrmSeguro.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

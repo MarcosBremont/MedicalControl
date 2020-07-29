@@ -50,6 +50,13 @@
             this.cmbnalergia = new System.Windows.Forms.ComboBox();
             this.cmbndoctor = new System.Windows.Forms.ComboBox();
             this.cmbnpaciente = new System.Windows.Forms.ComboBox();
+            this.IDCitaMedica = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Horacm = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Fechacm = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Comentario = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ID2SEGUR = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.id2alerg = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.id2doctor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -58,7 +65,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(177, 347);
+            this.label1.Location = new System.Drawing.Point(214, 345);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(88, 16);
             this.label1.TabIndex = 44;
@@ -69,7 +76,7 @@
             this.lbltelefonoep.AutoSize = true;
             this.lbltelefonoep.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
             this.lbltelefonoep.ForeColor = System.Drawing.Color.White;
-            this.lbltelefonoep.Location = new System.Drawing.Point(609, 411);
+            this.lbltelefonoep.Location = new System.Drawing.Point(652, 409);
             this.lbltelefonoep.Name = "lbltelefonoep";
             this.lbltelefonoep.Size = new System.Drawing.Size(72, 16);
             this.lbltelefonoep.TabIndex = 42;
@@ -80,7 +87,7 @@
             this.lbltelefono.AutoSize = true;
             this.lbltelefono.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
             this.lbltelefono.ForeColor = System.Drawing.Color.White;
-            this.lbltelefono.Location = new System.Drawing.Point(609, 374);
+            this.lbltelefono.Location = new System.Drawing.Point(652, 372);
             this.lbltelefono.Name = "lbltelefono";
             this.lbltelefono.Size = new System.Drawing.Size(62, 16);
             this.lbltelefono.TabIndex = 41;
@@ -91,7 +98,7 @@
             this.lbldireccion.AutoSize = true;
             this.lbldireccion.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
             this.lbldireccion.ForeColor = System.Drawing.Color.White;
-            this.lbldireccion.Location = new System.Drawing.Point(382, 411);
+            this.lbldireccion.Location = new System.Drawing.Point(425, 409);
             this.lbldireccion.Name = "lbldireccion";
             this.lbldireccion.Size = new System.Drawing.Size(65, 16);
             this.lbldireccion.TabIndex = 40;
@@ -102,7 +109,7 @@
             this.lblcedula.AutoSize = true;
             this.lblcedula.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
             this.lblcedula.ForeColor = System.Drawing.Color.White;
-            this.lblcedula.Location = new System.Drawing.Point(382, 374);
+            this.lblcedula.Location = new System.Drawing.Point(425, 372);
             this.lblcedula.Name = "lblcedula";
             this.lblcedula.Size = new System.Drawing.Size(65, 16);
             this.lblcedula.TabIndex = 39;
@@ -113,7 +120,7 @@
             this.lbledad.AutoSize = true;
             this.lbledad.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
             this.lbledad.ForeColor = System.Drawing.Color.White;
-            this.lbledad.Location = new System.Drawing.Point(177, 449);
+            this.lbledad.Location = new System.Drawing.Point(214, 447);
             this.lbledad.Name = "lbledad";
             this.lbledad.Size = new System.Drawing.Size(75, 16);
             this.lbledad.TabIndex = 38;
@@ -124,7 +131,7 @@
             this.lblapellido.AutoSize = true;
             this.lblapellido.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
             this.lblapellido.ForeColor = System.Drawing.Color.White;
-            this.lblapellido.Location = new System.Drawing.Point(177, 411);
+            this.lblapellido.Location = new System.Drawing.Point(214, 409);
             this.lblapellido.Name = "lblapellido";
             this.lblapellido.Size = new System.Drawing.Size(42, 16);
             this.lblapellido.TabIndex = 37;
@@ -135,7 +142,7 @@
             this.lblnombre.AutoSize = true;
             this.lblnombre.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
             this.lblnombre.ForeColor = System.Drawing.Color.White;
-            this.lblnombre.Location = new System.Drawing.Point(177, 374);
+            this.lblnombre.Location = new System.Drawing.Point(214, 372);
             this.lblnombre.Name = "lblnombre";
             this.lblnombre.Size = new System.Drawing.Size(37, 16);
             this.lblnombre.TabIndex = 36;
@@ -146,7 +153,7 @@
             this.lblid.AutoSize = true;
             this.lblid.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
             this.lblid.ForeColor = System.Drawing.Color.White;
-            this.lblid.Location = new System.Drawing.Point(268, 347);
+            this.lblid.Location = new System.Drawing.Point(301, 345);
             this.lblid.Name = "lblid";
             this.lblid.Size = new System.Drawing.Size(0, 16);
             this.lblid.TabIndex = 35;
@@ -156,7 +163,7 @@
             this.btnactualizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
             this.btnactualizar.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnactualizar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnactualizar.Location = new System.Drawing.Point(518, 295);
+            this.btnactualizar.Location = new System.Drawing.Point(562, 295);
             this.btnactualizar.Name = "btnactualizar";
             this.btnactualizar.Size = new System.Drawing.Size(103, 35);
             this.btnactualizar.TabIndex = 34;
@@ -169,7 +176,7 @@
             this.btnEliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
             this.btnEliminar.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnEliminar.Location = new System.Drawing.Point(402, 295);
+            this.btnEliminar.Location = new System.Drawing.Point(446, 295);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(103, 35);
             this.btnEliminar.TabIndex = 33;
@@ -182,7 +189,7 @@
             this.btninsertar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
             this.btninsertar.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btninsertar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btninsertar.Location = new System.Drawing.Point(286, 295);
+            this.btninsertar.Location = new System.Drawing.Point(330, 295);
             this.btninsertar.Name = "btninsertar";
             this.btninsertar.Size = new System.Drawing.Size(103, 35);
             this.btninsertar.TabIndex = 32;
@@ -193,7 +200,7 @@
             // txtcomentario
             // 
             this.txtcomentario.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtcomentario.Location = new System.Drawing.Point(268, 449);
+            this.txtcomentario.Location = new System.Drawing.Point(301, 447);
             this.txtcomentario.Multiline = true;
             this.txtcomentario.Name = "txtcomentario";
             this.txtcomentario.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
@@ -202,6 +209,9 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AllowUserToOrderColumns = true;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
@@ -212,10 +222,19 @@
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.IDCitaMedica,
+            this.Horacm,
+            this.Fechacm,
+            this.Comentario,
+            this.ID2SEGUR,
+            this.id2alerg,
+            this.id2doctor});
             this.dataGridView1.EnableHeadersVisualStyles = false;
             this.dataGridView1.GridColor = System.Drawing.Color.SteelBlue;
-            this.dataGridView1.Location = new System.Drawing.Point(75, 56);
+            this.dataGridView1.Location = new System.Drawing.Point(143, 12);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dataGridView1.RowHeadersVisible = false;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
@@ -225,14 +244,14 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
             this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(811, 233);
+            this.dataGridView1.Size = new System.Drawing.Size(704, 267);
             this.dataGridView1.TabIndex = 23;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // dthora
             // 
             this.dthora.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dthora.Location = new System.Drawing.Point(268, 372);
+            this.dthora.Location = new System.Drawing.Point(301, 370);
             this.dthora.Name = "dthora";
             this.dthora.Size = new System.Drawing.Size(93, 20);
             this.dthora.TabIndex = 45;
@@ -240,15 +259,15 @@
             // dtfecha
             // 
             this.dtfecha.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtfecha.Location = new System.Drawing.Point(268, 409);
+            this.dtfecha.Location = new System.Drawing.Point(301, 407);
             this.dtfecha.Name = "dtfecha";
-            this.dtfecha.Size = new System.Drawing.Size(93, 20);
+            this.dtfecha.Size = new System.Drawing.Size(108, 20);
             this.dtfecha.TabIndex = 46;
             // 
             // cmbnseguro
             // 
             this.cmbnseguro.FormattingEnabled = true;
-            this.cmbnseguro.Location = new System.Drawing.Point(453, 369);
+            this.cmbnseguro.Location = new System.Drawing.Point(496, 367);
             this.cmbnseguro.Name = "cmbnseguro";
             this.cmbnseguro.Size = new System.Drawing.Size(121, 21);
             this.cmbnseguro.TabIndex = 47;
@@ -256,7 +275,7 @@
             // cmbnalergia
             // 
             this.cmbnalergia.FormattingEnabled = true;
-            this.cmbnalergia.Location = new System.Drawing.Point(453, 406);
+            this.cmbnalergia.Location = new System.Drawing.Point(496, 404);
             this.cmbnalergia.Name = "cmbnalergia";
             this.cmbnalergia.Size = new System.Drawing.Size(121, 21);
             this.cmbnalergia.TabIndex = 48;
@@ -264,7 +283,7 @@
             // cmbndoctor
             // 
             this.cmbndoctor.FormattingEnabled = true;
-            this.cmbndoctor.Location = new System.Drawing.Point(683, 369);
+            this.cmbndoctor.Location = new System.Drawing.Point(726, 367);
             this.cmbndoctor.Name = "cmbndoctor";
             this.cmbndoctor.Size = new System.Drawing.Size(121, 21);
             this.cmbndoctor.TabIndex = 49;
@@ -272,17 +291,66 @@
             // cmbnpaciente
             // 
             this.cmbnpaciente.FormattingEnabled = true;
-            this.cmbnpaciente.Location = new System.Drawing.Point(683, 409);
+            this.cmbnpaciente.Location = new System.Drawing.Point(726, 407);
             this.cmbnpaciente.Name = "cmbnpaciente";
             this.cmbnpaciente.Size = new System.Drawing.Size(121, 21);
             this.cmbnpaciente.TabIndex = 50;
+            // 
+            // IDCitaMedica
+            // 
+            this.IDCitaMedica.DataPropertyName = "N. Cita Medica";
+            this.IDCitaMedica.HeaderText = "N. Cita Medica";
+            this.IDCitaMedica.Name = "IDCitaMedica";
+            this.IDCitaMedica.ReadOnly = true;
+            // 
+            // Horacm
+            // 
+            this.Horacm.DataPropertyName = "Hora Cita";
+            this.Horacm.HeaderText = "Hora Cita";
+            this.Horacm.Name = "Horacm";
+            this.Horacm.ReadOnly = true;
+            // 
+            // Fechacm
+            // 
+            this.Fechacm.DataPropertyName = "Fecha Cita";
+            this.Fechacm.HeaderText = "Fecha Cita";
+            this.Fechacm.Name = "Fechacm";
+            this.Fechacm.ReadOnly = true;
+            // 
+            // Comentario
+            // 
+            this.Comentario.DataPropertyName = "Comentario";
+            this.Comentario.HeaderText = "Comentario";
+            this.Comentario.Name = "Comentario";
+            this.Comentario.ReadOnly = true;
+            // 
+            // ID2SEGUR
+            // 
+            this.ID2SEGUR.DataPropertyName = "N. Seguro Medico";
+            this.ID2SEGUR.HeaderText = "N. Seguro Medico";
+            this.ID2SEGUR.Name = "ID2SEGUR";
+            this.ID2SEGUR.ReadOnly = true;
+            // 
+            // id2alerg
+            // 
+            this.id2alerg.DataPropertyName = "N. Alergia";
+            this.id2alerg.HeaderText = "N. Alergia";
+            this.id2alerg.Name = "id2alerg";
+            this.id2alerg.ReadOnly = true;
+            // 
+            // id2doctor
+            // 
+            this.id2doctor.DataPropertyName = "N. Doctor";
+            this.id2doctor.HeaderText = "N. Doctor";
+            this.id2doctor.Name = "id2doctor";
+            this.id2doctor.ReadOnly = true;
             // 
             // FrmCitasMedicas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.ClientSize = new System.Drawing.Size(891, 539);
+            this.ClientSize = new System.Drawing.Size(958, 539);
             this.Controls.Add(this.cmbnpaciente);
             this.Controls.Add(this.cmbndoctor);
             this.Controls.Add(this.cmbnalergia);
@@ -334,5 +402,12 @@
         private System.Windows.Forms.ComboBox cmbnalergia;
         private System.Windows.Forms.ComboBox cmbndoctor;
         private System.Windows.Forms.ComboBox cmbnpaciente;
+        private System.Windows.Forms.DataGridViewTextBoxColumn IDCitaMedica;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Horacm;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Fechacm;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Comentario;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ID2SEGUR;
+        private System.Windows.Forms.DataGridViewTextBoxColumn id2alerg;
+        private System.Windows.Forms.DataGridViewTextBoxColumn id2doctor;
     }
 }

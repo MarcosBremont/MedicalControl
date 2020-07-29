@@ -33,14 +33,14 @@ namespace MedicalControl
            // int rowIndex = -1;
             //Hacemos un foreach para que recorra la tabla, en caso de que encuentre una fecha que sea igual
             // de la de hoy este mostrara la celda en rojo
-            foreach (DataGridViewRow row in dataGridView1.Rows)
+            /*foreach (DataGridViewRow row in dataGridView1.Rows)
             {
                 if (row.Cells[2].Value.Equals(fechacompar))
                 {
                     //rowIndex = row.Index;
                     row.DefaultCellStyle.BackColor = Color.Red;
                     row.DefaultCellStyle.ForeColor = Color.Red;
-                    //break;
+                    //break
                 }
                 else
                 {
@@ -49,7 +49,7 @@ namespace MedicalControl
 
                 }
             }
-
+            */
         }
 
         public void CARGARCOMBOXSEGURO()

@@ -13,7 +13,7 @@ namespace MedicalControl
 {
     public partial class FrmCitasMedicas : Form
     {
-        MySqlConnection con = new MySqlConnection("Server=localhost; database=medicalcontrol; user=root; password=MarcosBremont");
+        MySqlConnection con = new MySqlConnection("Server=localhost; database=medicalcontrol; user=root; password=1234");
 
         public FrmCitasMedicas()
         {
@@ -54,42 +54,33 @@ namespace MedicalControl
 
         public void CARGARCOMBOXSEGURO()
         {
-            MySqlCommand cmd = new MySqlCommand("SELECT * FROM T_SEGUROM", con);
-            con.Open();
-            MySqlDataReader registro = cmd.ExecuteReader();
-            while (registro.Read())
-            {
-                cmbnseguro.Items.Add(registro["IDSEGURO"].ToString());
-                cmbnseguro.Items.Add(registro["NombreSeguro"].ToString());
-            }
-            con.Close();
+            MySqlDataAdapter da = new MySqlDataAdapter("SELECT * FROM t_segurom", con);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            cmbnseguro.ValueMember = "IDSEGURO";
+            cmbnseguro.DisplayMember = "NombreSeguro";
+            cmbnseguro.DataSource = dt;
         }
 
         public void CARGARCOMBOXALERGIA()
         {
-            MySqlCommand cmd = new MySqlCommand("SELECT * FROM T_ALERGIA", con);
-            con.Open();
-            MySqlDataReader registro = cmd.ExecuteReader();
-            while (registro.Read())
-            {
-                cmbnalergia.Items.Add(registro["IDALERGIA"].ToString());
-                cmbnalergia.Items.Add(registro["NombreA"].ToString());
-            }
-            con.Close();
+            MySqlDataAdapter da = new MySqlDataAdapter("SELECT * FROM T_ALERGIA", con);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            cmbnalergia.ValueMember = "IDALERGIA";
+            cmbnalergia.DisplayMember = "NombreA";
+            cmbnalergia.DataSource = dt;
         }
 
 
         public void CARGARCOMBOXDOCTOR()
         {
-            MySqlCommand cmd = new MySqlCommand("SELECT * FROM T_Doctor", con);
-            con.Open();
-            MySqlDataReader registro = cmd.ExecuteReader();
-            while (registro.Read())
-            {
-                cmbndoctor.Items.Add(registro["IDDOCTOR"].ToString());
-                cmbndoctor.Items.Add(registro["NombreDoctor"].ToString());
-            }
-            con.Close();
+            MySqlDataAdapter da = new MySqlDataAdapter("SELECT * FROM T_Doctor", con);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            cmbndoctor.ValueMember = "IDDOCTOR";
+            cmbndoctor.DisplayMember = "NombreDoctor";
+            cmbndoctor.DataSource = dt;
         }
 
         
@@ -107,14 +98,15 @@ namespace MedicalControl
         private void btninsertar_Click(object sender, EventArgs e)
         {
             con.Open();
-            string query = "INSERT INTO T_CitaMedica (HORACM, FECHACM, COMENTARIO, ID2SEGUR, ID2ALERG, ID2DOCTOR) values (@HORACM, @FECHACM, @COMENTARIO, @ID2SEGUR, @ID2ALERG, @ID2DOCTOR)";
+            string query = "INSERT INTO T_CitaMedica (HORACM, FECHACM, COMENTARIO, ID2SEGUR, ID2ALERG, ID2DOCTOR, NombreCompleto) values (@HORACM, @FECHACM, @COMENTARIO, @ID2SEGUR, @ID2ALERG, @ID2DOCTOR, @NombreCompleto)";
             MySqlCommand comando = new MySqlCommand(query, con);
             comando.Parameters.AddWithValue("@HORACM", dthora.Text);
             comando.Parameters.AddWithValue("@FECHACM", dtfecha.Text);
             comando.Parameters.AddWithValue("@COMENTARIO", txtcomentario.Text);
-            comando.Parameters.AddWithValue("@ID2SEGUR", cmbnseguro.Text);
-            comando.Parameters.AddWithValue("@ID2ALERG", cmbnalergia.Text);
-            comando.Parameters.AddWithValue("@ID2DOCTOR", cmbndoctor.Text);
+            comando.Parameters.AddWithValue("@ID2SEGUR", cmbnseguro.SelectedValue);
+            comando.Parameters.AddWithValue("@ID2ALERG", cmbnalergia.SelectedValue);
+            comando.Parameters.AddWithValue("@ID2DOCTOR", cmbndoctor.SelectedValue);
+            comando.Parameters.AddWithValue("@NombreCompleto", txtnombrecompleto.Text);
             comando.ExecuteNonQuery();
             Refresh();
             MessageBox.Show("Paciente Agregado");
@@ -144,20 +136,22 @@ namespace MedicalControl
             cmbnseguro.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
             cmbnalergia.Text = dataGridView1.CurrentRow.Cells[5].Value.ToString();
             cmbndoctor.Text = dataGridView1.CurrentRow.Cells[6].Value.ToString();
+            txtnombrecompleto.Text = dataGridView1.CurrentRow.Cells[7].Value.ToString();
         }
 
         private void btnactualizar_Click(object sender, EventArgs e)
         {
             con.Open();
-            string query = "UPDATE T_CITAMEDICA SET HORACM = @HORACM, FECHACM = @FECHACM, COMENTARIO = @COMENTARIO, ID2SEGUR = @ID2SEGUR, ID2ALERG = @ID2ALERG, ID2DOCTOR = @ID2DOCTOR where IDCITAMEDICA=@IDCITAMEDICA";
+            string query = "UPDATE T_CITAMEDICA SET HORACM = @HORACM, FECHACM = @FECHACM, COMENTARIO = @COMENTARIO, ID2SEGUR = @ID2SEGUR, ID2ALERG = @ID2ALERG, ID2DOCTOR = @ID2DOCTOR, NombreCompleto = @NombreCompleto where IDCITAMEDICA=@IDCITAMEDICA";
             MySqlCommand comando = new MySqlCommand(query, con);
             comando.Parameters.AddWithValue("@IDCITAMEDICA", lblid.Text);
             comando.Parameters.AddWithValue("@HORACM", dthora.Text);
             comando.Parameters.AddWithValue("@FECHACM", dtfecha.Text);
             comando.Parameters.AddWithValue("@COMENTARIO", txtcomentario.Text);
-            comando.Parameters.AddWithValue("@ID2SEGUR", cmbnseguro.Text);
-            comando.Parameters.AddWithValue("@ID2ALERG", cmbnalergia.Text);
-            comando.Parameters.AddWithValue("@ID2DOCTOR", cmbndoctor.Text);
+            comando.Parameters.AddWithValue("@ID2SEGUR", cmbnseguro.SelectedValue);
+            comando.Parameters.AddWithValue("@ID2ALERG", cmbnalergia.SelectedValue);
+            comando.Parameters.AddWithValue("@ID2DOCTOR", cmbndoctor.SelectedValue);
+            comando.Parameters.AddWithValue("@NombreCompleto", txtnombrecompleto.Text);
             comando.ExecuteNonQuery();
             Refresh();
             MessageBox.Show("Paciente Actualizado");

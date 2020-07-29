@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace MedicalControl
 {
-    public partial class FrmPacientes : Form
+    public partial class FrmInventario : Form
     {
-        public FrmPacientes()
+        public FrmInventario()
         {
             InitializeComponent();
         }

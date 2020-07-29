@@ -101,7 +101,7 @@ namespace MedicalControl
         private void iconButton3_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color3);
-            OpenChildForm(new FrmPacientes());
+            OpenChildForm(new FrmInventario());
             menuStrip1.Visible = false;
 
         }

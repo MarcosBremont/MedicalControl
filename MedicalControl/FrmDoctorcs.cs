@@ -19,7 +19,7 @@ namespace MedicalControl
         {
             InitializeComponent();
         }
-        MySqlConnection con = new MySqlConnection("Server=localhost; database=medicalcontrol; user=root; password=MarcosBremont");
+        MySqlConnection con = new MySqlConnection("Server=localhost; database=medicalcontrol; user=root; password=1234");
 
         private void FrmDoctorcs_Load(object sender, EventArgs e)
         {

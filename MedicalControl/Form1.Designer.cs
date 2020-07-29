@@ -31,7 +31,7 @@
             this.panelMenu = new System.Windows.Forms.Panel();
             this.ibsalir = new FontAwesome.Sharp.IconButton();
             this.ibajustes = new FontAwesome.Sharp.IconButton();
-            this.ibpacientes = new FontAwesome.Sharp.IconButton();
+            this.ibinventario = new FontAwesome.Sharp.IconButton();
             this.ibcitasmedicas = new FontAwesome.Sharp.IconButton();
             this.ibpaginaprincipal = new FontAwesome.Sharp.IconButton();
             this.panelLogo = new System.Windows.Forms.Panel();
@@ -66,7 +66,7 @@
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.panelMenu.Controls.Add(this.ibsalir);
             this.panelMenu.Controls.Add(this.ibajustes);
-            this.panelMenu.Controls.Add(this.ibpacientes);
+            this.panelMenu.Controls.Add(this.ibinventario);
             this.panelMenu.Controls.Add(this.ibcitasmedicas);
             this.panelMenu.Controls.Add(this.ibpaginaprincipal);
             this.panelMenu.Controls.Add(this.panelLogo);
@@ -122,27 +122,27 @@
             this.ibajustes.UseVisualStyleBackColor = true;
             this.ibajustes.Click += new System.EventHandler(this.iconButton4_Click);
             // 
-            // ibpacientes
+            // ibinventario
             // 
-            this.ibpacientes.FlatAppearance.BorderSize = 0;
-            this.ibpacientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ibpacientes.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.ibpacientes.Font = new System.Drawing.Font("Bahnschrift Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ibpacientes.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ibpacientes.IconChar = FontAwesome.Sharp.IconChar.Portrait;
-            this.ibpacientes.IconColor = System.Drawing.Color.White;
-            this.ibpacientes.IconSize = 40;
-            this.ibpacientes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ibpacientes.Location = new System.Drawing.Point(0, 356);
-            this.ibpacientes.Name = "ibpacientes";
-            this.ibpacientes.Padding = new System.Windows.Forms.Padding(10, 0, 5, 0);
-            this.ibpacientes.Rotation = 0D;
-            this.ibpacientes.Size = new System.Drawing.Size(220, 60);
-            this.ibpacientes.TabIndex = 4;
-            this.ibpacientes.Text = "Pacientes";
-            this.ibpacientes.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.ibpacientes.UseVisualStyleBackColor = true;
-            this.ibpacientes.Click += new System.EventHandler(this.iconButton3_Click);
+            this.ibinventario.FlatAppearance.BorderSize = 0;
+            this.ibinventario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ibinventario.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.ibinventario.Font = new System.Drawing.Font("Bahnschrift Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ibinventario.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.ibinventario.IconChar = FontAwesome.Sharp.IconChar.NotesMedical;
+            this.ibinventario.IconColor = System.Drawing.Color.White;
+            this.ibinventario.IconSize = 40;
+            this.ibinventario.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ibinventario.Location = new System.Drawing.Point(0, 356);
+            this.ibinventario.Name = "ibinventario";
+            this.ibinventario.Padding = new System.Windows.Forms.Padding(10, 0, 5, 0);
+            this.ibinventario.Rotation = 0D;
+            this.ibinventario.Size = new System.Drawing.Size(220, 60);
+            this.ibinventario.TabIndex = 4;
+            this.ibinventario.Text = "Inventario";
+            this.ibinventario.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.ibinventario.UseVisualStyleBackColor = true;
+            this.ibinventario.Click += new System.EventHandler(this.iconButton3_Click);
             // 
             // ibcitasmedicas
             // 
@@ -416,7 +416,7 @@
 
         private System.Windows.Forms.Panel panelMenu;
         private FontAwesome.Sharp.IconButton ibajustes;
-        private FontAwesome.Sharp.IconButton ibpacientes;
+        private FontAwesome.Sharp.IconButton ibinventario;
         private FontAwesome.Sharp.IconButton ibcitasmedicas;
         private FontAwesome.Sharp.IconButton ibpaginaprincipal;
         private System.Windows.Forms.Panel panelLogo;

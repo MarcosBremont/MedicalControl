@@ -32,6 +32,18 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.IDPACIENTE = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NOMBREP = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.APELLIDOP = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.EDADP = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CEDULAP = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DIRECCIONP = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TELEFONOP = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TELEFONOP2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SEXOP = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.IDTALER = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.IDTSEGURO = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.IDTDOCTOR = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pacienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.medicalControlDataSet = new MedicalControl.MedicalControlDataSet();
             this.pacienteTableAdapter = new MedicalControl.MedicalControlDataSetTableAdapters.PacienteTableAdapter();
@@ -71,18 +83,6 @@
             this.label8 = new System.Windows.Forms.Label();
             this.txtbuscar = new System.Windows.Forms.TextBox();
             this.lblbuscar = new System.Windows.Forms.Label();
-            this.IDPACIENTE = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NOMBREP = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.APELLIDOP = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.EDADP = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CEDULAP = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DIRECCIONP = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TELEFONOP = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TELEFONOP2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SEXOP = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.IDTALER = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.IDTSEGURO = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.IDTDOCTOR = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pacienteBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.medicalControlDataSet)).BeginInit();
@@ -136,9 +136,93 @@
             this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.RowTemplate.Height = 30;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(1100, 327);
+            this.dataGridView1.Size = new System.Drawing.Size(1104, 327);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            // 
+            // IDPACIENTE
+            // 
+            this.IDPACIENTE.DataPropertyName = "IDPACIENTE";
+            this.IDPACIENTE.HeaderText = "N. Paciente";
+            this.IDPACIENTE.Name = "IDPACIENTE";
+            this.IDPACIENTE.ReadOnly = true;
+            // 
+            // NOMBREP
+            // 
+            this.NOMBREP.DataPropertyName = "NOMBREP";
+            this.NOMBREP.HeaderText = "Nombre";
+            this.NOMBREP.Name = "NOMBREP";
+            this.NOMBREP.ReadOnly = true;
+            // 
+            // APELLIDOP
+            // 
+            this.APELLIDOP.DataPropertyName = "APELLIDOP";
+            this.APELLIDOP.HeaderText = "Apellido";
+            this.APELLIDOP.Name = "APELLIDOP";
+            this.APELLIDOP.ReadOnly = true;
+            // 
+            // EDADP
+            // 
+            this.EDADP.DataPropertyName = "EDADP";
+            this.EDADP.HeaderText = "Edad";
+            this.EDADP.Name = "EDADP";
+            this.EDADP.ReadOnly = true;
+            // 
+            // CEDULAP
+            // 
+            this.CEDULAP.DataPropertyName = "CEDULAP";
+            this.CEDULAP.HeaderText = "Cedula";
+            this.CEDULAP.Name = "CEDULAP";
+            this.CEDULAP.ReadOnly = true;
+            // 
+            // DIRECCIONP
+            // 
+            this.DIRECCIONP.DataPropertyName = "DIRECCIONP";
+            this.DIRECCIONP.HeaderText = "Direccion";
+            this.DIRECCIONP.Name = "DIRECCIONP";
+            this.DIRECCIONP.ReadOnly = true;
+            // 
+            // TELEFONOP
+            // 
+            this.TELEFONOP.DataPropertyName = "TELEFONOP";
+            this.TELEFONOP.HeaderText = "Telefono";
+            this.TELEFONOP.Name = "TELEFONOP";
+            this.TELEFONOP.ReadOnly = true;
+            // 
+            // TELEFONOP2
+            // 
+            this.TELEFONOP2.DataPropertyName = "TELEFONOP2";
+            this.TELEFONOP2.HeaderText = "Telefono 2";
+            this.TELEFONOP2.Name = "TELEFONOP2";
+            this.TELEFONOP2.ReadOnly = true;
+            // 
+            // SEXOP
+            // 
+            this.SEXOP.DataPropertyName = "SEXOP";
+            this.SEXOP.HeaderText = "Sexo";
+            this.SEXOP.Name = "SEXOP";
+            this.SEXOP.ReadOnly = true;
+            // 
+            // IDTALER
+            // 
+            this.IDTALER.DataPropertyName = "IDTALER";
+            this.IDTALER.HeaderText = "N. Alergia";
+            this.IDTALER.Name = "IDTALER";
+            this.IDTALER.ReadOnly = true;
+            // 
+            // IDTSEGURO
+            // 
+            this.IDTSEGURO.DataPropertyName = "IDTSEGURO";
+            this.IDTSEGURO.HeaderText = "N. Seguro";
+            this.IDTSEGURO.Name = "IDTSEGURO";
+            this.IDTSEGURO.ReadOnly = true;
+            // 
+            // IDTDOCTOR
+            // 
+            this.IDTDOCTOR.DataPropertyName = "IDTDOCTOR";
+            this.IDTDOCTOR.HeaderText = "N. Doctor";
+            this.IDTDOCTOR.Name = "IDTDOCTOR";
+            this.IDTDOCTOR.ReadOnly = true;
             // 
             // pacienteBindingSource
             // 
@@ -589,90 +673,6 @@
             this.lblbuscar.Size = new System.Drawing.Size(49, 16);
             this.lblbuscar.TabIndex = 49;
             this.lblbuscar.Text = "Buscar";
-            // 
-            // IDPACIENTE
-            // 
-            this.IDPACIENTE.DataPropertyName = "IDPACIENTE";
-            this.IDPACIENTE.HeaderText = "N. Paciente";
-            this.IDPACIENTE.Name = "IDPACIENTE";
-            this.IDPACIENTE.ReadOnly = true;
-            // 
-            // NOMBREP
-            // 
-            this.NOMBREP.DataPropertyName = "NOMBREP";
-            this.NOMBREP.HeaderText = "Nombre";
-            this.NOMBREP.Name = "NOMBREP";
-            this.NOMBREP.ReadOnly = true;
-            // 
-            // APELLIDOP
-            // 
-            this.APELLIDOP.DataPropertyName = "APELLIDOP";
-            this.APELLIDOP.HeaderText = "Apellido";
-            this.APELLIDOP.Name = "APELLIDOP";
-            this.APELLIDOP.ReadOnly = true;
-            // 
-            // EDADP
-            // 
-            this.EDADP.DataPropertyName = "EDADP";
-            this.EDADP.HeaderText = "Edad";
-            this.EDADP.Name = "EDADP";
-            this.EDADP.ReadOnly = true;
-            // 
-            // CEDULAP
-            // 
-            this.CEDULAP.DataPropertyName = "CEDULAP";
-            this.CEDULAP.HeaderText = "Cedula";
-            this.CEDULAP.Name = "CEDULAP";
-            this.CEDULAP.ReadOnly = true;
-            // 
-            // DIRECCIONP
-            // 
-            this.DIRECCIONP.DataPropertyName = "DIRECCIONP";
-            this.DIRECCIONP.HeaderText = "Direccion";
-            this.DIRECCIONP.Name = "DIRECCIONP";
-            this.DIRECCIONP.ReadOnly = true;
-            // 
-            // TELEFONOP
-            // 
-            this.TELEFONOP.DataPropertyName = "TELEFONOP";
-            this.TELEFONOP.HeaderText = "Telefono";
-            this.TELEFONOP.Name = "TELEFONOP";
-            this.TELEFONOP.ReadOnly = true;
-            // 
-            // TELEFONOP2
-            // 
-            this.TELEFONOP2.DataPropertyName = "TELEFONOP2";
-            this.TELEFONOP2.HeaderText = "Telefono 2";
-            this.TELEFONOP2.Name = "TELEFONOP2";
-            this.TELEFONOP2.ReadOnly = true;
-            // 
-            // SEXOP
-            // 
-            this.SEXOP.DataPropertyName = "SEXOP";
-            this.SEXOP.HeaderText = "Sexo";
-            this.SEXOP.Name = "SEXOP";
-            this.SEXOP.ReadOnly = true;
-            // 
-            // IDTALER
-            // 
-            this.IDTALER.DataPropertyName = "IDTALER";
-            this.IDTALER.HeaderText = "N. Alergia";
-            this.IDTALER.Name = "IDTALER";
-            this.IDTALER.ReadOnly = true;
-            // 
-            // IDTSEGURO
-            // 
-            this.IDTSEGURO.DataPropertyName = "IDTSEGURO";
-            this.IDTSEGURO.HeaderText = "N. Seguro";
-            this.IDTSEGURO.Name = "IDTSEGURO";
-            this.IDTSEGURO.ReadOnly = true;
-            // 
-            // IDTDOCTOR
-            // 
-            this.IDTDOCTOR.DataPropertyName = "IDTDOCTOR";
-            this.IDTDOCTOR.HeaderText = "N. Doctor";
-            this.IDTDOCTOR.Name = "IDTDOCTOR";
-            this.IDTDOCTOR.ReadOnly = true;
             // 
             // FrmPPrincipal
             // 

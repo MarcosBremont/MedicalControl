@@ -1,0 +1,15 @@
+C:\Users\MarcosB\source\repos\MedicalControl\MedicalControl\bin\Debug\MedicalControl.exe.config
+C:\Users\MarcosB\source\repos\MedicalControl\MedicalControl\bin\Debug\MedicalControl.exe
+C:\Users\MarcosB\source\repos\MedicalControl\MedicalControl\bin\Debug\MedicalControl.pdb
+C:\Users\MarcosB\source\repos\MedicalControl\MedicalControl\obj\Debug\MedicalControl.csprojAssemblyReference.cache
+C:\Users\MarcosB\source\repos\MedicalControl\MedicalControl\obj\Debug\MedicalControl.FrmPrincipal.resources
+C:\Users\MarcosB\source\repos\MedicalControl\MedicalControl\obj\Debug\MedicalControl.Properties.Resources.resources
+C:\Users\MarcosB\source\repos\MedicalControl\MedicalControl\obj\Debug\MedicalControl.csproj.GenerateResource.cache
+C:\Users\MarcosB\source\repos\MedicalControl\MedicalControl\obj\Debug\MedicalControl.csproj.CoreCompileInputs.cache
+C:\Users\MarcosB\source\repos\MedicalControl\MedicalControl\obj\Debug\MedicalControl.exe
+C:\Users\MarcosB\source\repos\MedicalControl\MedicalControl\obj\Debug\MedicalControl.pdb
+C:\Users\MarcosB\source\repos\MedicalControl\MedicalControl\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\MarcosB\source\repos\MedicalControl\MedicalControl\obj\Debug\MedicalControl.csproj.CopyComplete
+C:\Users\MarcosB\source\repos\MedicalControl\MedicalControl\obj\Debug\MedicalControl.FrmPPrincipal.resources
+C:\Users\MarcosB\source\repos\MedicalControl\MedicalControl\obj\Debug\MedicalControl.FrmCitasMedicas.resources
+C:\Users\MarcosB\source\repos\MedicalControl\MedicalControl\obj\Debug\MedicalControl.FrmPacientes.resources

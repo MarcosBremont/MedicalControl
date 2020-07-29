@@ -241,5 +241,11 @@ namespace MedicalControl
             FrmSeguro form = new FrmSeguro();
             form.ShowDialog();
         }
+
+        private void citaMedicaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmProveedor form = new FrmProveedor();
+            form.ShowDialog();
+        }
     }
 }

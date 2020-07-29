@@ -28,12 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.txtnombrecompleto = new System.Windows.Forms.TextBox();
+            this.txtnombremedicamento = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.cmbnseguro = new System.Windows.Forms.ComboBox();
+            this.cbproveedor = new System.Windows.Forms.ComboBox();
             this.dtfecha = new System.Windows.Forms.DateTimePicker();
             this.lblidmedicamento = new System.Windows.Forms.Label();
             this.lblcedula = new System.Windows.Forms.Label();
@@ -44,13 +44,14 @@
             this.btnactualizar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btninsertar = new System.Windows.Forms.Button();
-            this.txtcomentario = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtdescripcionmedicamento = new System.Windows.Forms.TextBox();
+            this.txtcantidadmedicamento = new System.Windows.Forms.TextBox();
             this.idt_inventario = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NombreMedicamento = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CantidadMedicamento = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Proveedor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -62,21 +63,22 @@
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idt_inventario,
             this.NombreMedicamento,
             this.CantidadMedicamento,
             this.Proveedor,
-            this.Descripcion});
+            this.Descripcion,
+            this.Fecha});
             this.dataGridView1.EnableHeadersVisualStyles = false;
             this.dataGridView1.GridColor = System.Drawing.Color.SteelBlue;
             this.dataGridView1.Location = new System.Drawing.Point(130, 44);
@@ -84,23 +86,24 @@
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dataGridView1.RowHeadersVisible = false;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Bahnschrift SemiLight", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.SteelBlue;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
-            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Bahnschrift SemiLight", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.White;
+            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle6;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(947, 267);
             this.dataGridView1.TabIndex = 24;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
-            // txtnombrecompleto
+            // txtnombremedicamento
             // 
-            this.txtnombrecompleto.Location = new System.Drawing.Point(458, 399);
-            this.txtnombrecompleto.MaxLength = 60;
-            this.txtnombrecompleto.Name = "txtnombrecompleto";
-            this.txtnombrecompleto.Size = new System.Drawing.Size(108, 20);
-            this.txtnombrecompleto.TabIndex = 70;
+            this.txtnombremedicamento.Location = new System.Drawing.Point(458, 399);
+            this.txtnombremedicamento.MaxLength = 60;
+            this.txtnombremedicamento.Name = "txtnombremedicamento";
+            this.txtnombremedicamento.Size = new System.Drawing.Size(108, 20);
+            this.txtnombremedicamento.TabIndex = 70;
             // 
             // label2
             // 
@@ -113,18 +116,18 @@
             this.label2.TabIndex = 69;
             this.label2.Text = "Nombre Medicamento";
             // 
-            // cmbnseguro
+            // cbproveedor
             // 
-            this.cmbnseguro.FormattingEnabled = true;
-            this.cmbnseguro.Location = new System.Drawing.Point(741, 433);
-            this.cmbnseguro.Name = "cmbnseguro";
-            this.cmbnseguro.Size = new System.Drawing.Size(121, 21);
-            this.cmbnseguro.TabIndex = 66;
+            this.cbproveedor.FormattingEnabled = true;
+            this.cbproveedor.Location = new System.Drawing.Point(742, 433);
+            this.cbproveedor.Name = "cbproveedor";
+            this.cbproveedor.Size = new System.Drawing.Size(121, 21);
+            this.cbproveedor.TabIndex = 66;
             // 
             // dtfecha
             // 
             this.dtfecha.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtfecha.Location = new System.Drawing.Point(741, 397);
+            this.dtfecha.Location = new System.Drawing.Point(742, 397);
             this.dtfecha.Name = "dtfecha";
             this.dtfecha.Size = new System.Drawing.Size(121, 20);
             this.dtfecha.TabIndex = 65;
@@ -156,7 +159,7 @@
             this.lbledad.AutoSize = true;
             this.lbledad.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
             this.lbledad.ForeColor = System.Drawing.Color.White;
-            this.lbledad.Location = new System.Drawing.Point(323, 471);
+            this.lbledad.Location = new System.Drawing.Point(318, 471);
             this.lbledad.Name = "lbledad";
             this.lbledad.Size = new System.Drawing.Size(76, 16);
             this.lbledad.TabIndex = 59;
@@ -205,6 +208,7 @@
             this.btnactualizar.TabIndex = 55;
             this.btnactualizar.Text = "Actualizar";
             this.btnactualizar.UseVisualStyleBackColor = false;
+            this.btnactualizar.Click += new System.EventHandler(this.btnactualizar_Click);
             // 
             // btnEliminar
             // 
@@ -217,6 +221,7 @@
             this.btnEliminar.TabIndex = 54;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = false;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btninsertar
             // 
@@ -229,25 +234,26 @@
             this.btninsertar.TabIndex = 53;
             this.btninsertar.Text = "Insertar";
             this.btninsertar.UseVisualStyleBackColor = false;
+            this.btninsertar.Click += new System.EventHandler(this.btninsertar_Click);
             // 
-            // txtcomentario
+            // txtdescripcionmedicamento
             // 
-            this.txtcomentario.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtcomentario.Location = new System.Drawing.Point(442, 476);
-            this.txtcomentario.MaxLength = 30;
-            this.txtcomentario.Multiline = true;
-            this.txtcomentario.Name = "txtcomentario";
-            this.txtcomentario.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtcomentario.Size = new System.Drawing.Size(420, 58);
-            this.txtcomentario.TabIndex = 52;
+            this.txtdescripcionmedicamento.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtdescripcionmedicamento.Location = new System.Drawing.Point(442, 476);
+            this.txtdescripcionmedicamento.MaxLength = 30;
+            this.txtdescripcionmedicamento.Multiline = true;
+            this.txtdescripcionmedicamento.Name = "txtdescripcionmedicamento";
+            this.txtdescripcionmedicamento.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtdescripcionmedicamento.Size = new System.Drawing.Size(421, 58);
+            this.txtdescripcionmedicamento.TabIndex = 52;
             // 
-            // textBox1
+            // txtcantidadmedicamento
             // 
-            this.textBox1.Location = new System.Drawing.Point(458, 435);
-            this.textBox1.MaxLength = 60;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(108, 20);
-            this.textBox1.TabIndex = 71;
+            this.txtcantidadmedicamento.Location = new System.Drawing.Point(458, 435);
+            this.txtcantidadmedicamento.MaxLength = 60;
+            this.txtcantidadmedicamento.Name = "txtcantidadmedicamento";
+            this.txtcantidadmedicamento.Size = new System.Drawing.Size(108, 20);
+            this.txtcantidadmedicamento.TabIndex = 71;
             // 
             // idt_inventario
             // 
@@ -291,16 +297,23 @@
             this.Descripcion.ReadOnly = true;
             this.Descripcion.Width = 200;
             // 
+            // Fecha
+            // 
+            this.Fecha.DataPropertyName = "Fecha";
+            this.Fecha.HeaderText = "Fecha";
+            this.Fecha.Name = "Fecha";
+            this.Fecha.ReadOnly = true;
+            // 
             // FrmInventario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.ClientSize = new System.Drawing.Size(1339, 557);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.txtnombrecompleto);
+            this.Controls.Add(this.txtcantidadmedicamento);
+            this.Controls.Add(this.txtnombremedicamento);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.cmbnseguro);
+            this.Controls.Add(this.cbproveedor);
             this.Controls.Add(this.dtfecha);
             this.Controls.Add(this.lblidmedicamento);
             this.Controls.Add(this.lblcedula);
@@ -311,10 +324,11 @@
             this.Controls.Add(this.btnactualizar);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btninsertar);
-            this.Controls.Add(this.txtcomentario);
+            this.Controls.Add(this.txtdescripcionmedicamento);
             this.Controls.Add(this.dataGridView1);
             this.Name = "FrmInventario";
             this.Text = "Inventario";
+            this.Load += new System.EventHandler(this.FrmInventario_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -324,9 +338,9 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.TextBox txtnombrecompleto;
+        private System.Windows.Forms.TextBox txtnombremedicamento;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox cmbnseguro;
+        private System.Windows.Forms.ComboBox cbproveedor;
         private System.Windows.Forms.DateTimePicker dtfecha;
         private System.Windows.Forms.Label lblidmedicamento;
         private System.Windows.Forms.Label lblcedula;
@@ -337,12 +351,13 @@
         private System.Windows.Forms.Button btnactualizar;
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button btninsertar;
-        private System.Windows.Forms.TextBox txtcomentario;
+        private System.Windows.Forms.TextBox txtdescripcionmedicamento;
+        private System.Windows.Forms.TextBox txtcantidadmedicamento;
         private System.Windows.Forms.DataGridViewTextBoxColumn idt_inventario;
         private System.Windows.Forms.DataGridViewTextBoxColumn NombreMedicamento;
         private System.Windows.Forms.DataGridViewTextBoxColumn CantidadMedicamento;
         private System.Windows.Forms.DataGridViewTextBoxColumn Proveedor;
         private System.Windows.Forms.DataGridViewTextBoxColumn Descripcion;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Fecha;
     }
 }

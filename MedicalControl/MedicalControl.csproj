@@ -90,17 +90,23 @@
     <Compile Include="FrmDoctorcs.Designer.cs">
       <DependentUpon>FrmDoctorcs.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmPacientes.cs">
+    <Compile Include="FrmInventario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmPacientes.Designer.cs">
-      <DependentUpon>FrmPacientes.cs</DependentUpon>
+    <Compile Include="FrmInventario.Designer.cs">
+      <DependentUpon>FrmInventario.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmPPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmPPrincipal.Designer.cs">
       <DependentUpon>FrmPPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmProveedor.Designer.cs">
+      <DependentUpon>FrmProveedor.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmSeguro.cs">
       <SubType>Form</SubType>
@@ -115,6 +121,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="Resources\medicine1.png" />
     <None Include="Resources\insurance.png" />
     <None Include="Resources\flu.png" />
     <None Include="Resources\doctor.png" />
@@ -145,11 +152,14 @@
     <EmbeddedResource Include="FrmDoctorcs.resx">
       <DependentUpon>FrmDoctorcs.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmPacientes.resx">
-      <DependentUpon>FrmPacientes.cs</DependentUpon>
+    <EmbeddedResource Include="FrmInventario.resx">
+      <DependentUpon>FrmInventario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmPPrincipal.resx">
       <DependentUpon>FrmPPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmProveedor.resx">
+      <DependentUpon>FrmProveedor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmSeguro.resx">
       <DependentUpon>FrmSeguro.cs</DependentUpon>

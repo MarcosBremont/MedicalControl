@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.lbltelefono = new System.Windows.Forms.Label();
             this.lbldireccion = new System.Windows.Forms.Label();
@@ -43,13 +43,6 @@
             this.btninsertar = new System.Windows.Forms.Button();
             this.txtcomentario = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dthora = new System.Windows.Forms.DateTimePicker();
-            this.dtfecha = new System.Windows.Forms.DateTimePicker();
-            this.cmbnseguro = new System.Windows.Forms.ComboBox();
-            this.cmbnalergia = new System.Windows.Forms.ComboBox();
-            this.cmbndoctor = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtnombrecompleto = new System.Windows.Forms.TextBox();
             this.IDCitaMedica = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Horacm = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Fechacm = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -58,6 +51,13 @@
             this.id2alerg = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.id2doctor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NombreCompleto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dthora = new System.Windows.Forms.DateTimePicker();
+            this.dtfecha = new System.Windows.Forms.DateTimePicker();
+            this.cmbnseguro = new System.Windows.Forms.ComboBox();
+            this.cmbnalergia = new System.Windows.Forms.ComboBox();
+            this.cmbndoctor = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtnombrecompleto = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -202,18 +202,19 @@
             // 
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.AllowUserToOrderColumns = true;
+            this.dataGridView1.AllowUserToResizeColumns = false;
+            this.dataGridView1.AllowUserToResizeRows = false;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.IDCitaMedica,
@@ -231,75 +232,17 @@
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dataGridView1.RowHeadersVisible = false;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Bahnschrift SemiLight", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.SteelBlue;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
-            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.dataGridView1.RowHeadersWidth = 10;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Bahnschrift SemiLight", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(1217, 267);
             this.dataGridView1.TabIndex = 23;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
-            // 
-            // dthora
-            // 
-            this.dthora.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dthora.Location = new System.Drawing.Point(458, 404);
-            this.dthora.Name = "dthora";
-            this.dthora.Size = new System.Drawing.Size(108, 20);
-            this.dthora.TabIndex = 45;
-            // 
-            // dtfecha
-            // 
-            this.dtfecha.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtfecha.Location = new System.Drawing.Point(662, 368);
-            this.dtfecha.Name = "dtfecha";
-            this.dtfecha.Size = new System.Drawing.Size(121, 20);
-            this.dtfecha.TabIndex = 46;
-            // 
-            // cmbnseguro
-            // 
-            this.cmbnseguro.FormattingEnabled = true;
-            this.cmbnseguro.Location = new System.Drawing.Point(662, 404);
-            this.cmbnseguro.Name = "cmbnseguro";
-            this.cmbnseguro.Size = new System.Drawing.Size(121, 21);
-            this.cmbnseguro.TabIndex = 47;
-            // 
-            // cmbnalergia
-            // 
-            this.cmbnalergia.FormattingEnabled = true;
-            this.cmbnalergia.Location = new System.Drawing.Point(890, 404);
-            this.cmbnalergia.Name = "cmbnalergia";
-            this.cmbnalergia.Size = new System.Drawing.Size(121, 21);
-            this.cmbnalergia.TabIndex = 48;
-            // 
-            // cmbndoctor
-            // 
-            this.cmbndoctor.FormattingEnabled = true;
-            this.cmbndoctor.Location = new System.Drawing.Point(890, 368);
-            this.cmbndoctor.Name = "cmbndoctor";
-            this.cmbndoctor.Size = new System.Drawing.Size(121, 21);
-            this.cmbndoctor.TabIndex = 49;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(339, 370);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(113, 16);
-            this.label2.TabIndex = 50;
-            this.label2.Text = "Nombre Completo";
-            // 
-            // txtnombrecompleto
-            // 
-            this.txtnombrecompleto.Location = new System.Drawing.Point(458, 368);
-            this.txtnombrecompleto.MaxLength = 60;
-            this.txtnombrecompleto.Name = "txtnombrecompleto";
-            this.txtnombrecompleto.Size = new System.Drawing.Size(108, 20);
-            this.txtnombrecompleto.TabIndex = 51;
             // 
             // IDCitaMedica
             // 
@@ -361,6 +304,65 @@
             this.NombreCompleto.Name = "NombreCompleto";
             this.NombreCompleto.ReadOnly = true;
             this.NombreCompleto.Width = 200;
+            // 
+            // dthora
+            // 
+            this.dthora.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.dthora.Location = new System.Drawing.Point(458, 404);
+            this.dthora.Name = "dthora";
+            this.dthora.Size = new System.Drawing.Size(108, 20);
+            this.dthora.TabIndex = 45;
+            // 
+            // dtfecha
+            // 
+            this.dtfecha.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtfecha.Location = new System.Drawing.Point(662, 368);
+            this.dtfecha.Name = "dtfecha";
+            this.dtfecha.Size = new System.Drawing.Size(121, 20);
+            this.dtfecha.TabIndex = 46;
+            // 
+            // cmbnseguro
+            // 
+            this.cmbnseguro.FormattingEnabled = true;
+            this.cmbnseguro.Location = new System.Drawing.Point(662, 404);
+            this.cmbnseguro.Name = "cmbnseguro";
+            this.cmbnseguro.Size = new System.Drawing.Size(121, 21);
+            this.cmbnseguro.TabIndex = 47;
+            // 
+            // cmbnalergia
+            // 
+            this.cmbnalergia.FormattingEnabled = true;
+            this.cmbnalergia.Location = new System.Drawing.Point(890, 404);
+            this.cmbnalergia.Name = "cmbnalergia";
+            this.cmbnalergia.Size = new System.Drawing.Size(121, 21);
+            this.cmbnalergia.TabIndex = 48;
+            // 
+            // cmbndoctor
+            // 
+            this.cmbndoctor.FormattingEnabled = true;
+            this.cmbndoctor.Location = new System.Drawing.Point(890, 368);
+            this.cmbndoctor.Name = "cmbndoctor";
+            this.cmbndoctor.Size = new System.Drawing.Size(121, 21);
+            this.cmbndoctor.TabIndex = 49;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(339, 370);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(113, 16);
+            this.label2.TabIndex = 50;
+            this.label2.Text = "Nombre Completo";
+            // 
+            // txtnombrecompleto
+            // 
+            this.txtnombrecompleto.Location = new System.Drawing.Point(458, 368);
+            this.txtnombrecompleto.MaxLength = 60;
+            this.txtnombrecompleto.Name = "txtnombrecompleto";
+            this.txtnombrecompleto.Size = new System.Drawing.Size(108, 20);
+            this.txtnombrecompleto.TabIndex = 51;
             // 
             // FrmCitasMedicas
             // 

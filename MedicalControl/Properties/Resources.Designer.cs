@@ -83,6 +83,26 @@ namespace MedicalControl.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Green_and_White_Music_Logo__1__removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("Green_and_White_Music_Logo__1_-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Green_and_White_Music_Logo_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("Green_and_White_Music_Logo-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap insurance {
             get {
                 object obj = ResourceManager.GetObject("insurance", resourceCulture);

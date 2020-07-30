@@ -64,11 +64,11 @@
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.panelMenu.Controls.Add(this.ibpaginaprincipal);
             this.panelMenu.Controls.Add(this.ibsalir);
             this.panelMenu.Controls.Add(this.ibajustes);
             this.panelMenu.Controls.Add(this.ibinventario);
             this.panelMenu.Controls.Add(this.ibcitasmedicas);
-            this.panelMenu.Controls.Add(this.ibpaginaprincipal);
             this.panelMenu.Controls.Add(this.panelLogo);
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
@@ -159,28 +159,28 @@
             // doctorToolStripMenuItem
             // 
             this.doctorToolStripMenuItem.Name = "doctorToolStripMenuItem";
-            this.doctorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.doctorToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
             this.doctorToolStripMenuItem.Text = "Doctor";
             this.doctorToolStripMenuItem.Click += new System.EventHandler(this.doctorToolStripMenuItem_Click);
             // 
             // alergiaToolStripMenuItem
             // 
             this.alergiaToolStripMenuItem.Name = "alergiaToolStripMenuItem";
-            this.alergiaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.alergiaToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
             this.alergiaToolStripMenuItem.Text = "Alergia";
             this.alergiaToolStripMenuItem.Click += new System.EventHandler(this.alergiaToolStripMenuItem_Click);
             // 
             // seguroToolStripMenuItem
             // 
             this.seguroToolStripMenuItem.Name = "seguroToolStripMenuItem";
-            this.seguroToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.seguroToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
             this.seguroToolStripMenuItem.Text = "Seguro";
             this.seguroToolStripMenuItem.Click += new System.EventHandler(this.seguroToolStripMenuItem_Click);
             // 
             // citaMedicaToolStripMenuItem
             // 
             this.citaMedicaToolStripMenuItem.Name = "citaMedicaToolStripMenuItem";
-            this.citaMedicaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.citaMedicaToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
             this.citaMedicaToolStripMenuItem.Text = "Proveedor";
             this.citaMedicaToolStripMenuItem.Click += new System.EventHandler(this.citaMedicaToolStripMenuItem_Click);
             // 
@@ -374,11 +374,11 @@
             // 
             // btnHome
             // 
-            this.btnHome.Image = global::MedicalControl.Properties.Resources.MEDICAL_CONTROL__1__removebg1;
-            this.btnHome.Location = new System.Drawing.Point(8, 25);
+            this.btnHome.Image = global::MedicalControl.Properties.Resources.Green_and_White_Music_Logo__1__removebg_preview;
+            this.btnHome.Location = new System.Drawing.Point(4, -26);
             this.btnHome.Name = "btnHome";
-            this.btnHome.Size = new System.Drawing.Size(205, 81);
-            this.btnHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnHome.Size = new System.Drawing.Size(214, 218);
+            this.btnHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnHome.TabIndex = 0;
             this.btnHome.TabStop = false;
             this.btnHome.Click += new System.EventHandler(this.btnHome_Click);

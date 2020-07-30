@@ -31,6 +31,12 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.idt_inventario = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NombreMedicamento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CantidadMedicamento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Proveedor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtnombremedicamento = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.cbproveedor = new System.Windows.Forms.ComboBox();
@@ -46,12 +52,7 @@
             this.btninsertar = new System.Windows.Forms.Button();
             this.txtdescripcionmedicamento = new System.Windows.Forms.TextBox();
             this.txtcantidadmedicamento = new System.Windows.Forms.TextBox();
-            this.idt_inventario = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NombreMedicamento = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CantidadMedicamento = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Proveedor = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnOtro = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -59,7 +60,8 @@
             // 
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.AllowUserToOrderColumns = true;
+            this.dataGridView1.AllowUserToResizeColumns = false;
+            this.dataGridView1.AllowUserToResizeRows = false;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
@@ -96,6 +98,55 @@
             this.dataGridView1.Size = new System.Drawing.Size(947, 267);
             this.dataGridView1.TabIndex = 24;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            // 
+            // idt_inventario
+            // 
+            this.idt_inventario.DataPropertyName = "idt_inventario";
+            this.idt_inventario.HeaderText = "N. Medicamento";
+            this.idt_inventario.Name = "idt_inventario";
+            this.idt_inventario.ReadOnly = true;
+            this.idt_inventario.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.idt_inventario.Width = 110;
+            // 
+            // NombreMedicamento
+            // 
+            this.NombreMedicamento.DataPropertyName = "NombreMedicamento";
+            this.NombreMedicamento.HeaderText = "Nombre Medicamento";
+            this.NombreMedicamento.Name = "NombreMedicamento";
+            this.NombreMedicamento.ReadOnly = true;
+            this.NombreMedicamento.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.NombreMedicamento.Width = 200;
+            // 
+            // CantidadMedicamento
+            // 
+            this.CantidadMedicamento.DataPropertyName = "CantidadMedicamento";
+            this.CantidadMedicamento.HeaderText = "Cantidad Medicamento";
+            this.CantidadMedicamento.Name = "CantidadMedicamento";
+            this.CantidadMedicamento.ReadOnly = true;
+            this.CantidadMedicamento.Width = 200;
+            // 
+            // Proveedor
+            // 
+            this.Proveedor.DataPropertyName = "Proveedor";
+            this.Proveedor.HeaderText = "Proveedor";
+            this.Proveedor.Name = "Proveedor";
+            this.Proveedor.ReadOnly = true;
+            this.Proveedor.Width = 120;
+            // 
+            // Descripcion
+            // 
+            this.Descripcion.DataPropertyName = "Descripcion";
+            this.Descripcion.HeaderText = "Descripcion";
+            this.Descripcion.Name = "Descripcion";
+            this.Descripcion.ReadOnly = true;
+            this.Descripcion.Width = 200;
+            // 
+            // Fecha
+            // 
+            this.Fecha.DataPropertyName = "Fecha";
+            this.Fecha.HeaderText = "Fecha";
+            this.Fecha.Name = "Fecha";
+            this.Fecha.ReadOnly = true;
             // 
             // txtnombremedicamento
             // 
@@ -255,54 +306,22 @@
             this.txtcantidadmedicamento.Size = new System.Drawing.Size(108, 20);
             this.txtcantidadmedicamento.TabIndex = 71;
             // 
-            // idt_inventario
+            // btnOtro
             // 
-            this.idt_inventario.DataPropertyName = "idt_inventario";
-            this.idt_inventario.HeaderText = "N. Medicamento";
-            this.idt_inventario.Name = "idt_inventario";
-            this.idt_inventario.ReadOnly = true;
-            this.idt_inventario.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.idt_inventario.Width = 110;
-            // 
-            // NombreMedicamento
-            // 
-            this.NombreMedicamento.DataPropertyName = "NombreMedicamento";
-            this.NombreMedicamento.HeaderText = "Nombre Medicamento";
-            this.NombreMedicamento.Name = "NombreMedicamento";
-            this.NombreMedicamento.ReadOnly = true;
-            this.NombreMedicamento.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.NombreMedicamento.Width = 200;
-            // 
-            // CantidadMedicamento
-            // 
-            this.CantidadMedicamento.DataPropertyName = "CantidadMedicamento";
-            this.CantidadMedicamento.HeaderText = "Cantidad Medicamento";
-            this.CantidadMedicamento.Name = "CantidadMedicamento";
-            this.CantidadMedicamento.ReadOnly = true;
-            this.CantidadMedicamento.Width = 200;
-            // 
-            // Proveedor
-            // 
-            this.Proveedor.DataPropertyName = "Proveedor";
-            this.Proveedor.HeaderText = "Proveedor";
-            this.Proveedor.Name = "Proveedor";
-            this.Proveedor.ReadOnly = true;
-            this.Proveedor.Width = 120;
-            // 
-            // Descripcion
-            // 
-            this.Descripcion.DataPropertyName = "Descripcion";
-            this.Descripcion.HeaderText = "Descripcion";
-            this.Descripcion.Name = "Descripcion";
-            this.Descripcion.ReadOnly = true;
-            this.Descripcion.Width = 200;
-            // 
-            // Fecha
-            // 
-            this.Fecha.DataPropertyName = "Fecha";
-            this.Fecha.HeaderText = "Fecha";
-            this.Fecha.Name = "Fecha";
-            this.Fecha.ReadOnly = true;
+            this.btnOtro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
+            this.btnOtro.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnOtro.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkSlateBlue;
+            this.btnOtro.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SlateBlue;
+            this.btnOtro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnOtro.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOtro.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnOtro.Location = new System.Drawing.Point(869, 427);
+            this.btnOtro.Name = "btnOtro";
+            this.btnOtro.Size = new System.Drawing.Size(79, 28);
+            this.btnOtro.TabIndex = 72;
+            this.btnOtro.Text = "Otro";
+            this.btnOtro.UseVisualStyleBackColor = false;
+            this.btnOtro.Click += new System.EventHandler(this.btnOtro_Click);
             // 
             // FrmInventario
             // 
@@ -310,6 +329,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.ClientSize = new System.Drawing.Size(1339, 557);
+            this.Controls.Add(this.btnOtro);
             this.Controls.Add(this.txtcantidadmedicamento);
             this.Controls.Add(this.txtnombremedicamento);
             this.Controls.Add(this.label2);
@@ -359,5 +379,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Proveedor;
         private System.Windows.Forms.DataGridViewTextBoxColumn Descripcion;
         private System.Windows.Forms.DataGridViewTextBoxColumn Fecha;
+        private System.Windows.Forms.Button btnOtro;
     }
 }

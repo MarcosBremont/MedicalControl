@@ -118,5 +118,12 @@ namespace MedicalControl
 
 
         }
+
+        private void btnOtro_Click(object sender, EventArgs e)
+        {
+            FrmProveedor form = new FrmProveedor();
+            form.ShowDialog();
+            CARGARCOMBOXPROVEEDOR();
+        }
     }
 }

@@ -121,6 +121,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="Resources\Green_and_White_Music_Logo__1_-removebg-preview.png" />
+    <None Include="Resources\Green_and_White_Music_Logo-removebg-preview.png" />
     <None Include="Resources\medicine1.png" />
     <None Include="Resources\insurance.png" />
     <None Include="Resources\flu.png" />
@@ -142,6 +144,9 @@
     <None Include="Resources\MEDICAL_CONTROL-removebg-preview.png" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAjustes.resx">
+      <DependentUpon>FrmAjustes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmAlergia.resx">
       <DependentUpon>FrmAlergia.cs</DependentUpon>

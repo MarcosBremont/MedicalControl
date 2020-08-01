@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using Microsoft.Office.Interop.Excel;
+using DataTable = System.Data.DataTable;
 
 namespace MedicalControl
 {
@@ -248,6 +250,54 @@ namespace MedicalControl
             dataGridView1.DataSource = dt;
 
             con.Close();
+        }
+
+        public void exportaraexcel(DataGridView tabla)
+        {
+
+            Microsoft.Office.Interop.Excel.Application excel = new Microsoft.Office.Interop.Excel.Application();
+
+            excel.Application.Workbooks.Add(true);
+
+            int IndiceColumna = 0;
+
+            foreach (DataGridViewColumn col in tabla.Columns) // Columnas
+            {
+
+                IndiceColumna++;
+
+                excel.Cells[1, IndiceColumna] = col.Name;
+
+            }
+
+            int IndeceFila = 0;
+
+            foreach (DataGridViewRow row in tabla.Rows) // Filas
+            {
+
+                IndeceFila++;
+
+                IndiceColumna = 0;
+
+                foreach (DataGridViewColumn col in tabla.Columns)
+                {
+
+                    IndiceColumna++;
+
+                    excel.Cells[IndeceFila + 1, IndiceColumna] = row.Cells[col.Name].Value;
+
+                }
+
+            }
+
+            excel.Visible = true;
+
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            exportaraexcel(dataGridView1);
         }
     }
 }

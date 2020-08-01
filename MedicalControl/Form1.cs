@@ -248,5 +248,11 @@ namespace MedicalControl
             FrmProveedor form = new FrmProveedor();
             form.ShowDialog();
         }
+
+        private void iconButton1_Click_1(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color2);
+            OpenChildForm(new FrmCorreo());
+        }
     }
 }

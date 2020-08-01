@@ -36,6 +36,10 @@
     <Reference Include="FontAwesome.Sharp, Version=5.13.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\FontAwesome.Sharp.5.13.0\lib\net45\FontAwesome.Sharp.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1000\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
     <Reference Include="MySql.Data, Version=6.10.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <HintPath>..\packages\MySql.Data.6.10.9\lib\net452\MySql.Data.dll</HintPath>
     </Reference>
@@ -83,6 +87,12 @@
     </Compile>
     <Compile Include="FrmCitasMedicas.Designer.cs">
       <DependentUpon>FrmCitasMedicas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCorreo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCorreo.Designer.cs">
+      <DependentUpon>FrmCorreo.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmDoctorcs.cs">
       <SubType>Form</SubType>
@@ -153,6 +163,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmCitasMedicas.resx">
       <DependentUpon>FrmCitasMedicas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCorreo.resx">
+      <DependentUpon>FrmCorreo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmDoctorcs.resx">
       <DependentUpon>FrmDoctorcs.cs</DependentUpon>

@@ -51,6 +51,7 @@
             this.seguroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.citaMedicaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnHome)).BeginInit();
@@ -64,6 +65,7 @@
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.panelMenu.Controls.Add(this.iconButton1);
             this.panelMenu.Controls.Add(this.ibpaginaprincipal);
             this.panelMenu.Controls.Add(this.ibsalir);
             this.panelMenu.Controls.Add(this.ibMantenimiento);
@@ -88,7 +90,7 @@
             this.ibpaginaprincipal.IconColor = System.Drawing.Color.White;
             this.ibpaginaprincipal.IconSize = 40;
             this.ibpaginaprincipal.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ibpaginaprincipal.Location = new System.Drawing.Point(0, 170);
+            this.ibpaginaprincipal.Location = new System.Drawing.Point(-3, 144);
             this.ibpaginaprincipal.Name = "ibpaginaprincipal";
             this.ibpaginaprincipal.Padding = new System.Windows.Forms.Padding(10, 0, 5, 0);
             this.ibpaginaprincipal.Rotation = 0D;
@@ -133,7 +135,7 @@
             this.ibMantenimiento.IconColor = System.Drawing.Color.White;
             this.ibMantenimiento.IconSize = 40;
             this.ibMantenimiento.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ibMantenimiento.Location = new System.Drawing.Point(0, 449);
+            this.ibMantenimiento.Location = new System.Drawing.Point(-3, 402);
             this.ibMantenimiento.Name = "ibMantenimiento";
             this.ibMantenimiento.Padding = new System.Windows.Forms.Padding(10, 0, 5, 0);
             this.ibMantenimiento.Rotation = 0D;
@@ -155,7 +157,7 @@
             this.ibinventario.IconColor = System.Drawing.Color.White;
             this.ibinventario.IconSize = 40;
             this.ibinventario.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ibinventario.Location = new System.Drawing.Point(0, 356);
+            this.ibinventario.Location = new System.Drawing.Point(-3, 316);
             this.ibinventario.Name = "ibinventario";
             this.ibinventario.Padding = new System.Windows.Forms.Padding(10, 0, 5, 0);
             this.ibinventario.Rotation = 0D;
@@ -177,7 +179,7 @@
             this.ibcitasmedicas.IconColor = System.Drawing.Color.White;
             this.ibcitasmedicas.IconSize = 40;
             this.ibcitasmedicas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ibcitasmedicas.Location = new System.Drawing.Point(0, 263);
+            this.ibcitasmedicas.Location = new System.Drawing.Point(-3, 230);
             this.ibcitasmedicas.Name = "ibcitasmedicas";
             this.ibcitasmedicas.Padding = new System.Windows.Forms.Padding(10, 0, 5, 0);
             this.ibcitasmedicas.Rotation = 0D;
@@ -383,6 +385,28 @@
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
+            // iconButton1
+            // 
+            this.iconButton1.FlatAppearance.BorderSize = 0;
+            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton1.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.iconButton1.Font = new System.Drawing.Font("Bahnschrift Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.MailBulk;
+            this.iconButton1.IconColor = System.Drawing.Color.White;
+            this.iconButton1.IconSize = 40;
+            this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton1.Location = new System.Drawing.Point(1, 488);
+            this.iconButton1.Name = "iconButton1";
+            this.iconButton1.Padding = new System.Windows.Forms.Padding(10, 0, 5, 0);
+            this.iconButton1.Rotation = 0D;
+            this.iconButton1.Size = new System.Drawing.Size(220, 60);
+            this.iconButton1.TabIndex = 7;
+            this.iconButton1.Text = "Correo";
+            this.iconButton1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.iconButton1.UseVisualStyleBackColor = true;
+            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click_1);
+            // 
             // FrmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -438,6 +462,7 @@
         private System.Windows.Forms.ToolStripMenuItem alergiaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem seguroToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem citaMedicaToolStripMenuItem;
+        private FontAwesome.Sharp.IconButton iconButton1;
     }
 }
 

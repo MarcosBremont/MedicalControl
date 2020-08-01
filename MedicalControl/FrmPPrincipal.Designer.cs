@@ -83,9 +83,11 @@
             this.label8 = new System.Windows.Forms.Label();
             this.txtbuscar = new System.Windows.Forms.TextBox();
             this.lblbuscar = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pacienteBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.medicalControlDataSet)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -289,7 +291,7 @@
             this.btninsertar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btninsertar.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btninsertar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btninsertar.Location = new System.Drawing.Point(422, 354);
+            this.btninsertar.Location = new System.Drawing.Point(422, 359);
             this.btninsertar.Name = "btninsertar";
             this.btninsertar.Size = new System.Drawing.Size(103, 35);
             this.btninsertar.TabIndex = 10;
@@ -307,7 +309,7 @@
             this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEliminar.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnEliminar.Location = new System.Drawing.Point(538, 354);
+            this.btnEliminar.Location = new System.Drawing.Point(538, 359);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(103, 35);
             this.btnEliminar.TabIndex = 11;
@@ -325,7 +327,7 @@
             this.btnactualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnactualizar.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnactualizar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnactualizar.Location = new System.Drawing.Point(654, 354);
+            this.btnactualizar.Location = new System.Drawing.Point(654, 359);
             this.btnactualizar.Name = "btnactualizar";
             this.btnactualizar.Size = new System.Drawing.Size(103, 35);
             this.btnactualizar.TabIndex = 12;
@@ -491,7 +493,7 @@
             this.cmbAlergia.FormattingEnabled = true;
             this.cmbAlergia.Location = new System.Drawing.Point(715, 468);
             this.cmbAlergia.Name = "cmbAlergia";
-            this.cmbAlergia.Size = new System.Drawing.Size(131, 21);
+            this.cmbAlergia.Size = new System.Drawing.Size(100, 21);
             this.cmbAlergia.TabIndex = 28;
             // 
             // label4
@@ -621,7 +623,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button2.Location = new System.Drawing.Point(729, 493);
+            this.button2.Location = new System.Drawing.Point(697, 149);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(103, 35);
             this.button2.TabIndex = 42;
@@ -656,7 +658,7 @@
             // txtbuscar
             // 
             this.txtbuscar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.txtbuscar.Location = new System.Drawing.Point(83, 349);
+            this.txtbuscar.Location = new System.Drawing.Point(83, 364);
             this.txtbuscar.Name = "txtbuscar";
             this.txtbuscar.Size = new System.Drawing.Size(100, 20);
             this.txtbuscar.TabIndex = 48;
@@ -668,11 +670,22 @@
             this.lblbuscar.AutoSize = true;
             this.lblbuscar.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
             this.lblbuscar.ForeColor = System.Drawing.Color.White;
-            this.lblbuscar.Location = new System.Drawing.Point(27, 351);
+            this.lblbuscar.Location = new System.Drawing.Point(27, 364);
             this.lblbuscar.Name = "lblbuscar";
             this.lblbuscar.Size = new System.Drawing.Size(49, 16);
             this.lblbuscar.TabIndex = 49;
             this.lblbuscar.Text = "Buscar";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.groupBox1.Controls.Add(this.button2);
+            this.groupBox1.Location = new System.Drawing.Point(15, 344);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(1104, 242);
+            this.groupBox1.TabIndex = 50;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "groupBox1";
             // 
             // FrmPPrincipal
             // 
@@ -684,7 +697,6 @@
             this.Controls.Add(this.txtbuscar);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.TxtCantidad);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnOtro);
             this.Controls.Add(this.mtxtTelefono2);
@@ -717,12 +729,14 @@
             this.Controls.Add(this.txtapellidop);
             this.Controls.Add(this.txtnombrep);
             this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.groupBox1);
             this.Name = "FrmPPrincipal";
             this.Text = "Principal";
             this.Load += new System.EventHandler(this.FrmPPrincipal_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pacienteBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.medicalControlDataSet)).EndInit();
+            this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -782,5 +796,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn IDTALER;
         private System.Windows.Forms.DataGridViewTextBoxColumn IDTSEGURO;
         private System.Windows.Forms.DataGridViewTextBoxColumn IDTDOCTOR;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }

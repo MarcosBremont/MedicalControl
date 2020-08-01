@@ -24,8 +24,6 @@ namespace MedicalControl
         {
             Refresh();
             CARGARCOMBOXPROVEEDOR();
-
-
         }
 
         public void CARGARCOMBOXPROVEEDOR()

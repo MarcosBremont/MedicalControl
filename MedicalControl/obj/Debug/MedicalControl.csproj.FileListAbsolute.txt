@@ -93,7 +93,6 @@ C:\Users\MarcosBremont\Desktop\Mis Proyectos C#\MedicalControl Git\MedicalContro
 C:\Users\MarcosBremont\Desktop\Mis Proyectos C#\MedicalControl Git\MedicalControl\MedicalControl\obj\Debug\MedicalControl.pdb
 C:\Users\MarcosBremont\Desktop\Mis Proyectos C#\MedicalControl Git\MedicalControl\MedicalControl\obj\Debug\MedicalControl.FrmInventario.resources
 C:\Users\MarcosBremont\Desktop\Mis Proyectos C#\MedicalControl Git\MedicalControl\MedicalControl\obj\Debug\MedicalControl.FrmProveedor.resources
-C:\Users\MarcosB\Desktop\GIT\MedicalControl\MedicalControl\obj\Debug\MedicalControl.FrmAjustes.resources
 C:\Users\MarcosB\Desktop\GIT\MedicalControl\MedicalControl\obj\Debug\MedicalControl.FrmInventario.resources
 C:\Users\MarcosB\Desktop\GIT\MedicalControl\MedicalControl\obj\Debug\MedicalControl.FrmProveedor.resources
 C:\Users\MarcosBremont\Desktop\MisProyectosC#\MedicalControl Git\MedicalControl\MedicalControl\bin\Debug\MedicalControl.exe.config
@@ -118,3 +117,4 @@ C:\Users\MarcosBremont\Desktop\MisProyectosC#\MedicalControl Git\MedicalControl\
 C:\Users\MarcosBremont\Desktop\MisProyectosC#\MedicalControl Git\MedicalControl\MedicalControl\obj\Debug\MedicalControl.csproj.CopyComplete
 C:\Users\MarcosBremont\Desktop\MisProyectosC#\MedicalControl Git\MedicalControl\MedicalControl\obj\Debug\MedicalControl.exe
 C:\Users\MarcosBremont\Desktop\MisProyectosC#\MedicalControl Git\MedicalControl\MedicalControl\obj\Debug\MedicalControl.pdb
+C:\Users\MarcosB\Desktop\GIT\MedicalControl\MedicalControl\obj\Debug\MedicalControl.FrmMantenimiento.resources

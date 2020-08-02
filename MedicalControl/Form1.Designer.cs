@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panelMenu = new System.Windows.Forms.Panel();
+            this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.ibpaginaprincipal = new FontAwesome.Sharp.IconButton();
             this.ibsalir = new FontAwesome.Sharp.IconButton();
             this.ibMantenimiento = new FontAwesome.Sharp.IconButton();
@@ -51,7 +52,8 @@
             this.seguroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.citaMedicaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
+            this.contactanosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.informacionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnHome)).BeginInit();
@@ -78,6 +80,28 @@
             this.panelMenu.Size = new System.Drawing.Size(220, 662);
             this.panelMenu.TabIndex = 0;
             this.panelMenu.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelMenu_MouseDown);
+            // 
+            // iconButton1
+            // 
+            this.iconButton1.FlatAppearance.BorderSize = 0;
+            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton1.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.iconButton1.Font = new System.Drawing.Font("Bahnschrift Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.MailBulk;
+            this.iconButton1.IconColor = System.Drawing.Color.White;
+            this.iconButton1.IconSize = 40;
+            this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton1.Location = new System.Drawing.Point(1, 488);
+            this.iconButton1.Name = "iconButton1";
+            this.iconButton1.Padding = new System.Windows.Forms.Padding(10, 0, 5, 0);
+            this.iconButton1.Rotation = 0D;
+            this.iconButton1.Size = new System.Drawing.Size(220, 60);
+            this.iconButton1.TabIndex = 7;
+            this.iconButton1.Text = "Correo";
+            this.iconButton1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.iconButton1.UseVisualStyleBackColor = true;
+            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click_1);
             // 
             // ibpaginaprincipal
             // 
@@ -327,7 +351,9 @@
             // 
             this.menuStrip1.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.agregarToolStripMenuItem});
+            this.agregarToolStripMenuItem,
+            this.contactanosToolStripMenuItem,
+            this.informacionToolStripMenuItem});
             this.menuStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -385,27 +411,17 @@
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
-            // iconButton1
+            // contactanosToolStripMenuItem
             // 
-            this.iconButton1.FlatAppearance.BorderSize = 0;
-            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton1.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.iconButton1.Font = new System.Drawing.Font("Bahnschrift Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.MailBulk;
-            this.iconButton1.IconColor = System.Drawing.Color.White;
-            this.iconButton1.IconSize = 40;
-            this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton1.Location = new System.Drawing.Point(1, 488);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Padding = new System.Windows.Forms.Padding(10, 0, 5, 0);
-            this.iconButton1.Rotation = 0D;
-            this.iconButton1.Size = new System.Drawing.Size(220, 60);
-            this.iconButton1.TabIndex = 7;
-            this.iconButton1.Text = "Correo";
-            this.iconButton1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.iconButton1.UseVisualStyleBackColor = true;
-            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click_1);
+            this.contactanosToolStripMenuItem.Name = "contactanosToolStripMenuItem";
+            this.contactanosToolStripMenuItem.Size = new System.Drawing.Size(83, 20);
+            this.contactanosToolStripMenuItem.Text = "Contactanos";
+            // 
+            // informacionToolStripMenuItem
+            // 
+            this.informacionToolStripMenuItem.Name = "informacionToolStripMenuItem";
+            this.informacionToolStripMenuItem.Size = new System.Drawing.Size(81, 20);
+            this.informacionToolStripMenuItem.Text = "Informacion";
             // 
             // FrmPrincipal
             // 
@@ -463,6 +479,8 @@
         private System.Windows.Forms.ToolStripMenuItem seguroToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem citaMedicaToolStripMenuItem;
         private FontAwesome.Sharp.IconButton iconButton1;
+        private System.Windows.Forms.ToolStripMenuItem contactanosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem informacionToolStripMenuItem;
     }
 }
 

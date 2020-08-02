@@ -100,15 +100,16 @@ namespace MedicalControl
         private void btninsertar_Click(object sender, EventArgs e)
         {
             con.Open();
-            string query = "INSERT INTO T_CitaMedica (HORACM, FECHACM, COMENTARIO, ID2SEGUR, ID2ALERG, ID2DOCTOR, NombreCompleto) values (@HORACM, @FECHACM, @COMENTARIO, @ID2SEGUR, @ID2ALERG, @ID2DOCTOR, @NombreCompleto)";
+            string query = "INSERT INTO T_CitaMedica (NombreCompleto, HORACM, FECHACM, COMENTARIO, ID2SEGUR, ID2ALERG, ID2DOCTOR) values (@NombreCompleto, @HORACM, @FECHACM, @COMENTARIO, @ID2SEGUR, @ID2ALERG, @ID2DOCTOR)";
             MySqlCommand comando = new MySqlCommand(query, con);
+            comando.Parameters.AddWithValue("@NombreCompleto", txtnombrecompleto.Text);
             comando.Parameters.AddWithValue("@HORACM", dthora.Text);
             comando.Parameters.AddWithValue("@FECHACM", dtfecha.Text);
             comando.Parameters.AddWithValue("@COMENTARIO", txtcomentario.Text);
             comando.Parameters.AddWithValue("@ID2SEGUR", cmbnseguro.SelectedValue);
             comando.Parameters.AddWithValue("@ID2ALERG", cmbnalergia.SelectedValue);
             comando.Parameters.AddWithValue("@ID2DOCTOR", cmbndoctor.SelectedValue);
-            comando.Parameters.AddWithValue("@NombreCompleto", txtnombrecompleto.Text);
+            
             comando.ExecuteNonQuery();
             Refresh();
             MessageBox.Show("Paciente Agregado");
@@ -132,13 +133,13 @@ namespace MedicalControl
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             lblid.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
-            dthora.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
-            dtfecha.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
-            txtcomentario.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
-            cmbnseguro.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
-            cmbnalergia.Text = dataGridView1.CurrentRow.Cells[5].Value.ToString();
-            cmbndoctor.Text = dataGridView1.CurrentRow.Cells[6].Value.ToString();
-            txtnombrecompleto.Text = dataGridView1.CurrentRow.Cells[7].Value.ToString();
+            txtnombrecompleto.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
+            dthora.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
+            dtfecha.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
+            txtcomentario.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
+            cmbnseguro.SelectedValue = dataGridView1.CurrentRow.Cells[5].Value.ToString();
+            cmbnalergia.SelectedValue = dataGridView1.CurrentRow.Cells[6].Value.ToString();
+            cmbndoctor.SelectedValue = dataGridView1.CurrentRow.Cells[7].Value.ToString();
         }
 
         private void btnactualizar_Click(object sender, EventArgs e)

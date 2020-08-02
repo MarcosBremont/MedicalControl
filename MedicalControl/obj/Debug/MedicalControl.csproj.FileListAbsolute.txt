@@ -119,3 +119,4 @@ C:\Users\MarcosBremont\Desktop\MisProyectosC#\MedicalControl Git\MedicalControl\
 C:\Users\MarcosB\Desktop\GIT\MedicalControl\MedicalControl\obj\Debug\MedicalControl.FrmMantenimiento.resources
 C:\Users\MarcosBremont\Desktop\MisProyectosC#\MedicalControl Git\MedicalControl\MedicalControl\obj\Debug\MedicalControl.FrmMantenimiento.resources
 C:\Users\MarcosBremont\Desktop\MisProyectosC#\MedicalControl Git\MedicalControl\MedicalControl\obj\Debug\MedicalControl.FrmCorreo.resources
+C:\Users\MarcosB\Desktop\GIT\MedicalControl\MedicalControl\obj\Debug\MedicalControl.FrmCorreo.resources

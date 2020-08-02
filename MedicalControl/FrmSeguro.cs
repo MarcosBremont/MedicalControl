@@ -14,7 +14,7 @@ namespace MedicalControl
 {
     public partial class FrmSeguro : Form
     {
-        MySqlConnection con = new MySqlConnection("Server=localhost; database=medicalcontrol; user=root; password=MarcosBremont");
+        MySqlConnection con = new MySqlConnection("Server=localhost; database=medicalcontrol; user=root; password=1234");
 
         public FrmSeguro()
         {

@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 using Microsoft.Office.Interop.Excel;
+using System.Data.OleDb;
 using DataTable = System.Data.DataTable;
 
 namespace MedicalControl
@@ -26,7 +27,37 @@ namespace MedicalControl
         {
             Refresh();
             CARGARCOMBOXPROVEEDOR();
+            this.TxtCantidad.Text = this.dataGridView1.Rows.Count.ToString("N0");
+
         }
+
+        DataView ImportarDatos(string nombrearchivo)
+        {
+            //UTILIZAMOS 12.0 DEPENDIENDO DE LA VERSION DEL EXCEL, EN CASO DE QUE LA VERSIÓN QUE TIENES ES INFERIOR AL DEL 2013, CAMBIAR POR A EXCEL 8.0 Y EN VEZ DE
+            //ACE.OLEDB.12.0 UTILIZAR LO SIGUIENTE (Jet.Oledb.4.0)
+            string conexion = string.Format("Provider = Microsoft.ACE.OLEDB.12.0; Data Source = {0}; Extended Properties = 'Excel 12.0;'", nombrearchivo);
+
+            OleDbConnection conector = new OleDbConnection(conexion);
+
+            conector.Open();
+
+            //DEPENDIENDO DEL NOMBRE QUE TIENE LA PESTAÑA EN TU ARCHIVO EXCEL COLOCAR DENTRO DE LOS []
+            OleDbCommand consulta = new OleDbCommand("select * from [Hoja1$]", conector);
+
+            OleDbDataAdapter adaptador = new OleDbDataAdapter
+            {
+                SelectCommand = consulta
+            };
+
+            DataSet ds = new DataSet();
+
+            adaptador.Fill(ds);
+
+            conector.Close();
+
+            return ds.Tables[0].DefaultView;
+        }
+
 
         public void CARGARCOMBOXPROVEEDOR()
         {
@@ -57,13 +88,15 @@ namespace MedicalControl
             comando.Parameters.AddWithValue("@CantidadMedicamento", txtcantidadmedicamento.Text);
             comando.Parameters.AddWithValue("@Proveedor", cbproveedor.SelectedValue);
             comando.Parameters.AddWithValue("@Descripcion", txtdescripcionmedicamento.Text);
-            comando.Parameters.AddWithValue("@Fecha", dtfecha.Text);
+            comando.Parameters.AddWithValue("@Fecha", txtdescripcionmedicamento.Text);
 
             comando.ExecuteNonQuery();
             Refresh();
             MessageBox.Show("Medicamento Agregado");
             con.Close();
             clear();
+            this.TxtCantidad.Text = this.dataGridView1.Rows.Count.ToString("N0");
+
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -71,9 +104,10 @@ namespace MedicalControl
             lblid.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
             txtnombremedicamento.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
             txtcantidadmedicamento.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
-            cbproveedor.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
+            cbproveedor.SelectedValue = dataGridView1.CurrentRow.Cells[3].Value.ToString();
             txtdescripcionmedicamento.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
             dtfecha.Text = dataGridView1.CurrentRow.Cells[5].Value.ToString();
+
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)
@@ -92,7 +126,7 @@ namespace MedicalControl
         private void btnactualizar_Click(object sender, EventArgs e)
         {
             con.Open();
-            string query = "UPDATE t_inventario SET NombreMedicamento = @NombreMedicamento, CantidadMedicamento = @CantidadMedicamento, Proveedor = @Proveedor, Descripcion = @Descripcion, Fecha = @Fecha where idt_inventario=@idt_inventario";
+            string query = "UPDATE t_inventario SET NombreMedicamento = @NombreMedicamento, CantidadMedicamento = @CantidadMedicamento, Proveedor = @Proveedor, Descripcion = @Descripcion, Fecha=@Fecha where idt_inventario=@idt_inventario";
             MySqlCommand comando = new MySqlCommand(query, con);
             comando.Parameters.AddWithValue("@idt_inventario", lblid.Text);
             comando.Parameters.AddWithValue("@NombreMedicamento", txtnombremedicamento.Text);
@@ -100,6 +134,7 @@ namespace MedicalControl
             comando.Parameters.AddWithValue("@Proveedor", cbproveedor.SelectedValue);
             comando.Parameters.AddWithValue("@Descripcion", txtdescripcionmedicamento.Text);
             comando.Parameters.AddWithValue("@Fecha", dtfecha.Text);
+
 
             comando.ExecuteNonQuery();
             Refresh();
@@ -172,6 +207,44 @@ namespace MedicalControl
         {
             exportaraexcel(dataGridView1);
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog
+            {
+                //DE ESTA MANERA FILTRAMOS TODOS LOS ARCHIVOS EXCEL EN EL NAVEGADOR DE ARCHIVOS
+                Filter = "Excel | *.xls;*.xlsx;",
+
+                //AQUÍ INDICAMOS QUE NOMBRE TENDRÁ EL NAVEGADOR DE ARCHIVOS COMO TITULO
+                Title = "Seleccionar Archivo"
+            };
+
+            //EN CASO DE SELECCIONAR EL ARCHIVO, ENTONCES PROCEDEMOS A ABRIR EL ARCHIVO CORRESPONDIENTE
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                dataGridView1.DataSource = ImportarDatos(openFileDialog.FileName);
+            }
+        }
+
+        private void txtbuscar_KeyUp(object sender, KeyEventArgs e)
+        {
+            con.Open();
+
+            MySqlCommand cmd = con.CreateCommand();
+
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "SELECT * FROM t_inventario where NombreMedicamento like ('" + txtbuscar.Text + "%')";
+            cmd.ExecuteNonQuery();
+
+            DataTable dt = new DataTable();
+            MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+
+            da.Fill(dt);
+
+            dataGridView1.DataSource = dt;
+
+            con.Close();
         }
     }
 }

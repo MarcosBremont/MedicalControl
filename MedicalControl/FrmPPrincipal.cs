@@ -100,6 +100,8 @@ namespace MedicalControl
             MessageBox.Show("Paciente Agregado");
             con.Close();
             clear();
+            this.TxtCantidad.Text = this.dataGridView1.Rows.Count.ToString("N0");
+
 
         }
 
@@ -133,6 +135,8 @@ namespace MedicalControl
             MessageBox.Show("Paciente Eliminado");
             con.Close();
             clear();
+            this.TxtCantidad.Text = this.dataGridView1.Rows.Count.ToString("N0");
+
 
 
 

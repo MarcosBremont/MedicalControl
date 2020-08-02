@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.lbltelefono = new System.Windows.Forms.Label();
             this.lbldireccion = new System.Windows.Forms.Label();
@@ -43,14 +43,6 @@
             this.btninsertar = new System.Windows.Forms.Button();
             this.txtcomentario = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.IDCitaMedica = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Horacm = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Fechacm = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Comentario = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ID2SEGUR = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.id2alerg = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.id2doctor = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NombreCompleto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dthora = new System.Windows.Forms.DateTimePicker();
             this.dtfecha = new System.Windows.Forms.DateTimePicker();
             this.cmbnseguro = new System.Windows.Forms.ComboBox();
@@ -59,6 +51,14 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtnombrecompleto = new System.Windows.Forms.TextBox();
             this.button3 = new System.Windows.Forms.Button();
+            this.IDCitaMedica = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NombreCompleto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Horacm = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Fechacm = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Comentario = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ID2SEGUR = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.id2alerg = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.id2doctor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -67,7 +67,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(339, 339);
+            this.label1.Location = new System.Drawing.Point(272, 334);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(88, 16);
             this.label1.TabIndex = 44;
@@ -78,7 +78,7 @@
             this.lbltelefono.AutoSize = true;
             this.lbltelefono.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
             this.lbltelefono.ForeColor = System.Drawing.Color.White;
-            this.lbltelefono.Location = new System.Drawing.Point(816, 370);
+            this.lbltelefono.Location = new System.Drawing.Point(749, 365);
             this.lbltelefono.Name = "lbltelefono";
             this.lbltelefono.Size = new System.Drawing.Size(62, 16);
             this.lbltelefono.TabIndex = 41;
@@ -89,7 +89,7 @@
             this.lbldireccion.AutoSize = true;
             this.lbldireccion.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
             this.lbldireccion.ForeColor = System.Drawing.Color.White;
-            this.lbldireccion.Location = new System.Drawing.Point(816, 406);
+            this.lbldireccion.Location = new System.Drawing.Point(749, 401);
             this.lbldireccion.Name = "lbldireccion";
             this.lbldireccion.Size = new System.Drawing.Size(65, 16);
             this.lbldireccion.TabIndex = 40;
@@ -100,7 +100,7 @@
             this.lblcedula.AutoSize = true;
             this.lblcedula.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
             this.lblcedula.ForeColor = System.Drawing.Color.White;
-            this.lblcedula.Location = new System.Drawing.Point(590, 406);
+            this.lblcedula.Location = new System.Drawing.Point(523, 401);
             this.lblcedula.Name = "lblcedula";
             this.lblcedula.Size = new System.Drawing.Size(65, 16);
             this.lblcedula.TabIndex = 39;
@@ -111,7 +111,7 @@
             this.lbledad.AutoSize = true;
             this.lbledad.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
             this.lbledad.ForeColor = System.Drawing.Color.White;
-            this.lbledad.Location = new System.Drawing.Point(339, 441);
+            this.lbledad.Location = new System.Drawing.Point(272, 436);
             this.lbledad.Name = "lbledad";
             this.lbledad.Size = new System.Drawing.Size(75, 16);
             this.lbledad.TabIndex = 38;
@@ -122,7 +122,7 @@
             this.lblapellido.AutoSize = true;
             this.lblapellido.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
             this.lblapellido.ForeColor = System.Drawing.Color.White;
-            this.lblapellido.Location = new System.Drawing.Point(590, 370);
+            this.lblapellido.Location = new System.Drawing.Point(523, 365);
             this.lblapellido.Name = "lblapellido";
             this.lblapellido.Size = new System.Drawing.Size(42, 16);
             this.lblapellido.TabIndex = 37;
@@ -133,7 +133,7 @@
             this.lblnombre.AutoSize = true;
             this.lblnombre.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
             this.lblnombre.ForeColor = System.Drawing.Color.White;
-            this.lblnombre.Location = new System.Drawing.Point(339, 406);
+            this.lblnombre.Location = new System.Drawing.Point(272, 401);
             this.lblnombre.Name = "lblnombre";
             this.lblnombre.Size = new System.Drawing.Size(37, 16);
             this.lblnombre.TabIndex = 36;
@@ -144,7 +144,7 @@
             this.lblid.AutoSize = true;
             this.lblid.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
             this.lblid.ForeColor = System.Drawing.Color.White;
-            this.lblid.Location = new System.Drawing.Point(425, 339);
+            this.lblid.Location = new System.Drawing.Point(358, 334);
             this.lblid.Name = "lblid";
             this.lblid.Size = new System.Drawing.Size(0, 16);
             this.lblid.TabIndex = 35;
@@ -154,9 +154,9 @@
             this.btnactualizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
             this.btnactualizar.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnactualizar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnactualizar.Location = new System.Drawing.Point(728, 285);
+            this.btnactualizar.Location = new System.Drawing.Point(661, 280);
             this.btnactualizar.Name = "btnactualizar";
-            this.btnactualizar.Size = new System.Drawing.Size(103, 35);
+            this.btnactualizar.Size = new System.Drawing.Size(103, 36);
             this.btnactualizar.TabIndex = 34;
             this.btnactualizar.Text = "Actualizar";
             this.btnactualizar.UseVisualStyleBackColor = false;
@@ -167,9 +167,9 @@
             this.btnEliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
             this.btnEliminar.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnEliminar.Location = new System.Drawing.Point(612, 285);
+            this.btnEliminar.Location = new System.Drawing.Point(545, 280);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(103, 35);
+            this.btnEliminar.Size = new System.Drawing.Size(103, 36);
             this.btnEliminar.TabIndex = 33;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = false;
@@ -180,9 +180,9 @@
             this.btninsertar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
             this.btninsertar.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btninsertar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btninsertar.Location = new System.Drawing.Point(496, 285);
+            this.btninsertar.Location = new System.Drawing.Point(429, 280);
             this.btninsertar.Name = "btninsertar";
-            this.btninsertar.Size = new System.Drawing.Size(103, 35);
+            this.btninsertar.Size = new System.Drawing.Size(103, 36);
             this.btninsertar.TabIndex = 32;
             this.btninsertar.Text = "Insertar";
             this.btninsertar.UseVisualStyleBackColor = false;
@@ -191,59 +191,136 @@
             // txtcomentario
             // 
             this.txtcomentario.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtcomentario.Location = new System.Drawing.Point(458, 446);
+            this.txtcomentario.Location = new System.Drawing.Point(391, 441);
             this.txtcomentario.MaxLength = 30;
             this.txtcomentario.Multiline = true;
             this.txtcomentario.Name = "txtcomentario";
             this.txtcomentario.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtcomentario.Size = new System.Drawing.Size(553, 58);
+            this.txtcomentario.Size = new System.Drawing.Size(553, 59);
             this.txtcomentario.TabIndex = 26;
             // 
             // dataGridView1
             // 
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AllowUserToOrderColumns = true;
             this.dataGridView1.AllowUserToResizeColumns = false;
             this.dataGridView1.AllowUserToResizeRows = false;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.IDCitaMedica,
+            this.NombreCompleto,
             this.Horacm,
             this.Fechacm,
             this.Comentario,
             this.ID2SEGUR,
             this.id2alerg,
-            this.id2doctor,
-            this.NombreCompleto});
+            this.id2doctor});
             this.dataGridView1.EnableHeadersVisualStyles = false;
             this.dataGridView1.GridColor = System.Drawing.Color.SteelBlue;
-            this.dataGridView1.Location = new System.Drawing.Point(111, 12);
+            this.dataGridView1.Location = new System.Drawing.Point(81, 7);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowHeadersWidth = 10;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Bahnschrift SemiLight", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.SteelBlue;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
-            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Bahnschrift SemiLight", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(1217, 267);
+            this.dataGridView1.Size = new System.Drawing.Size(991, 267);
             this.dataGridView1.TabIndex = 23;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            // 
+            // dthora
+            // 
+            this.dthora.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.dthora.Location = new System.Drawing.Point(391, 399);
+            this.dthora.Name = "dthora";
+            this.dthora.Size = new System.Drawing.Size(108, 20);
+            this.dthora.TabIndex = 45;
+            // 
+            // dtfecha
+            // 
+            this.dtfecha.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtfecha.Location = new System.Drawing.Point(595, 363);
+            this.dtfecha.Name = "dtfecha";
+            this.dtfecha.Size = new System.Drawing.Size(121, 20);
+            this.dtfecha.TabIndex = 46;
+            // 
+            // cmbnseguro
+            // 
+            this.cmbnseguro.FormattingEnabled = true;
+            this.cmbnseguro.Location = new System.Drawing.Point(595, 399);
+            this.cmbnseguro.Name = "cmbnseguro";
+            this.cmbnseguro.Size = new System.Drawing.Size(121, 21);
+            this.cmbnseguro.TabIndex = 47;
+            // 
+            // cmbnalergia
+            // 
+            this.cmbnalergia.FormattingEnabled = true;
+            this.cmbnalergia.Location = new System.Drawing.Point(823, 399);
+            this.cmbnalergia.Name = "cmbnalergia";
+            this.cmbnalergia.Size = new System.Drawing.Size(121, 21);
+            this.cmbnalergia.TabIndex = 48;
+            // 
+            // cmbndoctor
+            // 
+            this.cmbndoctor.FormattingEnabled = true;
+            this.cmbndoctor.Location = new System.Drawing.Point(823, 363);
+            this.cmbndoctor.Name = "cmbndoctor";
+            this.cmbndoctor.Size = new System.Drawing.Size(121, 21);
+            this.cmbndoctor.TabIndex = 49;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(272, 365);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(113, 16);
+            this.label2.TabIndex = 50;
+            this.label2.Text = "Nombre Completo";
+            // 
+            // txtnombrecompleto
+            // 
+            this.txtnombrecompleto.Location = new System.Drawing.Point(391, 363);
+            this.txtnombrecompleto.MaxLength = 60;
+            this.txtnombrecompleto.Name = "txtnombrecompleto";
+            this.txtnombrecompleto.Size = new System.Drawing.Size(108, 20);
+            this.txtnombrecompleto.TabIndex = 51;
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
+            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkSlateBlue;
+            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SlateBlue;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button3.Location = new System.Drawing.Point(270, 280);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(153, 36);
+            this.button3.TabIndex = 52;
+            this.button3.Text = "Exportar a Excel";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // IDCitaMedica
             // 
@@ -252,13 +329,22 @@
             this.IDCitaMedica.Name = "IDCitaMedica";
             this.IDCitaMedica.ReadOnly = true;
             // 
+            // NombreCompleto
+            // 
+            this.NombreCompleto.DataPropertyName = "NombreCompleto";
+            this.NombreCompleto.FillWeight = 200F;
+            this.NombreCompleto.HeaderText = "Nombre Completo";
+            this.NombreCompleto.Name = "NombreCompleto";
+            this.NombreCompleto.ReadOnly = true;
+            this.NombreCompleto.Width = 150;
+            // 
             // Horacm
             // 
             this.Horacm.DataPropertyName = "Horacm";
             this.Horacm.HeaderText = "Hora Cita";
             this.Horacm.Name = "Horacm";
             this.Horacm.ReadOnly = true;
-            this.Horacm.Width = 200;
+            this.Horacm.Width = 120;
             // 
             // Fechacm
             // 
@@ -266,7 +352,7 @@
             this.Fechacm.HeaderText = "Fecha Cita";
             this.Fechacm.Name = "Fechacm";
             this.Fechacm.ReadOnly = true;
-            this.Fechacm.Width = 200;
+            this.Fechacm.Width = 120;
             // 
             // Comentario
             // 
@@ -296,92 +382,6 @@
             this.id2doctor.HeaderText = "N. Doctor";
             this.id2doctor.Name = "id2doctor";
             this.id2doctor.ReadOnly = true;
-            // 
-            // NombreCompleto
-            // 
-            this.NombreCompleto.DataPropertyName = "NombreCompleto";
-            this.NombreCompleto.FillWeight = 200F;
-            this.NombreCompleto.HeaderText = "Nombre Completo";
-            this.NombreCompleto.Name = "NombreCompleto";
-            this.NombreCompleto.ReadOnly = true;
-            this.NombreCompleto.Width = 200;
-            // 
-            // dthora
-            // 
-            this.dthora.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dthora.Location = new System.Drawing.Point(458, 404);
-            this.dthora.Name = "dthora";
-            this.dthora.Size = new System.Drawing.Size(108, 20);
-            this.dthora.TabIndex = 45;
-            // 
-            // dtfecha
-            // 
-            this.dtfecha.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtfecha.Location = new System.Drawing.Point(662, 368);
-            this.dtfecha.Name = "dtfecha";
-            this.dtfecha.Size = new System.Drawing.Size(121, 20);
-            this.dtfecha.TabIndex = 46;
-            // 
-            // cmbnseguro
-            // 
-            this.cmbnseguro.FormattingEnabled = true;
-            this.cmbnseguro.Location = new System.Drawing.Point(662, 404);
-            this.cmbnseguro.Name = "cmbnseguro";
-            this.cmbnseguro.Size = new System.Drawing.Size(121, 21);
-            this.cmbnseguro.TabIndex = 47;
-            // 
-            // cmbnalergia
-            // 
-            this.cmbnalergia.FormattingEnabled = true;
-            this.cmbnalergia.Location = new System.Drawing.Point(890, 404);
-            this.cmbnalergia.Name = "cmbnalergia";
-            this.cmbnalergia.Size = new System.Drawing.Size(121, 21);
-            this.cmbnalergia.TabIndex = 48;
-            // 
-            // cmbndoctor
-            // 
-            this.cmbndoctor.FormattingEnabled = true;
-            this.cmbndoctor.Location = new System.Drawing.Point(890, 368);
-            this.cmbndoctor.Name = "cmbndoctor";
-            this.cmbndoctor.Size = new System.Drawing.Size(121, 21);
-            this.cmbndoctor.TabIndex = 49;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(339, 370);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(113, 16);
-            this.label2.TabIndex = 50;
-            this.label2.Text = "Nombre Completo";
-            // 
-            // txtnombrecompleto
-            // 
-            this.txtnombrecompleto.Location = new System.Drawing.Point(458, 368);
-            this.txtnombrecompleto.MaxLength = 60;
-            this.txtnombrecompleto.Name = "txtnombrecompleto";
-            this.txtnombrecompleto.Size = new System.Drawing.Size(108, 20);
-            this.txtnombrecompleto.TabIndex = 51;
-            // 
-            // button3
-            // 
-            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
-            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkSlateBlue;
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SlateBlue;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button3.Location = new System.Drawing.Point(337, 285);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(153, 35);
-            this.button3.TabIndex = 52;
-            this.button3.Text = "Exportar a Excel";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // FrmCitasMedicas
             // 
@@ -441,14 +441,14 @@
         private System.Windows.Forms.ComboBox cmbndoctor;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtnombrecompleto;
+        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.DataGridViewTextBoxColumn IDCitaMedica;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NombreCompleto;
         private System.Windows.Forms.DataGridViewTextBoxColumn Horacm;
         private System.Windows.Forms.DataGridViewTextBoxColumn Fechacm;
         private System.Windows.Forms.DataGridViewTextBoxColumn Comentario;
         private System.Windows.Forms.DataGridViewTextBoxColumn ID2SEGUR;
         private System.Windows.Forms.DataGridViewTextBoxColumn id2alerg;
         private System.Windows.Forms.DataGridViewTextBoxColumn id2doctor;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NombreCompleto;
-        private System.Windows.Forms.Button button3;
     }
 }

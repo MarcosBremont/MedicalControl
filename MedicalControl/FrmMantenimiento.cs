@@ -30,34 +30,40 @@ namespace MedicalControl
 
         }
 
-     
-        
+
+
         private void BtnEliminar_Click(object sender, EventArgs e)
         {
-            con.Open();
-            string query = "DELETE FROM T_Doctor Where IDDOCTOR = @IDDOCTOR";
-            MySqlCommand comando = new MySqlCommand(query, con);
-            comando.Parameters.AddWithValue("@IDDOCTOR", txtcodigodoctor.Text);
-            comando.ExecuteNonQuery();
-            Refresh();
-            MessageBox.Show("DOCTOR Eliminado");
-            con.Close();
-           
+            try
+            {
+                con.Open();
+                string query = "DELETE FROM T_Doctor Where IDDOCTOR = @IDDOCTOR";
+                MySqlCommand comando = new MySqlCommand(query, con);
+                comando.Parameters.AddWithValue("@IDDOCTOR", txtcodigodoctor.Text);
+                comando.ExecuteNonQuery();
+                RefreshDoctor();
+                MessageBox.Show("Doctor Eliminado");
+                con.Close();
+            }
+            catch (MySql.Data.MySqlClient.MySqlException ER)
+            {
+                MessageBox.Show("Error, primero elimine o modifique las citas y pacientes que hay registrados con este doctor/@");
+            }
         }
 
         private void BtnEliminarAlergia_Click(object sender, EventArgs e)
         {
             try
             {
-            con.Open();
-            string query = "DELETE FROM T_Alergia Where IDALERGIA = @IDALERGIA";
-            MySqlCommand comando = new MySqlCommand(query, con);
-            comando.Parameters.AddWithValue("@IDALERGIA", txtcodigoalergia.Text);
-            comando.ExecuteNonQuery();
-            Refresh();
-            MessageBox.Show("Alergia Eliminada");
-            con.Close();
-           
+                con.Open();
+                string query = "DELETE FROM T_Alergia Where IDALERGIA = @IDALERGIA";
+                MySqlCommand comando = new MySqlCommand(query, con);
+                comando.Parameters.AddWithValue("@IDALERGIA", txtcodigoalergia.Text);
+                comando.ExecuteNonQuery();
+                RefreshAlergia();
+                MessageBox.Show("Alergia Eliminada");
+                con.Close();
+
 
             }
             catch (MySql.Data.MySqlClient.MySqlException ER)
@@ -70,15 +76,15 @@ namespace MedicalControl
         {
             try
             {
-            con.Open();
-            string query = "DELETE FROM T_SeguroM Where IDSEGURO = @IDSEGURO";
-            MySqlCommand comando = new MySqlCommand(query, con);
-            comando.Parameters.AddWithValue("@IDSEGURO", txtcodigoseguro.Text);
-            comando.ExecuteNonQuery();
-            Refresh();
-            MessageBox.Show("Seguro Eliminada");
-            con.Close();
-           
+                con.Open();
+                string query = "DELETE FROM T_SeguroM Where IDSEGURO = @IDSEGURO";
+                MySqlCommand comando = new MySqlCommand(query, con);
+                comando.Parameters.AddWithValue("@IDSEGURO", txtcodigoseguro.Text);
+                comando.ExecuteNonQuery();
+                RefreshSeguro();
+                MessageBox.Show("Seguro Eliminada");
+                con.Close();
+
 
             }
             catch (MySql.Data.MySqlClient.MySqlException ER)
@@ -96,10 +102,10 @@ namespace MedicalControl
                 MySqlCommand comando = new MySqlCommand(query, con);
                 comando.Parameters.AddWithValue("@idt_proveedor", txtcodigoproveedor.Text);
                 comando.ExecuteNonQuery();
-                Refresh();
+                RefreshProveedor();
                 MessageBox.Show("Proveedor Eliminado");
                 con.Close();
-                
+
 
             }
             catch (MySql.Data.MySqlClient.MySqlException ER)
@@ -123,21 +129,21 @@ namespace MedicalControl
             comando.Parameters.AddWithValue("@NombreDoctor", txtnombredoctor.Text);
             comando.Parameters.AddWithValue("@Especialidad", txtexpecialidaddoctor.Text);
             comando.ExecuteNonQuery();
-            Refresh();
+            RefreshDoctor();
             MessageBox.Show("Doctor Actualizado");
             con.Close();
         }
 
         public void RefreshDoctor()
         {
-            
-                //  MySqlCommand comando = new MySqlCommand("Select * from T_Paciente", con);
-                MySqlDataAdapter adaptador = new MySqlDataAdapter("Select * from t_doctor", con);
-                // adaptador.SelectCommand = comando;
-                DataTable tabla = new DataTable();
-                adaptador.Fill(tabla);
-                dgvdoctores.DataSource = tabla;
-          
+
+            //  MySqlCommand comando = new MySqlCommand("Select * from T_Paciente", con);
+            MySqlDataAdapter adaptador = new MySqlDataAdapter("Select * from t_doctor", con);
+            // adaptador.SelectCommand = comando;
+            DataTable tabla = new DataTable();
+            adaptador.Fill(tabla);
+            dgvdoctores.DataSource = tabla;
+
         }
         public void RefreshAlergia()
         {
@@ -178,7 +184,7 @@ namespace MedicalControl
 
         }
 
-       
+
 
         private void dataGridView2_CellClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -206,6 +212,50 @@ namespace MedicalControl
             txtcodigodoctor.Text = dgvdoctores.CurrentRow.Cells[0].Value.ToString();
             txtnombredoctor.Text = dgvdoctores.CurrentRow.Cells[1].Value.ToString();
             txtexpecialidaddoctor.Text = dgvdoctores.CurrentRow.Cells[2].Value.ToString();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            con.Open();
+            string query = "UPDATE T_Alergia SET NOMBREA = @NOMBREA where IDALERGIA=@IDALERGIA";
+            MySqlCommand comando = new MySqlCommand(query, con);
+            comando.Parameters.AddWithValue("@IDALERGIA", txtcodigoalergia.Text);
+            comando.Parameters.AddWithValue("@NOMBREA", txtnombrealergia.Text);
+            comando.ExecuteNonQuery();
+            RefreshAlergia();
+            MessageBox.Show("Alergia Actualizada");
+            con.Close();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            con.Open();
+            string query = "UPDATE t_segurom SET NOMBRESEGURO = @NOMBRESEGURO where IDSEGURO=@IDSEGURO";
+            MySqlCommand comando = new MySqlCommand(query, con);
+            comando.Parameters.AddWithValue("@IDSEGURO", txtcodigoseguro.Text);
+            comando.Parameters.AddWithValue("@NOMBRESEGURO", txtnombreseguro.Text);
+            comando.ExecuteNonQuery();
+            RefreshSeguro();
+            MessageBox.Show("Seguro Actualizado");
+            con.Close();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            con.Open();
+            string query = "UPDATE t_proveedor SET NombreProveedor = @NombreProveedor, UbicacionProveedor = @UbicacionProveedor, TelefonoProveedor = @TelefonoProveedor, Correo=@Correo where idt_proveedor=@idt_proveedor";
+            MySqlCommand comando = new MySqlCommand(query, con);
+            comando.Parameters.AddWithValue("@idt_proveedor", txtcodigoproveedor.Text);
+            comando.Parameters.AddWithValue("@NombreProveedor", txtnombreproveedor.Text);
+            comando.Parameters.AddWithValue("@UbicacionProveedor", txtubicacionproveedor.Text);
+            comando.Parameters.AddWithValue("@TelefonoProveedor", txttelefonoproveedor.Text);
+            comando.Parameters.AddWithValue("@Correo", txtcorreo.Text);
+
+
+            comando.ExecuteNonQuery();
+            RefreshProveedor();
+            MessageBox.Show("Seguro Actualizado");
+            con.Close();
         }
     }
 }

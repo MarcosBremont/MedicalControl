@@ -253,6 +253,18 @@ namespace MedicalControl
         {
             ActivateButton(sender, RGBColors.color2);
             OpenChildForm(new FrmCorreo());
+
+            menuStrip1.Visible = false;
+        }
+
+        private void informacionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Contactanos());
+        }
+
+        private void contactanosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new FrmInformacionProyecto());
         }
     }
 }

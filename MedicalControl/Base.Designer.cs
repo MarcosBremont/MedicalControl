@@ -51,9 +51,9 @@
             this.alergiaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.seguroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.citaMedicaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.contactanosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.informacionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnHome)).BeginInit();
@@ -400,6 +400,20 @@
             this.citaMedicaToolStripMenuItem.Text = "Proveedor";
             this.citaMedicaToolStripMenuItem.Click += new System.EventHandler(this.citaMedicaToolStripMenuItem_Click);
             // 
+            // contactanosToolStripMenuItem
+            // 
+            this.contactanosToolStripMenuItem.Name = "contactanosToolStripMenuItem";
+            this.contactanosToolStripMenuItem.Size = new System.Drawing.Size(83, 20);
+            this.contactanosToolStripMenuItem.Text = "Contactanos";
+            this.contactanosToolStripMenuItem.Click += new System.EventHandler(this.contactanosToolStripMenuItem_Click);
+            // 
+            // informacionToolStripMenuItem
+            // 
+            this.informacionToolStripMenuItem.Name = "informacionToolStripMenuItem";
+            this.informacionToolStripMenuItem.Size = new System.Drawing.Size(81, 20);
+            this.informacionToolStripMenuItem.Text = "Informacion";
+            this.informacionToolStripMenuItem.Click += new System.EventHandler(this.informacionToolStripMenuItem_Click);
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -410,18 +424,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
-            // 
-            // contactanosToolStripMenuItem
-            // 
-            this.contactanosToolStripMenuItem.Name = "contactanosToolStripMenuItem";
-            this.contactanosToolStripMenuItem.Size = new System.Drawing.Size(83, 20);
-            this.contactanosToolStripMenuItem.Text = "Contactanos";
-            // 
-            // informacionToolStripMenuItem
-            // 
-            this.informacionToolStripMenuItem.Name = "informacionToolStripMenuItem";
-            this.informacionToolStripMenuItem.Size = new System.Drawing.Size(81, 20);
-            this.informacionToolStripMenuItem.Text = "Informacion";
             // 
             // FrmPrincipal
             // 

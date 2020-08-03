@@ -64,11 +64,23 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Conexioncs.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="Contactanos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Contactanos.Designer.cs">
+      <DependentUpon>Contactanos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base.Designer.cs">
+      <DependentUpon>Base.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmInformacionProyecto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmInformacionProyecto.Designer.cs">
+      <DependentUpon>FrmInformacionProyecto.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmMantenimiento.cs">
       <SubType>Form</SubType>
@@ -131,6 +143,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="Resources\Copia_de_UNBLOG_MAS-removebg-preview %281%29.png" />
+    <None Include="Resources\Copia_de_UNBLOG_MAS-removebg-preview.png" />
+    <None Include="Resources\image %281%29.png" />
+    <None Include="Resources\image.png" />
+    <None Include="Resources\gmail.png" />
+    <None Include="Resources\email.png" />
     <None Include="Resources\Green_and_White_Music_Logo__1_-removebg-preview.png" />
     <None Include="Resources\Green_and_White_Music_Logo-removebg-preview.png" />
     <None Include="Resources\medicine1.png" />
@@ -152,8 +170,14 @@
     <None Include="Resources\MEDICAL_CONTROL__1_-removebg.png" />
     <None Include="Resources\MEDICAL CONTROL.png" />
     <None Include="Resources\MEDICAL_CONTROL-removebg-preview.png" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Contactanos.resx">
+      <DependentUpon>Contactanos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base.resx">
+      <DependentUpon>Base.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmInformacionProyecto.resx">
+      <DependentUpon>FrmInformacionProyecto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMantenimiento.resx">
       <DependentUpon>FrmMantenimiento.cs</DependentUpon>

@@ -23,6 +23,7 @@ namespace MedicalControl
             InitializeComponent();
         }
 
+       
         private void FrmPPrincipal_Load(object sender, EventArgs e)
         {
             Refresh();
@@ -81,26 +82,51 @@ namespace MedicalControl
 
         private void btninsertar_Click(object sender, EventArgs e)
         {
-            con.Open();
-            string query = "INSERT INTO T_Paciente (NombreP, ApellidoP, EdadP, CedulaP, DireccionP, TelefonoP, Telefonop2, SexoP, IDTALER, IDTSEGURO, IDTDOCTOR  ) values (@NombreP, @ApellidoP, @EdadP, @CedulaP, @DireccionP, @TelefonoP, @Telefonop2, @SexoP, @IDTALER, @IDTSEGURO, @IDTDOCTOR)";
-            MySqlCommand comando = new MySqlCommand(query, con);
-            comando.Parameters.AddWithValue("@NombreP", txtnombrep.Text);
-            comando.Parameters.AddWithValue("@ApellidoP", txtapellidop.Text);
-            comando.Parameters.AddWithValue("@EdadP", txtedadp.Text);
-            comando.Parameters.AddWithValue("@CedulaP", mtxtCedula.Text);
-            comando.Parameters.AddWithValue("@DireccionP", txtdireccionp.Text);
-            comando.Parameters.AddWithValue("@TelefonoP", mtxtTelefono.Text);
-            comando.Parameters.AddWithValue("@Telefonop2", mtxtTelefono2.Text);
-            comando.Parameters.AddWithValue("@SEXOP", cmbSexo.Text);
-            comando.Parameters.AddWithValue("@IDTALER", cmbAlergia.SelectedValue);
-            comando.Parameters.AddWithValue("@IDTSEGURO", cmbSeguro.SelectedValue);
-            comando.Parameters.AddWithValue("@IDTDOCTOR", cmbDoctor.SelectedValue);
-            comando.ExecuteNonQuery();
-            Refresh();
-            MessageBox.Show("Paciente Agregado");
-            con.Close();
-            clear();
-            this.TxtCantidad.Text = this.dataGridView1.Rows.Count.ToString("N0");
+
+            bool error = false;
+            foreach (char caracter in txtnombrep.Text + txtapellidop.Text)
+            {
+                if (char.IsDigit(caracter))
+                {
+                    error = true;
+                    break;
+                }
+            }
+
+            if (error)
+            {
+                errorProvider1.SetError(txtnombrep, "No se admiten numeros");
+                errorProvider1.SetError(txtapellidop, "No se admiten numeros");
+            }
+            else
+            {
+
+            
+           
+                errorProvider1.Clear();
+                con.Open();
+                string query = "INSERT INTO T_Paciente (NombreP, ApellidoP, EdadP, CedulaP, DireccionP, TelefonoP, Telefonop2, SexoP, IDTALER, IDTSEGURO, IDTDOCTOR  ) values (@NombreP, @ApellidoP, @EdadP, @CedulaP, @DireccionP, @TelefonoP, @Telefonop2, @SexoP, @IDTALER, @IDTSEGURO, @IDTDOCTOR)";
+                MySqlCommand comando = new MySqlCommand(query, con);
+                comando.Parameters.AddWithValue("@NombreP", txtnombrep.Text);
+                comando.Parameters.AddWithValue("@ApellidoP", txtapellidop.Text);
+                comando.Parameters.AddWithValue("@EdadP", txtedadp.Text);
+                comando.Parameters.AddWithValue("@CedulaP", mtxtCedula.Text);
+                comando.Parameters.AddWithValue("@DireccionP", txtdireccionp.Text);
+                comando.Parameters.AddWithValue("@TelefonoP", mtxtTelefono.Text);
+                comando.Parameters.AddWithValue("@Telefonop2", mtxtTelefono2.Text);
+                comando.Parameters.AddWithValue("@SEXOP", cmbSexo.Text);
+                comando.Parameters.AddWithValue("@IDTALER", cmbAlergia.SelectedValue);
+                comando.Parameters.AddWithValue("@IDTSEGURO", cmbSeguro.SelectedValue);
+                comando.Parameters.AddWithValue("@IDTDOCTOR", cmbDoctor.SelectedValue);
+                comando.ExecuteNonQuery();
+                Refresh();
+                MessageBox.Show("Paciente Agregado");
+                con.Close();
+                clear();
+                this.TxtCantidad.Text = this.dataGridView1.Rows.Count.ToString("N0");
+
+
+            }
 
 
         }
@@ -303,5 +329,7 @@ namespace MedicalControl
         {
             exportaraexcel(dataGridView1);
         }
+
+     
     }
 }

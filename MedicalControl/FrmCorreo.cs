@@ -12,6 +12,8 @@ using System.Net.Mail;
 using System.Diagnostics;
 using System.Runtime.InteropServices;
 
+
+
 namespace MedicalControl
 {
     public partial class FrmCorreo : Form
@@ -57,9 +59,11 @@ namespace MedicalControl
             rtbmensaje.Text = "";
 
             string total;
-            total = txtnombreclinica.Text + rtbmensaje.Text;
+            total =  rtbmensaje.Text;
 
             rtbmensaje.Text = total;
+
+            
         }
 
         public void enviar_correo(string host, int puerto, string remitente, string contraseña, string nombre, string destinatarios, string cc, string asunto, string adjuntos, string cuerpo)
@@ -94,7 +98,9 @@ namespace MedicalControl
                 cliente.EnableSsl = true;
                 cliente.Send(correo);
 
-                MessageBox.Show("El correo se ha enviado correctamente");
+                MessageBox.Show("El correo se envio correctamente", "Correo Enviado");
+
+
             }
             catch (Exception ex)
             {
@@ -120,15 +126,12 @@ namespace MedicalControl
             }
         }
 
-        private void openFileDialog1_FileOk(object sender, CancelEventArgs e)
-        {
 
-        }
-
-        private void btnenviar_Click(object sender, EventArgs e)
+        private void btnenviar_Click_1(object sender, EventArgs e)
         {
             enviar_correo("smtp.gmail.com", 587, txtremitente.Text, txtpassword.Text, txtasunto.Text, txtpara.Text, txtcc.Text, rtbmensaje.Text, txtadjunto.Text, rtbmensaje.Text);
-            Cursor = Cursors.WaitCursor;
         }
+
+       
     }
 }

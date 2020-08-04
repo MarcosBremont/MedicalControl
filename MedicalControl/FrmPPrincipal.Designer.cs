@@ -254,6 +254,7 @@
             this.txtnombrep.Size = new System.Drawing.Size(83, 23);
             this.txtnombrep.TabIndex = 2;
             this.txtnombrep.TextChanged += new System.EventHandler(this.txtnombrep_TextChanged);
+            this.txtnombrep.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtnombrep_KeyPress);
             // 
             // txtedadp
             // 
@@ -264,6 +265,7 @@
             this.txtedadp.Name = "txtedadp";
             this.txtedadp.Size = new System.Drawing.Size(48, 23);
             this.txtedadp.TabIndex = 4;
+            this.txtedadp.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtedadp_KeyPress);
             // 
             // txtapellidop
             // 
@@ -274,6 +276,7 @@
             this.txtapellidop.Name = "txtapellidop";
             this.txtapellidop.Size = new System.Drawing.Size(83, 23);
             this.txtapellidop.TabIndex = 3;
+            this.txtapellidop.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtapellidop_KeyPress);
             // 
             // txtdireccionp
             // 
@@ -666,6 +669,7 @@
             this.txtbuscar.Name = "txtbuscar";
             this.txtbuscar.Size = new System.Drawing.Size(100, 27);
             this.txtbuscar.TabIndex = 48;
+            this.txtbuscar.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtbuscar_KeyPress);
             this.txtbuscar.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtbuscar_KeyUp);
             // 
             // lblbuscar

@@ -28,9 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.idt_inventario = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NombreMedicamento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CantidadMedicamento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Proveedor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtnombremedicamento = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.cbproveedor = new System.Windows.Forms.ComboBox();
@@ -50,16 +56,12 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.gbprincipal = new System.Windows.Forms.GroupBox();
-            this.lblbuscar = new System.Windows.Forms.Label();
-            this.txtbuscar = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.TxtCantidad = new System.Windows.Forms.TextBox();
-            this.idt_inventario = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NombreMedicamento = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CantidadMedicamento = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Proveedor = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lblbuscar = new System.Windows.Forms.Label();
+            this.txtbuscar = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.gbprincipal.SuspendLayout();
             this.SuspendLayout();
@@ -74,14 +76,14 @@
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idt_inventario,
@@ -97,16 +99,65 @@
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dataGridView1.RowHeadersVisible = false;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Bahnschrift SemiLight", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.SteelBlue;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
-            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Bahnschrift SemiLight", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.White;
+            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle6;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(1152, 265);
             this.dataGridView1.TabIndex = 24;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            // 
+            // idt_inventario
+            // 
+            this.idt_inventario.DataPropertyName = "idt_inventario";
+            this.idt_inventario.HeaderText = "Codigo";
+            this.idt_inventario.Name = "idt_inventario";
+            this.idt_inventario.ReadOnly = true;
+            this.idt_inventario.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.idt_inventario.Width = 80;
+            // 
+            // NombreMedicamento
+            // 
+            this.NombreMedicamento.DataPropertyName = "NombreMedicamento";
+            this.NombreMedicamento.HeaderText = "Nombre Medicamento";
+            this.NombreMedicamento.Name = "NombreMedicamento";
+            this.NombreMedicamento.ReadOnly = true;
+            this.NombreMedicamento.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.NombreMedicamento.Width = 200;
+            // 
+            // CantidadMedicamento
+            // 
+            this.CantidadMedicamento.DataPropertyName = "CantidadMedicamento";
+            this.CantidadMedicamento.HeaderText = "Cantidad";
+            this.CantidadMedicamento.Name = "CantidadMedicamento";
+            this.CantidadMedicamento.ReadOnly = true;
+            this.CantidadMedicamento.Width = 80;
+            // 
+            // Proveedor
+            // 
+            this.Proveedor.DataPropertyName = "Proveedor";
+            this.Proveedor.HeaderText = "Proveedor";
+            this.Proveedor.Name = "Proveedor";
+            this.Proveedor.ReadOnly = true;
+            this.Proveedor.Width = 90;
+            // 
+            // Descripcion
+            // 
+            this.Descripcion.DataPropertyName = "Descripcion";
+            this.Descripcion.HeaderText = "Descripcion";
+            this.Descripcion.Name = "Descripcion";
+            this.Descripcion.ReadOnly = true;
+            this.Descripcion.Width = 560;
+            // 
+            // Fecha
+            // 
+            this.Fecha.DataPropertyName = "Fecha";
+            this.Fecha.HeaderText = "Fecha";
+            this.Fecha.Name = "Fecha";
+            this.Fecha.ReadOnly = true;
             // 
             // txtnombremedicamento
             // 
@@ -265,6 +316,7 @@
             this.txtcantidadmedicamento.Name = "txtcantidadmedicamento";
             this.txtcantidadmedicamento.Size = new System.Drawing.Size(153, 27);
             this.txtcantidadmedicamento.TabIndex = 71;
+            this.txtcantidadmedicamento.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtcantidadmedicamento_KeyPress);
             // 
             // btnOtro
             // 
@@ -320,6 +372,8 @@
             // gbprincipal
             // 
             this.gbprincipal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(62)))));
+            this.gbprincipal.Controls.Add(this.label1);
+            this.gbprincipal.Controls.Add(this.textBox1);
             this.gbprincipal.Controls.Add(this.button1);
             this.gbprincipal.Controls.Add(this.button3);
             this.gbprincipal.Controls.Add(this.btnOtro);
@@ -350,6 +404,30 @@
             this.gbprincipal.TabStop = false;
             this.gbprincipal.Text = "Inventario";
             // 
+            // label8
+            // 
+            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(191, 27);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(58, 16);
+            this.label8.TabIndex = 47;
+            this.label8.Text = "Cantidad";
+            // 
+            // TxtCantidad
+            // 
+            this.TxtCantidad.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.TxtCantidad.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.TxtCantidad.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtCantidad.ForeColor = System.Drawing.Color.DarkRed;
+            this.TxtCantidad.Location = new System.Drawing.Point(255, 26);
+            this.TxtCantidad.Name = "TxtCantidad";
+            this.TxtCantidad.ReadOnly = true;
+            this.TxtCantidad.Size = new System.Drawing.Size(45, 23);
+            this.TxtCantidad.TabIndex = 46;
+            // 
             // lblbuscar
             // 
             this.lblbuscar.AutoSize = true;
@@ -369,78 +447,26 @@
             this.txtbuscar.TabIndex = 48;
             this.txtbuscar.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtbuscar_KeyUp);
             // 
-            // label8
+            // label1
             // 
-            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
-            this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(150, 28);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(58, 16);
-            this.label8.TabIndex = 47;
-            this.label8.Text = "Cantidad";
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(14, 27);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(49, 16);
+            this.label1.TabIndex = 76;
+            this.label1.Text = "Buscar";
             // 
-            // TxtCantidad
+            // textBox1
             // 
-            this.TxtCantidad.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.TxtCantidad.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.TxtCantidad.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtCantidad.ForeColor = System.Drawing.Color.DarkRed;
-            this.TxtCantidad.Location = new System.Drawing.Point(214, 27);
-            this.TxtCantidad.Name = "TxtCantidad";
-            this.TxtCantidad.ReadOnly = true;
-            this.TxtCantidad.Size = new System.Drawing.Size(45, 23);
-            this.TxtCantidad.TabIndex = 46;
-            // 
-            // idt_inventario
-            // 
-            this.idt_inventario.DataPropertyName = "idt_inventario";
-            this.idt_inventario.HeaderText = "Codigo";
-            this.idt_inventario.Name = "idt_inventario";
-            this.idt_inventario.ReadOnly = true;
-            this.idt_inventario.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.idt_inventario.Width = 80;
-            // 
-            // NombreMedicamento
-            // 
-            this.NombreMedicamento.DataPropertyName = "NombreMedicamento";
-            this.NombreMedicamento.HeaderText = "Nombre Medicamento";
-            this.NombreMedicamento.Name = "NombreMedicamento";
-            this.NombreMedicamento.ReadOnly = true;
-            this.NombreMedicamento.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.NombreMedicamento.Width = 200;
-            // 
-            // CantidadMedicamento
-            // 
-            this.CantidadMedicamento.DataPropertyName = "CantidadMedicamento";
-            this.CantidadMedicamento.HeaderText = "Cantidad";
-            this.CantidadMedicamento.Name = "CantidadMedicamento";
-            this.CantidadMedicamento.ReadOnly = true;
-            this.CantidadMedicamento.Width = 80;
-            // 
-            // Proveedor
-            // 
-            this.Proveedor.DataPropertyName = "Proveedor";
-            this.Proveedor.HeaderText = "Proveedor";
-            this.Proveedor.Name = "Proveedor";
-            this.Proveedor.ReadOnly = true;
-            this.Proveedor.Width = 90;
-            // 
-            // Descripcion
-            // 
-            this.Descripcion.DataPropertyName = "Descripcion";
-            this.Descripcion.HeaderText = "Descripcion";
-            this.Descripcion.Name = "Descripcion";
-            this.Descripcion.ReadOnly = true;
-            this.Descripcion.Width = 560;
-            // 
-            // Fecha
-            // 
-            this.Fecha.DataPropertyName = "Fecha";
-            this.Fecha.HeaderText = "Fecha";
-            this.Fecha.Name = "Fecha";
-            this.Fecha.ReadOnly = true;
+            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.textBox1.Location = new System.Drawing.Point(69, 21);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 27);
+            this.textBox1.TabIndex = 75;
+            this.textBox1.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textBox1_KeyUp);
             // 
             // FrmInventario
             // 
@@ -495,5 +521,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Proveedor;
         private System.Windows.Forms.DataGridViewTextBoxColumn Descripcion;
         private System.Windows.Forms.DataGridViewTextBoxColumn Fecha;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

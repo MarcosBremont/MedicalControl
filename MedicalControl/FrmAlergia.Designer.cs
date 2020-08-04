@@ -76,6 +76,7 @@
             this.txtnombrealergia.Name = "txtnombrealergia";
             this.txtnombrealergia.Size = new System.Drawing.Size(100, 20);
             this.txtnombrealergia.TabIndex = 12;
+            this.txtnombrealergia.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtnombrealergia_KeyPress);
             // 
             // lblnombrealergia
             // 

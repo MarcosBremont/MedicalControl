@@ -246,5 +246,37 @@ namespace MedicalControl
 
             con.Close();
         }
+
+        private void txtcantidadmedicamento_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!(char.IsNumber(e.KeyChar)) && (e.KeyChar != (char)Keys.Back))
+
+            {
+                e.Handled = true;
+
+                return;
+
+            }
+        }
+
+        private void textBox1_KeyUp(object sender, KeyEventArgs e)
+        {
+            con.Open();
+
+            MySqlCommand cmd = con.CreateCommand();
+
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "SELECT * FROM t_paciente where NombreP like ('" + txtbuscar.Text + "%')";
+            cmd.ExecuteNonQuery();
+
+            DataTable dt = new DataTable();
+            MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+
+            da.Fill(dt);
+
+            dataGridView1.DataSource = dt;
+
+            con.Close();
+        }
     }
 }

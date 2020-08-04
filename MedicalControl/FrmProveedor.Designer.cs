@@ -100,6 +100,7 @@
             this.txtnombreproveedor.Name = "txtnombreproveedor";
             this.txtnombreproveedor.Size = new System.Drawing.Size(100, 20);
             this.txtnombreproveedor.TabIndex = 11;
+            this.txtnombreproveedor.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtnombreproveedor_KeyPress);
             // 
             // lblnombreproveedor
             // 

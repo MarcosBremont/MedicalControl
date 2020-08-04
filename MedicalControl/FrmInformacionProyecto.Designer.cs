@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmInformacionProyecto));
             this.label2 = new System.Windows.Forms.Label();
             this.Parriba = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -40,11 +41,11 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(50, 278);
+            this.label2.Location = new System.Drawing.Point(285, 258);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(253, 19);
+            this.label2.Size = new System.Drawing.Size(828, 323);
             this.label2.TabIndex = 3;
-            this.label2.Text = "Medical Control es un sistema de ";
+            this.label2.Text = resources.GetString("label2.Text");
             // 
             // Parriba
             // 

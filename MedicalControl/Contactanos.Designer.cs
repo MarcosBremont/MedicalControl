@@ -30,8 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Contactanos));
             this.Parriba = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.Parriba.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -41,37 +41,37 @@
             this.Parriba.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.Parriba.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(188)))), ((int)(((byte)(155)))));
             this.Parriba.Controls.Add(this.pictureBox1);
-            this.Parriba.Location = new System.Drawing.Point(-314, 1);
+            this.Parriba.Location = new System.Drawing.Point(-314, -2);
             this.Parriba.Name = "Parriba";
             this.Parriba.Size = new System.Drawing.Size(1500, 188);
             this.Parriba.TabIndex = 0;
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(365, 271);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(715, 133);
-            this.label2.TabIndex = 1;
-            this.label2.Text = resources.GetString("label2.Text");
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::MedicalControl.Properties.Resources.Copia_de_UNBLOG_MAS_removebg_preview__1_;
-            this.pictureBox1.Location = new System.Drawing.Point(579, -67);
+            this.pictureBox1.Location = new System.Drawing.Point(570, -67);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(299, 291);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(163, 262);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(1105, 228);
+            this.label2.TabIndex = 4;
+            this.label2.Text = resources.GetString("label2.Text");
+            // 
             // Contactanos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.ClientSize = new System.Drawing.Size(854, 545);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.Parriba);

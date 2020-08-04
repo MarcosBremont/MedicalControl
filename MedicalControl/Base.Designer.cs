@@ -92,7 +92,7 @@
             this.iconButton1.IconColor = System.Drawing.Color.White;
             this.iconButton1.IconSize = 40;
             this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton1.Location = new System.Drawing.Point(1, 488);
+            this.iconButton1.Location = new System.Drawing.Point(0, 393);
             this.iconButton1.Name = "iconButton1";
             this.iconButton1.Padding = new System.Windows.Forms.Padding(10, 0, 5, 0);
             this.iconButton1.Rotation = 0D;
@@ -159,7 +159,7 @@
             this.ibMantenimiento.IconColor = System.Drawing.Color.White;
             this.ibMantenimiento.IconSize = 40;
             this.ibMantenimiento.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ibMantenimiento.Location = new System.Drawing.Point(-3, 402);
+            this.ibMantenimiento.Location = new System.Drawing.Point(0, 477);
             this.ibMantenimiento.Name = "ibMantenimiento";
             this.ibMantenimiento.Padding = new System.Windows.Forms.Padding(10, 0, 5, 0);
             this.ibMantenimiento.Rotation = 0D;
@@ -350,6 +350,7 @@
             // menuStrip1
             // 
             this.menuStrip1.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.menuStrip1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.agregarToolStripMenuItem,
             this.contactanosToolStripMenuItem,
@@ -357,6 +358,7 @@
             this.menuStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.ShowItemToolTips = true;
             this.menuStrip1.Size = new System.Drawing.Size(1050, 24);
             this.menuStrip1.TabIndex = 37;
             this.menuStrip1.Text = "menuStrip1";
@@ -474,7 +476,6 @@
         private FontAwesome.Sharp.IconButton iconButton3;
         private FontAwesome.Sharp.IconButton ibminimize;
         private FontAwesome.Sharp.IconButton ibmaximize;
-        private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem agregarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem doctorToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem alergiaToolStripMenuItem;
@@ -483,6 +484,7 @@
         private FontAwesome.Sharp.IconButton iconButton1;
         private System.Windows.Forms.ToolStripMenuItem contactanosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem informacionToolStripMenuItem;
+        private System.Windows.Forms.MenuStrip menuStrip1;
     }
 }
 

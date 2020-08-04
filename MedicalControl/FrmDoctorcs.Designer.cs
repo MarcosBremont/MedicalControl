@@ -56,6 +56,7 @@
             this.txtespecialidaddr.Name = "txtespecialidaddr";
             this.txtespecialidaddr.Size = new System.Drawing.Size(100, 20);
             this.txtespecialidaddr.TabIndex = 5;
+            this.txtespecialidaddr.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtespecialidaddr_KeyPress);
             // 
             // lblespecialidad
             // 
@@ -119,6 +120,7 @@
             this.txtnombredr.Size = new System.Drawing.Size(100, 20);
             this.txtnombredr.TabIndex = 3;
             this.txtnombredr.Text = "Dr/a ";
+            this.txtnombredr.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtnombredr_KeyPress);
             // 
             // FrmDoctorcs
             // 

@@ -28,17 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle49 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle50 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle51 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle52 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle53 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle54 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle55 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle56 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txtcodigodoctor = new System.Windows.Forms.TextBox();
             this.dgvdoctores = new System.Windows.Forms.DataGridView();
+            this.IDDOCTOR = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NombreDoctor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Especialidadd = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Especialidad = new System.Windows.Forms.Label();
             this.txtexpecialidaddoctor = new System.Windows.Forms.TextBox();
             this.BtnActualizarDoctor = new System.Windows.Forms.Button();
@@ -48,6 +51,8 @@
             this.txtnombredoctor = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dgvalergia = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtcodigoalergia = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.txtnombrealergia = new System.Windows.Forms.TextBox();
@@ -57,6 +62,8 @@
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.txtcodigoseguro = new System.Windows.Forms.TextBox();
             this.dgvsegurom = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button3 = new System.Windows.Forms.Button();
             this.txtnombreseguro = new System.Windows.Forms.TextBox();
             this.lblcodigoseguro = new System.Windows.Forms.Label();
@@ -70,24 +77,17 @@
             this.lblNombreProveedor = new System.Windows.Forms.Label();
             this.lblidproveedor = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.txttelefonoproveedor = new System.Windows.Forms.TextBox();
             this.txtcodigoproveedor = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.dgvproveedor = new System.Windows.Forms.DataGridView();
-            this.button5 = new System.Windows.Forms.Button();
-            this.BtnEliminarProveedores = new System.Windows.Forms.Button();
-            this.IDDOCTOR = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NombreDoctor = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Especialidadd = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.UbicacionProveedor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TelefonoProveedor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Correo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button5 = new System.Windows.Forms.Button();
+            this.BtnEliminarProveedores = new System.Windows.Forms.Button();
+            this.mtxtTelefono = new System.Windows.Forms.MaskedTextBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvdoctores)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -137,14 +137,14 @@
             this.dgvdoctores.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.dgvdoctores.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvdoctores.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Bahnschrift", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvdoctores.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle49.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle49.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            dataGridViewCellStyle49.Font = new System.Drawing.Font("Bahnschrift", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle49.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle49.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle49.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle49.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvdoctores.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle49;
             this.dgvdoctores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvdoctores.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.IDDOCTOR,
@@ -160,17 +160,41 @@
             this.dgvdoctores.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dgvdoctores.RowHeadersVisible = false;
             this.dgvdoctores.RowHeadersWidth = 10;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Bahnschrift SemiLight", 10F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.SteelBlue;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
-            this.dgvdoctores.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle50.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            dataGridViewCellStyle50.Font = new System.Drawing.Font("Bahnschrift SemiLight", 10F);
+            dataGridViewCellStyle50.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle50.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle50.SelectionForeColor = System.Drawing.Color.White;
+            this.dgvdoctores.RowsDefaultCellStyle = dataGridViewCellStyle50;
             this.dgvdoctores.RowTemplate.Height = 30;
             this.dgvdoctores.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvdoctores.Size = new System.Drawing.Size(320, 189);
             this.dgvdoctores.TabIndex = 8;
             this.dgvdoctores.Click += new System.EventHandler(this.dgvdoctores_Click);
+            // 
+            // IDDOCTOR
+            // 
+            this.IDDOCTOR.DataPropertyName = "IDDOCTOR";
+            this.IDDOCTOR.FillWeight = 76.14214F;
+            this.IDDOCTOR.HeaderText = "Codigo";
+            this.IDDOCTOR.Name = "IDDOCTOR";
+            this.IDDOCTOR.ReadOnly = true;
+            // 
+            // NombreDoctor
+            // 
+            this.NombreDoctor.DataPropertyName = "NombreDoctor";
+            this.NombreDoctor.FillWeight = 111.9289F;
+            this.NombreDoctor.HeaderText = "Nombre";
+            this.NombreDoctor.Name = "NombreDoctor";
+            this.NombreDoctor.ReadOnly = true;
+            // 
+            // Especialidadd
+            // 
+            this.Especialidadd.DataPropertyName = "Especialidad";
+            this.Especialidadd.FillWeight = 111.9289F;
+            this.Especialidadd.HeaderText = "Especialidad";
+            this.Especialidadd.Name = "Especialidadd";
+            this.Especialidadd.ReadOnly = true;
             // 
             // Especialidad
             // 
@@ -189,6 +213,7 @@
             this.txtexpecialidaddoctor.Name = "txtexpecialidaddoctor";
             this.txtexpecialidaddoctor.Size = new System.Drawing.Size(121, 26);
             this.txtexpecialidaddoctor.TabIndex = 6;
+            this.txtexpecialidaddoctor.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtexpecialidaddoctor_KeyPress);
             // 
             // BtnActualizarDoctor
             // 
@@ -242,6 +267,7 @@
             this.txtnombredoctor.Name = "txtnombredoctor";
             this.txtnombredoctor.Size = new System.Drawing.Size(121, 26);
             this.txtnombredoctor.TabIndex = 1;
+            this.txtnombredoctor.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtnombredoctor_KeyPress);
             // 
             // groupBox2
             // 
@@ -272,14 +298,14 @@
             this.dgvalergia.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.dgvalergia.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvalergia.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Bahnschrift", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvalergia.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle51.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle51.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            dataGridViewCellStyle51.Font = new System.Drawing.Font("Bahnschrift", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle51.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle51.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle51.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle51.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvalergia.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle51;
             this.dgvalergia.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvalergia.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -294,17 +320,33 @@
             this.dgvalergia.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dgvalergia.RowHeadersVisible = false;
             this.dgvalergia.RowHeadersWidth = 10;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Bahnschrift SemiLight", 10F);
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.SteelBlue;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
-            this.dgvalergia.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle52.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            dataGridViewCellStyle52.Font = new System.Drawing.Font("Bahnschrift SemiLight", 10F);
+            dataGridViewCellStyle52.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle52.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle52.SelectionForeColor = System.Drawing.Color.White;
+            this.dgvalergia.RowsDefaultCellStyle = dataGridViewCellStyle52;
             this.dgvalergia.RowTemplate.Height = 30;
             this.dgvalergia.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvalergia.Size = new System.Drawing.Size(176, 189);
             this.dgvalergia.TabIndex = 10;
             this.dgvalergia.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellClick);
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "IDALERGIA";
+            this.dataGridViewTextBoxColumn1.FillWeight = 60.9137F;
+            this.dataGridViewTextBoxColumn1.HeaderText = "Codigo";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "NombreA";
+            this.dataGridViewTextBoxColumn2.FillWeight = 139.0863F;
+            this.dataGridViewTextBoxColumn2.HeaderText = "Nombre";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
             // 
             // txtcodigoalergia
             // 
@@ -331,6 +373,7 @@
             this.txtnombrealergia.Name = "txtnombrealergia";
             this.txtnombrealergia.Size = new System.Drawing.Size(121, 26);
             this.txtnombrealergia.TabIndex = 7;
+            this.txtnombrealergia.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtnombrealergia_KeyPress);
             // 
             // label1
             // 
@@ -402,14 +445,14 @@
             this.dgvsegurom.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.dgvsegurom.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvsegurom.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Bahnschrift", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvsegurom.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle53.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle53.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            dataGridViewCellStyle53.Font = new System.Drawing.Font("Bahnschrift", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle53.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle53.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle53.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle53.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvsegurom.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle53;
             this.dgvsegurom.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvsegurom.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn3,
@@ -424,17 +467,33 @@
             this.dgvsegurom.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dgvsegurom.RowHeadersVisible = false;
             this.dgvsegurom.RowHeadersWidth = 10;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Bahnschrift SemiLight", 10F);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.SteelBlue;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.White;
-            this.dgvsegurom.RowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle54.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            dataGridViewCellStyle54.Font = new System.Drawing.Font("Bahnschrift SemiLight", 10F);
+            dataGridViewCellStyle54.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle54.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle54.SelectionForeColor = System.Drawing.Color.White;
+            this.dgvsegurom.RowsDefaultCellStyle = dataGridViewCellStyle54;
             this.dgvsegurom.RowTemplate.Height = 30;
             this.dgvsegurom.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvsegurom.Size = new System.Drawing.Size(213, 193);
             this.dgvsegurom.TabIndex = 10;
             this.dgvsegurom.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvsegurom_CellClick);
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "IDSEGURO";
+            this.dataGridViewTextBoxColumn3.FillWeight = 60.9137F;
+            this.dataGridViewTextBoxColumn3.HeaderText = "Codigo";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "NombreSeguro";
+            this.dataGridViewTextBoxColumn4.FillWeight = 139.0863F;
+            this.dataGridViewTextBoxColumn4.HeaderText = "Nombre Seguro";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.ReadOnly = true;
             // 
             // button3
             // 
@@ -454,6 +513,7 @@
             this.txtnombreseguro.Name = "txtnombreseguro";
             this.txtnombreseguro.Size = new System.Drawing.Size(91, 26);
             this.txtnombreseguro.TabIndex = 7;
+            this.txtnombreseguro.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtnombreseguro_KeyPress);
             // 
             // lblcodigoseguro
             // 
@@ -491,6 +551,7 @@
             // 
             // groupBox4
             // 
+            this.groupBox4.Controls.Add(this.mtxtTelefono);
             this.groupBox4.Controls.Add(this.txtcorreo);
             this.groupBox4.Controls.Add(this.txtubicacionproveedor);
             this.groupBox4.Controls.Add(this.label5);
@@ -498,7 +559,6 @@
             this.groupBox4.Controls.Add(this.lblNombreProveedor);
             this.groupBox4.Controls.Add(this.lblidproveedor);
             this.groupBox4.Controls.Add(this.label7);
-            this.groupBox4.Controls.Add(this.txttelefonoproveedor);
             this.groupBox4.Controls.Add(this.txtcodigoproveedor);
             this.groupBox4.Controls.Add(this.label2);
             this.groupBox4.Controls.Add(this.dgvproveedor);
@@ -544,6 +604,7 @@
             this.txtnombreproveedor.Name = "txtnombreproveedor";
             this.txtnombreproveedor.Size = new System.Drawing.Size(89, 26);
             this.txtnombreproveedor.TabIndex = 7;
+            this.txtnombreproveedor.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtnombreproveedor_KeyPress);
             // 
             // lblNombreProveedor
             // 
@@ -578,13 +639,6 @@
             this.label7.TabIndex = 15;
             this.label7.Text = "Ubicacion Proveedor";
             // 
-            // txttelefonoproveedor
-            // 
-            this.txttelefonoproveedor.Location = new System.Drawing.Point(378, 161);
-            this.txttelefonoproveedor.Name = "txttelefonoproveedor";
-            this.txttelefonoproveedor.Size = new System.Drawing.Size(94, 26);
-            this.txttelefonoproveedor.TabIndex = 14;
-            // 
             // txtcodigoproveedor
             // 
             this.txtcodigoproveedor.Location = new System.Drawing.Point(138, 161);
@@ -614,14 +668,14 @@
             this.dgvproveedor.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.dgvproveedor.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvproveedor.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Bahnschrift", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvproveedor.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle55.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle55.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            dataGridViewCellStyle55.Font = new System.Drawing.Font("Bahnschrift", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle55.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle55.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle55.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle55.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvproveedor.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle55;
             this.dgvproveedor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvproveedor.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn5,
@@ -639,97 +693,17 @@
             this.dgvproveedor.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dgvproveedor.RowHeadersVisible = false;
             this.dgvproveedor.RowHeadersWidth = 10;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Bahnschrift SemiLight", 10F);
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.SteelBlue;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.White;
-            this.dgvproveedor.RowsDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle56.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            dataGridViewCellStyle56.Font = new System.Drawing.Font("Bahnschrift SemiLight", 10F);
+            dataGridViewCellStyle56.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle56.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle56.SelectionForeColor = System.Drawing.Color.White;
+            this.dgvproveedor.RowsDefaultCellStyle = dataGridViewCellStyle56;
             this.dgvproveedor.RowTemplate.Height = 30;
             this.dgvproveedor.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvproveedor.Size = new System.Drawing.Size(544, 126);
             this.dgvproveedor.TabIndex = 12;
             this.dgvproveedor.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvproveedor_CellClick);
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
-            this.button5.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(8, 44);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(85, 23);
-            this.button5.TabIndex = 11;
-            this.button5.Text = "Actualizar";
-            this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // BtnEliminarProveedores
-            // 
-            this.BtnEliminarProveedores.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
-            this.BtnEliminarProveedores.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnEliminarProveedores.Location = new System.Drawing.Point(8, 73);
-            this.BtnEliminarProveedores.Name = "BtnEliminarProveedores";
-            this.BtnEliminarProveedores.Size = new System.Drawing.Size(85, 23);
-            this.BtnEliminarProveedores.TabIndex = 8;
-            this.BtnEliminarProveedores.Text = "Eliminar";
-            this.BtnEliminarProveedores.UseVisualStyleBackColor = false;
-            this.BtnEliminarProveedores.Click += new System.EventHandler(this.BtnEliminarProveedores_Click);
-            // 
-            // IDDOCTOR
-            // 
-            this.IDDOCTOR.DataPropertyName = "IDDOCTOR";
-            this.IDDOCTOR.FillWeight = 76.14214F;
-            this.IDDOCTOR.HeaderText = "Codigo";
-            this.IDDOCTOR.Name = "IDDOCTOR";
-            this.IDDOCTOR.ReadOnly = true;
-            // 
-            // NombreDoctor
-            // 
-            this.NombreDoctor.DataPropertyName = "NombreDoctor";
-            this.NombreDoctor.FillWeight = 111.9289F;
-            this.NombreDoctor.HeaderText = "Nombre";
-            this.NombreDoctor.Name = "NombreDoctor";
-            this.NombreDoctor.ReadOnly = true;
-            // 
-            // Especialidadd
-            // 
-            this.Especialidadd.DataPropertyName = "Especialidad";
-            this.Especialidadd.FillWeight = 111.9289F;
-            this.Especialidadd.HeaderText = "Especialidad";
-            this.Especialidadd.Name = "Especialidadd";
-            this.Especialidadd.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "IDALERGIA";
-            this.dataGridViewTextBoxColumn1.FillWeight = 60.9137F;
-            this.dataGridViewTextBoxColumn1.HeaderText = "Codigo";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "NombreA";
-            this.dataGridViewTextBoxColumn2.FillWeight = 139.0863F;
-            this.dataGridViewTextBoxColumn2.HeaderText = "Nombre";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "IDSEGURO";
-            this.dataGridViewTextBoxColumn3.FillWeight = 60.9137F;
-            this.dataGridViewTextBoxColumn3.HeaderText = "Codigo";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "NombreSeguro";
-            this.dataGridViewTextBoxColumn4.FillWeight = 139.0863F;
-            this.dataGridViewTextBoxColumn4.HeaderText = "Nombre Seguro";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn5
             // 
@@ -771,11 +745,44 @@
             this.Correo.Name = "Correo";
             this.Correo.ReadOnly = true;
             // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
+            this.button5.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.Location = new System.Drawing.Point(8, 44);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(85, 23);
+            this.button5.TabIndex = 11;
+            this.button5.Text = "Actualizar";
+            this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // BtnEliminarProveedores
+            // 
+            this.BtnEliminarProveedores.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
+            this.BtnEliminarProveedores.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnEliminarProveedores.Location = new System.Drawing.Point(8, 73);
+            this.BtnEliminarProveedores.Name = "BtnEliminarProveedores";
+            this.BtnEliminarProveedores.Size = new System.Drawing.Size(85, 23);
+            this.BtnEliminarProveedores.TabIndex = 8;
+            this.BtnEliminarProveedores.Text = "Eliminar";
+            this.BtnEliminarProveedores.UseVisualStyleBackColor = false;
+            this.BtnEliminarProveedores.Click += new System.EventHandler(this.BtnEliminarProveedores_Click);
+            // 
+            // mtxtTelefono
+            // 
+            this.mtxtTelefono.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.mtxtTelefono.Location = new System.Drawing.Point(373, 156);
+            this.mtxtTelefono.Mask = "000-000-0000";
+            this.mtxtTelefono.Name = "mtxtTelefono";
+            this.mtxtTelefono.Size = new System.Drawing.Size(100, 26);
+            this.mtxtTelefono.TabIndex = 38;
+            // 
             // FrmMantenimiento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.ClientSize = new System.Drawing.Size(1124, 559);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
@@ -835,7 +842,6 @@
         private System.Windows.Forms.TextBox txtcodigoseguro;
         private System.Windows.Forms.DataGridView dgvsegurom;
         private System.Windows.Forms.TextBox txtubicacionproveedor;
-        private System.Windows.Forms.TextBox txttelefonoproveedor;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtcodigoproveedor;
@@ -854,5 +860,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn UbicacionProveedor;
         private System.Windows.Forms.DataGridViewTextBoxColumn TelefonoProveedor;
         private System.Windows.Forms.DataGridViewTextBoxColumn Correo;
+        private System.Windows.Forms.MaskedTextBox mtxtTelefono;
     }
 }

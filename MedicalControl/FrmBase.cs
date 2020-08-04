@@ -14,7 +14,7 @@ using System.Data;
 
 namespace MedicalControl
 {
-    public partial class FrmPrincipal : Form
+    public partial class FrmBase : Form
     {
         //Camopos de forma privada para almacenar el boton actual y el panel para aplicar un borde izquierdo al boton
         private IconButton currentBtn;
@@ -22,7 +22,7 @@ namespace MedicalControl
         private Form currentChildForm;
 
 
-        public FrmPrincipal()
+        public FrmBase()
         {
             InitializeComponent();
             leftBorderBtn = new Panel();
@@ -259,12 +259,12 @@ namespace MedicalControl
 
         private void informacionToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Contactanos());
+            OpenChildForm(new FrmAcercade());
         }
 
         private void contactanosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new FrmInformacionProyecto());
+            OpenChildForm(new FrmInformacionEmpresa());
         }
     }
 }

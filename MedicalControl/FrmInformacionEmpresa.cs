@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace MedicalControl
 {
-    public partial class FrmInformacionProyecto : Form
+    public partial class FrmInformacionEmpresa : Form
     {
-        public FrmInformacionProyecto()
+        public FrmInformacionEmpresa()
         {
             InitializeComponent();
+        }
+
+        private void FrmInformacionProyecto_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

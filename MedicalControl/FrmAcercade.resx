@@ -117,7 +117,19 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
+  <data name="label2.Text" xml:space="preserve">
+    <value>En el panorama medico el tiempo es una de las cosas más preciadas para el médico o personal capacitado y también para los pacientes, no 
+se les puede dar el lujo de desperdiciarlo utilizando métodos un poco “anticuados”, los cuales son muy inseguros y hacen perder demasiado 
+el tiempo.
+
+Por esta razón presentamos Medical Control, un software capaz de gestionar una lista de todos los pacientes que visitan el centro de salud de
+manera más rápida, eficaz y segura que los anticuados cuadernos donde la mayor parte del personal médico agenda a los pacientes y las citas 
+de los mismos.
+
+Cabe destacar que estos métodos han sido usados por mucho tiempo en el día a día de un personal médico, métodos que no son los más efectivos 
+porque se suele perder mucho tiempo, la información si se daña el cuaderno o libro donde están agendados los pacientes pues automáticamente se 
+pierde todo sin opción de recuperar, todo esto será evitado con Medical Control, ya que disponemos de herramientas muy útiles como exportar la lista 
+de pacientes que visitaron la clínica y de esta manera tenerlos bien organizados, esta y muchas más funciones se presentan en el software.
+</value>
+  </data>
 </root>

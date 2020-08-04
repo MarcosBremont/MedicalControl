@@ -78,6 +78,7 @@
             this.txtnombrreseguro.Name = "txtnombrreseguro";
             this.txtnombrreseguro.Size = new System.Drawing.Size(100, 20);
             this.txtnombrreseguro.TabIndex = 20;
+            this.txtnombrreseguro.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtnombrreseguro_KeyPress);
             // 
             // lblnombreseguro
             // 

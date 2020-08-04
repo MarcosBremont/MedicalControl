@@ -61,5 +61,17 @@ namespace MedicalControl
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
+
+        private void txtnombrealergia_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!(char.IsLetter(e.KeyChar)) && (e.KeyChar != (char)Keys.Back))
+
+            {
+                e.Handled = true;
+
+                return;
+
+            }
+        }
     }
 }

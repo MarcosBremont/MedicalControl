@@ -203,7 +203,7 @@ namespace MedicalControl
             txtcodigoproveedor.Text = dgvproveedor.CurrentRow.Cells[0].Value.ToString();
             txtnombreproveedor.Text = dgvproveedor.CurrentRow.Cells[1].Value.ToString();
             txtubicacionproveedor.Text = dgvproveedor.CurrentRow.Cells[2].Value.ToString();
-            txttelefonoproveedor.Text = dgvproveedor.CurrentRow.Cells[3].Value.ToString();
+            mtxtTelefono.Text = dgvproveedor.CurrentRow.Cells[3].Value.ToString();
             txtcorreo.Text = dgvproveedor.CurrentRow.Cells[4].Value.ToString();
         }
 
@@ -248,7 +248,7 @@ namespace MedicalControl
             comando.Parameters.AddWithValue("@idt_proveedor", txtcodigoproveedor.Text);
             comando.Parameters.AddWithValue("@NombreProveedor", txtnombreproveedor.Text);
             comando.Parameters.AddWithValue("@UbicacionProveedor", txtubicacionproveedor.Text);
-            comando.Parameters.AddWithValue("@TelefonoProveedor", txttelefonoproveedor.Text);
+            comando.Parameters.AddWithValue("@TelefonoProveedor", mtxtTelefono.Text);
             comando.Parameters.AddWithValue("@Correo", txtcorreo.Text);
 
 
@@ -256,6 +256,66 @@ namespace MedicalControl
             RefreshProveedor();
             MessageBox.Show("Seguro Actualizado");
             con.Close();
+        }
+
+        private void txtnombredoctor_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+            if (!(char.IsLetter(e.KeyChar)) && (e.KeyChar != (char)Keys.Back))
+
+            {
+                e.Handled = true;
+
+                return;
+            }
+        }
+
+        private void txtexpecialidaddoctor_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+            if (!(char.IsLetter(e.KeyChar)) && (e.KeyChar != (char)Keys.Back))
+
+            {
+                e.Handled = true;
+
+                return;
+            }
+        }
+
+        private void txtnombrealergia_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+            if (!(char.IsLetter(e.KeyChar)) && (e.KeyChar != (char)Keys.Back))
+
+            {
+                e.Handled = true;
+
+                return;
+            }
+        }
+
+        private void txtnombreseguro_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+            if (!(char.IsLetter(e.KeyChar)) && (e.KeyChar != (char)Keys.Back))
+
+            {
+                e.Handled = true;
+
+                return;
+            }
+        }
+
+        private void txtnombreproveedor_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+            if (!(char.IsLetter(e.KeyChar)) && (e.KeyChar != (char)Keys.Back))
+
+            {
+                e.Handled = true;
+
+                return;
+            }
         }
     }
 }

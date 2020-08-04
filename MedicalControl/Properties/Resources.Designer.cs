@@ -63,6 +63,16 @@ namespace MedicalControl.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap blocked {
+            get {
+                object obj = ResourceManager.GetObject("blocked", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Copia_de_UNBLOG_MAS_removebg_preview {
             get {
                 object obj = ResourceManager.GetObject("Copia_de_UNBLOG_MAS-removebg-preview", resourceCulture);
@@ -216,6 +226,16 @@ namespace MedicalControl.Properties {
         internal static System.Drawing.Bitmap medicine {
             get {
                 object obj = ResourceManager.GetObject("medicine", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap user {
+            get {
+                object obj = ResourceManager.GetObject("user", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

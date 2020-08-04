@@ -117,13 +117,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="label2.Text" xml:space="preserve">
-    <value>Empresa especializada en el desarrollo de software de cualquier tipo, contamos con estándares 
-de calidad basados en metodología scrum.
-
-Nuestro principal objetivo es  desarrollar herramientas que facilite la vida de nuestros clientes, 
-porque una herramienta eficaz hace a un cliente feliz.
-
-Estamos ubicados en Jarabacoa, Avenida la confluencia, próximo al play de softbol.</value>
-  </data>
+  <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
 </root>

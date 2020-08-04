@@ -102,7 +102,6 @@ C:\Users\MarcosBremont\Desktop\MisProyectosC#\MedicalControl Git\MedicalControl\
 C:\Users\MarcosBremont\Desktop\MisProyectosC#\MedicalControl Git\MedicalControl\MedicalControl\bin\Debug\MySql.Data.dll
 C:\Users\MarcosBremont\Desktop\MisProyectosC#\MedicalControl Git\MedicalControl\MedicalControl\bin\Debug\MySql.Data.xml
 C:\Users\MarcosBremont\Desktop\MisProyectosC#\MedicalControl Git\MedicalControl\MedicalControl\obj\Debug\MedicalControl.csprojAssemblyReference.cache
-C:\Users\MarcosBremont\Desktop\MisProyectosC#\MedicalControl Git\MedicalControl\MedicalControl\obj\Debug\MedicalControl.FrmPrincipal.resources
 C:\Users\MarcosBremont\Desktop\MisProyectosC#\MedicalControl Git\MedicalControl\MedicalControl\obj\Debug\MedicalControl.FrmAlergia.resources
 C:\Users\MarcosBremont\Desktop\MisProyectosC#\MedicalControl Git\MedicalControl\MedicalControl\obj\Debug\MedicalControl.FrmCitasMedicas.resources
 C:\Users\MarcosBremont\Desktop\MisProyectosC#\MedicalControl Git\MedicalControl\MedicalControl\obj\Debug\MedicalControl.FrmDoctorcs.resources
@@ -120,7 +119,7 @@ C:\Users\MarcosB\Desktop\GIT\MedicalControl\MedicalControl\obj\Debug\MedicalCont
 C:\Users\MarcosBremont\Desktop\MisProyectosC#\MedicalControl Git\MedicalControl\MedicalControl\obj\Debug\MedicalControl.FrmMantenimiento.resources
 C:\Users\MarcosBremont\Desktop\MisProyectosC#\MedicalControl Git\MedicalControl\MedicalControl\obj\Debug\MedicalControl.FrmCorreo.resources
 C:\Users\MarcosB\Desktop\GIT\MedicalControl\MedicalControl\obj\Debug\MedicalControl.FrmCorreo.resources
-C:\Users\MarcosBremont\Desktop\MisProyectosC#\MedicalControl Git\MedicalControl\MedicalControl\obj\Debug\MedicalControl.Contactanos.resources
-C:\Users\MarcosBremont\Desktop\MisProyectosC#\MedicalControl Git\MedicalControl\MedicalControl\obj\Debug\MedicalControl.FrmInformacionProyecto.resources
-C:\Users\MarcosB\Desktop\GIT\MedicalControl\MedicalControl\obj\Debug\MedicalControl.Contactanos.resources
-C:\Users\MarcosB\Desktop\GIT\MedicalControl\MedicalControl\obj\Debug\MedicalControl.FrmInformacionProyecto.resources
+C:\Users\MarcosBremont\Desktop\MisProyectosC#\MedicalControl Git\MedicalControl\MedicalControl\obj\Debug\MedicalControl.FrmAcercade.resources
+C:\Users\MarcosBremont\Desktop\MisProyectosC#\MedicalControl Git\MedicalControl\MedicalControl\obj\Debug\MedicalControl.FrmInformacionEmpresa.resources
+C:\Users\MarcosBremont\Desktop\MisProyectosC#\MedicalControl Git\MedicalControl\MedicalControl\obj\Debug\MedicalControl.FrmBase.resources
+C:\Users\MarcosBremont\Desktop\MisProyectosC#\MedicalControl Git\MedicalControl\MedicalControl\obj\Debug\MedicalControl.FrmLogin.resources

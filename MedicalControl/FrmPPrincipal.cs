@@ -23,7 +23,7 @@ namespace MedicalControl
             InitializeComponent();
         }
 
-       
+
         private void FrmPPrincipal_Load(object sender, EventArgs e)
         {
             Refresh();
@@ -83,46 +83,29 @@ namespace MedicalControl
         private void btninsertar_Click(object sender, EventArgs e)
         {
 
-            bool error = false;
-            foreach (char caracter in txtnombrep.Text)
-            {
-                if (char.IsDigit(caracter))
-                {
-                    error = true;
-                    break;
-                }
-            }
-
-            if (error)
-            {
-                errorProvider1.SetError(txtnombrep, "No se admiten numeros");
-            }
-            else
-            {
-                errorProvider1.Clear();
-                con.Open();
-                string query = "INSERT INTO T_Paciente (NombreP, ApellidoP, EdadP, CedulaP, DireccionP, TelefonoP, Telefonop2, SexoP, IDTALER, IDTSEGURO, IDTDOCTOR  ) values (@NombreP, @ApellidoP, @EdadP, @CedulaP, @DireccionP, @TelefonoP, @Telefonop2, @SexoP, @IDTALER, @IDTSEGURO, @IDTDOCTOR)";
-                MySqlCommand comando = new MySqlCommand(query, con);
-                comando.Parameters.AddWithValue("@NombreP", txtnombrep.Text);
-                comando.Parameters.AddWithValue("@ApellidoP", txtapellidop.Text);
-                comando.Parameters.AddWithValue("@EdadP", txtedadp.Text);
-                comando.Parameters.AddWithValue("@CedulaP", mtxtCedula.Text);
-                comando.Parameters.AddWithValue("@DireccionP", txtdireccionp.Text);
-                comando.Parameters.AddWithValue("@TelefonoP", mtxtTelefono.Text);
-                comando.Parameters.AddWithValue("@Telefonop2", mtxtTelefono2.Text);
-                comando.Parameters.AddWithValue("@SEXOP", cmbSexo.Text);
-                comando.Parameters.AddWithValue("@IDTALER", cmbAlergia.SelectedValue);
-                comando.Parameters.AddWithValue("@IDTSEGURO", cmbSeguro.SelectedValue);
-                comando.Parameters.AddWithValue("@IDTDOCTOR", cmbDoctor.SelectedValue);
-                comando.ExecuteNonQuery();
-                Refresh();
-                MessageBox.Show("Paciente Agregado");
-                con.Close();
-                clear();
-                this.TxtCantidad.Text = this.dataGridView1.Rows.Count.ToString("N0");
+            con.Open();
+            string query = "INSERT INTO T_Paciente (NombreP, ApellidoP, EdadP, CedulaP, DireccionP, TelefonoP, Telefonop2, SexoP, IDTALER, IDTSEGURO, IDTDOCTOR  ) values (@NombreP, @ApellidoP, @EdadP, @CedulaP, @DireccionP, @TelefonoP, @Telefonop2, @SexoP, @IDTALER, @IDTSEGURO, @IDTDOCTOR)";
+            MySqlCommand comando = new MySqlCommand(query, con);
+            comando.Parameters.AddWithValue("@NombreP", txtnombrep.Text);
+            comando.Parameters.AddWithValue("@ApellidoP", txtapellidop.Text);
+            comando.Parameters.AddWithValue("@EdadP", txtedadp.Text);
+            comando.Parameters.AddWithValue("@CedulaP", mtxtCedula.Text);
+            comando.Parameters.AddWithValue("@DireccionP", txtdireccionp.Text);
+            comando.Parameters.AddWithValue("@TelefonoP", mtxtTelefono.Text);
+            comando.Parameters.AddWithValue("@Telefonop2", mtxtTelefono2.Text);
+            comando.Parameters.AddWithValue("@SEXOP", cmbSexo.Text);
+            comando.Parameters.AddWithValue("@IDTALER", cmbAlergia.SelectedValue);
+            comando.Parameters.AddWithValue("@IDTSEGURO", cmbSeguro.SelectedValue);
+            comando.Parameters.AddWithValue("@IDTDOCTOR", cmbDoctor.SelectedValue);
+            comando.ExecuteNonQuery();
+            Refresh();
+            MessageBox.Show("Paciente Agregado");
+            con.Close();
+            clear();
+            this.TxtCantidad.Text = this.dataGridView1.Rows.Count.ToString("N0");
 
 
-            }
+
 
 
         }
@@ -326,10 +309,50 @@ namespace MedicalControl
             exportaraexcel(dataGridView1);
         }
 
-        private void txtapellidop_TextChanged(object sender, EventArgs e)
+        private void txtapellidop_KeyPress(object sender, KeyPressEventArgs e)
         {
-            
+            if (!(char.IsLetter(e.KeyChar)) && (e.KeyChar != (char)Keys.Back))
+
+            {
+                e.Handled = true;
+
+                return;
+            }
+        }
+
+        private void txtnombrep_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!(char.IsLetter(e.KeyChar)) && (e.KeyChar != (char)Keys.Back))
+
+            {
+                e.Handled = true;
+
+                return;
+            }
+        }
+
+        private void txtedadp_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!(char.IsNumber(e.KeyChar)) && (e.KeyChar != (char)Keys.Back))
+
+            {
+                e.Handled = true;
+
+                return;
+
+            }
+        }
+
+        private void txtbuscar_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!(char.IsLetter(e.KeyChar)) && (e.KeyChar != (char)Keys.Back))
+
+            {
+                e.Handled = true;
+
+                return;
+
+            }
         }
     }
 }
-    

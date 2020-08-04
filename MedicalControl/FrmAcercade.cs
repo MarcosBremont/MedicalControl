@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace MedicalControl
 {
-    public partial class Contactanos : Form
+    public partial class FrmAcercade : Form
     {
-        public Contactanos()
+        public FrmAcercade()
         {
             InitializeComponent();
+        }
+
+        private void Contactanos_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

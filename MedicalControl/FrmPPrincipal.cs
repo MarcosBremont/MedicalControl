@@ -84,7 +84,7 @@ namespace MedicalControl
         {
 
             bool error = false;
-            foreach (char caracter in txtnombrep.Text + txtapellidop.Text)
+            foreach (char caracter in txtnombrep.Text)
             {
                 if (char.IsDigit(caracter))
                 {
@@ -96,13 +96,9 @@ namespace MedicalControl
             if (error)
             {
                 errorProvider1.SetError(txtnombrep, "No se admiten numeros");
-                errorProvider1.SetError(txtapellidop, "No se admiten numeros");
             }
             else
             {
-
-            
-           
                 errorProvider1.Clear();
                 con.Open();
                 string query = "INSERT INTO T_Paciente (NombreP, ApellidoP, EdadP, CedulaP, DireccionP, TelefonoP, Telefonop2, SexoP, IDTALER, IDTSEGURO, IDTDOCTOR  ) values (@NombreP, @ApellidoP, @EdadP, @CedulaP, @DireccionP, @TelefonoP, @Telefonop2, @SexoP, @IDTALER, @IDTSEGURO, @IDTDOCTOR)";
@@ -330,6 +326,10 @@ namespace MedicalControl
             exportaraexcel(dataGridView1);
         }
 
-     
+        private void txtapellidop_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
+    

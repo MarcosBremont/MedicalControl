@@ -122,3 +122,5 @@ C:\Users\MarcosBremont\Desktop\MisProyectosC#\MedicalControl Git\MedicalControl\
 C:\Users\MarcosB\Desktop\GIT\MedicalControl\MedicalControl\obj\Debug\MedicalControl.FrmCorreo.resources
 C:\Users\MarcosBremont\Desktop\MisProyectosC#\MedicalControl Git\MedicalControl\MedicalControl\obj\Debug\MedicalControl.Contactanos.resources
 C:\Users\MarcosBremont\Desktop\MisProyectosC#\MedicalControl Git\MedicalControl\MedicalControl\obj\Debug\MedicalControl.FrmInformacionProyecto.resources
+C:\Users\MarcosB\Desktop\GIT\MedicalControl\MedicalControl\obj\Debug\MedicalControl.Contactanos.resources
+C:\Users\MarcosB\Desktop\GIT\MedicalControl\MedicalControl\obj\Debug\MedicalControl.FrmInformacionProyecto.resources

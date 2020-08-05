@@ -46,11 +46,11 @@ namespace MedicalControl
         private void btnEliminar_Click(object sender, EventArgs e)
         {
             string Nombre = txtnombreusuario.Text;
-            string Contrasena = txtcontrasena.Text;
+            string Password = txtcontrasena.Text;
             cmd = new MySqlCommand();
             con.Open();
             cmd.Connection = con;
-            cmd.CommandText = "SELECT * FROM Usuario where LoginName='" + txtnombreusuario.Text + "' AND Contrasena='" + txtcontrasena.Text + "'";
+            cmd.CommandText = "SELECT * FROM Usuario where LoginName='" + txtnombreusuario.Text + "' AND Password='" + txtcontrasena.Text + "'";
             dr = cmd.ExecuteReader();
             if (dr.Read())
             {
@@ -111,7 +111,7 @@ namespace MedicalControl
                 cmd = new MySqlCommand();
                 con.Open();
                 cmd.Connection = con;
-                cmd.CommandText = "SELECT * FROM Usuario where LoginName='" + txtnombreusuario.Text + "' AND Contrasena='" + txtcontrasena.Text + "'";
+                cmd.CommandText = "SELECT * FROM Usuario where LoginName='" + txtnombreusuario.Text + "' AND Password='" + txtcontrasena.Text + "'";
                 dr = cmd.ExecuteReader();
                 if (dr.Read())
                 {
@@ -147,6 +147,13 @@ namespace MedicalControl
         {
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void btnregistrar_Click(object sender, EventArgs e)
+        {
+            FrmRegistro form = new FrmRegistro();
+            this.Hide();
+            form.Show();
         }
     }
 }

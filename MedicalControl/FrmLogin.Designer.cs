@@ -34,13 +34,12 @@
             this.lblregistro = new System.Windows.Forms.Label();
             this.btnregistrar = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.lblcallcontrolx = new System.Windows.Forms.Label();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.btnminimizar = new System.Windows.Forms.Button();
             this.pBcontrasena = new System.Windows.Forms.PictureBox();
             this.pBusuario = new System.Windows.Forms.PictureBox();
             this.pBLogoCall = new System.Windows.Forms.PictureBox();
-            this.btnminimizar = new System.Windows.Forms.Button();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pBcontrasena)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBusuario)).BeginInit();
@@ -110,28 +109,17 @@
             this.btnregistrar.TabIndex = 18;
             this.btnregistrar.Text = "aca";
             this.btnregistrar.UseVisualStyleBackColor = false;
+            this.btnregistrar.Click += new System.EventHandler(this.btnregistrar_Click);
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(188)))), ((int)(((byte)(155)))));
-            this.panel3.Controls.Add(this.lblcallcontrolx);
             this.panel3.Controls.Add(this.pBLogoCall);
             this.panel3.Location = new System.Drawing.Point(1, 0);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(250, 330);
             this.panel3.TabIndex = 15;
             this.panel3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel3_MouseDown);
-            // 
-            // lblcallcontrolx
-            // 
-            this.lblcallcontrolx.AutoSize = true;
-            this.lblcallcontrolx.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblcallcontrolx.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblcallcontrolx.Location = new System.Drawing.Point(24, 193);
-            this.lblcallcontrolx.Name = "lblcallcontrolx";
-            this.lblcallcontrolx.Size = new System.Drawing.Size(192, 22);
-            this.lblcallcontrolx.TabIndex = 0;
-            this.lblcallcontrolx.Text = "MEDICAL CONTROL";
             // 
             // btnEliminar
             // 
@@ -159,6 +147,21 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // btnminimizar
+            // 
+            this.btnminimizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.btnminimizar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnminimizar.Font = new System.Drawing.Font("Bahnschrift", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnminimizar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnminimizar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnminimizar.Location = new System.Drawing.Point(758, 0);
+            this.btnminimizar.Name = "btnminimizar";
+            this.btnminimizar.Size = new System.Drawing.Size(23, 26);
+            this.btnminimizar.TabIndex = 57;
+            this.btnminimizar.Text = "-";
+            this.btnminimizar.UseVisualStyleBackColor = false;
+            this.btnminimizar.Click += new System.EventHandler(this.btnminimizar_Click);
+            // 
             // pBcontrasena
             // 
             this.pBcontrasena.Image = global::MedicalControl.Properties.Resources.blocked;
@@ -181,27 +184,13 @@
             // 
             // pBLogoCall
             // 
-            this.pBLogoCall.Location = new System.Drawing.Point(39, 11);
+            this.pBLogoCall.Image = global::MedicalControl.Properties.Resources.MEDICAL_CONTROL__1__removebg;
+            this.pBLogoCall.Location = new System.Drawing.Point(1, 29);
             this.pBLogoCall.Name = "pBLogoCall";
-            this.pBLogoCall.Size = new System.Drawing.Size(147, 179);
+            this.pBLogoCall.Size = new System.Drawing.Size(249, 285);
             this.pBLogoCall.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pBLogoCall.TabIndex = 13;
             this.pBLogoCall.TabStop = false;
-            // 
-            // btnminimizar
-            // 
-            this.btnminimizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.btnminimizar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnminimizar.Font = new System.Drawing.Font("Bahnschrift", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnminimizar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnminimizar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnminimizar.Location = new System.Drawing.Point(758, 0);
-            this.btnminimizar.Name = "btnminimizar";
-            this.btnminimizar.Size = new System.Drawing.Size(23, 26);
-            this.btnminimizar.TabIndex = 57;
-            this.btnminimizar.Text = "-";
-            this.btnminimizar.UseVisualStyleBackColor = false;
-            this.btnminimizar.Click += new System.EventHandler(this.btnminimizar_Click);
             // 
             // FrmLogin
             // 
@@ -226,7 +215,6 @@
             this.Load += new System.EventHandler(this.FrmLogin_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.FrmLogin_MouseDown);
             this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pBcontrasena)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBusuario)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBLogoCall)).EndInit();
@@ -245,7 +233,6 @@
         private System.Windows.Forms.Label lblregistro;
         private System.Windows.Forms.Button btnregistrar;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label lblcallcontrolx;
         private System.Windows.Forms.PictureBox pBLogoCall;
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button button1;

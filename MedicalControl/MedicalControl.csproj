@@ -136,6 +136,12 @@
     <Compile Include="FrmProveedor.Designer.cs">
       <DependentUpon>FrmProveedor.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmRegistro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRegistro.Designer.cs">
+      <DependentUpon>FrmRegistro.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmSeguro.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -149,6 +155,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="Resources\nombre.png" />
     <None Include="Resources\blocked.png" />
     <None Include="Resources\user.png" />
     <None Include="Resources\Copia_de_UNBLOG_MAS-removebg-preview %281%29.png" />
@@ -213,6 +220,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmProveedor.resx">
       <DependentUpon>FrmProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRegistro.resx">
+      <DependentUpon>FrmRegistro.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmSeguro.resx">
       <DependentUpon>FrmSeguro.cs</DependentUpon>

@@ -34,16 +34,16 @@
             this.lblregistro = new System.Windows.Forms.Label();
             this.btnregistrar = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.pBLogoCall = new System.Windows.Forms.PictureBox();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.btnminimizar = new System.Windows.Forms.Button();
             this.pBcontrasena = new System.Windows.Forms.PictureBox();
             this.pBusuario = new System.Windows.Forms.PictureBox();
-            this.pBLogoCall = new System.Windows.Forms.PictureBox();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pBLogoCall)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBcontrasena)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBusuario)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pBLogoCall)).BeginInit();
             this.SuspendLayout();
             // 
             // lbllogin
@@ -121,6 +121,17 @@
             this.panel3.TabIndex = 15;
             this.panel3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel3_MouseDown);
             // 
+            // pBLogoCall
+            // 
+            this.pBLogoCall.Image = global::MedicalControl.Properties.Resources.MEDICAL_CONTROL__1__removebg;
+            this.pBLogoCall.Location = new System.Drawing.Point(1, 29);
+            this.pBLogoCall.Name = "pBLogoCall";
+            this.pBLogoCall.Size = new System.Drawing.Size(249, 285);
+            this.pBLogoCall.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pBLogoCall.TabIndex = 13;
+            this.pBLogoCall.TabStop = false;
+            this.pBLogoCall.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pBLogoCall_MouseDown);
+            // 
             // btnEliminar
             // 
             this.btnEliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
@@ -182,16 +193,6 @@
             this.pBusuario.TabIndex = 20;
             this.pBusuario.TabStop = false;
             // 
-            // pBLogoCall
-            // 
-            this.pBLogoCall.Image = global::MedicalControl.Properties.Resources.MEDICAL_CONTROL__1__removebg;
-            this.pBLogoCall.Location = new System.Drawing.Point(1, 29);
-            this.pBLogoCall.Name = "pBLogoCall";
-            this.pBLogoCall.Size = new System.Drawing.Size(249, 285);
-            this.pBLogoCall.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pBLogoCall.TabIndex = 13;
-            this.pBLogoCall.TabStop = false;
-            // 
             // FrmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -215,9 +216,9 @@
             this.Load += new System.EventHandler(this.FrmLogin_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.FrmLogin_MouseDown);
             this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pBLogoCall)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBcontrasena)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBusuario)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pBLogoCall)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

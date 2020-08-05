@@ -7,8 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Threading;
+using System.Threading.Tasks;
 using System.Runtime.InteropServices;
 using MySql.Data.MySqlClient;
+using System.Windows.Forms;
 
 namespace MedicalControl
 {
@@ -20,10 +23,23 @@ namespace MedicalControl
 
         public FrmLogin()
         {
-            InitializeComponent();
             con = new MySqlConnection("Server=localhost; database=medicalcontrol; user=root; password=1234");
+            Thread trd = new Thread(new ThreadStart(formRun));
+            trd.Start();
+            Thread.Sleep(5000);
+            InitializeComponent();
+            trd.Abort();
+            
 
         }
+
+        private void formRun()
+        {
+            Application.Run(new FrmPantallaCarga());
+        }
+
+
+
         //Para poder arastrar el Formulario
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
@@ -154,6 +170,12 @@ namespace MedicalControl
             FrmRegistro form = new FrmRegistro();
             this.Hide();
             form.Show();
+        }
+
+        private void pBLogoCall_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
     }
 }

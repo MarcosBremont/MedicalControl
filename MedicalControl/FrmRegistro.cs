@@ -78,6 +78,8 @@ namespace MedicalControl
         private void BtnSalir_Click(object sender, EventArgs e)
         {
             ActiveForm.Close();
+            FrmLogin form = new FrmLogin();
+            form.Show();
 
         }
 

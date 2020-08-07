@@ -32,6 +32,7 @@
             this.txtnombre = new System.Windows.Forms.TextBox();
             this.btnminimizar = new System.Windows.Forms.Button();
             this.panelregistro = new System.Windows.Forms.Panel();
+            this.pictureBoxregistro = new System.Windows.Forms.PictureBox();
             this.lblregistro = new System.Windows.Forms.Label();
             this.txtemail = new System.Windows.Forms.TextBox();
             this.txtcontrasena = new System.Windows.Forms.TextBox();
@@ -39,17 +40,16 @@
             this.pBapellido = new System.Windows.Forms.PictureBox();
             this.pBnombre = new System.Windows.Forms.PictureBox();
             this.pBemail = new System.Windows.Forms.PictureBox();
-            this.pictureBoxregistro = new System.Windows.Forms.PictureBox();
             this.pBcontrasena = new System.Windows.Forms.PictureBox();
             this.pBusuario = new System.Windows.Forms.PictureBox();
             this.BtnSalir = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnmin = new System.Windows.Forms.Button();
             this.panelregistro.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxregistro)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBapellido)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBnombre)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBemail)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxregistro)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBcontrasena)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBusuario)).BeginInit();
             this.SuspendLayout();
@@ -104,12 +104,23 @@
             this.panelregistro.TabIndex = 23;
             this.panelregistro.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelregistro_MouseDown);
             // 
+            // pictureBoxregistro
+            // 
+            this.pictureBoxregistro.Image = global::MedicalControl.Properties.Resources.MEDICAL_CONTROL__1__removebg;
+            this.pictureBoxregistro.Location = new System.Drawing.Point(-19, 39);
+            this.pictureBoxregistro.Name = "pictureBoxregistro";
+            this.pictureBoxregistro.Size = new System.Drawing.Size(278, 249);
+            this.pictureBoxregistro.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxregistro.TabIndex = 18;
+            this.pictureBoxregistro.TabStop = false;
+            this.pictureBoxregistro.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBoxregistro_MouseDown);
+            // 
             // lblregistro
             // 
             this.lblregistro.AutoSize = true;
             this.lblregistro.Font = new System.Drawing.Font("Century Gothic", 16F);
             this.lblregistro.ForeColor = System.Drawing.Color.White;
-            this.lblregistro.Location = new System.Drawing.Point(500, 8);
+            this.lblregistro.Location = new System.Drawing.Point(500, 3);
             this.lblregistro.Name = "lblregistro";
             this.lblregistro.Size = new System.Drawing.Size(96, 25);
             this.lblregistro.TabIndex = 0;
@@ -185,17 +196,6 @@
             this.pBemail.TabIndex = 34;
             this.pBemail.TabStop = false;
             // 
-            // pictureBoxregistro
-            // 
-            this.pictureBoxregistro.Image = global::MedicalControl.Properties.Resources.MEDICAL_CONTROL__1__removebg;
-            this.pictureBoxregistro.Location = new System.Drawing.Point(-19, 39);
-            this.pictureBoxregistro.Name = "pictureBoxregistro";
-            this.pictureBoxregistro.Size = new System.Drawing.Size(278, 249);
-            this.pictureBoxregistro.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxregistro.TabIndex = 18;
-            this.pictureBoxregistro.TabStop = false;
-            this.pictureBoxregistro.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBoxregistro_MouseDown);
-            // 
             // pBcontrasena
             // 
             this.pBcontrasena.Image = global::MedicalControl.Properties.Resources.blocked;
@@ -249,7 +249,7 @@
             this.btnmin.Font = new System.Drawing.Font("Bahnschrift", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnmin.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnmin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnmin.Location = new System.Drawing.Point(739, 0);
+            this.btnmin.Location = new System.Drawing.Point(742, 0);
             this.btnmin.Name = "btnmin";
             this.btnmin.Size = new System.Drawing.Size(23, 26);
             this.btnmin.TabIndex = 59;
@@ -285,10 +285,10 @@
             this.Load += new System.EventHandler(this.FrmRegistro_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.FrmRegistro_MouseDown);
             this.panelregistro.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxregistro)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBapellido)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBnombre)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBemail)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxregistro)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBcontrasena)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBusuario)).EndInit();
             this.ResumeLayout(false);

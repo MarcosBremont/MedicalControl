@@ -40,7 +40,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::MedicalControl.Properties.Resources.MEDICAL_CONTROL__1__removebg1;
-            this.pictureBox1.Location = new System.Drawing.Point(152, 57);
+            this.pictureBox1.Location = new System.Drawing.Point(152, 30);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(464, 211);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -49,16 +49,16 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(30)))), ((int)(((byte)(71)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(30)))), ((int)(((byte)(50)))));
             this.panel1.Controls.Add(this.panelslide);
-            this.panel1.Location = new System.Drawing.Point(210, 305);
+            this.panel1.Location = new System.Drawing.Point(254, 264);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(390, 11);
+            this.panel1.Size = new System.Drawing.Size(270, 11);
             this.panel1.TabIndex = 1;
             // 
             // panelslide
             // 
-            this.panelslide.BackColor = System.Drawing.Color.Orange;
+            this.panelslide.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(188)))), ((int)(((byte)(155)))));
             this.panelslide.Location = new System.Drawing.Point(0, 0);
             this.panelslide.Name = "panelslide";
             this.panelslide.Size = new System.Drawing.Size(120, 11);
@@ -74,11 +74,12 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.ClientSize = new System.Drawing.Size(796, 404);
+            this.ClientSize = new System.Drawing.Size(780, 330);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmPantallaCarga";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmPantallaCarga";
             this.Load += new System.EventHandler(this.FrmPantallaCarga_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

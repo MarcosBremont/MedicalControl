@@ -212,6 +212,7 @@
             this.Controls.Add(this.panel3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmLogin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmLogin";
             this.Load += new System.EventHandler(this.FrmLogin_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.FrmLogin_MouseDown);

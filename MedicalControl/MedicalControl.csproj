@@ -161,6 +161,10 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="Resources\Diseño_sin_título__1_-removebg-preview %281%29.png" />
+    <None Include="Resources\Diseño_sin_título__1_-removebg-preview.png" />
+    <None Include="Resources\Charity_Store__1_-removebg-preview.png" />
+    <None Include="Resources\Charity_Store-removebg-preview.png" />
     <None Include="Resources\nombre.png" />
     <None Include="Resources\blocked.png" />
     <None Include="Resources\user.png" />

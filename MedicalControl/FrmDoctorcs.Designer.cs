@@ -62,7 +62,7 @@
             this.BtnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnAgregar.Font = new System.Drawing.Font("Bahnschrift", 10F);
             this.BtnAgregar.ForeColor = System.Drawing.Color.Black;
-            this.BtnAgregar.Location = new System.Drawing.Point(627, 80);
+            this.BtnAgregar.Location = new System.Drawing.Point(169, 379);
             this.BtnAgregar.Name = "BtnAgregar";
             this.BtnAgregar.Size = new System.Drawing.Size(100, 37);
             this.BtnAgregar.TabIndex = 7;
@@ -80,7 +80,7 @@
             this.BtnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnCerrar.Font = new System.Drawing.Font("Bahnschrift", 10F);
             this.BtnCerrar.ForeColor = System.Drawing.Color.Black;
-            this.BtnCerrar.Location = new System.Drawing.Point(650, 363);
+            this.BtnCerrar.Location = new System.Drawing.Point(627, 379);
             this.BtnCerrar.Name = "BtnCerrar";
             this.BtnCerrar.Size = new System.Drawing.Size(100, 37);
             this.BtnCerrar.TabIndex = 8;
@@ -141,7 +141,7 @@
             this.dgvdoctores.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvdoctores.EnableHeadersVisualStyles = false;
             this.dgvdoctores.GridColor = System.Drawing.Color.White;
-            this.dgvdoctores.Location = new System.Drawing.Point(82, 80);
+            this.dgvdoctores.Location = new System.Drawing.Point(58, 80);
             this.dgvdoctores.MultiSelect = false;
             this.dgvdoctores.Name = "dgvdoctores";
             this.dgvdoctores.ReadOnly = true;
@@ -164,7 +164,7 @@
             this.dgvdoctores.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvdoctores.RowTemplate.Height = 30;
             this.dgvdoctores.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvdoctores.Size = new System.Drawing.Size(512, 189);
+            this.dgvdoctores.Size = new System.Drawing.Size(591, 189);
             this.dgvdoctores.TabIndex = 8;
             this.dgvdoctores.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvdoctores_CellClick);
             // 
@@ -218,7 +218,7 @@
             this.BtnActualizarDoctor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnActualizarDoctor.Font = new System.Drawing.Font("Bahnschrift", 10F);
             this.BtnActualizarDoctor.ForeColor = System.Drawing.Color.Black;
-            this.BtnActualizarDoctor.Location = new System.Drawing.Point(627, 131);
+            this.BtnActualizarDoctor.Location = new System.Drawing.Point(320, 379);
             this.BtnActualizarDoctor.Name = "BtnActualizarDoctor";
             this.BtnActualizarDoctor.Size = new System.Drawing.Size(100, 37);
             this.BtnActualizarDoctor.TabIndex = 5;
@@ -256,7 +256,7 @@
             this.BtnEliminarDoctor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnEliminarDoctor.Font = new System.Drawing.Font("Bahnschrift", 10F);
             this.BtnEliminarDoctor.ForeColor = System.Drawing.Color.Black;
-            this.BtnEliminarDoctor.Location = new System.Drawing.Point(627, 181);
+            this.BtnEliminarDoctor.Location = new System.Drawing.Point(465, 379);
             this.BtnEliminarDoctor.Name = "BtnEliminarDoctor";
             this.BtnEliminarDoctor.Size = new System.Drawing.Size(100, 37);
             this.BtnEliminarDoctor.TabIndex = 2;
@@ -276,7 +276,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(107)))), ((int)(((byte)(167)))));
-            this.ClientSize = new System.Drawing.Size(762, 408);
+            this.ClientSize = new System.Drawing.Size(743, 438);
             this.Controls.Add(this.txtcodigodoctor);
             this.Controls.Add(this.dgvdoctores);
             this.Controls.Add(this.Especialidad);

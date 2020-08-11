@@ -128,5 +128,17 @@ namespace MedicalControl
             MessageBox.Show("Seguro Actualizado");
             con.Close();
         }
+
+        private void FrmProveedor_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void pictureBox1_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
     }
 }

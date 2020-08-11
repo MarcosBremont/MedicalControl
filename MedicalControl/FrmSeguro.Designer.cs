@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.BtnCerrar = new System.Windows.Forms.Button();
             this.BtnAgregar = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -58,7 +58,7 @@
             this.BtnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnCerrar.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnCerrar.ForeColor = System.Drawing.Color.Black;
-            this.BtnCerrar.Location = new System.Drawing.Point(666, 346);
+            this.BtnCerrar.Location = new System.Drawing.Point(612, 361);
             this.BtnCerrar.Name = "BtnCerrar";
             this.BtnCerrar.Size = new System.Drawing.Size(87, 35);
             this.BtnCerrar.TabIndex = 22;
@@ -76,7 +76,7 @@
             this.BtnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnAgregar.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnAgregar.ForeColor = System.Drawing.Color.Black;
-            this.BtnAgregar.Location = new System.Drawing.Point(653, 115);
+            this.BtnAgregar.Location = new System.Drawing.Point(134, 361);
             this.BtnAgregar.Name = "BtnAgregar";
             this.BtnAgregar.Size = new System.Drawing.Size(87, 35);
             this.BtnAgregar.TabIndex = 21;
@@ -87,7 +87,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::MedicalControl.Properties.Resources.insurance;
-            this.pictureBox1.Location = new System.Drawing.Point(318, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(301, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(86, 87);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -97,7 +97,7 @@
             // 
             // txtcodigoseguro
             // 
-            this.txtcodigoseguro.Location = new System.Drawing.Point(219, 311);
+            this.txtcodigoseguro.Location = new System.Drawing.Point(202, 311);
             this.txtcodigoseguro.Name = "txtcodigoseguro";
             this.txtcodigoseguro.Size = new System.Drawing.Size(91, 20);
             this.txtcodigoseguro.TabIndex = 29;
@@ -109,7 +109,7 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.Black;
-            this.button3.Location = new System.Drawing.Point(653, 227);
+            this.button3.Location = new System.Drawing.Point(465, 361);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(87, 35);
             this.button3.TabIndex = 28;
@@ -119,7 +119,7 @@
             // 
             // txtnombreseguro
             // 
-            this.txtnombreseguro.Location = new System.Drawing.Point(478, 312);
+            this.txtnombreseguro.Location = new System.Drawing.Point(461, 312);
             this.txtnombreseguro.Name = "txtnombreseguro";
             this.txtnombreseguro.Size = new System.Drawing.Size(91, 20);
             this.txtnombreseguro.TabIndex = 23;
@@ -129,7 +129,7 @@
             this.lblcodigoseguro.AutoSize = true;
             this.lblcodigoseguro.Font = new System.Drawing.Font("Bahnschrift", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblcodigoseguro.ForeColor = System.Drawing.Color.White;
-            this.lblcodigoseguro.Location = new System.Drawing.Point(130, 312);
+            this.lblcodigoseguro.Location = new System.Drawing.Point(113, 312);
             this.lblcodigoseguro.Name = "lblcodigoseguro";
             this.lblcodigoseguro.Size = new System.Drawing.Size(73, 18);
             this.lblcodigoseguro.TabIndex = 27;
@@ -140,7 +140,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Bahnschrift", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(361, 313);
+            this.label1.Location = new System.Drawing.Point(344, 313);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(113, 18);
             this.label1.TabIndex = 25;
@@ -153,7 +153,7 @@
             this.BtnEliminarSeguros.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnEliminarSeguros.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnEliminarSeguros.ForeColor = System.Drawing.Color.Black;
-            this.BtnEliminarSeguros.Location = new System.Drawing.Point(653, 170);
+            this.BtnEliminarSeguros.Location = new System.Drawing.Point(291, 361);
             this.BtnEliminarSeguros.Name = "BtnEliminarSeguros";
             this.BtnEliminarSeguros.Size = new System.Drawing.Size(87, 35);
             this.BtnEliminarSeguros.TabIndex = 24;
@@ -173,53 +173,53 @@
             this.dgvsegurom.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvsegurom.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.dgvsegurom.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(173)))), ((int)(((byte)(168)))));
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvsegurom.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(173)))), ((int)(((byte)(168)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvsegurom.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvsegurom.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvsegurom.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.IDSEGURO,
             this.NombreSeguro});
             this.dgvsegurom.Cursor = System.Windows.Forms.Cursors.Hand;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(173)))), ((int)(((byte)(168)))));
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvsegurom.DefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(173)))), ((int)(((byte)(168)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvsegurom.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvsegurom.EnableHeadersVisualStyles = false;
             this.dgvsegurom.GridColor = System.Drawing.Color.White;
-            this.dgvsegurom.Location = new System.Drawing.Point(95, 105);
+            this.dgvsegurom.Location = new System.Drawing.Point(76, 105);
             this.dgvsegurom.MultiSelect = false;
             this.dgvsegurom.Name = "dgvsegurom";
             this.dgvsegurom.ReadOnly = true;
             this.dgvsegurom.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(173)))), ((int)(((byte)(168)))));
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvsegurom.RowHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(173)))), ((int)(((byte)(168)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvsegurom.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvsegurom.RowHeadersVisible = false;
             this.dgvsegurom.RowHeadersWidth = 10;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Bahnschrift SemiLight", 10F);
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.Black;
-            this.dgvsegurom.RowsDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Bahnschrift SemiLight", 10F);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgvsegurom.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvsegurom.RowTemplate.Height = 30;
             this.dgvsegurom.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvsegurom.Size = new System.Drawing.Size(522, 189);
+            this.dgvsegurom.Size = new System.Drawing.Size(546, 189);
             this.dgvsegurom.TabIndex = 30;
             this.dgvsegurom.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvsegurom_CellClick);
             // 
@@ -244,7 +244,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(107)))), ((int)(((byte)(167)))));
-            this.ClientSize = new System.Drawing.Size(762, 408);
+            this.ClientSize = new System.Drawing.Size(718, 408);
             this.Controls.Add(this.dgvsegurom);
             this.Controls.Add(this.txtcodigoseguro);
             this.Controls.Add(this.button3);

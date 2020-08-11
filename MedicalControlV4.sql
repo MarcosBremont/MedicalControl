@@ -28,7 +28,7 @@ CREATE TABLE `t_alergia` (
   `IDALERGIA` int(11) NOT NULL AUTO_INCREMENT,
   `NOMBREA` varchar(30) DEFAULT NULL,
   PRIMARY KEY (`IDALERGIA`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -37,7 +37,7 @@ CREATE TABLE `t_alergia` (
 
 LOCK TABLES `t_alergia` WRITE;
 /*!40000 ALTER TABLE `t_alergia` DISABLE KEYS */;
-INSERT INTO `t_alergia` VALUES (2,'Agua'),(3,'Azucar'),(5,'Polenn');
+INSERT INTO `t_alergia` VALUES (2,'Agua'),(3,'Azucar'),(6,'sdasdsa'),(7,'sadasdas'),(8,'hjjhj'),(9,'wwwwwwwwww'),(10,'nnnnnn');
 /*!40000 ALTER TABLE `t_alergia` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -64,7 +64,7 @@ CREATE TABLE `t_citamedica` (
   CONSTRAINT `FK2ALERG` FOREIGN KEY (`ID2ALERG`) REFERENCES `t_alergia` (`IDALERGIA`),
   CONSTRAINT `FK2DOCTOR` FOREIGN KEY (`ID2DOCTOR`) REFERENCES `t_doctor` (`IDDOCTOR`),
   CONSTRAINT `FK2SEGURO` FOREIGN KEY (`ID2SEGUR`) REFERENCES `t_segurom` (`IDSEGURO`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -73,6 +73,7 @@ CREATE TABLE `t_citamedica` (
 
 LOCK TABLES `t_citamedica` WRITE;
 /*!40000 ALTER TABLE `t_citamedica` DISABLE KEYS */;
+INSERT INTO `t_citamedica` VALUES (8,'4:24:00 p. m.','11/8/2020','Aggggggg',1,2,1,'fdsfsd'),(11,'4:24:00 p. m.','11/8/2020','dfsdfsdfsd',5,3,16,'aaaaaaaaaaa');
 /*!40000 ALTER TABLE `t_citamedica` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -88,7 +89,7 @@ CREATE TABLE `t_doctor` (
   `NOMBREDOCTOR` varchar(30) DEFAULT NULL,
   `ESPECIALIDAD` varchar(30) DEFAULT NULL,
   PRIMARY KEY (`IDDOCTOR`)
-) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -97,7 +98,7 @@ CREATE TABLE `t_doctor` (
 
 LOCK TABLES `t_doctor` WRITE;
 /*!40000 ALTER TABLE `t_doctor` DISABLE KEYS */;
-INSERT INTO `t_doctor` VALUES (1,'Dr. Marcos','Pediatría'),(2,'Dra. Angie','of'),(3,'Carlos','Carlos'),(4,'Josefina','Josefina'),(5,'Emelyt','Emelyt'),(6,'Lola','Lola'),(8,'Polen','Polen'),(9,'Wilkania','Wilkania'),(10,'sdsd','sdsd'),(11,'cccccaaa','cccccaaa'),(12,'fdsfsdfsd','fdsfsdfsd'),(13,'fgffff','fgffff'),(14,'fsdfds','fsdfds'),(15,'dsadsa','dsadsa'),(16,'david','david'),(17,'Yeannn','saasasa'),(18,'Dr@','');
+INSERT INTO `t_doctor` VALUES (1,'Dr. Marcos','Pediatría'),(2,'Dra. Angie','of'),(3,'Carlos','Carlos'),(4,'Josefina','aaaaa'),(5,'Emelyt','Emelyt'),(6,'Lola','Lola'),(8,'Polen','Polen'),(9,'Wilkania','Wilkania'),(10,'sdsd','sdsd'),(11,'cccccaaa','cccccaaa'),(12,'fdsfsdfsd','fdsfsdfsd'),(13,'fgffff','fgffff'),(14,'fsdfds','fsdfds'),(15,'dsadsa','dsadsa'),(16,'david','david'),(17,'Yeannna','saasasa'),(20,'sadasd','sadadsa'),(21,'dsada','sdadsa'),(22,'qqq','qq');
 /*!40000 ALTER TABLE `t_doctor` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -116,7 +117,7 @@ CREATE TABLE `t_inventario` (
   `Descripcion` varchar(100) DEFAULT NULL,
   `Fecha` varchar(60) DEFAULT NULL,
   PRIMARY KEY (`idt_inventario`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -125,7 +126,7 @@ CREATE TABLE `t_inventario` (
 
 LOCK TABLES `t_inventario` WRITE;
 /*!40000 ALTER TABLE `t_inventario` DISABLE KEYS */;
-INSERT INTO `t_inventario` VALUES (1,'Acetaminofen',16,'F San Miguel','Sirve para x cosa',NULL),(2,'Diclofenaco Sodico',28,'F El Pueblo','Sirve para esto y lo otro',NULL),(4,'Advil',59,'3','aaaaaaaaaaaaaa','29/7/2020');
+INSERT INTO `t_inventario` VALUES (4,'Advil',59,'3','aaaaaaaaaaaaaa','29/7/2020'),(6,'Dicofenac',100,'1','Sirve para esto','31/7/2020');
 /*!40000 ALTER TABLE `t_inventario` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -154,7 +155,7 @@ CREATE TABLE `t_paciente` (
   KEY `FKDOCTOR` (`IDTDOCTOR`),
   CONSTRAINT `FKDOCTOR` FOREIGN KEY (`IDTDOCTOR`) REFERENCES `t_doctor` (`IDDOCTOR`),
   CONSTRAINT `FKSEGURO` FOREIGN KEY (`IDTSEGURO`) REFERENCES `t_segurom` (`IDSEGURO`)
-) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -181,7 +182,7 @@ CREATE TABLE `t_proveedor` (
   `TelefonoProveedor` varchar(60) DEFAULT NULL,
   `Correo` varchar(60) DEFAULT NULL,
   PRIMARY KEY (`idt_proveedor`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -190,7 +191,7 @@ CREATE TABLE `t_proveedor` (
 
 LOCK TABLES `t_proveedor` WRITE;
 /*!40000 ALTER TABLE `t_proveedor` DISABLE KEYS */;
-INSERT INTO `t_proveedor` VALUES (1,'No se x','Santiago de los caballeros','809-099-9965','Nose@gmail.com'),(3,'aaaaaa','aaaaaaaaaaa','111-111-1111','dsdsadsadasda');
+INSERT INTO `t_proveedor` VALUES (1,'No se x','Santiago de los caballeros','809-099-9965','Nose@gmail.com'),(3,'aaaaaa','aaaaaaaaaaa','111-111-1111','dsdsadsadasda'),(4,'aaaaaaaa','Santiago de los caballeros','555-555-5555','Nose@gmail.com');
 /*!40000 ALTER TABLE `t_proveedor` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -205,7 +206,7 @@ CREATE TABLE `t_segurom` (
   `IDSEGURO` int(11) NOT NULL AUTO_INCREMENT,
   `NOMBRESEGURO` varchar(40) DEFAULT NULL,
   PRIMARY KEY (`IDSEGURO`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -214,7 +215,7 @@ CREATE TABLE `t_segurom` (
 
 LOCK TABLES `t_segurom` WRITE;
 /*!40000 ALTER TABLE `t_segurom` DISABLE KEYS */;
-INSERT INTO `t_segurom` VALUES (1,'MEDICARE'),(4,'Papee');
+INSERT INTO `t_segurom` VALUES (1,'MEDICARE'),(5,'ghgfhfghfd');
 /*!40000 ALTER TABLE `t_segurom` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -228,13 +229,13 @@ DROP TABLE IF EXISTS `usuario`;
 CREATE TABLE `usuario` (
   `ID` int(11) NOT NULL AUTO_INCREMENT,
   `LoginName` varchar(100) NOT NULL,
-  `Contrasena` varchar(100) NOT NULL,
+  `Password` varchar(100) NOT NULL,
   `FirstName` varchar(100) NOT NULL,
   `LastName` varchar(100) NOT NULL,
   `Email` varchar(150) NOT NULL,
   PRIMARY KEY (`ID`),
   UNIQUE KEY `LoginName` (`LoginName`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -243,7 +244,7 @@ CREATE TABLE `usuario` (
 
 LOCK TABLES `usuario` WRITE;
 /*!40000 ALTER TABLE `usuario` DISABLE KEYS */;
-INSERT INTO `usuario` VALUES (1,'Admin','Admin','Marcos','Bremont','Marcosbremont00@gmail.com');
+INSERT INTO `usuario` VALUES (1,'Admin','Admin','Marcos','Bremont','Marcosbremont00@gmail.com'),(2,'asd','asd','asd','asd','asd');
 /*!40000 ALTER TABLE `usuario` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -256,4 +257,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-08-04 18:00:06
+-- Dump completed on 2020-08-11 16:42:06

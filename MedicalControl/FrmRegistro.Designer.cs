@@ -106,10 +106,10 @@
             // 
             // pictureBoxregistro
             // 
-            this.pictureBoxregistro.Image = global::MedicalControl.Properties.Resources.MEDICAL_CONTROL__1__removebg;
-            this.pictureBoxregistro.Location = new System.Drawing.Point(-19, 39);
+            this.pictureBoxregistro.Image = global::MedicalControl.Properties.Resources.Diseño_sin_título__1__removebg_preview__1_;
+            this.pictureBoxregistro.Location = new System.Drawing.Point(-44, 27);
             this.pictureBoxregistro.Name = "pictureBoxregistro";
-            this.pictureBoxregistro.Size = new System.Drawing.Size(278, 249);
+            this.pictureBoxregistro.Size = new System.Drawing.Size(329, 307);
             this.pictureBoxregistro.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxregistro.TabIndex = 18;
             this.pictureBoxregistro.TabStop = false;
@@ -282,6 +282,7 @@
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmRegistro";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "FrmRegistro";
             this.Load += new System.EventHandler(this.FrmRegistro_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.FrmRegistro_MouseDown);

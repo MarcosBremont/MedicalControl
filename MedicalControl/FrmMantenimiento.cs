@@ -23,7 +23,7 @@ namespace MedicalControl
         private void FrmAjustes_Load(object sender, EventArgs e)
         {
 
-            RefreshDoctor();
+        
             RefreshAlergia();
             RefreshProveedor();
             RefreshSeguro();
@@ -32,24 +32,7 @@ namespace MedicalControl
 
 
 
-        private void BtnEliminar_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                con.Open();
-                string query = "DELETE FROM T_Doctor Where IDDOCTOR = @IDDOCTOR";
-                MySqlCommand comando = new MySqlCommand(query, con);
-                comando.Parameters.AddWithValue("@IDDOCTOR", txtcodigodoctor.Text);
-                comando.ExecuteNonQuery();
-                RefreshDoctor();
-                MessageBox.Show("Doctor Eliminado");
-                con.Close();
-            }
-            catch (MySql.Data.MySqlClient.MySqlException ER)
-            {
-                MessageBox.Show("Error, primero elimine o modifique las citas y pacientes que hay registrados con este doctor/@");
-            }
-        }
+       
 
         private void BtnEliminarAlergia_Click(object sender, EventArgs e)
         {
@@ -119,32 +102,9 @@ namespace MedicalControl
 
         }
 
-        private void BtnActualizarDoctor_Click(object sender, EventArgs e)
-        {
+      
 
-            con.Open();
-            string query = "UPDATE T_DOCTOR SET NOMBREDOCTOR = @NOMBREDOCTOR, ESPECIALIDAD = @ESPECIALIDAD where IDDOCTOR=@IDDOCTOR";
-            MySqlCommand comando = new MySqlCommand(query, con);
-            comando.Parameters.AddWithValue("@IDDOCTOR", txtcodigodoctor.Text);
-            comando.Parameters.AddWithValue("@NombreDoctor", txtnombredoctor.Text);
-            comando.Parameters.AddWithValue("@Especialidad", txtexpecialidaddoctor.Text);
-            comando.ExecuteNonQuery();
-            RefreshDoctor();
-            MessageBox.Show("Doctor Actualizado");
-            con.Close();
-        }
-
-        public void RefreshDoctor()
-        {
-
-            //  MySqlCommand comando = new MySqlCommand("Select * from T_Paciente", con);
-            MySqlDataAdapter adaptador = new MySqlDataAdapter("Select * from t_doctor", con);
-            // adaptador.SelectCommand = comando;
-            DataTable tabla = new DataTable();
-            adaptador.Fill(tabla);
-            dgvdoctores.DataSource = tabla;
-
-        }
+        
         public void RefreshAlergia()
         {
 
@@ -207,12 +167,7 @@ namespace MedicalControl
             txtcorreo.Text = dgvproveedor.CurrentRow.Cells[4].Value.ToString();
         }
 
-        private void dgvdoctores_Click(object sender, EventArgs e)
-        {
-            txtcodigodoctor.Text = dgvdoctores.CurrentRow.Cells[0].Value.ToString();
-            txtnombredoctor.Text = dgvdoctores.CurrentRow.Cells[1].Value.ToString();
-            txtexpecialidaddoctor.Text = dgvdoctores.CurrentRow.Cells[2].Value.ToString();
-        }
+       
 
         private void button1_Click(object sender, EventArgs e)
         {

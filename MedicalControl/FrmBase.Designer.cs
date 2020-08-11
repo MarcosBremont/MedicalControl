@@ -66,7 +66,7 @@
             // 
             // panelMenu
             // 
-            this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(107)))), ((int)(((byte)(167)))));
             this.panelMenu.Controls.Add(this.iconButton1);
             this.panelMenu.Controls.Add(this.ibpaginaprincipal);
             this.panelMenu.Controls.Add(this.ibsalir);
@@ -227,7 +227,7 @@
             // btnHome
             // 
             this.btnHome.Image = global::MedicalControl.Properties.Resources.Green_and_White_Music_Logo__1__removebg_preview;
-            this.btnHome.Location = new System.Drawing.Point(4, -26);
+            this.btnHome.Location = new System.Drawing.Point(4, -50);
             this.btnHome.Name = "btnHome";
             this.btnHome.Size = new System.Drawing.Size(214, 218);
             this.btnHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -237,7 +237,7 @@
             // 
             // panelTitleBar
             // 
-            this.panelTitleBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
+            this.panelTitleBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(107)))), ((int)(((byte)(167)))));
             this.panelTitleBar.Controls.Add(this.iconButton3);
             this.panelTitleBar.Controls.Add(this.ibminimize);
             this.panelTitleBar.Controls.Add(this.ibmaximize);
@@ -253,7 +253,7 @@
             // iconButton3
             // 
             this.iconButton3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.iconButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
+            this.iconButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(107)))), ((int)(((byte)(167)))));
             this.iconButton3.FlatAppearance.BorderSize = 0;
             this.iconButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iconButton3.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
@@ -271,7 +271,7 @@
             // ibminimize
             // 
             this.ibminimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.ibminimize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
+            this.ibminimize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(107)))), ((int)(((byte)(167)))));
             this.ibminimize.FlatAppearance.BorderSize = 0;
             this.ibminimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ibminimize.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
@@ -289,7 +289,7 @@
             // ibmaximize
             // 
             this.ibmaximize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.ibmaximize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
+            this.ibmaximize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(107)))), ((int)(((byte)(167)))));
             this.ibmaximize.FlatAppearance.BorderSize = 0;
             this.ibmaximize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ibmaximize.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
@@ -317,7 +317,7 @@
             // 
             // iconCurrentChildForm
             // 
-            this.iconCurrentChildForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
+            this.iconCurrentChildForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(107)))), ((int)(((byte)(167)))));
             this.iconCurrentChildForm.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.iconCurrentChildForm.IconChar = FontAwesome.Sharp.IconChar.Home;
             this.iconCurrentChildForm.IconColor = System.Drawing.SystemColors.ControlLightLight;
@@ -329,7 +329,7 @@
             // 
             // panelShadow
             // 
-            this.panelShadow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(24)))), ((int)(((byte)(58)))));
+            this.panelShadow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(107)))), ((int)(((byte)(169)))));
             this.panelShadow.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelShadow.Location = new System.Drawing.Point(220, 75);
             this.panelShadow.Name = "panelShadow";
@@ -338,7 +338,7 @@
             // 
             // panelDesktop
             // 
-            this.panelDesktop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.panelDesktop.BackColor = System.Drawing.Color.White;
             this.panelDesktop.Controls.Add(this.menuStrip1);
             this.panelDesktop.Controls.Add(this.pictureBox1);
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -419,6 +419,8 @@
             // pictureBox1
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(107)))), ((int)(((byte)(167)))));
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox1.Image = global::MedicalControl.Properties.Resources.MEDICAL_CONTROL__1__removebg1;
             this.pictureBox1.Location = new System.Drawing.Point(423, 249);
             this.pictureBox1.Name = "pictureBox1";

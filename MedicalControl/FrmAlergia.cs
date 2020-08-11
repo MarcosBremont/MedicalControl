@@ -23,8 +23,21 @@ namespace MedicalControl
 
         private void FrmAlergia_Load(object sender, EventArgs e)
         {
+            RefreshAlergia();
+        }
+
+        public void RefreshAlergia()
+        {
+
+            //  MySqlCommand comando = new MySqlCommand("Select * from T_Paciente", con);
+            MySqlDataAdapter adaptador = new MySqlDataAdapter("Select * from t_alergia", con);
+            // adaptador.SelectCommand = comando;
+            DataTable tabla = new DataTable();
+            adaptador.Fill(tabla);
+            dgvalergia.DataSource = tabla;
 
         }
+
 
         //Drag Form
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
@@ -48,6 +61,7 @@ namespace MedicalControl
             con.Close();
             txtnombrealergia.Text = "";
             Refresh();
+            RefreshAlergia();
         }
 
         private void FrmAlergia_MouseDown(object sender, MouseEventArgs e)
@@ -72,6 +86,12 @@ namespace MedicalControl
                 return;
 
             }
+        }
+
+        private void dgvalergia_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            txtcodigoalergia.Text = dgvalergia.CurrentRow.Cells[0].Value.ToString();
+            txtnombrealergia.Text = dgvalergia.CurrentRow.Cells[1].Value.ToString();
         }
     }
 }

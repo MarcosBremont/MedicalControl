@@ -96,7 +96,7 @@
             // 
             // panelregistro
             // 
-            this.panelregistro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(188)))), ((int)(((byte)(155)))));
+            this.panelregistro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(107)))), ((int)(((byte)(167)))));
             this.panelregistro.Controls.Add(this.pictureBoxregistro);
             this.panelregistro.Location = new System.Drawing.Point(-2, -24);
             this.panelregistro.Name = "panelregistro";
@@ -218,7 +218,7 @@
             // 
             // BtnSalir
             // 
-            this.BtnSalir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
+            this.BtnSalir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(107)))), ((int)(((byte)(167)))));
             this.BtnSalir.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnSalir.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.BtnSalir.Location = new System.Drawing.Point(574, 229);
@@ -231,7 +231,7 @@
             // 
             // btnEliminar
             // 
-            this.btnEliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
+            this.btnEliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(107)))), ((int)(((byte)(167)))));
             this.btnEliminar.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnEliminar.Location = new System.Drawing.Point(408, 229);
@@ -261,7 +261,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(764, 291);
             this.Controls.Add(this.btnmin);
             this.Controls.Add(this.BtnSalir);
@@ -279,6 +279,7 @@
             this.Controls.Add(this.pBusuario);
             this.Controls.Add(this.txtcontrasena);
             this.Controls.Add(this.txtnombreusuario);
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmRegistro";
             this.Text = "FrmRegistro";

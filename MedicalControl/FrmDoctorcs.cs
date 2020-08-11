@@ -67,7 +67,7 @@ namespace MedicalControl
             con.Close();
             txtnombredoctor.Text = "";
             txtexpecialidaddoctor.Text = "";
-            Refresh();
+            RefreshDoctor();
         }
 
         private void pictureBox1_MouseDown(object sender, MouseEventArgs e)
@@ -110,6 +110,7 @@ namespace MedicalControl
                 RefreshDoctor();
                 MessageBox.Show("Doctor Eliminado");
                 con.Close();
+                RefreshDoctor();
             }
             catch (MySql.Data.MySqlClient.MySqlException ER)
             {

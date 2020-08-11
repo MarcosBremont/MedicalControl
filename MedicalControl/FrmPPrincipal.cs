@@ -32,7 +32,7 @@ namespace MedicalControl
             CARGARCOMBOXDOCTOR();
 
 
-            this.TxtCantidad.Text = this.dataGridView1.Rows.Count.ToString("N0");
+            this.TxtCantidad.Text = this.dgvprincipal.Rows.Count.ToString("N0");
 
 
 
@@ -77,7 +77,7 @@ namespace MedicalControl
             // adaptador.SelectCommand = comando;
             DataTable tabla = new DataTable();
             adaptador.Fill(tabla);
-            dataGridView1.DataSource = tabla;
+            dgvprincipal.DataSource = tabla;
         }
 
         private void btninsertar_Click(object sender, EventArgs e)
@@ -102,7 +102,7 @@ namespace MedicalControl
             MessageBox.Show("Paciente Agregado");
             con.Close();
             clear();
-            this.TxtCantidad.Text = this.dataGridView1.Rows.Count.ToString("N0");
+            this.TxtCantidad.Text = this.dgvprincipal.Rows.Count.ToString("N0");
 
 
 
@@ -110,24 +110,7 @@ namespace MedicalControl
 
         }
 
-        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            lblid.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
-            txtnombrep.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
-            txtapellidop.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
-            txtedadp.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
-            mtxtCedula.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
-            txtdireccionp.Text = dataGridView1.CurrentRow.Cells[5].Value.ToString();
-            mtxtTelefono.Text = dataGridView1.CurrentRow.Cells[6].Value.ToString();
-            mtxtTelefono2.Text = dataGridView1.CurrentRow.Cells[7].Value.ToString();
-            cmbSexo.Text = dataGridView1.CurrentRow.Cells[8].Value.ToString();
-            cmbAlergia.SelectedValue = dataGridView1.CurrentRow.Cells[9].Value.ToString();
-            cmbSeguro.SelectedValue = dataGridView1.CurrentRow.Cells[10].Value.ToString();
-            cmbDoctor.SelectedValue = dataGridView1.CurrentRow.Cells[11].Value.ToString();
-
-
-
-        }
+        
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
@@ -140,7 +123,7 @@ namespace MedicalControl
             MessageBox.Show("Paciente Eliminado");
             con.Close();
             clear();
-            this.TxtCantidad.Text = this.dataGridView1.Rows.Count.ToString("N0");
+            this.TxtCantidad.Text = this.dgvprincipal.Rows.Count.ToString("N0");
 
 
 
@@ -214,7 +197,7 @@ namespace MedicalControl
             MySqlDataAdapter adap = new MySqlDataAdapter(cmd);
             adap.Fill(dt);
 
-            dataGridView1.DataSource = dt;
+            dgvprincipal.DataSource = dt;
 
         }
 
@@ -256,7 +239,7 @@ namespace MedicalControl
 
             da.Fill(dt);
 
-            dataGridView1.DataSource = dt;
+            dgvprincipal.DataSource = dt;
 
             con.Close();
         }
@@ -306,7 +289,7 @@ namespace MedicalControl
 
         private void button3_Click(object sender, EventArgs e)
         {
-            exportaraexcel(dataGridView1);
+            exportaraexcel(dgvprincipal);
         }
 
         private void txtapellidop_KeyPress(object sender, KeyPressEventArgs e)
@@ -353,6 +336,22 @@ namespace MedicalControl
                 return;
 
             }
+        }
+
+        private void dgvprincipal_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            lblid.Text = dgvprincipal.CurrentRow.Cells[0].Value.ToString();
+            txtnombrep.Text = dgvprincipal.CurrentRow.Cells[1].Value.ToString();
+            txtapellidop.Text = dgvprincipal.CurrentRow.Cells[2].Value.ToString();
+            txtedadp.Text = dgvprincipal.CurrentRow.Cells[3].Value.ToString();
+            mtxtCedula.Text = dgvprincipal.CurrentRow.Cells[4].Value.ToString();
+            txtdireccionp.Text = dgvprincipal.CurrentRow.Cells[5].Value.ToString();
+            mtxtTelefono.Text = dgvprincipal.CurrentRow.Cells[6].Value.ToString();
+            mtxtTelefono2.Text = dgvprincipal.CurrentRow.Cells[7].Value.ToString();
+            cmbSexo.Text = dgvprincipal.CurrentRow.Cells[8].Value.ToString();
+            cmbAlergia.SelectedValue = dgvprincipal.CurrentRow.Cells[9].Value.ToString();
+            cmbSeguro.SelectedValue = dgvprincipal.CurrentRow.Cells[10].Value.ToString();
+            cmbDoctor.SelectedValue = dgvprincipal.CurrentRow.Cells[11].Value.ToString();
         }
     }
 }

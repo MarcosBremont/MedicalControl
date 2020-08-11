@@ -36,7 +36,7 @@
             this.BtnAgregar = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txtcodigoalergia = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.BtnActualizar = new System.Windows.Forms.Button();
             this.txtnombrealergia = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.lblcodigoalergia = new System.Windows.Forms.Label();
@@ -102,20 +102,21 @@
             this.txtcodigoalergia.Size = new System.Drawing.Size(121, 20);
             this.txtcodigoalergia.TabIndex = 22;
             // 
-            // button1
+            // BtnActualizar
             // 
-            this.button1.BackColor = System.Drawing.Color.White;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.button1.FlatAppearance.BorderSize = 2;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(663, 178);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(97, 35);
-            this.button1.TabIndex = 24;
-            this.button1.Text = "Actualizar";
-            this.button1.UseVisualStyleBackColor = false;
+            this.BtnActualizar.BackColor = System.Drawing.Color.White;
+            this.BtnActualizar.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.BtnActualizar.FlatAppearance.BorderSize = 2;
+            this.BtnActualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnActualizar.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnActualizar.ForeColor = System.Drawing.Color.Black;
+            this.BtnActualizar.Location = new System.Drawing.Point(663, 178);
+            this.BtnActualizar.Name = "BtnActualizar";
+            this.BtnActualizar.Size = new System.Drawing.Size(97, 35);
+            this.BtnActualizar.TabIndex = 24;
+            this.BtnActualizar.Text = "Actualizar";
+            this.BtnActualizar.UseVisualStyleBackColor = false;
+            this.BtnActualizar.Click += new System.EventHandler(this.BtnActualizar_Click);
             // 
             // txtnombrealergia
             // 
@@ -160,6 +161,7 @@
             this.BtnEliminarAlergia.TabIndex = 19;
             this.BtnEliminarAlergia.Text = "Eliminar";
             this.BtnEliminarAlergia.UseVisualStyleBackColor = false;
+            this.BtnEliminarAlergia.Click += new System.EventHandler(this.BtnEliminarAlergia_Click);
             // 
             // dgvalergia
             // 
@@ -247,7 +249,7 @@
             this.ClientSize = new System.Drawing.Size(823, 388);
             this.Controls.Add(this.dgvalergia);
             this.Controls.Add(this.txtcodigoalergia);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.BtnActualizar);
             this.Controls.Add(this.txtnombrealergia);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblcodigoalergia);
@@ -274,7 +276,7 @@
         protected System.Windows.Forms.Button BtnAgregar;
         protected System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox txtcodigoalergia;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button BtnActualizar;
         private System.Windows.Forms.TextBox txtnombrealergia;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblcodigoalergia;

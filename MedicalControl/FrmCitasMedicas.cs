@@ -31,7 +31,7 @@ namespace MedicalControl
 
             //Nombramos una variable string con la fecha de hoy
             string fechacompar = DateTime.Today.ToString("dd/MM/yyyy");
-            dataGridView1.AllowUserToAddRows = false;
+            dgvcitasmedicas.AllowUserToAddRows = false;
            // int rowIndex = -1;
             //Hacemos un foreach para que recorra la tabla, en caso de que encuentre una fecha que sea igual
             // de la de hoy este mostrara la celda en rojo
@@ -94,7 +94,7 @@ namespace MedicalControl
             // adaptador.SelectCommand = comando;
             DataTable tabla = new DataTable();
             adaptador.Fill(tabla);
-            dataGridView1.DataSource = tabla;
+            dgvcitasmedicas.DataSource = tabla;
         }
 
         private void btninsertar_Click(object sender, EventArgs e)
@@ -130,17 +130,7 @@ namespace MedicalControl
             clear();
         }
 
-        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            lblid.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
-            txtnombrecompleto.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
-            dthora.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
-            dtfecha.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
-            txtcomentario.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
-            cmbnseguro.SelectedValue = dataGridView1.CurrentRow.Cells[5].Value.ToString();
-            cmbnalergia.SelectedValue = dataGridView1.CurrentRow.Cells[6].Value.ToString();
-            cmbndoctor.SelectedValue = dataGridView1.CurrentRow.Cells[7].Value.ToString();
-        }
+       
 
         private void btnactualizar_Click(object sender, EventArgs e)
         {
@@ -217,7 +207,7 @@ namespace MedicalControl
 
         private void button3_Click(object sender, EventArgs e)
         {
-            exportaraexcel(dataGridView1);
+            exportaraexcel(dgvcitasmedicas);
 
         }
 
@@ -230,6 +220,18 @@ namespace MedicalControl
 
                 return;
             }
+        }
+
+        private void dgvcitasmedicas_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            lblid.Text = dgvcitasmedicas.CurrentRow.Cells[0].Value.ToString();
+            dthora.Text = dgvcitasmedicas.CurrentRow.Cells[1].Value.ToString();
+            dtfecha.Text = dgvcitasmedicas.CurrentRow.Cells[2].Value.ToString();
+            txtcomentario.Text = dgvcitasmedicas.CurrentRow.Cells[3].Value.ToString();
+            cmbnseguro.SelectedValue = dgvcitasmedicas.CurrentRow.Cells[4].Value.ToString();
+            cmbnalergia.SelectedValue = dgvcitasmedicas.CurrentRow.Cells[5].Value.ToString();
+            cmbndoctor.SelectedValue = dgvcitasmedicas.CurrentRow.Cells[6].Value.ToString();
+            txtnombrecompleto.Text = dgvcitasmedicas.CurrentRow.Cells[7].Value.ToString();
         }
     }
 }

@@ -30,6 +30,8 @@
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.lbltelefono = new System.Windows.Forms.Label();
             this.lbldireccion = new System.Windows.Forms.Label();
@@ -42,15 +44,6 @@
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btninsertar = new System.Windows.Forms.Button();
             this.txtcomentario = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.IDCitaMedica = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NombreCompleto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Horacm = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Fechacm = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Comentario = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ID2SEGUR = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.id2alerg = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.id2doctor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dthora = new System.Windows.Forms.DateTimePicker();
             this.dtfecha = new System.Windows.Forms.DateTimePicker();
             this.cmbnseguro = new System.Windows.Forms.ComboBox();
@@ -60,8 +53,17 @@
             this.txtnombrecompleto = new System.Windows.Forms.TextBox();
             this.button3 = new System.Windows.Forms.Button();
             this.gbprincipal = new System.Windows.Forms.GroupBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.dgvcitasmedicas = new System.Windows.Forms.DataGridView();
+            this.IDCITAMEDICA = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.HORACM = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FECHACM = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.COMENTARIO = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ID2SEGUR = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ID2ALERG = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ID2DOCTOR = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NombreCompleto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gbprincipal.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvcitasmedicas)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -153,9 +155,9 @@
             // 
             // btnactualizar
             // 
-            this.btnactualizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
+            this.btnactualizar.BackColor = System.Drawing.Color.White;
             this.btnactualizar.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnactualizar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnactualizar.ForeColor = System.Drawing.Color.Black;
             this.btnactualizar.Location = new System.Drawing.Point(517, 36);
             this.btnactualizar.Name = "btnactualizar";
             this.btnactualizar.Size = new System.Drawing.Size(103, 36);
@@ -166,9 +168,9 @@
             // 
             // btnEliminar
             // 
-            this.btnEliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
+            this.btnEliminar.BackColor = System.Drawing.Color.White;
             this.btnEliminar.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnEliminar.ForeColor = System.Drawing.Color.Black;
             this.btnEliminar.Location = new System.Drawing.Point(401, 36);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(103, 36);
@@ -179,9 +181,9 @@
             // 
             // btninsertar
             // 
-            this.btninsertar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
+            this.btninsertar.BackColor = System.Drawing.Color.White;
             this.btninsertar.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btninsertar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btninsertar.ForeColor = System.Drawing.Color.Black;
             this.btninsertar.Location = new System.Drawing.Point(285, 36);
             this.btninsertar.Name = "btninsertar";
             this.btninsertar.Size = new System.Drawing.Size(103, 36);
@@ -200,114 +202,6 @@
             this.txtcomentario.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txtcomentario.Size = new System.Drawing.Size(553, 86);
             this.txtcomentario.TabIndex = 26;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.AllowUserToOrderColumns = true;
-            this.dataGridView1.AllowUserToResizeColumns = false;
-            this.dataGridView1.AllowUserToResizeRows = false;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.IDCitaMedica,
-            this.NombreCompleto,
-            this.Horacm,
-            this.Fechacm,
-            this.Comentario,
-            this.ID2SEGUR,
-            this.id2alerg,
-            this.id2doctor});
-            this.dataGridView1.EnableHeadersVisualStyles = false;
-            this.dataGridView1.GridColor = System.Drawing.Color.SteelBlue;
-            this.dataGridView1.Location = new System.Drawing.Point(22, 12);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dataGridView1.RowHeadersVisible = false;
-            this.dataGridView1.RowHeadersWidth = 10;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Bahnschrift SemiLight", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.SteelBlue;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
-            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(1092, 267);
-            this.dataGridView1.TabIndex = 23;
-            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
-            // 
-            // IDCitaMedica
-            // 
-            this.IDCitaMedica.DataPropertyName = "IDCitaMedica";
-            this.IDCitaMedica.HeaderText = "N. Cita Medica";
-            this.IDCitaMedica.Name = "IDCitaMedica";
-            this.IDCitaMedica.ReadOnly = true;
-            // 
-            // NombreCompleto
-            // 
-            this.NombreCompleto.DataPropertyName = "NombreCompleto";
-            this.NombreCompleto.FillWeight = 200F;
-            this.NombreCompleto.HeaderText = "Nombre Completo";
-            this.NombreCompleto.Name = "NombreCompleto";
-            this.NombreCompleto.ReadOnly = true;
-            this.NombreCompleto.Width = 150;
-            // 
-            // Horacm
-            // 
-            this.Horacm.DataPropertyName = "Horacm";
-            this.Horacm.HeaderText = "Hora Cita";
-            this.Horacm.Name = "Horacm";
-            this.Horacm.ReadOnly = true;
-            this.Horacm.Width = 120;
-            // 
-            // Fechacm
-            // 
-            this.Fechacm.DataPropertyName = "Fechacm";
-            this.Fechacm.HeaderText = "Fecha Cita";
-            this.Fechacm.Name = "Fechacm";
-            this.Fechacm.ReadOnly = true;
-            this.Fechacm.Width = 120;
-            // 
-            // Comentario
-            // 
-            this.Comentario.DataPropertyName = "Comentario";
-            this.Comentario.HeaderText = "Comentario";
-            this.Comentario.Name = "Comentario";
-            this.Comentario.ReadOnly = true;
-            this.Comentario.Width = 300;
-            // 
-            // ID2SEGUR
-            // 
-            this.ID2SEGUR.DataPropertyName = "ID2SEGUR";
-            this.ID2SEGUR.HeaderText = "N. Seguro Medico";
-            this.ID2SEGUR.Name = "ID2SEGUR";
-            this.ID2SEGUR.ReadOnly = true;
-            // 
-            // id2alerg
-            // 
-            this.id2alerg.DataPropertyName = "id2alerg";
-            this.id2alerg.HeaderText = "N. Alergia";
-            this.id2alerg.Name = "id2alerg";
-            this.id2alerg.ReadOnly = true;
-            // 
-            // id2doctor
-            // 
-            this.id2doctor.DataPropertyName = "id2doctor";
-            this.id2doctor.HeaderText = "N. Doctor";
-            this.id2doctor.Name = "id2doctor";
-            this.id2doctor.ReadOnly = true;
             // 
             // dthora
             // 
@@ -371,13 +265,13 @@
             // 
             // button3
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
+            this.button3.BackColor = System.Drawing.Color.White;
             this.button3.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkSlateBlue;
             this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SlateBlue;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button3.ForeColor = System.Drawing.Color.Black;
             this.button3.Location = new System.Drawing.Point(626, 36);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(153, 36);
@@ -389,7 +283,7 @@
             // gbprincipal
             // 
             this.gbprincipal.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.gbprincipal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(62)))));
+            this.gbprincipal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(107)))), ((int)(((byte)(167)))));
             this.gbprincipal.Controls.Add(this.txtcomentario);
             this.gbprincipal.Controls.Add(this.button3);
             this.gbprincipal.Controls.Add(this.btnactualizar);
@@ -418,22 +312,148 @@
             this.gbprincipal.Size = new System.Drawing.Size(947, 280);
             this.gbprincipal.TabIndex = 76;
             this.gbprincipal.TabStop = false;
-            this.gbprincipal.Text = "Inventario";
+            this.gbprincipal.Text = "Citas Medicas";
+            // 
+            // dgvcitasmedicas
+            // 
+            this.dgvcitasmedicas.AllowUserToAddRows = false;
+            this.dgvcitasmedicas.AllowUserToDeleteRows = false;
+            this.dgvcitasmedicas.AllowUserToOrderColumns = true;
+            this.dgvcitasmedicas.AllowUserToResizeColumns = false;
+            this.dgvcitasmedicas.AllowUserToResizeRows = false;
+            this.dgvcitasmedicas.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvcitasmedicas.BackgroundColor = System.Drawing.Color.White;
+            this.dgvcitasmedicas.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.dgvcitasmedicas.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.dgvcitasmedicas.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(173)))), ((int)(((byte)(168)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvcitasmedicas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvcitasmedicas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvcitasmedicas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.IDCITAMEDICA,
+            this.HORACM,
+            this.FECHACM,
+            this.COMENTARIO,
+            this.ID2SEGUR,
+            this.ID2ALERG,
+            this.ID2DOCTOR,
+            this.NombreCompleto});
+            this.dgvcitasmedicas.Cursor = System.Windows.Forms.Cursors.Hand;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(173)))), ((int)(((byte)(168)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvcitasmedicas.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvcitasmedicas.EnableHeadersVisualStyles = false;
+            this.dgvcitasmedicas.GridColor = System.Drawing.Color.White;
+            this.dgvcitasmedicas.Location = new System.Drawing.Point(65, 12);
+            this.dgvcitasmedicas.MultiSelect = false;
+            this.dgvcitasmedicas.Name = "dgvcitasmedicas";
+            this.dgvcitasmedicas.ReadOnly = true;
+            this.dgvcitasmedicas.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(173)))), ((int)(((byte)(168)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvcitasmedicas.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvcitasmedicas.RowHeadersVisible = false;
+            this.dgvcitasmedicas.RowHeadersWidth = 10;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Bahnschrift SemiLight", 10F);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgvcitasmedicas.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.dgvcitasmedicas.RowTemplate.Height = 30;
+            this.dgvcitasmedicas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvcitasmedicas.Size = new System.Drawing.Size(1080, 330);
+            this.dgvcitasmedicas.TabIndex = 77;
+            this.dgvcitasmedicas.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvcitasmedicas_CellClick);
+            // 
+            // IDCITAMEDICA
+            // 
+            this.IDCITAMEDICA.DataPropertyName = "IDCITAMEDICA";
+            this.IDCITAMEDICA.FillWeight = 76.14214F;
+            this.IDCITAMEDICA.HeaderText = "Codigo";
+            this.IDCITAMEDICA.Name = "IDCITAMEDICA";
+            this.IDCITAMEDICA.ReadOnly = true;
+            // 
+            // HORACM
+            // 
+            this.HORACM.DataPropertyName = "HORACM";
+            this.HORACM.FillWeight = 111.9289F;
+            this.HORACM.HeaderText = "Hora Cita";
+            this.HORACM.Name = "HORACM";
+            this.HORACM.ReadOnly = true;
+            // 
+            // FECHACM
+            // 
+            this.FECHACM.DataPropertyName = "FECHACM";
+            this.FECHACM.HeaderText = "Fecha Cita";
+            this.FECHACM.Name = "FECHACM";
+            this.FECHACM.ReadOnly = true;
+            // 
+            // COMENTARIO
+            // 
+            this.COMENTARIO.DataPropertyName = "COMENTARIO";
+            this.COMENTARIO.HeaderText = "Comentario";
+            this.COMENTARIO.Name = "COMENTARIO";
+            this.COMENTARIO.ReadOnly = true;
+            // 
+            // ID2SEGUR
+            // 
+            this.ID2SEGUR.DataPropertyName = "ID2SEGUR";
+            this.ID2SEGUR.HeaderText = "Codigo Seguro";
+            this.ID2SEGUR.Name = "ID2SEGUR";
+            this.ID2SEGUR.ReadOnly = true;
+            // 
+            // ID2ALERG
+            // 
+            this.ID2ALERG.DataPropertyName = "ID2ALERG";
+            this.ID2ALERG.HeaderText = "Codigo Alergia";
+            this.ID2ALERG.Name = "ID2ALERG";
+            this.ID2ALERG.ReadOnly = true;
+            // 
+            // ID2DOCTOR
+            // 
+            this.ID2DOCTOR.DataPropertyName = "ID2DOCTOR";
+            this.ID2DOCTOR.HeaderText = "Codigo Doctor";
+            this.ID2DOCTOR.Name = "ID2DOCTOR";
+            this.ID2DOCTOR.ReadOnly = true;
+            // 
+            // NombreCompleto
+            // 
+            this.NombreCompleto.DataPropertyName = "NombreCompleto";
+            this.NombreCompleto.HeaderText = "Nombre Completo";
+            this.NombreCompleto.Name = "NombreCompleto";
+            this.NombreCompleto.ReadOnly = true;
             // 
             // FrmCitasMedicas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1258, 539);
+            this.Controls.Add(this.dgvcitasmedicas);
             this.Controls.Add(this.gbprincipal);
-            this.Controls.Add(this.dataGridView1);
             this.Name = "FrmCitasMedicas";
             this.Text = "Citas Medicas";
             this.Load += new System.EventHandler(this.FrmCitasMedicas_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.gbprincipal.ResumeLayout(false);
             this.gbprincipal.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvcitasmedicas)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -452,7 +472,6 @@
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button btninsertar;
         private System.Windows.Forms.TextBox txtcomentario;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DateTimePicker dthora;
         private System.Windows.Forms.DateTimePicker dtfecha;
         private System.Windows.Forms.ComboBox cmbnseguro;
@@ -461,14 +480,15 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtnombrecompleto;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn IDCitaMedica;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NombreCompleto;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Horacm;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Fechacm;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Comentario;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ID2SEGUR;
-        private System.Windows.Forms.DataGridViewTextBoxColumn id2alerg;
-        private System.Windows.Forms.DataGridViewTextBoxColumn id2doctor;
         private System.Windows.Forms.GroupBox gbprincipal;
+        private System.Windows.Forms.DataGridView dgvcitasmedicas;
+        private System.Windows.Forms.DataGridViewTextBoxColumn IDCITAMEDICA;
+        private System.Windows.Forms.DataGridViewTextBoxColumn HORACM;
+        private System.Windows.Forms.DataGridViewTextBoxColumn FECHACM;
+        private System.Windows.Forms.DataGridViewTextBoxColumn COMENTARIO;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ID2SEGUR;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ID2ALERG;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ID2DOCTOR;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NombreCompleto;
     }
 }

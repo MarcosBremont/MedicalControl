@@ -54,13 +54,12 @@
             // 
             this.lblaadjunto.AutoSize = true;
             this.lblaadjunto.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblaadjunto.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblaadjunto.ForeColor = System.Drawing.Color.Black;
             this.lblaadjunto.Location = new System.Drawing.Point(541, 221);
             this.lblaadjunto.Name = "lblaadjunto";
             this.lblaadjunto.Size = new System.Drawing.Size(82, 19);
             this.lblaadjunto.TabIndex = 81;
             this.lblaadjunto.Text = "A. Adjunto";
-            
             // 
             // txtadjunto
             // 
@@ -68,11 +67,10 @@
             this.txtadjunto.Name = "txtadjunto";
             this.txtadjunto.Size = new System.Drawing.Size(186, 20);
             this.txtadjunto.TabIndex = 80;
-            
             // 
             // btnadjuntar
             // 
-            this.btnadjuntar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
+            this.btnadjuntar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(107)))), ((int)(((byte)(167)))));
             this.btnadjuntar.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnadjuntar.Font = new System.Drawing.Font("Bahnschrift", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnadjuntar.ForeColor = System.Drawing.Color.White;
@@ -90,35 +88,32 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label7.Location = new System.Drawing.Point(110, 136);
+            this.label7.ForeColor = System.Drawing.Color.Black;
+            this.label7.Location = new System.Drawing.Point(110, 155);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(93, 19);
             this.label7.TabIndex = 76;
             this.label7.Text = "Contraseña";
-            
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label6.ForeColor = System.Drawing.Color.Black;
             this.label6.Location = new System.Drawing.Point(110, 97);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(83, 19);
             this.label6.TabIndex = 75;
             this.label6.Text = "Remitente";
-            
             // 
             // txtpassword
             // 
-            this.txtpassword.Location = new System.Drawing.Point(212, 138);
+            this.txtpassword.Location = new System.Drawing.Point(212, 157);
             this.txtpassword.Name = "txtpassword";
             this.txtpassword.PasswordChar = '*';
             this.txtpassword.Size = new System.Drawing.Size(132, 20);
             this.txtpassword.TabIndex = 74;
             this.txtpassword.UseSystemPasswordChar = true;
-            
             // 
             // txtremitente
             // 
@@ -126,13 +121,12 @@
             this.txtremitente.Name = "txtremitente";
             this.txtremitente.Size = new System.Drawing.Size(132, 20);
             this.txtremitente.TabIndex = 73;
-            
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label4.ForeColor = System.Drawing.Color.Black;
             this.label4.Location = new System.Drawing.Point(179, 254);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(73, 19);
@@ -163,7 +157,7 @@
             // 
             // txtpara
             // 
-            this.txtpara.Location = new System.Drawing.Point(665, 135);
+            this.txtpara.Location = new System.Drawing.Point(665, 120);
             this.txtpara.Name = "txtpara";
             this.txtpara.Size = new System.Drawing.Size(186, 20);
             this.txtpara.TabIndex = 66;
@@ -172,7 +166,7 @@
             // 
             this.lblasunto.AutoSize = true;
             this.lblasunto.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblasunto.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblasunto.ForeColor = System.Drawing.Color.Black;
             this.lblasunto.Location = new System.Drawing.Point(596, 169);
             this.lblasunto.Name = "lblasunto";
             this.lblasunto.Size = new System.Drawing.Size(63, 19);
@@ -183,8 +177,8 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label2.Location = new System.Drawing.Point(110, 214);
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(110, 213);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(33, 19);
             this.label2.TabIndex = 64;
@@ -194,8 +188,8 @@
             // 
             this.lblpara.AutoSize = true;
             this.lblpara.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblpara.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblpara.Location = new System.Drawing.Point(612, 132);
+            this.lblpara.ForeColor = System.Drawing.Color.Black;
+            this.lblpara.Location = new System.Drawing.Point(612, 117);
             this.lblpara.Name = "lblpara";
             this.lblpara.Size = new System.Drawing.Size(48, 19);
             this.lblpara.TabIndex = 63;
@@ -207,7 +201,7 @@
             // 
             // btnenviar
             // 
-            this.btnenviar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
+            this.btnenviar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(107)))), ((int)(((byte)(167)))));
             this.btnenviar.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnenviar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnenviar.Location = new System.Drawing.Point(431, 413);
@@ -232,7 +226,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::MedicalControl.Properties.Resources.gmail;
-            this.pictureBox1.Location = new System.Drawing.Point(516, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(400, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(121, 70);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -243,7 +237,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(887, 500);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnenviar);

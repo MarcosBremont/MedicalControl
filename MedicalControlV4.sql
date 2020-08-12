@@ -1,15 +1,15 @@
-CREATE DATABASE  IF NOT EXISTS `medicalcontrol` /*!40100 DEFAULT CHARACTER SET latin1 */;
+CREATE DATABASE  IF NOT EXISTS `medicalcontrol` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
 USE `medicalcontrol`;
--- MySQL dump 10.13  Distrib 5.7.17, for Win64 (x86_64)
+-- MySQL dump 10.13  Distrib 8.0.21, for Win64 (x86_64)
 --
 -- Host: localhost    Database: medicalcontrol
 -- ------------------------------------------------------
--- Server version	5.7.22-log
+-- Server version	8.0.21
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8 */;
+/*!50503 SET NAMES utf8 */;
 /*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
 /*!40103 SET TIME_ZONE='+00:00' */;
 /*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
@@ -23,9 +23,9 @@ USE `medicalcontrol`;
 
 DROP TABLE IF EXISTS `t_alergia`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `t_alergia` (
-  `IDALERGIA` int(11) NOT NULL AUTO_INCREMENT,
+  `IDALERGIA` int NOT NULL AUTO_INCREMENT,
   `NOMBREA` varchar(30) DEFAULT NULL,
   PRIMARY KEY (`IDALERGIA`)
 ) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=latin1;
@@ -47,15 +47,15 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `t_citamedica`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `t_citamedica` (
-  `IDCITAMEDICA` int(11) NOT NULL AUTO_INCREMENT,
+  `IDCITAMEDICA` int NOT NULL AUTO_INCREMENT,
   `HORACM` varchar(30) NOT NULL,
   `FECHACM` varchar(30) NOT NULL,
   `COMENTARIO` varchar(50) DEFAULT NULL,
-  `ID2SEGUR` int(11) DEFAULT NULL,
-  `ID2ALERG` int(11) DEFAULT NULL,
-  `ID2DOCTOR` int(11) DEFAULT NULL,
+  `ID2SEGUR` int DEFAULT NULL,
+  `ID2ALERG` int DEFAULT NULL,
+  `ID2DOCTOR` int DEFAULT NULL,
   `NombreCompleto` varchar(60) NOT NULL,
   PRIMARY KEY (`IDCITAMEDICA`),
   KEY `FK2SEGURO` (`ID2SEGUR`),
@@ -83,9 +83,9 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `t_doctor`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `t_doctor` (
-  `IDDOCTOR` int(11) NOT NULL AUTO_INCREMENT,
+  `IDDOCTOR` int NOT NULL AUTO_INCREMENT,
   `NOMBREDOCTOR` varchar(30) DEFAULT NULL,
   `ESPECIALIDAD` varchar(30) DEFAULT NULL,
   PRIMARY KEY (`IDDOCTOR`)
@@ -103,16 +103,66 @@ INSERT INTO `t_doctor` VALUES (1,'Dr. Marcos','Pediatría'),(2,'Dra. Angie','of'
 UNLOCK TABLES;
 
 --
+-- Table structure for table `t_historialclinico`
+--
+
+DROP TABLE IF EXISTS `t_historialclinico`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `t_historialclinico` (
+  `IDhistorialClinico` int NOT NULL AUTO_INCREMENT,
+  `NombreP` varchar(25) NOT NULL,
+  `ApellidoP` varchar(50) NOT NULL,
+  `Fecha` datetime DEFAULT NULL,
+  `Sexo` varchar(1) NOT NULL,
+  `Telefono` varchar(12) NOT NULL,
+  `Procedencia` varchar(100) NOT NULL,
+  `Residencia` varchar(100) NOT NULL,
+  `Edad` int NOT NULL,
+  `Cedula` varchar(13) DEFAULT NULL,
+  `Telefono2` varchar(12) DEFAULT NULL,
+  `Seguro` varchar(40) DEFAULT NULL,
+  `Doctor` varchar(40) DEFAULT NULL,
+  `Ocupacion` varchar(50) NOT NULL,
+  `Religion` varchar(50) NOT NULL,
+  `EstadoCivil` varchar(15) DEFAULT NULL,
+  `Raza` varchar(25) DEFAULT NULL,
+  `AntAlrg` varchar(50) NOT NULL,
+  `AntQrg` varchar(50) DEFAULT NULL,
+  `AntHops` varchar(100) DEFAULT NULL,
+  `AntMed` varchar(100) DEFAULT NULL,
+  `AntTra` varchar(100) DEFAULT NULL,
+  `Ninez` varchar(100) DEFAULT NULL,
+  `Adolescencia` varchar(100) DEFAULT NULL,
+  `Adultez` varchar(100) DEFAULT NULL,
+  `Sonografia` blob,
+  `TomografiaComp` blob,
+  `Radriografia` blob,
+  `ResonanciaM` blob,
+  PRIMARY KEY (`IDhistorialClinico`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `t_historialclinico`
+--
+
+LOCK TABLES `t_historialclinico` WRITE;
+/*!40000 ALTER TABLE `t_historialclinico` DISABLE KEYS */;
+/*!40000 ALTER TABLE `t_historialclinico` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `t_inventario`
 --
 
 DROP TABLE IF EXISTS `t_inventario`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `t_inventario` (
-  `idt_inventario` int(11) NOT NULL AUTO_INCREMENT,
+  `idt_inventario` int NOT NULL AUTO_INCREMENT,
   `NombreMedicamento` varchar(60) NOT NULL,
-  `CantidadMedicamento` int(11) DEFAULT NULL,
+  `CantidadMedicamento` int DEFAULT NULL,
   `Proveedor` varchar(60) DEFAULT NULL,
   `Descripcion` varchar(100) DEFAULT NULL,
   `Fecha` varchar(60) DEFAULT NULL,
@@ -136,20 +186,20 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `t_paciente`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `t_paciente` (
-  `IDPACIENTE` int(11) NOT NULL AUTO_INCREMENT,
+  `IDPACIENTE` int NOT NULL AUTO_INCREMENT,
   `NOMBREP` varchar(30) DEFAULT NULL,
   `APELLIDOP` varchar(30) DEFAULT NULL,
-  `EDADP` int(3) DEFAULT NULL,
+  `EDADP` int DEFAULT NULL,
   `CEDULAP` varchar(13) DEFAULT NULL,
   `DIRECCIONP` varchar(60) DEFAULT NULL,
   `TELEFONOP` varchar(13) DEFAULT NULL,
   `TELEFONOP2` varchar(13) DEFAULT NULL,
   `SEXOP` char(1) DEFAULT NULL,
-  `IDTALER` int(11) DEFAULT NULL,
-  `IDTSEGURO` int(11) DEFAULT NULL,
-  `IDTDOCTOR` int(11) DEFAULT NULL,
+  `IDTALER` int DEFAULT NULL,
+  `IDTSEGURO` int DEFAULT NULL,
+  `IDTDOCTOR` int DEFAULT NULL,
   PRIMARY KEY (`IDPACIENTE`),
   KEY `FKSEGURO` (`IDTSEGURO`),
   KEY `FKDOCTOR` (`IDTDOCTOR`),
@@ -174,9 +224,9 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `t_proveedor`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `t_proveedor` (
-  `idt_proveedor` int(11) NOT NULL AUTO_INCREMENT,
+  `idt_proveedor` int NOT NULL AUTO_INCREMENT,
   `NombreProveedor` varchar(60) DEFAULT NULL,
   `UbicacionProveedor` varchar(60) DEFAULT NULL,
   `TelefonoProveedor` varchar(60) DEFAULT NULL,
@@ -201,9 +251,9 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `t_segurom`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `t_segurom` (
-  `IDSEGURO` int(11) NOT NULL AUTO_INCREMENT,
+  `IDSEGURO` int NOT NULL AUTO_INCREMENT,
   `NOMBRESEGURO` varchar(40) DEFAULT NULL,
   PRIMARY KEY (`IDSEGURO`)
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
@@ -225,9 +275,9 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `usuario`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `usuario` (
-  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `ID` int NOT NULL AUTO_INCREMENT,
   `LoginName` varchar(100) NOT NULL,
   `Password` varchar(100) NOT NULL,
   `FirstName` varchar(100) NOT NULL,
@@ -247,6 +297,51 @@ LOCK TABLES `usuario` WRITE;
 INSERT INTO `usuario` VALUES (1,'Admin','Admin','Marcos','Bremont','Marcosbremont00@gmail.com'),(2,'asd','asd','asd','asd','asd');
 /*!40000 ALTER TABLE `usuario` ENABLE KEYS */;
 UNLOCK TABLES;
+
+--
+-- Temporary view structure for view `vtpacientetdtatsg`
+--
+
+DROP TABLE IF EXISTS `vtpacientetdtatsg`;
+/*!50001 DROP VIEW IF EXISTS `vtpacientetdtatsg`*/;
+SET @saved_cs_client     = @@character_set_client;
+/*!50503 SET character_set_client = utf8mb4 */;
+/*!50001 CREATE VIEW `vtpacientetdtatsg` AS SELECT 
+ 1 AS `IDPACIENTE`,
+ 1 AS `NOMBREP`,
+ 1 AS `APELLIDOP`,
+ 1 AS `EDADP`,
+ 1 AS `CEDULAP`,
+ 1 AS `DIRECCIONP`,
+ 1 AS `TELEFONOP`,
+ 1 AS `TELEFONOP2`,
+ 1 AS `SEXOP`,
+ 1 AS `IDSEGURO`,
+ 1 AS `NOMBRESEGURO`,
+ 1 AS `IDALERGIA`,
+ 1 AS `NOMBREA`,
+ 1 AS `IDDOCTOR`,
+ 1 AS `NOMBREDOCTOR`,
+ 1 AS `ESPECIALIDAD`*/;
+SET character_set_client = @saved_cs_client;
+
+--
+-- Final view structure for view `vtpacientetdtatsg`
+--
+
+/*!50001 DROP VIEW IF EXISTS `vtpacientetdtatsg`*/;
+/*!50001 SET @saved_cs_client          = @@character_set_client */;
+/*!50001 SET @saved_cs_results         = @@character_set_results */;
+/*!50001 SET @saved_col_connection     = @@collation_connection */;
+/*!50001 SET character_set_client      = utf8 */;
+/*!50001 SET character_set_results     = utf8 */;
+/*!50001 SET collation_connection      = utf8_general_ci */;
+/*!50001 CREATE ALGORITHM=UNDEFINED */
+/*!50013 DEFINER=`root`@`localhost` SQL SECURITY DEFINER */
+/*!50001 VIEW `vtpacientetdtatsg` AS select 1 AS `IDPACIENTE`,1 AS `NOMBREP`,1 AS `APELLIDOP`,1 AS `EDADP`,1 AS `CEDULAP`,1 AS `DIRECCIONP`,1 AS `TELEFONOP`,1 AS `TELEFONOP2`,1 AS `SEXOP`,1 AS `IDSEGURO`,1 AS `NOMBRESEGURO`,1 AS `IDALERGIA`,1 AS `NOMBREA`,1 AS `IDDOCTOR`,1 AS `NOMBREDOCTOR`,1 AS `ESPECIALIDAD` */;
+/*!50001 SET character_set_client      = @saved_cs_client */;
+/*!50001 SET character_set_results     = @saved_cs_results */;
+/*!50001 SET collation_connection      = @saved_col_connection */;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -257,4 +352,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-08-11 16:42:06
+-- Dump completed on 2020-08-12 14:42:59

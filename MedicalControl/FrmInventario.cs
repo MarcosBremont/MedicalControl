@@ -27,7 +27,7 @@ namespace MedicalControl
         {
             Refresh();
             CARGARCOMBOXPROVEEDOR();
-            this.TxtCantidad.Text = this.dataGridView1.Rows.Count.ToString("N0");
+            this.TxtCantidad.Text = this.dgvinventario.Rows.Count.ToString("N0");
 
         }
 
@@ -76,7 +76,7 @@ namespace MedicalControl
             // adaptador.SelectCommand = comando;
             DataTable tabla = new DataTable();
             adaptador.Fill(tabla);
-            dataGridView1.DataSource = tabla;
+            dgvinventario.DataSource = tabla;
         }
 
         private void btninsertar_Click(object sender, EventArgs e)
@@ -88,27 +88,18 @@ namespace MedicalControl
             comando.Parameters.AddWithValue("@CantidadMedicamento", txtcantidadmedicamento.Text);
             comando.Parameters.AddWithValue("@Proveedor", cbproveedor.SelectedValue);
             comando.Parameters.AddWithValue("@Descripcion", txtdescripcionmedicamento.Text);
-            comando.Parameters.AddWithValue("@Fecha", txtdescripcionmedicamento.Text);
+            comando.Parameters.AddWithValue("@Fecha", dtfecha.Text);
 
             comando.ExecuteNonQuery();
             Refresh();
             MessageBox.Show("Medicamento Agregado");
             con.Close();
             clear();
-            this.TxtCantidad.Text = this.dataGridView1.Rows.Count.ToString("N0");
+            this.TxtCantidad.Text = this.dgvinventario.Rows.Count.ToString("N0");
 
         }
 
-        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            lblid.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
-            txtnombremedicamento.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
-            txtcantidadmedicamento.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
-            cbproveedor.SelectedValue = dataGridView1.CurrentRow.Cells[3].Value.ToString();
-            txtdescripcionmedicamento.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
-            dtfecha.Text = dataGridView1.CurrentRow.Cells[5].Value.ToString();
-
-        }
+       
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
@@ -205,7 +196,7 @@ namespace MedicalControl
 
         private void button3_Click(object sender, EventArgs e)
         {
-            exportaraexcel(dataGridView1);
+            exportaraexcel(dgvinventario);
 
         }
 
@@ -223,7 +214,7 @@ namespace MedicalControl
             //EN CASO DE SELECCIONAR EL ARCHIVO, ENTONCES PROCEDEMOS A ABRIR EL ARCHIVO CORRESPONDIENTE
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
-                dataGridView1.DataSource = ImportarDatos(openFileDialog.FileName);
+                dgvinventario.DataSource = ImportarDatos(openFileDialog.FileName);
             }
         }
 
@@ -242,7 +233,7 @@ namespace MedicalControl
 
             da.Fill(dt);
 
-            dataGridView1.DataSource = dt;
+            dgvinventario.DataSource = dt;
 
             con.Close();
         }
@@ -274,9 +265,21 @@ namespace MedicalControl
 
             da.Fill(dt);
 
-            dataGridView1.DataSource = dt;
+            dgvinventario.DataSource = dt;
 
             con.Close();
+        }
+
+ 
+        private void dgvinventario_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            lblid.Text = dgvinventario.CurrentRow.Cells[0].Value.ToString();
+            txtnombremedicamento.Text = dgvinventario.CurrentRow.Cells[1].Value.ToString();
+            txtcantidadmedicamento.Text = dgvinventario.CurrentRow.Cells[2].Value.ToString();
+            cbproveedor.SelectedValue = dgvinventario.CurrentRow.Cells[3].Value.ToString();
+            txtdescripcionmedicamento.Text = dgvinventario.CurrentRow.Cells[4].Value.ToString();
+            dtfecha.Text = dgvinventario.CurrentRow.Cells[5].Value.ToString();
+
         }
     }
 }

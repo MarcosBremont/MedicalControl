@@ -23,8 +23,17 @@ namespace MedicalControl
 
         private void FrmAlergia_Load(object sender, EventArgs e)
         {
-
+            RefreshAlergia();
         }
+
+        public void RefreshAlergia()
+        {
+            MySqlDataAdapter adaptador = new MySqlDataAdapter("Select * from t_alergia", con);
+            DataTable tabla = new DataTable();
+            adaptador.Fill(tabla);
+            dgvalergia.DataSource = tabla;
+        }
+     
 
         //Drag Form
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
@@ -46,8 +55,10 @@ namespace MedicalControl
             cmd.ExecuteNonQuery();
             MessageBox.Show("Alergia Agregado");
             con.Close();
+            RefreshAlergia();
             txtnombrealergia.Text = "";
             Refresh();
+           
         }
 
         private void FrmAlergia_MouseDown(object sender, MouseEventArgs e)
@@ -71,6 +82,46 @@ namespace MedicalControl
 
                 return;
 
+            }
+        }
+
+        private void dgvalergia_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            txtcodigoalergia.Text = dgvalergia.CurrentRow.Cells[0].Value.ToString();
+            txtnombrealergia.Text = dgvalergia.CurrentRow.Cells[1].Value.ToString();
+        }
+
+        private void BtnActualizar_Click(object sender, EventArgs e)
+        {
+            con.Open();
+            string query = "UPDATE T_Alergia SET NOMBREA = @NOMBREA where IDALERGIA=@IDALERGIA";
+            MySqlCommand comando = new MySqlCommand(query, con);
+            comando.Parameters.AddWithValue("@IDALERGIA", txtcodigoalergia.Text);
+            comando.Parameters.AddWithValue("@NOMBREA", txtnombrealergia.Text);
+            comando.ExecuteNonQuery();
+            RefreshAlergia();
+            MessageBox.Show("Alergia Actualizada");
+            con.Close();
+        }
+
+        private void BtnEliminarAlergia_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                con.Open();
+                string query = "DELETE FROM T_Alergia Where IDALERGIA = @IDALERGIA";
+                MySqlCommand comando = new MySqlCommand(query, con);
+                comando.Parameters.AddWithValue("@IDALERGIA", txtcodigoalergia.Text);
+                comando.ExecuteNonQuery();
+                RefreshAlergia();
+                MessageBox.Show("Alergia Eliminada");
+                con.Close();
+
+
+            }
+            catch (MySql.Data.MySqlClient.MySqlException ER)
+            {
+                MessageBox.Show("Error, primero elimine o modifique las citas y pacientes que hay registrados con esa Alergia");
             }
         }
     }

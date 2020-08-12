@@ -34,16 +34,16 @@
             this.lblregistro = new System.Windows.Forms.Label();
             this.btnregistrar = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.pBLogoCall = new System.Windows.Forms.PictureBox();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.btnminimizar = new System.Windows.Forms.Button();
             this.pBcontrasena = new System.Windows.Forms.PictureBox();
             this.pBusuario = new System.Windows.Forms.PictureBox();
+            this.pBLogoCall = new System.Windows.Forms.PictureBox();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pBLogoCall)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBcontrasena)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBusuario)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBLogoCall)).BeginInit();
             this.SuspendLayout();
             // 
             // lbllogin
@@ -88,7 +88,7 @@
             this.lblregistro.AutoSize = true;
             this.lblregistro.BackColor = System.Drawing.Color.Transparent;
             this.lblregistro.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.lblregistro.ForeColor = System.Drawing.Color.White;
+            this.lblregistro.ForeColor = System.Drawing.Color.Black;
             this.lblregistro.Location = new System.Drawing.Point(343, 172);
             this.lblregistro.Name = "lblregistro";
             this.lblregistro.Size = new System.Drawing.Size(303, 17);
@@ -100,10 +100,12 @@
             this.btnregistrar.BackColor = System.Drawing.Color.Transparent;
             this.btnregistrar.Cursor = System.Windows.Forms.Cursors.Default;
             this.btnregistrar.FlatAppearance.BorderSize = 0;
+            this.btnregistrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnregistrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnregistrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnregistrar.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.btnregistrar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold);
             this.btnregistrar.ForeColor = System.Drawing.Color.Red;
-            this.btnregistrar.Location = new System.Drawing.Point(630, 163);
+            this.btnregistrar.Location = new System.Drawing.Point(631, 162);
             this.btnregistrar.Name = "btnregistrar";
             this.btnregistrar.Size = new System.Drawing.Size(58, 36);
             this.btnregistrar.TabIndex = 18;
@@ -113,7 +115,7 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(188)))), ((int)(((byte)(155)))));
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(107)))), ((int)(((byte)(165)))));
             this.panel3.Controls.Add(this.pBLogoCall);
             this.panel3.Location = new System.Drawing.Point(1, 0);
             this.panel3.Name = "panel3";
@@ -121,20 +123,9 @@
             this.panel3.TabIndex = 15;
             this.panel3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel3_MouseDown);
             // 
-            // pBLogoCall
-            // 
-            this.pBLogoCall.Image = global::MedicalControl.Properties.Resources.MEDICAL_CONTROL__1__removebg;
-            this.pBLogoCall.Location = new System.Drawing.Point(1, 29);
-            this.pBLogoCall.Name = "pBLogoCall";
-            this.pBLogoCall.Size = new System.Drawing.Size(249, 285);
-            this.pBLogoCall.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pBLogoCall.TabIndex = 13;
-            this.pBLogoCall.TabStop = false;
-            this.pBLogoCall.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pBLogoCall_MouseDown);
-            // 
             // btnEliminar
             // 
-            this.btnEliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
+            this.btnEliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(107)))), ((int)(((byte)(165)))));
             this.btnEliminar.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnEliminar.Location = new System.Drawing.Point(372, 258);
@@ -147,7 +138,7 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(107)))), ((int)(((byte)(165)))));
             this.button1.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.button1.Location = new System.Drawing.Point(525, 258);
@@ -193,11 +184,22 @@
             this.pBusuario.TabIndex = 20;
             this.pBusuario.TabStop = false;
             // 
+            // pBLogoCall
+            // 
+            this.pBLogoCall.Image = global::MedicalControl.Properties.Resources.Diseño_sin_título__1__removebg_preview__1_;
+            this.pBLogoCall.Location = new System.Drawing.Point(-46, 13);
+            this.pBLogoCall.Name = "pBLogoCall";
+            this.pBLogoCall.Size = new System.Drawing.Size(335, 314);
+            this.pBLogoCall.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pBLogoCall.TabIndex = 13;
+            this.pBLogoCall.TabStop = false;
+            this.pBLogoCall.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pBLogoCall_MouseDown);
+            // 
             // FrmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(780, 330);
             this.Controls.Add(this.btnminimizar);
             this.Controls.Add(this.button1);
@@ -217,9 +219,9 @@
             this.Load += new System.EventHandler(this.FrmLogin_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.FrmLogin_MouseDown);
             this.panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pBLogoCall)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBcontrasena)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBusuario)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBLogoCall)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

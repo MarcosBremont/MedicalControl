@@ -23,6 +23,19 @@ namespace MedicalControl
 
         private void FrmProveedor_Load(object sender, EventArgs e)
         {
+            RefreshProveedor();
+        }
+
+
+        public void RefreshProveedor()
+        {
+
+            //  MySqlCommand comando = new MySqlCommand("Select * from T_Paciente", con);
+            MySqlDataAdapter adaptador = new MySqlDataAdapter("Select * from t_Proveedor", con);
+            // adaptador.SelectCommand = comando;
+            DataTable tabla = new DataTable();
+            adaptador.Fill(tabla);
+            dgvproveedor.DataSource = tabla;
 
         }
 
@@ -38,17 +51,17 @@ namespace MedicalControl
             string query = "Insert Into t_proveedor(NombreProveedor, UbicacionProveedor, TelefonoProveedor, Correo)values(@NombreProveedor, @UbicacionProveedor, @TelefonoProveedor, @Correo)";
             MySqlCommand cmd = new MySqlCommand(query, con);
             cmd.Parameters.AddWithValue("@NombreProveedor", txtnombreproveedor.Text);
-            cmd.Parameters.AddWithValue("@UbicacionProveedor", txtubicacion.Text);
-            cmd.Parameters.AddWithValue("@TelefonoProveedor", mtbtelefonoproveedor.Text);
+            cmd.Parameters.AddWithValue("@UbicacionProveedor", txtubicacionproveedor.Text);
+            cmd.Parameters.AddWithValue("@TelefonoProveedor", mtxtTelefono.Text);
             cmd.Parameters.AddWithValue("@Correo", txtcorreo.Text);
             cmd.ExecuteNonQuery();
             MessageBox.Show("Proveedor Agregado");
             con.Close();
             txtnombreproveedor.Text = "";
-            txtubicacion.Text = "";
+            txtubicacionproveedor.Text = "";
             txtcorreo.Text = "";
-            mtbtelefonoproveedor.Text = "";
-            Refresh();
+            mtxtTelefono.Text = "";
+            RefreshProveedor();
         }
 
         private void BtnCerrar_Click(object sender, EventArgs e)
@@ -66,6 +79,66 @@ namespace MedicalControl
                 return;
 
             }
+        }
+
+        private void BtnEliminarProveedores_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                con.Open();
+                string query = "DELETE FROM t_proveedor Where idt_proveedor = @idt_proveedor";
+                MySqlCommand comando = new MySqlCommand(query, con);
+                comando.Parameters.AddWithValue("@idt_proveedor", txtcodigoproveedor.Text);
+                comando.ExecuteNonQuery();
+                RefreshProveedor();
+                MessageBox.Show("Proveedor Eliminado");
+                con.Close();
+
+                RefreshProveedor();
+            }
+            catch (MySql.Data.MySqlClient.MySqlException ER)
+            {
+                MessageBox.Show("Error, primero elimine o modifique los medicamentos que hay registrados con ese proveedor");
+            }
+        }
+
+        private void dgvproveedor_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            txtcodigoproveedor.Text = dgvproveedor.CurrentRow.Cells[0].Value.ToString();
+            txtnombreproveedor.Text = dgvproveedor.CurrentRow.Cells[1].Value.ToString();
+            txtubicacionproveedor.Text = dgvproveedor.CurrentRow.Cells[2].Value.ToString();
+            mtxtTelefono.Text = dgvproveedor.CurrentRow.Cells[3].Value.ToString();
+            txtcorreo.Text = dgvproveedor.CurrentRow.Cells[4].Value.ToString();
+        }
+
+        private void BtnActualizar_Click(object sender, EventArgs e)
+        {
+            con.Open();
+            string query = "UPDATE t_proveedor SET NombreProveedor = @NombreProveedor, UbicacionProveedor = @UbicacionProveedor, TelefonoProveedor = @TelefonoProveedor, Correo=@Correo where idt_proveedor=@idt_proveedor";
+            MySqlCommand comando = new MySqlCommand(query, con);
+            comando.Parameters.AddWithValue("@idt_proveedor", txtcodigoproveedor.Text);
+            comando.Parameters.AddWithValue("@NombreProveedor", txtnombreproveedor.Text);
+            comando.Parameters.AddWithValue("@UbicacionProveedor", txtubicacionproveedor.Text);
+            comando.Parameters.AddWithValue("@TelefonoProveedor", mtxtTelefono.Text);
+            comando.Parameters.AddWithValue("@Correo", txtcorreo.Text);
+
+
+            comando.ExecuteNonQuery();
+            RefreshProveedor();
+            MessageBox.Show("Seguro Actualizado");
+            con.Close();
+        }
+
+        private void FrmProveedor_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void pictureBox1_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
     }
 }

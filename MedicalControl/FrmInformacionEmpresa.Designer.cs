@@ -40,7 +40,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(285, 258);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(828, 323);
@@ -50,8 +50,9 @@
             // Parriba
             // 
             this.Parriba.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.Parriba.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(188)))), ((int)(((byte)(155)))));
+            this.Parriba.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(107)))), ((int)(((byte)(167)))));
             this.Parriba.Controls.Add(this.pictureBox1);
+            this.Parriba.ForeColor = System.Drawing.Color.Coral;
             this.Parriba.Location = new System.Drawing.Point(-350, -2);
             this.Parriba.Name = "Parriba";
             this.Parriba.Size = new System.Drawing.Size(1500, 188);
@@ -67,15 +68,15 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // FrmInformacionProyecto
+            // FrmInformacionEmpresa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.Parriba);
-            this.Name = "FrmInformacionProyecto";
+            this.Name = "FrmInformacionEmpresa";
             this.Text = "FrmInformacionProyecto";
             this.Load += new System.EventHandler(this.FrmInformacionProyecto_Load);
             this.Parriba.ResumeLayout(false);

@@ -23,6 +23,18 @@ namespace MedicalControl
 
         private void FrmDoctorcs_Load(object sender, EventArgs e)
         {
+            RefreshDoctor();
+        }
+
+        public void RefreshDoctor()
+        {
+
+            //  MySqlCommand comando = new MySqlCommand("Select * from T_Paciente", con);
+            MySqlDataAdapter adaptador = new MySqlDataAdapter("Select * from t_doctor", con);
+            // adaptador.SelectCommand = comando;
+            DataTable tabla = new DataTable();
+            adaptador.Fill(tabla);
+            dgvdoctores.DataSource = tabla;
 
         }
 
@@ -48,14 +60,14 @@ namespace MedicalControl
             con.Open();
             string query = "Insert Into t_doctor(NombreDoctor, Especialidad)values(@NombreDoctor, @Especialidad)";
             MySqlCommand cmd = new MySqlCommand(query, con);
-            cmd.Parameters.AddWithValue("@NombreDoctor", txtnombredr.Text);
-            cmd.Parameters.AddWithValue("@Especialidad", txtespecialidaddr.Text);
+            cmd.Parameters.AddWithValue("@NombreDoctor", txtnombredoctor.Text);
+            cmd.Parameters.AddWithValue("@Especialidad", txtexpecialidaddoctor.Text);
             cmd.ExecuteNonQuery();
             MessageBox.Show("Doctor Agregado");
             con.Close();
-            txtnombredr.Text = "";
-            txtespecialidaddr.Text = "";
-            Refresh();
+            txtnombredoctor.Text = "";
+            txtexpecialidaddoctor.Text = "";
+            RefreshDoctor();
         }
 
         private void pictureBox1_MouseDown(object sender, MouseEventArgs e)
@@ -84,6 +96,47 @@ namespace MedicalControl
 
                 return;
             }
+        }
+
+        private void BtnEliminarDoctor_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                con.Open();
+                string query = "DELETE FROM T_Doctor Where IDDOCTOR = @IDDOCTOR";
+                MySqlCommand comando = new MySqlCommand(query, con);
+                comando.Parameters.AddWithValue("@IDDOCTOR", txtcodigodoctor.Text);
+                comando.ExecuteNonQuery();
+                RefreshDoctor();
+                MessageBox.Show("Doctor Eliminado");
+                con.Close();
+                RefreshDoctor();
+            }
+            catch (MySql.Data.MySqlClient.MySqlException ER)
+            {
+                MessageBox.Show("Error, primero elimine o modifique las citas y pacientes que hay registrados con este doctor/@");
+            }
+        }
+
+        private void BtnActualizarDoctor_Click(object sender, EventArgs e)
+        {
+            con.Open();
+            string query = "UPDATE T_DOCTOR SET NOMBREDOCTOR = @NOMBREDOCTOR, ESPECIALIDAD = @ESPECIALIDAD where IDDOCTOR=@IDDOCTOR";
+            MySqlCommand comando = new MySqlCommand(query, con);
+            comando.Parameters.AddWithValue("@IDDOCTOR", txtcodigodoctor.Text);
+            comando.Parameters.AddWithValue("@NombreDoctor", txtnombredoctor.Text);
+            comando.Parameters.AddWithValue("@Especialidad", txtexpecialidaddoctor.Text);
+            comando.ExecuteNonQuery();
+            RefreshDoctor();
+            MessageBox.Show("Doctor Actualizado");
+            con.Close();
+        }
+
+        private void dgvdoctores_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            txtcodigodoctor.Text = dgvdoctores.CurrentRow.Cells[0].Value.ToString();
+            txtnombredoctor.Text = dgvdoctores.CurrentRow.Cells[1].Value.ToString();
+            txtexpecialidaddoctor.Text = dgvdoctores.CurrentRow.Cells[2].Value.ToString();
         }
     }
 }

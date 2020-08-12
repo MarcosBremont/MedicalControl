@@ -23,6 +23,18 @@ namespace MedicalControl
 
         private void FrmSeguro_Load(object sender, EventArgs e)
         {
+            RefreshSeguro();
+        }
+
+        public void RefreshSeguro()
+        {
+
+            //  MySqlCommand comando = new MySqlCommand("Select * from T_Paciente", con);
+            MySqlDataAdapter adaptador = new MySqlDataAdapter("Select * from t_segurom", con);
+            // adaptador.SelectCommand = comando;
+            DataTable tabla = new DataTable();
+            adaptador.Fill(tabla);
+            dgvsegurom.DataSource = tabla;
 
         }
 
@@ -43,11 +55,11 @@ namespace MedicalControl
             con.Open();
             string query = "Insert Into t_segurom(NombreSeguro)values(@NombreSeguro)";
             MySqlCommand cmd = new MySqlCommand(query, con);
-            cmd.Parameters.AddWithValue("@NombreSeguro", txtnombrreseguro.Text);
+            cmd.Parameters.AddWithValue("@NombreSeguro", txtnombreseguro.Text);
             cmd.ExecuteNonQuery();
             MessageBox.Show("Seguro Agregado");
             con.Close();
-            txtnombrreseguro.Text = "";
+            txtnombreseguro.Text = "";
             Refresh();
         }
 
@@ -73,6 +85,51 @@ namespace MedicalControl
                 return;
 
             }
+        }
+
+        private void dgvdoctores_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void dgvsegurom_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            txtcodigoseguro.Text = dgvsegurom.CurrentRow.Cells[0].Value.ToString();
+            txtnombreseguro.Text = dgvsegurom.CurrentRow.Cells[1].Value.ToString();
+        }
+
+        private void BtnEliminarSeguros_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                con.Open();
+                string query = "DELETE FROM T_SeguroM Where IDSEGURO = @IDSEGURO";
+                MySqlCommand comando = new MySqlCommand(query, con);
+                comando.Parameters.AddWithValue("@IDSEGURO", txtcodigoseguro.Text);
+                comando.ExecuteNonQuery();
+                RefreshSeguro();
+                MessageBox.Show("Seguro Eliminada");
+                con.Close();
+
+
+            }
+            catch (MySql.Data.MySqlClient.MySqlException ER)
+            {
+                MessageBox.Show("Error, primero elimine o modifique las citas y pacientes que hay registrados con ese seguro medico");
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            con.Open();
+            string query = "UPDATE t_segurom SET NOMBRESEGURO = @NOMBRESEGURO where IDSEGURO=@IDSEGURO";
+            MySqlCommand comando = new MySqlCommand(query, con);
+            comando.Parameters.AddWithValue("@IDSEGURO", txtcodigoseguro.Text);
+            comando.Parameters.AddWithValue("@NOMBRESEGURO", txtnombreseguro.Text);
+            comando.ExecuteNonQuery();
+            RefreshSeguro();
+            MessageBox.Show("Seguro Actualizado");
+            con.Close();
         }
     }
 }

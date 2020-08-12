@@ -130,3 +130,4 @@ C:\Users\MarcosB\Desktop\GIT\MedicalControl\MedicalControl\obj\Debug\MedicalCont
 C:\Users\MarcosBremont\Desktop\MisProyectosC#\MedicalControl Git\MedicalControl\MedicalControl\obj\Debug\MedicalControl.FrmRegistro.resources
 C:\Users\MarcosBremont\Desktop\MisProyectosC#\MedicalControl Git\MedicalControl\MedicalControl\obj\Debug\MedicalControl.FrmPantallaCarga.resources
 C:\Users\MarcosB\Desktop\GIT\MedicalControl\MedicalControl\obj\Debug\MedicalControl.FrmPantallaCarga.resources
+C:\Users\MarcosB\Desktop\GIT\MedicalControl\MedicalControl\obj\Debug\MedicalControl.FrmHistorialClinicocs.resources

@@ -51,8 +51,6 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.gbprincipal = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.TxtCantidad = new System.Windows.Forms.TextBox();
             this.lblbuscar = new System.Windows.Forms.Label();
@@ -281,10 +279,10 @@
             // gbprincipal
             // 
             this.gbprincipal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(107)))), ((int)(((byte)(167)))));
-            this.gbprincipal.Controls.Add(this.label1);
-            this.gbprincipal.Controls.Add(this.textBox1);
             this.gbprincipal.Controls.Add(this.button1);
+            this.gbprincipal.Controls.Add(this.lblbuscar);
             this.gbprincipal.Controls.Add(this.button3);
+            this.gbprincipal.Controls.Add(this.txtbuscar);
             this.gbprincipal.Controls.Add(this.btnOtro);
             this.gbprincipal.Controls.Add(this.label8);
             this.gbprincipal.Controls.Add(this.txtcantidadmedicamento);
@@ -306,33 +304,12 @@
             this.gbprincipal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.gbprincipal.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbprincipal.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.gbprincipal.Location = new System.Drawing.Point(126, 395);
+            this.gbprincipal.Location = new System.Drawing.Point(91, 337);
             this.gbprincipal.Name = "gbprincipal";
             this.gbprincipal.Size = new System.Drawing.Size(947, 292);
             this.gbprincipal.TabIndex = 75;
             this.gbprincipal.TabStop = false;
             this.gbprincipal.Text = "Inventario";
-            // 
-            // label1
-            // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(14, 27);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(49, 16);
-            this.label1.TabIndex = 76;
-            this.label1.Text = "Buscar";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.textBox1.Location = new System.Drawing.Point(69, 21);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 27);
-            this.textBox1.TabIndex = 75;
-            this.textBox1.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textBox1_KeyUp);
             // 
             // label8
             // 
@@ -363,7 +340,7 @@
             this.lblbuscar.AutoSize = true;
             this.lblbuscar.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
             this.lblbuscar.ForeColor = System.Drawing.Color.Black;
-            this.lblbuscar.Location = new System.Drawing.Point(11, 18);
+            this.lblbuscar.Location = new System.Drawing.Point(15, 30);
             this.lblbuscar.Name = "lblbuscar";
             this.lblbuscar.Size = new System.Drawing.Size(49, 16);
             this.lblbuscar.TabIndex = 49;
@@ -371,9 +348,9 @@
             // 
             // txtbuscar
             // 
-            this.txtbuscar.Location = new System.Drawing.Point(66, 14);
+            this.txtbuscar.Location = new System.Drawing.Point(70, 26);
             this.txtbuscar.Name = "txtbuscar";
-            this.txtbuscar.Size = new System.Drawing.Size(100, 20);
+            this.txtbuscar.Size = new System.Drawing.Size(100, 27);
             this.txtbuscar.TabIndex = 48;
             this.txtbuscar.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtbuscar_KeyUp);
             // 
@@ -416,7 +393,7 @@
             this.dgvinventario.DefaultCellStyle = dataGridViewCellStyle6;
             this.dgvinventario.EnableHeadersVisualStyles = false;
             this.dgvinventario.GridColor = System.Drawing.Color.White;
-            this.dgvinventario.Location = new System.Drawing.Point(53, 40);
+            this.dgvinventario.Location = new System.Drawing.Point(39, 40);
             this.dgvinventario.MultiSelect = false;
             this.dgvinventario.Name = "dgvinventario";
             this.dgvinventario.ReadOnly = true;
@@ -439,7 +416,7 @@
             this.dgvinventario.RowsDefaultCellStyle = dataGridViewCellStyle8;
             this.dgvinventario.RowTemplate.Height = 30;
             this.dgvinventario.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvinventario.Size = new System.Drawing.Size(1080, 330);
+            this.dgvinventario.Size = new System.Drawing.Size(1038, 291);
             this.dgvinventario.TabIndex = 78;
             this.dgvinventario.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvinventario_CellClick);
             // 
@@ -494,9 +471,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1339, 621);
             this.Controls.Add(this.dgvinventario);
-            this.Controls.Add(this.lblbuscar);
             this.Controls.Add(this.gbprincipal);
-            this.Controls.Add(this.txtbuscar);
             this.Name = "FrmInventario";
             this.Text = "Inventario";
             this.Load += new System.EventHandler(this.FrmInventario_Load);
@@ -504,7 +479,6 @@
             this.gbprincipal.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvinventario)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -532,8 +506,6 @@
         private System.Windows.Forms.TextBox txtbuscar;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox TxtCantidad;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.DataGridView dgvinventario;
         private System.Windows.Forms.DataGridViewTextBoxColumn idt_inventario;
         private System.Windows.Forms.DataGridViewTextBoxColumn NombreMedicamento;

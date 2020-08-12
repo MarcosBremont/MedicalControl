@@ -233,5 +233,25 @@ namespace MedicalControl
             cmbndoctor.SelectedValue = dgvcitasmedicas.CurrentRow.Cells[6].Value.ToString();
             txtnombrecompleto.Text = dgvcitasmedicas.CurrentRow.Cells[7].Value.ToString();
         }
+
+        private void txtbuscar_KeyUp(object sender, KeyEventArgs e)
+        {
+            con.Open();
+
+            MySqlCommand cmd = con.CreateCommand();
+
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "SELECT * FROM t_citamedica where NombreCompleto like ('" + txtbuscar.Text + "%')";
+            cmd.ExecuteNonQuery();
+
+            DataTable dt = new DataTable();
+            MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+
+            da.Fill(dt);
+
+            dgvcitasmedicas.DataSource = dt;
+
+            con.Close();
+        }
     }
 }

@@ -353,5 +353,17 @@ namespace MedicalControl
             cmbSeguro.SelectedValue = dgvprincipal.CurrentRow.Cells[10].Value.ToString();
             cmbDoctor.SelectedValue = dgvprincipal.CurrentRow.Cells[11].Value.ToString();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            FrmHistorialClinicocs form = new FrmHistorialClinicocs();
+            form.ShowDialog();
+            
+        }
+
+        private void txtbuscar_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

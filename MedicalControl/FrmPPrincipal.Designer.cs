@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pacienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.medicalControlDataSet = new MedicalControl.MedicalControlDataSet();
             this.pacienteTableAdapter = new MedicalControl.MedicalControlDataSetTableAdapters.PacienteTableAdapter();
@@ -86,6 +86,7 @@
             this.IDTALER = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.IDTSEGURO = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.IDTDOCTOR = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button4 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pacienteBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.medicalControlDataSet)).BeginInit();
             this.gbprincipal.SuspendLayout();
@@ -111,7 +112,7 @@
             // 
             this.txtnombrep.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.txtnombrep.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtnombrep.Location = new System.Drawing.Point(343, 101);
+            this.txtnombrep.Location = new System.Drawing.Point(375, 101);
             this.txtnombrep.MaxLength = 30;
             this.txtnombrep.Name = "txtnombrep";
             this.txtnombrep.Size = new System.Drawing.Size(83, 23);
@@ -123,7 +124,7 @@
             // 
             this.txtedadp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.txtedadp.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtedadp.Location = new System.Drawing.Point(537, 70);
+            this.txtedadp.Location = new System.Drawing.Point(569, 70);
             this.txtedadp.MaxLength = 3;
             this.txtedadp.Name = "txtedadp";
             this.txtedadp.Size = new System.Drawing.Size(48, 23);
@@ -134,7 +135,7 @@
             // 
             this.txtapellidop.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.txtapellidop.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtapellidop.Location = new System.Drawing.Point(343, 134);
+            this.txtapellidop.Location = new System.Drawing.Point(375, 134);
             this.txtapellidop.MaxLength = 30;
             this.txtapellidop.Name = "txtapellidop";
             this.txtapellidop.Size = new System.Drawing.Size(83, 23);
@@ -145,7 +146,7 @@
             // 
             this.txtdireccionp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.txtdireccionp.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtdireccionp.Location = new System.Drawing.Point(537, 133);
+            this.txtdireccionp.Location = new System.Drawing.Point(569, 133);
             this.txtdireccionp.MaxLength = 60;
             this.txtdireccionp.Name = "txtdireccionp";
             this.txtdireccionp.Size = new System.Drawing.Size(100, 23);
@@ -161,7 +162,7 @@
             this.btninsertar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btninsertar.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btninsertar.ForeColor = System.Drawing.Color.Black;
-            this.btninsertar.Location = new System.Drawing.Point(407, 24);
+            this.btninsertar.Location = new System.Drawing.Point(439, 24);
             this.btninsertar.Name = "btninsertar";
             this.btninsertar.Size = new System.Drawing.Size(103, 35);
             this.btninsertar.TabIndex = 10;
@@ -179,7 +180,7 @@
             this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEliminar.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminar.ForeColor = System.Drawing.Color.Black;
-            this.btnEliminar.Location = new System.Drawing.Point(523, 24);
+            this.btnEliminar.Location = new System.Drawing.Point(555, 24);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(103, 35);
             this.btnEliminar.TabIndex = 11;
@@ -197,7 +198,7 @@
             this.btnactualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnactualizar.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnactualizar.ForeColor = System.Drawing.Color.Black;
-            this.btnactualizar.Location = new System.Drawing.Point(639, 24);
+            this.btnactualizar.Location = new System.Drawing.Point(671, 24);
             this.btnactualizar.Name = "btnactualizar";
             this.btnactualizar.Size = new System.Drawing.Size(103, 35);
             this.btnactualizar.TabIndex = 12;
@@ -211,7 +212,7 @@
             this.lblid.AutoSize = true;
             this.lblid.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
             this.lblid.ForeColor = System.Drawing.Color.White;
-            this.lblid.Location = new System.Drawing.Point(346, 76);
+            this.lblid.Location = new System.Drawing.Point(378, 76);
             this.lblid.Name = "lblid";
             this.lblid.Size = new System.Drawing.Size(0, 16);
             this.lblid.TabIndex = 13;
@@ -222,7 +223,7 @@
             this.lblnombre.AutoSize = true;
             this.lblnombre.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
             this.lblnombre.ForeColor = System.Drawing.Color.Black;
-            this.lblnombre.Location = new System.Drawing.Point(231, 108);
+            this.lblnombre.Location = new System.Drawing.Point(263, 108);
             this.lblnombre.Name = "lblnombre";
             this.lblnombre.Size = new System.Drawing.Size(107, 16);
             this.lblnombre.TabIndex = 14;
@@ -234,7 +235,7 @@
             this.lbledad.AutoSize = true;
             this.lbledad.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
             this.lbledad.ForeColor = System.Drawing.Color.Black;
-            this.lbledad.Location = new System.Drawing.Point(473, 76);
+            this.lbledad.Location = new System.Drawing.Point(505, 76);
             this.lbledad.Name = "lbledad";
             this.lbledad.Size = new System.Drawing.Size(37, 16);
             this.lbledad.TabIndex = 16;
@@ -246,7 +247,7 @@
             this.lblapellido.AutoSize = true;
             this.lblapellido.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
             this.lblapellido.ForeColor = System.Drawing.Color.Black;
-            this.lblapellido.Location = new System.Drawing.Point(231, 141);
+            this.lblapellido.Location = new System.Drawing.Point(263, 141);
             this.lblapellido.Name = "lblapellido";
             this.lblapellido.Size = new System.Drawing.Size(107, 16);
             this.lblapellido.TabIndex = 15;
@@ -258,7 +259,7 @@
             this.lbldireccion.AutoSize = true;
             this.lbldireccion.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
             this.lbldireccion.ForeColor = System.Drawing.Color.Black;
-            this.lbldireccion.Location = new System.Drawing.Point(473, 138);
+            this.lbldireccion.Location = new System.Drawing.Point(505, 138);
             this.lbldireccion.Name = "lbldireccion";
             this.lbldireccion.Size = new System.Drawing.Size(62, 16);
             this.lbldireccion.TabIndex = 18;
@@ -270,7 +271,7 @@
             this.lblcedula.AutoSize = true;
             this.lblcedula.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
             this.lblcedula.ForeColor = System.Drawing.Color.Black;
-            this.lblcedula.Location = new System.Drawing.Point(473, 107);
+            this.lblcedula.Location = new System.Drawing.Point(505, 107);
             this.lblcedula.Name = "lblcedula";
             this.lblcedula.Size = new System.Drawing.Size(48, 16);
             this.lblcedula.TabIndex = 17;
@@ -282,7 +283,7 @@
             this.lbltelefonoep.AutoSize = true;
             this.lbltelefonoep.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
             this.lbltelefonoep.ForeColor = System.Drawing.Color.Black;
-            this.lbltelefonoep.Location = new System.Drawing.Point(658, 107);
+            this.lbltelefonoep.Location = new System.Drawing.Point(690, 107);
             this.lbltelefonoep.Name = "lbltelefonoep";
             this.lbltelefonoep.Size = new System.Drawing.Size(66, 16);
             this.lbltelefonoep.TabIndex = 20;
@@ -294,7 +295,7 @@
             this.lbltelefono.AutoSize = true;
             this.lbltelefono.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
             this.lbltelefono.ForeColor = System.Drawing.Color.Black;
-            this.lbltelefono.Location = new System.Drawing.Point(658, 76);
+            this.lbltelefono.Location = new System.Drawing.Point(690, 76);
             this.lbltelefono.Name = "lbltelefono";
             this.lbltelefono.Size = new System.Drawing.Size(56, 16);
             this.lbltelefono.TabIndex = 19;
@@ -306,7 +307,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(231, 75);
+            this.label1.Location = new System.Drawing.Point(263, 75);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(73, 16);
             this.label1.TabIndex = 22;
@@ -318,7 +319,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(865, 75);
+            this.label2.Location = new System.Drawing.Point(897, 75);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(42, 16);
             this.label2.TabIndex = 24;
@@ -328,7 +329,7 @@
             // 
             this.dateTimePicker1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(914, 74);
+            this.dateTimePicker1.Location = new System.Drawing.Point(946, 74);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(105, 27);
             this.dateTimePicker1.TabIndex = 25;
@@ -340,7 +341,7 @@
             this.cmbSexo.Items.AddRange(new object[] {
             "M",
             "F"});
-            this.cmbSexo.Location = new System.Drawing.Point(914, 104);
+            this.cmbSexo.Location = new System.Drawing.Point(946, 104);
             this.cmbSexo.Name = "cmbSexo";
             this.cmbSexo.Size = new System.Drawing.Size(43, 27);
             this.cmbSexo.TabIndex = 26;
@@ -351,7 +352,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(865, 109);
+            this.label3.Location = new System.Drawing.Point(897, 109);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(37, 16);
             this.label3.TabIndex = 27;
@@ -361,7 +362,7 @@
             // 
             this.cmbAlergia.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.cmbAlergia.FormattingEnabled = true;
-            this.cmbAlergia.Location = new System.Drawing.Point(725, 133);
+            this.cmbAlergia.Location = new System.Drawing.Point(757, 133);
             this.cmbAlergia.Name = "cmbAlergia";
             this.cmbAlergia.Size = new System.Drawing.Size(100, 27);
             this.cmbAlergia.TabIndex = 28;
@@ -372,7 +373,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(658, 138);
+            this.label4.Location = new System.Drawing.Point(690, 138);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(50, 16);
             this.label4.TabIndex = 29;
@@ -384,7 +385,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(231, 174);
+            this.label5.Location = new System.Drawing.Point(263, 174);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(50, 16);
             this.label5.TabIndex = 31;
@@ -394,7 +395,7 @@
             // 
             this.cmbSeguro.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.cmbSeguro.FormattingEnabled = true;
-            this.cmbSeguro.Location = new System.Drawing.Point(297, 167);
+            this.cmbSeguro.Location = new System.Drawing.Point(329, 167);
             this.cmbSeguro.Name = "cmbSeguro";
             this.cmbSeguro.Size = new System.Drawing.Size(129, 27);
             this.cmbSeguro.TabIndex = 30;
@@ -405,7 +406,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(473, 169);
+            this.label6.Location = new System.Drawing.Point(505, 169);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(47, 16);
             this.label6.TabIndex = 33;
@@ -415,7 +416,7 @@
             // 
             this.cmbDoctor.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.cmbDoctor.FormattingEnabled = true;
-            this.cmbDoctor.Location = new System.Drawing.Point(537, 166);
+            this.cmbDoctor.Location = new System.Drawing.Point(569, 166);
             this.cmbDoctor.Name = "cmbDoctor";
             this.cmbDoctor.Size = new System.Drawing.Size(100, 27);
             this.cmbDoctor.TabIndex = 32;
@@ -423,7 +424,7 @@
             // mtxtCedula
             // 
             this.mtxtCedula.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.mtxtCedula.Location = new System.Drawing.Point(537, 103);
+            this.mtxtCedula.Location = new System.Drawing.Point(569, 103);
             this.mtxtCedula.Mask = "000-0000000-0";
             this.mtxtCedula.Name = "mtxtCedula";
             this.mtxtCedula.Size = new System.Drawing.Size(100, 27);
@@ -432,7 +433,7 @@
             // mtxtTelefono
             // 
             this.mtxtTelefono.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.mtxtTelefono.Location = new System.Drawing.Point(725, 75);
+            this.mtxtTelefono.Location = new System.Drawing.Point(757, 75);
             this.mtxtTelefono.Mask = "000-000-0000";
             this.mtxtTelefono.Name = "mtxtTelefono";
             this.mtxtTelefono.Size = new System.Drawing.Size(100, 27);
@@ -441,7 +442,7 @@
             // mtxtTelefono2
             // 
             this.mtxtTelefono2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.mtxtTelefono2.Location = new System.Drawing.Point(725, 104);
+            this.mtxtTelefono2.Location = new System.Drawing.Point(757, 104);
             this.mtxtTelefono2.Mask = "000-000-0000";
             this.mtxtTelefono2.Name = "mtxtTelefono2";
             this.mtxtTelefono2.Size = new System.Drawing.Size(100, 27);
@@ -457,7 +458,7 @@
             this.btnOtro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOtro.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOtro.ForeColor = System.Drawing.Color.Black;
-            this.btnOtro.Location = new System.Drawing.Point(643, 165);
+            this.btnOtro.Location = new System.Drawing.Point(675, 165);
             this.btnOtro.Name = "btnOtro";
             this.btnOtro.Size = new System.Drawing.Size(48, 26);
             this.btnOtro.TabIndex = 40;
@@ -475,7 +476,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(431, 164);
+            this.button1.Location = new System.Drawing.Point(463, 164);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(36, 27);
             this.button1.TabIndex = 41;
@@ -493,7 +494,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.Black;
-            this.button2.Location = new System.Drawing.Point(831, 133);
+            this.button2.Location = new System.Drawing.Point(863, 133);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(45, 27);
             this.button2.TabIndex = 42;
@@ -507,7 +508,7 @@
             this.TxtCantidad.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.TxtCantidad.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtCantidad.ForeColor = System.Drawing.Color.DarkRed;
-            this.TxtCantidad.Location = new System.Drawing.Point(330, 27);
+            this.TxtCantidad.Location = new System.Drawing.Point(362, 27);
             this.TxtCantidad.Name = "TxtCantidad";
             this.TxtCantidad.ReadOnly = true;
             this.TxtCantidad.Size = new System.Drawing.Size(45, 23);
@@ -519,7 +520,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
             this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(266, 30);
+            this.label8.Location = new System.Drawing.Point(298, 30);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(58, 16);
             this.label8.TabIndex = 47;
@@ -528,10 +529,11 @@
             // txtbuscar
             // 
             this.txtbuscar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.txtbuscar.Location = new System.Drawing.Point(68, 29);
+            this.txtbuscar.Location = new System.Drawing.Point(100, 29);
             this.txtbuscar.Name = "txtbuscar";
             this.txtbuscar.Size = new System.Drawing.Size(100, 27);
             this.txtbuscar.TabIndex = 48;
+            this.txtbuscar.TextChanged += new System.EventHandler(this.txtbuscar_TextChanged);
             this.txtbuscar.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtbuscar_KeyPress);
             this.txtbuscar.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtbuscar_KeyUp);
             // 
@@ -541,7 +543,7 @@
             this.lblbuscar.AutoSize = true;
             this.lblbuscar.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
             this.lblbuscar.ForeColor = System.Drawing.Color.Black;
-            this.lblbuscar.Location = new System.Drawing.Point(12, 29);
+            this.lblbuscar.Location = new System.Drawing.Point(44, 35);
             this.lblbuscar.Name = "lblbuscar";
             this.lblbuscar.Size = new System.Drawing.Size(49, 16);
             this.lblbuscar.TabIndex = 49;
@@ -550,6 +552,7 @@
             // gbprincipal
             // 
             this.gbprincipal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(107)))), ((int)(((byte)(167)))));
+            this.gbprincipal.Controls.Add(this.button4);
             this.gbprincipal.Controls.Add(this.button3);
             this.gbprincipal.Controls.Add(this.lblid);
             this.gbprincipal.Controls.Add(this.lblbuscar);
@@ -607,7 +610,7 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.Black;
-            this.button3.Location = new System.Drawing.Point(15, 74);
+            this.button3.Location = new System.Drawing.Point(38, 75);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(153, 35);
             this.button3.TabIndex = 50;
@@ -631,14 +634,14 @@
             this.dgvprincipal.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dgvprincipal.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.dgvprincipal.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(173)))), ((int)(((byte)(168)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvprincipal.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(173)))), ((int)(((byte)(168)))));
+            dataGridViewCellStyle21.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle21.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle21.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle21.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle21.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvprincipal.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle21;
             this.dgvprincipal.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvprincipal.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.IDPACIENTE,
@@ -652,14 +655,14 @@
             this.IDTSEGURO,
             this.IDTDOCTOR});
             this.dgvprincipal.Cursor = System.Windows.Forms.Cursors.Hand;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(173)))), ((int)(((byte)(168)))));
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvprincipal.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle22.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle22.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(173)))), ((int)(((byte)(168)))));
+            dataGridViewCellStyle22.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle22.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle22.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvprincipal.DefaultCellStyle = dataGridViewCellStyle22;
             this.dgvprincipal.EnableHeadersVisualStyles = false;
             this.dgvprincipal.GridColor = System.Drawing.Color.White;
             this.dgvprincipal.Location = new System.Drawing.Point(30, 23);
@@ -667,22 +670,22 @@
             this.dgvprincipal.Name = "dgvprincipal";
             this.dgvprincipal.ReadOnly = true;
             this.dgvprincipal.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(173)))), ((int)(((byte)(168)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvprincipal.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle23.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle23.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle23.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(173)))), ((int)(((byte)(168)))));
+            dataGridViewCellStyle23.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle23.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvprincipal.RowHeadersDefaultCellStyle = dataGridViewCellStyle23;
             this.dgvprincipal.RowHeadersVisible = false;
             this.dgvprincipal.RowHeadersWidth = 10;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Bahnschrift SemiLight", 10F);
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
-            this.dgvprincipal.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle24.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle24.Font = new System.Drawing.Font("Bahnschrift SemiLight", 10F);
+            dataGridViewCellStyle24.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle24.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle24.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgvprincipal.RowsDefaultCellStyle = dataGridViewCellStyle24;
             this.dgvprincipal.RowTemplate.Height = 30;
             this.dgvprincipal.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvprincipal.Size = new System.Drawing.Size(1080, 330);
@@ -761,6 +764,24 @@
             this.IDTDOCTOR.Name = "IDTDOCTOR";
             this.IDTDOCTOR.ReadOnly = true;
             // 
+            // button4
+            // 
+            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.button4.BackColor = System.Drawing.Color.White;
+            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkSlateBlue;
+            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SlateBlue;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.Color.Black;
+            this.button4.Location = new System.Drawing.Point(38, 129);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(207, 35);
+            this.button4.TabIndex = 51;
+            this.button4.Text = "Enviar a Historial Clinico";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
             // FrmPPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -836,5 +857,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn IDTALER;
         private System.Windows.Forms.DataGridViewTextBoxColumn IDTSEGURO;
         private System.Windows.Forms.DataGridViewTextBoxColumn IDTDOCTOR;
+        private System.Windows.Forms.Button button4;
     }
 }

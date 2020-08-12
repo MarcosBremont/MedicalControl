@@ -365,5 +365,10 @@ namespace MedicalControl
         {
 
         }
+
+        private void gbprincipal_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

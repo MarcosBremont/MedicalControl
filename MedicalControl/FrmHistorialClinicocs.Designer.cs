@@ -30,7 +30,27 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.BtnResonancia = new System.Windows.Forms.Button();
+            this.BtnRadriografia = new System.Windows.Forms.Button();
+            this.BtnTomografia = new System.Windows.Forms.Button();
+            this.BtnSonografia = new System.Windows.Forms.Button();
+            this.txtResonanciaMagnetica = new System.Windows.Forms.TextBox();
+            this.lblResonanciaMagnetica = new System.Windows.Forms.Label();
+            this.txtRadiografia = new System.Windows.Forms.TextBox();
+            this.lblRadiografia = new System.Windows.Forms.Label();
+            this.txtTomografiaComputarizada = new System.Windows.Forms.TextBox();
+            this.lblTomografiaComputarizada = new System.Windows.Forms.Label();
+            this.txtSonografia = new System.Windows.Forms.TextBox();
+            this.lblSonografia = new System.Windows.Forms.Label();
+            this.mtbCedula = new System.Windows.Forms.MaskedTextBox();
+            this.cmbalergias = new System.Windows.Forms.ComboBox();
+            this.cmbDoctor = new System.Windows.Forms.ComboBox();
+            this.cmbsegurom = new System.Windows.Forms.ComboBox();
+            this.cmbSexo = new System.Windows.Forms.ComboBox();
+            this.dtPFecha = new System.Windows.Forms.DateTimePicker();
             this.txtAdolescencia = new System.Windows.Forms.TextBox();
             this.lblAdultez = new System.Windows.Forms.Label();
             this.txtNiñez = new System.Windows.Forms.TextBox();
@@ -45,7 +65,6 @@
             this.txtAntecedentesTransfucionales = new System.Windows.Forms.TextBox();
             this.txtAntecedentesQuirurgicos = new System.Windows.Forms.TextBox();
             this.button3 = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
             this.txtResidencia = new System.Windows.Forms.TextBox();
             this.MtbTelefono = new System.Windows.Forms.MaskedTextBox();
             this.lblDoctor = new System.Windows.Forms.Label();
@@ -78,20 +97,7 @@
             this.lblNombreP = new System.Windows.Forms.Label();
             this.txtnombrep = new System.Windows.Forms.TextBox();
             this.txtAdultez = new System.Windows.Forms.TextBox();
-            this.dtPFecha = new System.Windows.Forms.DateTimePicker();
-            this.cmbSexo = new System.Windows.Forms.ComboBox();
-            this.cmbAlergia = new System.Windows.Forms.ComboBox();
-            this.cmbDoctor = new System.Windows.Forms.ComboBox();
-            this.cmbalergias = new System.Windows.Forms.ComboBox();
-            this.mtbCedula = new System.Windows.Forms.MaskedTextBox();
-            this.txtSonografia = new System.Windows.Forms.TextBox();
-            this.lblSonografia = new System.Windows.Forms.Label();
-            this.txtTomografiaComputarizada = new System.Windows.Forms.TextBox();
-            this.lblTomografiaComputarizada = new System.Windows.Forms.Label();
-            this.txtRadiografia = new System.Windows.Forms.TextBox();
-            this.lblRadiografia = new System.Windows.Forms.Label();
-            this.txtResonanciaMagnetica = new System.Windows.Forms.TextBox();
-            this.lblResonanciaMagnetica = new System.Windows.Forms.Label();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnenviar = new System.Windows.Forms.Button();
             this.lblaadjunto = new System.Windows.Forms.Label();
@@ -109,13 +115,8 @@
             this.lblasunto = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
             this.lblpara = new System.Windows.Forms.Label();
-            this.BtnSonografia = new System.Windows.Forms.Button();
-            this.BtnTomografia = new System.Windows.Forms.Button();
-            this.BtnRadriografia = new System.Windows.Forms.Button();
-            this.BtnResonancia = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.txthistorialclinico = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -135,6 +136,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.txthistorialclinico);
             this.tabPage1.Controls.Add(this.button4);
             this.tabPage1.Controls.Add(this.button2);
             this.tabPage1.Controls.Add(this.button1);
@@ -153,7 +155,7 @@
             this.tabPage1.Controls.Add(this.mtbCedula);
             this.tabPage1.Controls.Add(this.cmbalergias);
             this.tabPage1.Controls.Add(this.cmbDoctor);
-            this.tabPage1.Controls.Add(this.cmbAlergia);
+            this.tabPage1.Controls.Add(this.cmbsegurom);
             this.tabPage1.Controls.Add(this.cmbSexo);
             this.tabPage1.Controls.Add(this.dtPFecha);
             this.tabPage1.Controls.Add(this.txtAdolescencia);
@@ -170,7 +172,6 @@
             this.tabPage1.Controls.Add(this.txtAntecedentesTransfucionales);
             this.tabPage1.Controls.Add(this.txtAntecedentesQuirurgicos);
             this.tabPage1.Controls.Add(this.button3);
-            this.tabPage1.Controls.Add(this.label2);
             this.tabPage1.Controls.Add(this.txtResidencia);
             this.tabPage1.Controls.Add(this.MtbTelefono);
             this.tabPage1.Controls.Add(this.lblDoctor);
@@ -212,32 +213,259 @@
             this.tabPage1.UseVisualStyleBackColor = true;
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
-            // tabPage2
+            // button4
             // 
-            this.tabPage2.Controls.Add(this.pictureBox1);
-            this.tabPage2.Controls.Add(this.btnenviar);
-            this.tabPage2.Controls.Add(this.lblaadjunto);
-            this.tabPage2.Controls.Add(this.txtadjunto);
-            this.tabPage2.Controls.Add(this.btnadjuntar);
-            this.tabPage2.Controls.Add(this.label27);
-            this.tabPage2.Controls.Add(this.label28);
-            this.tabPage2.Controls.Add(this.txtpassword);
-            this.tabPage2.Controls.Add(this.txtremitente);
-            this.tabPage2.Controls.Add(this.label30);
-            this.tabPage2.Controls.Add(this.txtasunto);
-            this.tabPage2.Controls.Add(this.txtcc);
-            this.tabPage2.Controls.Add(this.rtbmensaje);
-            this.tabPage2.Controls.Add(this.txtpara);
-            this.tabPage2.Controls.Add(this.lblasunto);
-            this.tabPage2.Controls.Add(this.label31);
-            this.tabPage2.Controls.Add(this.lblpara);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(910, 459);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Correo";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.button4.BackColor = System.Drawing.Color.White;
+            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkSlateBlue;
+            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SlateBlue;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.Color.Black;
+            this.button4.Location = new System.Drawing.Point(464, 223);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(153, 35);
+            this.button4.TabIndex = 173;
+            this.button4.Text = "Actualizar";
+            this.button4.UseVisualStyleBackColor = false;
+            // 
+            // button2
+            // 
+            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.button2.BackColor = System.Drawing.Color.White;
+            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkSlateBlue;
+            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SlateBlue;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.Black;
+            this.button2.Location = new System.Drawing.Point(143, 223);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(153, 35);
+            this.button2.TabIndex = 172;
+            this.button2.Text = "Consultar";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button1
+            // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.button1.BackColor = System.Drawing.Color.White;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkSlateBlue;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SlateBlue;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.Black;
+            this.button1.Location = new System.Drawing.Point(305, 223);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(153, 35);
+            this.button1.TabIndex = 171;
+            this.button1.Text = "Insertar";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // BtnResonancia
+            // 
+            this.BtnResonancia.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.BtnResonancia.BackColor = System.Drawing.Color.White;
+            this.BtnResonancia.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.BtnResonancia.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkSlateBlue;
+            this.BtnResonancia.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SlateBlue;
+            this.BtnResonancia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnResonancia.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnResonancia.ForeColor = System.Drawing.Color.Black;
+            this.BtnResonancia.Location = new System.Drawing.Point(871, 405);
+            this.BtnResonancia.Name = "BtnResonancia";
+            this.BtnResonancia.Size = new System.Drawing.Size(31, 27);
+            this.BtnResonancia.TabIndex = 170;
+            this.BtnResonancia.Text = "...";
+            this.BtnResonancia.UseVisualStyleBackColor = false;
+            this.BtnResonancia.Click += new System.EventHandler(this.BtnResonancia_Click);
+            // 
+            // BtnRadriografia
+            // 
+            this.BtnRadriografia.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.BtnRadriografia.BackColor = System.Drawing.Color.White;
+            this.BtnRadriografia.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.BtnRadriografia.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkSlateBlue;
+            this.BtnRadriografia.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SlateBlue;
+            this.BtnRadriografia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnRadriografia.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnRadriografia.ForeColor = System.Drawing.Color.Black;
+            this.BtnRadriografia.Location = new System.Drawing.Point(629, 405);
+            this.BtnRadriografia.Name = "BtnRadriografia";
+            this.BtnRadriografia.Size = new System.Drawing.Size(31, 27);
+            this.BtnRadriografia.TabIndex = 169;
+            this.BtnRadriografia.Text = "...";
+            this.BtnRadriografia.UseVisualStyleBackColor = false;
+            this.BtnRadriografia.Click += new System.EventHandler(this.BtnRadriografia_Click);
+            // 
+            // BtnTomografia
+            // 
+            this.BtnTomografia.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.BtnTomografia.BackColor = System.Drawing.Color.White;
+            this.BtnTomografia.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.BtnTomografia.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkSlateBlue;
+            this.BtnTomografia.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SlateBlue;
+            this.BtnTomografia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnTomografia.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnTomografia.ForeColor = System.Drawing.Color.Black;
+            this.BtnTomografia.Location = new System.Drawing.Point(414, 404);
+            this.BtnTomografia.Name = "BtnTomografia";
+            this.BtnTomografia.Size = new System.Drawing.Size(31, 27);
+            this.BtnTomografia.TabIndex = 168;
+            this.BtnTomografia.Text = "...";
+            this.BtnTomografia.UseVisualStyleBackColor = false;
+            this.BtnTomografia.Click += new System.EventHandler(this.BtnTomografia_Click);
+            // 
+            // BtnSonografia
+            // 
+            this.BtnSonografia.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.BtnSonografia.BackColor = System.Drawing.Color.White;
+            this.BtnSonografia.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.BtnSonografia.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkSlateBlue;
+            this.BtnSonografia.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SlateBlue;
+            this.BtnSonografia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnSonografia.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnSonografia.ForeColor = System.Drawing.Color.Black;
+            this.BtnSonografia.Location = new System.Drawing.Point(149, 404);
+            this.BtnSonografia.Name = "BtnSonografia";
+            this.BtnSonografia.Size = new System.Drawing.Size(31, 27);
+            this.BtnSonografia.TabIndex = 164;
+            this.BtnSonografia.Text = "...";
+            this.BtnSonografia.UseVisualStyleBackColor = false;
+            this.BtnSonografia.Click += new System.EventHandler(this.BtnSonografia_Click);
+            // 
+            // txtResonanciaMagnetica
+            // 
+            this.txtResonanciaMagnetica.Location = new System.Drawing.Point(792, 411);
+            this.txtResonanciaMagnetica.Name = "txtResonanciaMagnetica";
+            this.txtResonanciaMagnetica.Size = new System.Drawing.Size(76, 20);
+            this.txtResonanciaMagnetica.TabIndex = 163;
+            // 
+            // lblResonanciaMagnetica
+            // 
+            this.lblResonanciaMagnetica.AutoSize = true;
+            this.lblResonanciaMagnetica.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblResonanciaMagnetica.ForeColor = System.Drawing.Color.Black;
+            this.lblResonanciaMagnetica.Location = new System.Drawing.Point(660, 413);
+            this.lblResonanciaMagnetica.Name = "lblResonanciaMagnetica";
+            this.lblResonanciaMagnetica.Size = new System.Drawing.Size(135, 16);
+            this.lblResonanciaMagnetica.TabIndex = 162;
+            this.lblResonanciaMagnetica.Text = "Resonancia Magnetica";
+            // 
+            // txtRadiografia
+            // 
+            this.txtRadiografia.Location = new System.Drawing.Point(522, 411);
+            this.txtRadiografia.Name = "txtRadiografia";
+            this.txtRadiografia.Size = new System.Drawing.Size(106, 20);
+            this.txtRadiografia.TabIndex = 161;
+            // 
+            // lblRadiografia
+            // 
+            this.lblRadiografia.AutoSize = true;
+            this.lblRadiografia.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRadiografia.ForeColor = System.Drawing.Color.Black;
+            this.lblRadiografia.Location = new System.Drawing.Point(444, 413);
+            this.lblRadiografia.Name = "lblRadiografia";
+            this.lblRadiografia.Size = new System.Drawing.Size(80, 16);
+            this.lblRadiografia.TabIndex = 160;
+            this.lblRadiografia.Text = "Radriografia";
+            // 
+            // txtTomografiaComputarizada
+            // 
+            this.txtTomografiaComputarizada.Location = new System.Drawing.Point(339, 411);
+            this.txtTomografiaComputarizada.Name = "txtTomografiaComputarizada";
+            this.txtTomografiaComputarizada.Size = new System.Drawing.Size(74, 20);
+            this.txtTomografiaComputarizada.TabIndex = 159;
+            // 
+            // lblTomografiaComputarizada
+            // 
+            this.lblTomografiaComputarizada.AutoSize = true;
+            this.lblTomografiaComputarizada.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTomografiaComputarizada.ForeColor = System.Drawing.Color.Black;
+            this.lblTomografiaComputarizada.Location = new System.Drawing.Point(180, 413);
+            this.lblTomografiaComputarizada.Name = "lblTomografiaComputarizada";
+            this.lblTomografiaComputarizada.Size = new System.Drawing.Size(162, 16);
+            this.lblTomografiaComputarizada.TabIndex = 158;
+            this.lblTomografiaComputarizada.Text = "Tomografia Computarizada";
+            // 
+            // txtSonografia
+            // 
+            this.txtSonografia.Location = new System.Drawing.Point(74, 411);
+            this.txtSonografia.Name = "txtSonografia";
+            this.txtSonografia.Size = new System.Drawing.Size(72, 20);
+            this.txtSonografia.TabIndex = 157;
+            // 
+            // lblSonografia
+            // 
+            this.lblSonografia.AutoSize = true;
+            this.lblSonografia.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSonografia.ForeColor = System.Drawing.Color.Black;
+            this.lblSonografia.Location = new System.Drawing.Point(4, 413);
+            this.lblSonografia.Name = "lblSonografia";
+            this.lblSonografia.Size = new System.Drawing.Size(71, 16);
+            this.lblSonografia.TabIndex = 156;
+            this.lblSonografia.Text = "Sonografia";
+            // 
+            // mtbCedula
+            // 
+            this.mtbCedula.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.mtbCedula.Location = new System.Drawing.Point(331, 134);
+            this.mtbCedula.Mask = "000-0000000-0";
+            this.mtbCedula.Name = "mtbCedula";
+            this.mtbCedula.Size = new System.Drawing.Size(100, 20);
+            this.mtbCedula.TabIndex = 155;
+            // 
+            // cmbalergias
+            // 
+            this.cmbalergias.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.cmbalergias.FormattingEnabled = true;
+            this.cmbalergias.Location = new System.Drawing.Point(199, 274);
+            this.cmbalergias.Name = "cmbalergias";
+            this.cmbalergias.Size = new System.Drawing.Size(126, 21);
+            this.cmbalergias.TabIndex = 154;
+            // 
+            // cmbDoctor
+            // 
+            this.cmbDoctor.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.cmbDoctor.FormattingEnabled = true;
+            this.cmbDoctor.Location = new System.Drawing.Point(560, 57);
+            this.cmbDoctor.Name = "cmbDoctor";
+            this.cmbDoctor.Size = new System.Drawing.Size(100, 21);
+            this.cmbDoctor.TabIndex = 153;
+            // 
+            // cmbsegurom
+            // 
+            this.cmbsegurom.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.cmbsegurom.FormattingEnabled = true;
+            this.cmbsegurom.Location = new System.Drawing.Point(560, 22);
+            this.cmbsegurom.Name = "cmbsegurom";
+            this.cmbsegurom.Size = new System.Drawing.Size(100, 21);
+            this.cmbsegurom.TabIndex = 152;
+            // 
+            // cmbSexo
+            // 
+            this.cmbSexo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.cmbSexo.FormattingEnabled = true;
+            this.cmbSexo.Items.AddRange(new object[] {
+            "M",
+            "F"});
+            this.cmbSexo.Location = new System.Drawing.Point(122, 155);
+            this.cmbSexo.Name = "cmbSexo";
+            this.cmbSexo.Size = new System.Drawing.Size(43, 21);
+            this.cmbSexo.TabIndex = 151;
+            // 
+            // dtPFecha
+            // 
+            this.dtPFecha.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.dtPFecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtPFecha.Location = new System.Drawing.Point(122, 122);
+            this.dtPFecha.Name = "dtPFecha";
+            this.dtPFecha.Size = new System.Drawing.Size(100, 20);
+            this.dtPFecha.TabIndex = 150;
             // 
             // txtAdolescencia
             // 
@@ -371,18 +599,6 @@
             this.button3.Text = "Mas informacion";
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // label2
-            // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
-            this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(119, 25);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(73, 16);
-            this.label2.TabIndex = 134;
-            this.label2.Text = "ID Paciente";
             // 
             // txtResidencia
             // 
@@ -702,134 +918,32 @@
             this.txtAdultez.Size = new System.Drawing.Size(147, 20);
             this.txtAdultez.TabIndex = 149;
             // 
-            // dtPFecha
+            // tabPage2
             // 
-            this.dtPFecha.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.dtPFecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtPFecha.Location = new System.Drawing.Point(122, 122);
-            this.dtPFecha.Name = "dtPFecha";
-            this.dtPFecha.Size = new System.Drawing.Size(100, 20);
-            this.dtPFecha.TabIndex = 150;
-            // 
-            // cmbSexo
-            // 
-            this.cmbSexo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.cmbSexo.FormattingEnabled = true;
-            this.cmbSexo.Items.AddRange(new object[] {
-            "M",
-            "F"});
-            this.cmbSexo.Location = new System.Drawing.Point(122, 155);
-            this.cmbSexo.Name = "cmbSexo";
-            this.cmbSexo.Size = new System.Drawing.Size(43, 21);
-            this.cmbSexo.TabIndex = 151;
-            // 
-            // cmbAlergia
-            // 
-            this.cmbAlergia.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.cmbAlergia.FormattingEnabled = true;
-            this.cmbAlergia.Location = new System.Drawing.Point(560, 22);
-            this.cmbAlergia.Name = "cmbAlergia";
-            this.cmbAlergia.Size = new System.Drawing.Size(100, 21);
-            this.cmbAlergia.TabIndex = 152;
-            // 
-            // cmbDoctor
-            // 
-            this.cmbDoctor.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.cmbDoctor.FormattingEnabled = true;
-            this.cmbDoctor.Location = new System.Drawing.Point(560, 57);
-            this.cmbDoctor.Name = "cmbDoctor";
-            this.cmbDoctor.Size = new System.Drawing.Size(100, 21);
-            this.cmbDoctor.TabIndex = 153;
-            // 
-            // cmbalergias
-            // 
-            this.cmbalergias.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.cmbalergias.FormattingEnabled = true;
-            this.cmbalergias.Location = new System.Drawing.Point(199, 274);
-            this.cmbalergias.Name = "cmbalergias";
-            this.cmbalergias.Size = new System.Drawing.Size(126, 21);
-            this.cmbalergias.TabIndex = 154;
-            // 
-            // mtbCedula
-            // 
-            this.mtbCedula.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.mtbCedula.Location = new System.Drawing.Point(331, 134);
-            this.mtbCedula.Mask = "000-0000000-0";
-            this.mtbCedula.Name = "mtbCedula";
-            this.mtbCedula.Size = new System.Drawing.Size(100, 20);
-            this.mtbCedula.TabIndex = 155;
-            // 
-            // txtSonografia
-            // 
-            this.txtSonografia.Location = new System.Drawing.Point(74, 411);
-            this.txtSonografia.Name = "txtSonografia";
-            this.txtSonografia.Size = new System.Drawing.Size(72, 20);
-            this.txtSonografia.TabIndex = 157;
-            // 
-            // lblSonografia
-            // 
-            this.lblSonografia.AutoSize = true;
-            this.lblSonografia.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSonografia.ForeColor = System.Drawing.Color.Black;
-            this.lblSonografia.Location = new System.Drawing.Point(4, 413);
-            this.lblSonografia.Name = "lblSonografia";
-            this.lblSonografia.Size = new System.Drawing.Size(71, 16);
-            this.lblSonografia.TabIndex = 156;
-            this.lblSonografia.Text = "Sonografia";
-            // 
-            // txtTomografiaComputarizada
-            // 
-            this.txtTomografiaComputarizada.Location = new System.Drawing.Point(339, 411);
-            this.txtTomografiaComputarizada.Name = "txtTomografiaComputarizada";
-            this.txtTomografiaComputarizada.Size = new System.Drawing.Size(74, 20);
-            this.txtTomografiaComputarizada.TabIndex = 159;
-            // 
-            // lblTomografiaComputarizada
-            // 
-            this.lblTomografiaComputarizada.AutoSize = true;
-            this.lblTomografiaComputarizada.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTomografiaComputarizada.ForeColor = System.Drawing.Color.Black;
-            this.lblTomografiaComputarizada.Location = new System.Drawing.Point(180, 413);
-            this.lblTomografiaComputarizada.Name = "lblTomografiaComputarizada";
-            this.lblTomografiaComputarizada.Size = new System.Drawing.Size(162, 16);
-            this.lblTomografiaComputarizada.TabIndex = 158;
-            this.lblTomografiaComputarizada.Text = "Tomografia Computarizada";
-            // 
-            // txtRadiografia
-            // 
-            this.txtRadiografia.Location = new System.Drawing.Point(522, 411);
-            this.txtRadiografia.Name = "txtRadiografia";
-            this.txtRadiografia.Size = new System.Drawing.Size(106, 20);
-            this.txtRadiografia.TabIndex = 161;
-            // 
-            // lblRadiografia
-            // 
-            this.lblRadiografia.AutoSize = true;
-            this.lblRadiografia.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRadiografia.ForeColor = System.Drawing.Color.Black;
-            this.lblRadiografia.Location = new System.Drawing.Point(444, 413);
-            this.lblRadiografia.Name = "lblRadiografia";
-            this.lblRadiografia.Size = new System.Drawing.Size(80, 16);
-            this.lblRadiografia.TabIndex = 160;
-            this.lblRadiografia.Text = "Radriografia";
-            // 
-            // txtResonanciaMagnetica
-            // 
-            this.txtResonanciaMagnetica.Location = new System.Drawing.Point(792, 411);
-            this.txtResonanciaMagnetica.Name = "txtResonanciaMagnetica";
-            this.txtResonanciaMagnetica.Size = new System.Drawing.Size(76, 20);
-            this.txtResonanciaMagnetica.TabIndex = 163;
-            // 
-            // lblResonanciaMagnetica
-            // 
-            this.lblResonanciaMagnetica.AutoSize = true;
-            this.lblResonanciaMagnetica.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblResonanciaMagnetica.ForeColor = System.Drawing.Color.Black;
-            this.lblResonanciaMagnetica.Location = new System.Drawing.Point(660, 413);
-            this.lblResonanciaMagnetica.Name = "lblResonanciaMagnetica";
-            this.lblResonanciaMagnetica.Size = new System.Drawing.Size(135, 16);
-            this.lblResonanciaMagnetica.TabIndex = 162;
-            this.lblResonanciaMagnetica.Text = "Resonancia Magnetica";
+            this.tabPage2.Controls.Add(this.pictureBox1);
+            this.tabPage2.Controls.Add(this.btnenviar);
+            this.tabPage2.Controls.Add(this.lblaadjunto);
+            this.tabPage2.Controls.Add(this.txtadjunto);
+            this.tabPage2.Controls.Add(this.btnadjuntar);
+            this.tabPage2.Controls.Add(this.label27);
+            this.tabPage2.Controls.Add(this.label28);
+            this.tabPage2.Controls.Add(this.txtpassword);
+            this.tabPage2.Controls.Add(this.txtremitente);
+            this.tabPage2.Controls.Add(this.label30);
+            this.tabPage2.Controls.Add(this.txtasunto);
+            this.tabPage2.Controls.Add(this.txtcc);
+            this.tabPage2.Controls.Add(this.rtbmensaje);
+            this.tabPage2.Controls.Add(this.txtpara);
+            this.tabPage2.Controls.Add(this.lblasunto);
+            this.tabPage2.Controls.Add(this.label31);
+            this.tabPage2.Controls.Add(this.lblpara);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(910, 459);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Correo";
+            this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // pictureBox1
             // 
@@ -1000,125 +1114,16 @@
             this.lblpara.Text = "Para:";
             this.lblpara.Click += new System.EventHandler(this.lblpara_Click);
             // 
-            // BtnSonografia
+            // openFileDialog1
             // 
-            this.BtnSonografia.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.BtnSonografia.BackColor = System.Drawing.Color.White;
-            this.BtnSonografia.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.BtnSonografia.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkSlateBlue;
-            this.BtnSonografia.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SlateBlue;
-            this.BtnSonografia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnSonografia.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnSonografia.ForeColor = System.Drawing.Color.Black;
-            this.BtnSonografia.Location = new System.Drawing.Point(149, 404);
-            this.BtnSonografia.Name = "BtnSonografia";
-            this.BtnSonografia.Size = new System.Drawing.Size(31, 27);
-            this.BtnSonografia.TabIndex = 164;
-            this.BtnSonografia.Text = "...";
-            this.BtnSonografia.UseVisualStyleBackColor = false;
+            this.openFileDialog1.FileName = "openFileDialog1";
             // 
-            // BtnTomografia
+            // txthistorialclinico
             // 
-            this.BtnTomografia.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.BtnTomografia.BackColor = System.Drawing.Color.White;
-            this.BtnTomografia.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.BtnTomografia.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkSlateBlue;
-            this.BtnTomografia.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SlateBlue;
-            this.BtnTomografia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnTomografia.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnTomografia.ForeColor = System.Drawing.Color.Black;
-            this.BtnTomografia.Location = new System.Drawing.Point(414, 404);
-            this.BtnTomografia.Name = "BtnTomografia";
-            this.BtnTomografia.Size = new System.Drawing.Size(31, 27);
-            this.BtnTomografia.TabIndex = 168;
-            this.BtnTomografia.Text = "...";
-            this.BtnTomografia.UseVisualStyleBackColor = false;
-            // 
-            // BtnRadriografia
-            // 
-            this.BtnRadriografia.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.BtnRadriografia.BackColor = System.Drawing.Color.White;
-            this.BtnRadriografia.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.BtnRadriografia.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkSlateBlue;
-            this.BtnRadriografia.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SlateBlue;
-            this.BtnRadriografia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnRadriografia.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnRadriografia.ForeColor = System.Drawing.Color.Black;
-            this.BtnRadriografia.Location = new System.Drawing.Point(629, 405);
-            this.BtnRadriografia.Name = "BtnRadriografia";
-            this.BtnRadriografia.Size = new System.Drawing.Size(31, 27);
-            this.BtnRadriografia.TabIndex = 169;
-            this.BtnRadriografia.Text = "...";
-            this.BtnRadriografia.UseVisualStyleBackColor = false;
-            // 
-            // BtnResonancia
-            // 
-            this.BtnResonancia.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.BtnResonancia.BackColor = System.Drawing.Color.White;
-            this.BtnResonancia.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.BtnResonancia.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkSlateBlue;
-            this.BtnResonancia.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SlateBlue;
-            this.BtnResonancia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnResonancia.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnResonancia.ForeColor = System.Drawing.Color.Black;
-            this.BtnResonancia.Location = new System.Drawing.Point(871, 405);
-            this.BtnResonancia.Name = "BtnResonancia";
-            this.BtnResonancia.Size = new System.Drawing.Size(31, 27);
-            this.BtnResonancia.TabIndex = 170;
-            this.BtnResonancia.Text = "...";
-            this.BtnResonancia.UseVisualStyleBackColor = false;
-            // 
-            // button1
-            // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button1.BackColor = System.Drawing.Color.White;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkSlateBlue;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SlateBlue;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(305, 223);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(153, 35);
-            this.button1.TabIndex = 171;
-            this.button1.Text = "Insertar";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button2
-            // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button2.BackColor = System.Drawing.Color.White;
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkSlateBlue;
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SlateBlue;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.Black;
-            this.button2.Location = new System.Drawing.Point(143, 223);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(153, 35);
-            this.button2.TabIndex = 172;
-            this.button2.Text = "Consultar";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // button4
-            // 
-            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button4.BackColor = System.Drawing.Color.White;
-            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkSlateBlue;
-            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SlateBlue;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.Black;
-            this.button4.Location = new System.Drawing.Point(464, 223);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(153, 35);
-            this.button4.TabIndex = 173;
-            this.button4.Text = "Actualizar";
-            this.button4.UseVisualStyleBackColor = false;
+            this.txthistorialclinico.Location = new System.Drawing.Point(122, 21);
+            this.txthistorialclinico.Name = "txthistorialclinico";
+            this.txthistorialclinico.Size = new System.Drawing.Size(100, 20);
+            this.txthistorialclinico.TabIndex = 174;
             // 
             // FrmHistorialClinicocs
             // 
@@ -1158,7 +1163,6 @@
         private System.Windows.Forms.TextBox txtAntecedentesTransfucionales;
         private System.Windows.Forms.TextBox txtAntecedentesQuirurgicos;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtResidencia;
         private System.Windows.Forms.MaskedTextBox MtbTelefono;
         private System.Windows.Forms.Label lblDoctor;
@@ -1196,7 +1200,7 @@
         private System.Windows.Forms.ComboBox cmbSexo;
         private System.Windows.Forms.ComboBox cmbalergias;
         private System.Windows.Forms.ComboBox cmbDoctor;
-        private System.Windows.Forms.ComboBox cmbAlergia;
+        private System.Windows.Forms.ComboBox cmbsegurom;
         private System.Windows.Forms.TextBox txtResonanciaMagnetica;
         private System.Windows.Forms.Label lblResonanciaMagnetica;
         private System.Windows.Forms.TextBox txtRadiografia;
@@ -1230,5 +1234,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.TextBox txthistorialclinico;
     }
 }

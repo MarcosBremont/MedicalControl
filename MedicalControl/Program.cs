@@ -16,7 +16,7 @@ namespace MedicalControl
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmHistorialClinicocs());
+            Application.Run(new FrmLogin());
         }
     }
 }

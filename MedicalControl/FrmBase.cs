@@ -264,5 +264,10 @@ namespace MedicalControl
         {
             OpenChildForm(new FrmInformacionEmpresa());
         }
+
+        private void historialClinicoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new FrmHistorialClinicocs());
+        }
     }
 }

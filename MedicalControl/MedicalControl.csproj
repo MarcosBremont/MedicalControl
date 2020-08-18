@@ -170,6 +170,10 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="Resources\School Supplies Welcome Back School Poster %285%29.png" />
+    <None Include="Resources\School Supplies Welcome Back School Poster %283%29.png" />
+    <None Include="Resources\School Supplies Welcome Back School Poster %282%29.png" />
+    <None Include="Resources\School Supplies Welcome Back School Poster %281%29.png" />
     <None Include="Resources\Diseño_sin_título__1_-removebg-preview %281%29.png" />
     <None Include="Resources\Diseño_sin_título__1_-removebg-preview.png" />
     <None Include="Resources\Charity_Store__1_-removebg-preview.png" />

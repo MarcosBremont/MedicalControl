@@ -283,6 +283,46 @@ namespace MedicalControl.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap School_Supplies_Welcome_Back_School_Poster__1_ {
+            get {
+                object obj = ResourceManager.GetObject("School Supplies Welcome Back School Poster (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap School_Supplies_Welcome_Back_School_Poster__2_ {
+            get {
+                object obj = ResourceManager.GetObject("School Supplies Welcome Back School Poster (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap School_Supplies_Welcome_Back_School_Poster__3_ {
+            get {
+                object obj = ResourceManager.GetObject("School Supplies Welcome Back School Poster (3)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap School_Supplies_Welcome_Back_School_Poster__5_ {
+            get {
+                object obj = ResourceManager.GetObject("School Supplies Welcome Back School Poster (5)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap user {
             get {
                 object obj = ResourceManager.GetObject("user", resourceCulture);

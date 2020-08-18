@@ -12,6 +12,7 @@ using System.Net;
 using System.Net.Mail;
 using System.Diagnostics;
 using System.Runtime.InteropServices;
+using System.IO;
 
 namespace MedicalControl
 {
@@ -49,20 +50,9 @@ namespace MedicalControl
             lblNiñez.Visible = false;
             lblAdolescencia.Visible = false;
             lblAdultez.Visible = false;
-            lblRadiografia.Visible = false;
-            lblSonografia.Visible = false;
-            lblResonanciaMagnetica.Visible = false;
-            lblTomografiaComputarizada.Visible = false;
             cmbalergias.Visible = false;
             lblAntecedentesTransfucionales.Visible = false;
-            txtRadiografia.Visible = false;
-            txtSonografia.Visible = false;
-            txtResonanciaMagnetica.Visible = false;
-            txtTomografiaComputarizada.Visible = false;
-            BtnRadriografia.Visible = false;
-            BtnResonancia.Visible = false;
-            BtnSonografia.Visible = false;
-            BtnTomografia.Visible = false;
+
 
         }
 
@@ -145,20 +135,8 @@ namespace MedicalControl
             lblNiñez.Visible = true;
             lblAdolescencia.Visible = true;
             lblAdultez.Visible = true;
-            lblRadiografia.Visible = true;
-            lblSonografia.Visible = true;
-            lblResonanciaMagnetica.Visible = true;
-            lblTomografiaComputarizada.Visible = true;
             cmbalergias.Visible = true;
             lblAntecedentesTransfucionales.Visible = true;
-            txtRadiografia.Visible = true;
-            txtSonografia.Visible = true;
-            txtResonanciaMagnetica.Visible = true;
-            txtTomografiaComputarizada.Visible = true;
-            BtnRadriografia.Visible = true;
-            BtnResonancia.Visible = true;
-            BtnSonografia.Visible = true;
-            BtnTomografia.Visible = true;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -168,7 +146,7 @@ namespace MedicalControl
                 if (con.State != ConnectionState.Open)
                 {
                     con.Open();
-                    string query = "INSERT INTO t_HistorialClinico (NombreP, ApellidoP, Fecha, Sexo, Telefono, Procedencia, Residencia, Edad, Cedula, Telefono2, Seguro, Doctor, Ocupacion, Religion, EstadoCivil, Raza, AntAlrg, AntQrg, AntHops, AntMed, AntTra, Ninez, Adolescencia, Adultez, Sonografia, TomografiaComp, Radriografia, ResonanciaM) values(@NombreP, @ApellidoP, @Fecha, @Sexo, @Telefono, @Procedencia, @Residencia, @Edad, @Cedula, @Telefono2, @Seguro, @Doctor, @Ocupacion, @Religion, @EstadoCivil, @Raza, @AntAlrg, @AntQrg, @AntHops, @AntMed, @AntTra, @Ninez, @Adolescencia, @Adultez, @Sonografia, @TomografiaComp, @Radriografia, @ResonanciaM)";
+                    string query = "INSERT INTO t_HistorialClinico (NombreP, ApellidoP, Fecha, Sexo, Telefono, Procedencia, Residencia, Edad, Cedula, Telefono2, Seguro, Doctor, Ocupacion, Religion, EstadoCivil, Raza, AntAlrg, AntQrg, AntHops, AntMed, AntTra, Ninez, Adolescencia, Adultez) values(@NombreP, @ApellidoP, @Fecha, @Sexo, @Telefono, @Procedencia, @Residencia, @Edad, @Cedula, @Telefono2, @Seguro, @Doctor, @Ocupacion, @Religion, @EstadoCivil, @Raza, @AntAlrg, @AntQrg, @AntHops, @AntMed, @AntTra, @Ninez, @Adolescencia, @Adultez)";
                     MySqlCommand comando = new MySqlCommand(query, con);
                     comando.Parameters.AddWithValue("@NombreP", txtnombrep.Text);
                     comando.Parameters.AddWithValue("@ApellidoP", txtApellido.Text);
@@ -194,10 +172,7 @@ namespace MedicalControl
                     comando.Parameters.AddWithValue("@Ninez", txtNiñez.Text);
                     comando.Parameters.AddWithValue("@Adolescencia", txtAdolescencia.Text);
                     comando.Parameters.AddWithValue("@Adultez", txtAdultez.Text);
-                    comando.Parameters.AddWithValue("@Sonografia", txtSonografia.Text);
-                    comando.Parameters.AddWithValue("@TomografiaComp", txtTomografiaComputarizada);
-                    comando.Parameters.AddWithValue("@Radriografia", txtRadiografia);
-                    comando.Parameters.AddWithValue("@ResonanciaM", txtResonanciaMagnetica.Text);
+                    
                     comando.ExecuteNonQuery();
                     Refresh();
                     MessageBox.Show("Historial Clinico Agregado");
@@ -217,73 +192,7 @@ namespace MedicalControl
 
         }
 
-        private void BtnSonografia_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                this.openFileDialog1.ShowDialog();
-                if (this.openFileDialog1.FileName.Equals("") == false)
-                {
-                    txtSonografia.Text = this.openFileDialog1.FileName;
-
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error al cargar la ruta del archivo: " + ex.ToString());
-            }
-        }
-
-        private void BtnTomografia_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                this.openFileDialog1.ShowDialog();
-                if (this.openFileDialog1.FileName.Equals("") == false)
-                {
-                    txtTomografiaComputarizada.Text = this.openFileDialog1.FileName;
-
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error al cargar la ruta del archivo: " + ex.ToString());
-            }
-        }
-
-        private void BtnRadriografia_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                this.openFileDialog1.ShowDialog();
-                if (this.openFileDialog1.FileName.Equals("") == false)
-                {
-                    txtRadiografia.Text = this.openFileDialog1.FileName;
-
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error al cargar la ruta del archivo: " + ex.ToString());
-            }
-        }
-
-        private void BtnResonancia_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                this.openFileDialog1.ShowDialog();
-                if (this.openFileDialog1.FileName.Equals("") == false)
-                {
-                    txtResonanciaMagnetica.Text = this.openFileDialog1.FileName;
-
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error al cargar la ruta del archivo: " + ex.ToString());
-            }
-        }
+       
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -294,7 +203,7 @@ namespace MedicalControl
                     con.Open();
                     MySqlCommand cmd = new MySqlCommand("select * from t_HistorialClinico where IDhistorialClinico=@IDhistorialClinico", con);
                     cmd.Parameters.AddWithValue("@IDhistorialClinico", txthistorialclinico.Text);
-                   
+
                     MySqlDataReader reg = cmd.ExecuteReader();
                     if (reg.Read())
                     {
@@ -322,10 +231,7 @@ namespace MedicalControl
                         txtNiñez.Text = reg["Ninez"].ToString();
                         txtAdolescencia.Text = reg["Adolescencia"].ToString();
                         txtAdultez.Text = reg["Adultez"].ToString();
-                        txtSonografia.Text = reg["Sonografia"].ToString();
-                        txtTomografiaComputarizada.Text = reg["TomografiaComp"].ToString();
-                        txtRadiografia.Text = reg["Radriografia"].ToString();
-                        txtResonanciaMagnetica.Text = reg["ResonanciaM"].ToString();
+               
                         MessageBox.Show("Historial Clinico Encontrado");
                     }
                 }
@@ -342,13 +248,103 @@ namespace MedicalControl
             }
 
         }
-
-        private void button5_Click(object sender, EventArgs e)
+        private void SaveFile(SaveFileDialog sfd)
         {
+            string path = sfd.FileName;
+            File.WriteAllText(path, string.Format("{0} {1} {2} {3} {4} {5} {6} {7} {8} {9} {10} {11} {12} {13} {14} {15} {16} {17} {18} {19} {20} {21} {22} {23} {24} {25} {26} {25} {26} {27} {28} {29} {30} {31} {32} {33} {34} {35} {36} {37} {38} {39} {40} {41} {42} {43} {44} {45} {46} {47} ", "Nombre", txtnombrep.Text, "Apellido", txtApellido.Text, "Fecha", dtPFecha.Text
+            , "Sexo", cmbSexo.Text
+            , "Telefono", MtbTelefono.Text
+            , "Procedencia", txtProcedencia.Text
+            , "Residencia", txtResidencia.Text
+            , "Edad", txtEdad.Text
+            , "Cedula", mtbCedula.Text
+            , "Telefono 2", mtbTelefono2.Text
+            , "Seguro", cmbsegurom.Text
+            , "Doctor/a", cmbDoctor.Text
+            , "Ocupacion", txtOcupacion.Text
+            , "Religion", txtReligion.Text
+            , "Estado Civil", txtEstadoCivil.Text
+            , "Raza", txtRaza.Text
+            , "Alergias", cmbalergias.Text
+            , "Antecedentes Quirurgicos", txtAntecedentesQuirurgicos.Text
+            , "Antecedentes Hospitalarios", txtAntecedentesHospitalarios.Text
+            , "Antecedentes Medicamentosos", txtAntecedentesMedicamentosos.Text
+            , "Antecedentes Traumaticos", txtAntecedentesTarumaticos.Text
+            , "Antecedentes sobre la niñez", txtNiñez.Text
+            , "Antecedentes sobre la adolescencia", txtAdolescencia.Text
+            , "Antecedentes sobre la adultez", txtAdultez.Text));
+            
 
         }
 
+        private void button5_Click(object sender, EventArgs e)
+        {
+          
+            using (SaveFileDialog sfd = new SaveFileDialog())
+            {
+                sfd.Filter = "Text Files|*.txt|Documents|*.doc";
+                sfd.CreatePrompt = true;
+                sfd.OverwritePrompt = false;
+                sfd.Title = "Save Text Document";
+                if (sfd.ShowDialog() == DialogResult.OK)
+                {
+                    SaveFile(sfd);
+                }
+            }
+          
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (con.State != ConnectionState.Open)
+                {
+                    con.Open();
+                    string query = "UPDATE t_HistorialClinico SET NombreP = @NombreP, ApellidoP=@ApellidoP, Fecha=@Fecha, Sexo=@Sexo, Telefono=@Telefono, Procedencia=@Procedencia, Residencia=@Residencia, Edad=@Edad, Cedula=@Cedula, Telefono2=@Telefono2, Seguro=@Seguro, Doctor=@Doctor, Ocupacion=@Ocupacion, Religion=@Religion, EstadoCivil=@EstadoCivil, Raza=@Raza, AntAlrg=@AntAlrg, AntQrg=@AntQrg, AntHops=@AntHops, AntMed=@AntMed, AntTra=@AntTra, Ninez=@Ninez, Adolescencia=@Adolescencia, Adultez=@Adultez where IDhistorialClinico=@IDhistorialClinico";
+                    MySqlCommand comando = new MySqlCommand(query, con);
+                    comando.Parameters.AddWithValue("@IDhistorialClinico", txthistorialclinico.Text);
+                    comando.Parameters.AddWithValue("@NombreP", txtnombrep.Text);
+                    comando.Parameters.AddWithValue("@ApellidoP", txtApellido.Text);
+                    comando.Parameters.AddWithValue("@Fecha", dtPFecha.Text);
+                    comando.Parameters.AddWithValue("@Sexo", cmbSexo.Text);
+                    comando.Parameters.AddWithValue("@Telefono", MtbTelefono.Text);
+                    comando.Parameters.AddWithValue("@Procedencia", txtProcedencia.Text);
+                    comando.Parameters.AddWithValue("@Residencia", txtResidencia.Text);
+                    comando.Parameters.AddWithValue("@Edad", txtEdad.Text);
+                    comando.Parameters.AddWithValue("@Cedula", mtbCedula.Text);
+                    comando.Parameters.AddWithValue("@Telefono2", mtbTelefono2.Text);
+                    comando.Parameters.AddWithValue("@Seguro", cmbsegurom.SelectedValue);
+                    comando.Parameters.AddWithValue("@Doctor", cmbDoctor.SelectedValue);
+                    comando.Parameters.AddWithValue("@Ocupacion", txtOcupacion.Text);
+                    comando.Parameters.AddWithValue("@Religion", txtReligion.Text);
+                    comando.Parameters.AddWithValue("@EstadoCivil", txtEstadoCivil.Text);
+                    comando.Parameters.AddWithValue("@Raza", txtRaza.Text);
+                    comando.Parameters.AddWithValue("@AntAlrg", cmbalergias.SelectedValue);
+                    comando.Parameters.AddWithValue("@AntQrg", txtAntecedentesQuirurgicos.Text);
+                    comando.Parameters.AddWithValue("@AntHops", txtAntecedentesHospitalarios.Text); 
+                    comando.Parameters.AddWithValue("@AntMed", txtAntecedentesMedicamentosos.Text);
+                    comando.Parameters.AddWithValue("@AntTra", txtAntecedentesTarumaticos.Text);
+                    comando.Parameters.AddWithValue("@Ninez", txtNiñez.Text);
+                    comando.Parameters.AddWithValue("@Adolescencia", txtAdolescencia.Text);
+                    comando.Parameters.AddWithValue("@Adultez", txtAdultez.Text);
+
+                    comando.ExecuteNonQuery();
+                    Refresh();
+                    MessageBox.Show("Historial Clinico Actualizado");
+                }
+                else
+                {
+                    con.Close();
+                }
+
+            }
+            catch (Exception)
+            {
+
+            }
 
 
+        }
     }
 }

@@ -112,7 +112,7 @@ namespace MedicalControl
             
             comando.ExecuteNonQuery();
             Refresh();
-            MessageBox.Show("Paciente Agregado");
+            MessageBox.Show("Cita Medica Agregada");
             con.Close();
             clear();
         }
@@ -125,7 +125,7 @@ namespace MedicalControl
             comando.Parameters.AddWithValue("@IDCITAMEDICA", lblid.Text);
             comando.ExecuteNonQuery();
             Refresh();
-            MessageBox.Show("Paciente Eliminado");
+            MessageBox.Show("Cita Medica Eliminada");
             con.Close();
             clear();
         }
@@ -147,7 +147,7 @@ namespace MedicalControl
             comando.Parameters.AddWithValue("@NombreCompleto", txtnombrecompleto.Text);
             comando.ExecuteNonQuery();
             Refresh();
-            MessageBox.Show("Paciente Actualizado");
+            MessageBox.Show("Cita Medica Actualizada");
             con.Close();
             clear();
         }
@@ -252,6 +252,11 @@ namespace MedicalControl
             dgvcitasmedicas.DataSource = dt;
 
             con.Close();
+        }
+
+        private void gbprincipal_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }

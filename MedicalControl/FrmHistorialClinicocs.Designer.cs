@@ -30,22 +30,11 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.button5 = new System.Windows.Forms.Button();
             this.txthistorialclinico = new System.Windows.Forms.TextBox();
             this.button4 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.BtnResonancia = new System.Windows.Forms.Button();
-            this.BtnRadriografia = new System.Windows.Forms.Button();
-            this.BtnTomografia = new System.Windows.Forms.Button();
-            this.BtnSonografia = new System.Windows.Forms.Button();
-            this.txtResonanciaMagnetica = new System.Windows.Forms.TextBox();
-            this.lblResonanciaMagnetica = new System.Windows.Forms.Label();
-            this.txtRadiografia = new System.Windows.Forms.TextBox();
-            this.lblRadiografia = new System.Windows.Forms.Label();
-            this.txtTomografiaComputarizada = new System.Windows.Forms.TextBox();
-            this.lblTomografiaComputarizada = new System.Windows.Forms.Label();
-            this.txtSonografia = new System.Windows.Forms.TextBox();
-            this.lblSonografia = new System.Windows.Forms.Label();
             this.mtbCedula = new System.Windows.Forms.MaskedTextBox();
             this.cmbalergias = new System.Windows.Forms.ComboBox();
             this.cmbDoctor = new System.Windows.Forms.ComboBox();
@@ -117,7 +106,6 @@
             this.label31 = new System.Windows.Forms.Label();
             this.lblpara = new System.Windows.Forms.Label();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.button5 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -142,18 +130,6 @@
             this.tabPage1.Controls.Add(this.button4);
             this.tabPage1.Controls.Add(this.button2);
             this.tabPage1.Controls.Add(this.button1);
-            this.tabPage1.Controls.Add(this.BtnResonancia);
-            this.tabPage1.Controls.Add(this.BtnRadriografia);
-            this.tabPage1.Controls.Add(this.BtnTomografia);
-            this.tabPage1.Controls.Add(this.BtnSonografia);
-            this.tabPage1.Controls.Add(this.txtResonanciaMagnetica);
-            this.tabPage1.Controls.Add(this.lblResonanciaMagnetica);
-            this.tabPage1.Controls.Add(this.txtRadiografia);
-            this.tabPage1.Controls.Add(this.lblRadiografia);
-            this.tabPage1.Controls.Add(this.txtTomografiaComputarizada);
-            this.tabPage1.Controls.Add(this.lblTomografiaComputarizada);
-            this.tabPage1.Controls.Add(this.txtSonografia);
-            this.tabPage1.Controls.Add(this.lblSonografia);
             this.tabPage1.Controls.Add(this.mtbCedula);
             this.tabPage1.Controls.Add(this.cmbalergias);
             this.tabPage1.Controls.Add(this.cmbDoctor);
@@ -215,12 +191,30 @@
             this.tabPage1.UseVisualStyleBackColor = true;
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
+            // button5
+            // 
+            this.button5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.button5.BackColor = System.Drawing.Color.White;
+            this.button5.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.button5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkSlateBlue;
+            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SlateBlue;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.ForeColor = System.Drawing.Color.Black;
+            this.button5.Location = new System.Drawing.Point(119, 221);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(153, 35);
+            this.button5.TabIndex = 17;
+            this.button5.Text = "Guardar";
+            this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
             // txthistorialclinico
             // 
             this.txthistorialclinico.Location = new System.Drawing.Point(167, 18);
             this.txthistorialclinico.Name = "txthistorialclinico";
             this.txthistorialclinico.Size = new System.Drawing.Size(100, 20);
-            this.txthistorialclinico.TabIndex = 174;
+            this.txthistorialclinico.TabIndex = 0;
             // 
             // button4
             // 
@@ -235,9 +229,10 @@
             this.button4.Location = new System.Drawing.Point(599, 221);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(153, 35);
-            this.button4.TabIndex = 173;
+            this.button4.TabIndex = 20;
             this.button4.Text = "Actualizar";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button2
             // 
@@ -252,7 +247,7 @@
             this.button2.Location = new System.Drawing.Point(278, 221);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(153, 35);
-            this.button2.TabIndex = 172;
+            this.button2.TabIndex = 18;
             this.button2.Text = "Consultar";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -270,154 +265,10 @@
             this.button1.Location = new System.Drawing.Point(440, 221);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(153, 35);
-            this.button1.TabIndex = 171;
+            this.button1.TabIndex = 19;
             this.button1.Text = "Insertar";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // BtnResonancia
-            // 
-            this.BtnResonancia.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.BtnResonancia.BackColor = System.Drawing.Color.White;
-            this.BtnResonancia.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.BtnResonancia.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkSlateBlue;
-            this.BtnResonancia.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SlateBlue;
-            this.BtnResonancia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnResonancia.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnResonancia.ForeColor = System.Drawing.Color.Black;
-            this.BtnResonancia.Location = new System.Drawing.Point(916, 403);
-            this.BtnResonancia.Name = "BtnResonancia";
-            this.BtnResonancia.Size = new System.Drawing.Size(31, 27);
-            this.BtnResonancia.TabIndex = 170;
-            this.BtnResonancia.Text = "...";
-            this.BtnResonancia.UseVisualStyleBackColor = false;
-            this.BtnResonancia.Click += new System.EventHandler(this.BtnResonancia_Click);
-            // 
-            // BtnRadriografia
-            // 
-            this.BtnRadriografia.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.BtnRadriografia.BackColor = System.Drawing.Color.White;
-            this.BtnRadriografia.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.BtnRadriografia.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkSlateBlue;
-            this.BtnRadriografia.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SlateBlue;
-            this.BtnRadriografia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnRadriografia.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnRadriografia.ForeColor = System.Drawing.Color.Black;
-            this.BtnRadriografia.Location = new System.Drawing.Point(674, 403);
-            this.BtnRadriografia.Name = "BtnRadriografia";
-            this.BtnRadriografia.Size = new System.Drawing.Size(31, 27);
-            this.BtnRadriografia.TabIndex = 169;
-            this.BtnRadriografia.Text = "...";
-            this.BtnRadriografia.UseVisualStyleBackColor = false;
-            this.BtnRadriografia.Click += new System.EventHandler(this.BtnRadriografia_Click);
-            // 
-            // BtnTomografia
-            // 
-            this.BtnTomografia.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.BtnTomografia.BackColor = System.Drawing.Color.White;
-            this.BtnTomografia.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.BtnTomografia.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkSlateBlue;
-            this.BtnTomografia.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SlateBlue;
-            this.BtnTomografia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnTomografia.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnTomografia.ForeColor = System.Drawing.Color.Black;
-            this.BtnTomografia.Location = new System.Drawing.Point(459, 402);
-            this.BtnTomografia.Name = "BtnTomografia";
-            this.BtnTomografia.Size = new System.Drawing.Size(31, 27);
-            this.BtnTomografia.TabIndex = 168;
-            this.BtnTomografia.Text = "...";
-            this.BtnTomografia.UseVisualStyleBackColor = false;
-            this.BtnTomografia.Click += new System.EventHandler(this.BtnTomografia_Click);
-            // 
-            // BtnSonografia
-            // 
-            this.BtnSonografia.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.BtnSonografia.BackColor = System.Drawing.Color.White;
-            this.BtnSonografia.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.BtnSonografia.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkSlateBlue;
-            this.BtnSonografia.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SlateBlue;
-            this.BtnSonografia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnSonografia.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnSonografia.ForeColor = System.Drawing.Color.Black;
-            this.BtnSonografia.Location = new System.Drawing.Point(194, 402);
-            this.BtnSonografia.Name = "BtnSonografia";
-            this.BtnSonografia.Size = new System.Drawing.Size(31, 27);
-            this.BtnSonografia.TabIndex = 164;
-            this.BtnSonografia.Text = "...";
-            this.BtnSonografia.UseVisualStyleBackColor = false;
-            this.BtnSonografia.Click += new System.EventHandler(this.BtnSonografia_Click);
-            // 
-            // txtResonanciaMagnetica
-            // 
-            this.txtResonanciaMagnetica.Location = new System.Drawing.Point(837, 408);
-            this.txtResonanciaMagnetica.Name = "txtResonanciaMagnetica";
-            this.txtResonanciaMagnetica.Size = new System.Drawing.Size(76, 20);
-            this.txtResonanciaMagnetica.TabIndex = 163;
-            // 
-            // lblResonanciaMagnetica
-            // 
-            this.lblResonanciaMagnetica.AutoSize = true;
-            this.lblResonanciaMagnetica.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblResonanciaMagnetica.ForeColor = System.Drawing.Color.Black;
-            this.lblResonanciaMagnetica.Location = new System.Drawing.Point(705, 410);
-            this.lblResonanciaMagnetica.Name = "lblResonanciaMagnetica";
-            this.lblResonanciaMagnetica.Size = new System.Drawing.Size(135, 16);
-            this.lblResonanciaMagnetica.TabIndex = 162;
-            this.lblResonanciaMagnetica.Text = "Resonancia Magnetica";
-            // 
-            // txtRadiografia
-            // 
-            this.txtRadiografia.Location = new System.Drawing.Point(567, 408);
-            this.txtRadiografia.Name = "txtRadiografia";
-            this.txtRadiografia.Size = new System.Drawing.Size(106, 20);
-            this.txtRadiografia.TabIndex = 161;
-            // 
-            // lblRadiografia
-            // 
-            this.lblRadiografia.AutoSize = true;
-            this.lblRadiografia.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRadiografia.ForeColor = System.Drawing.Color.Black;
-            this.lblRadiografia.Location = new System.Drawing.Point(489, 410);
-            this.lblRadiografia.Name = "lblRadiografia";
-            this.lblRadiografia.Size = new System.Drawing.Size(80, 16);
-            this.lblRadiografia.TabIndex = 160;
-            this.lblRadiografia.Text = "Radriografia";
-            // 
-            // txtTomografiaComputarizada
-            // 
-            this.txtTomografiaComputarizada.Location = new System.Drawing.Point(384, 408);
-            this.txtTomografiaComputarizada.Name = "txtTomografiaComputarizada";
-            this.txtTomografiaComputarizada.Size = new System.Drawing.Size(74, 20);
-            this.txtTomografiaComputarizada.TabIndex = 159;
-            // 
-            // lblTomografiaComputarizada
-            // 
-            this.lblTomografiaComputarizada.AutoSize = true;
-            this.lblTomografiaComputarizada.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTomografiaComputarizada.ForeColor = System.Drawing.Color.Black;
-            this.lblTomografiaComputarizada.Location = new System.Drawing.Point(225, 410);
-            this.lblTomografiaComputarizada.Name = "lblTomografiaComputarizada";
-            this.lblTomografiaComputarizada.Size = new System.Drawing.Size(162, 16);
-            this.lblTomografiaComputarizada.TabIndex = 158;
-            this.lblTomografiaComputarizada.Text = "Tomografia Computarizada";
-            // 
-            // txtSonografia
-            // 
-            this.txtSonografia.Location = new System.Drawing.Point(119, 408);
-            this.txtSonografia.Name = "txtSonografia";
-            this.txtSonografia.Size = new System.Drawing.Size(72, 20);
-            this.txtSonografia.TabIndex = 157;
-            // 
-            // lblSonografia
-            // 
-            this.lblSonografia.AutoSize = true;
-            this.lblSonografia.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSonografia.ForeColor = System.Drawing.Color.Black;
-            this.lblSonografia.Location = new System.Drawing.Point(49, 410);
-            this.lblSonografia.Name = "lblSonografia";
-            this.lblSonografia.Size = new System.Drawing.Size(71, 16);
-            this.lblSonografia.TabIndex = 156;
-            this.lblSonografia.Text = "Sonografia";
             // 
             // mtbCedula
             // 
@@ -426,16 +277,16 @@
             this.mtbCedula.Mask = "000-0000000-0";
             this.mtbCedula.Name = "mtbCedula";
             this.mtbCedula.Size = new System.Drawing.Size(100, 20);
-            this.mtbCedula.TabIndex = 155;
+            this.mtbCedula.TabIndex = 9;
             // 
             // cmbalergias
             // 
             this.cmbalergias.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.cmbalergias.FormattingEnabled = true;
-            this.cmbalergias.Location = new System.Drawing.Point(244, 364);
+            this.cmbalergias.Location = new System.Drawing.Point(241, 305);
             this.cmbalergias.Name = "cmbalergias";
             this.cmbalergias.Size = new System.Drawing.Size(126, 21);
-            this.cmbalergias.TabIndex = 154;
+            this.cmbalergias.TabIndex = 24;
             // 
             // cmbDoctor
             // 
@@ -444,7 +295,7 @@
             this.cmbDoctor.Location = new System.Drawing.Point(605, 60);
             this.cmbDoctor.Name = "cmbDoctor";
             this.cmbDoctor.Size = new System.Drawing.Size(100, 21);
-            this.cmbDoctor.TabIndex = 153;
+            this.cmbDoctor.TabIndex = 12;
             // 
             // cmbsegurom
             // 
@@ -453,7 +304,7 @@
             this.cmbsegurom.Location = new System.Drawing.Point(605, 25);
             this.cmbsegurom.Name = "cmbsegurom";
             this.cmbsegurom.Size = new System.Drawing.Size(100, 21);
-            this.cmbsegurom.TabIndex = 152;
+            this.cmbsegurom.TabIndex = 11;
             // 
             // cmbSexo
             // 
@@ -465,7 +316,7 @@
             this.cmbSexo.Location = new System.Drawing.Point(167, 148);
             this.cmbSexo.Name = "cmbSexo";
             this.cmbSexo.Size = new System.Drawing.Size(43, 21);
-            this.cmbSexo.TabIndex = 151;
+            this.cmbSexo.TabIndex = 4;
             // 
             // dtPFecha
             // 
@@ -474,21 +325,21 @@
             this.dtPFecha.Location = new System.Drawing.Point(167, 115);
             this.dtPFecha.Name = "dtPFecha";
             this.dtPFecha.Size = new System.Drawing.Size(100, 20);
-            this.dtPFecha.TabIndex = 150;
+            this.dtPFecha.TabIndex = 3;
             // 
             // txtAdolescencia
             // 
-            this.txtAdolescencia.Location = new System.Drawing.Point(778, 311);
+            this.txtAdolescencia.Location = new System.Drawing.Point(778, 344);
             this.txtAdolescencia.Name = "txtAdolescencia";
             this.txtAdolescencia.Size = new System.Drawing.Size(147, 20);
-            this.txtAdolescencia.TabIndex = 148;
+            this.txtAdolescencia.TabIndex = 29;
             // 
             // lblAdultez
             // 
             this.lblAdultez.AutoSize = true;
             this.lblAdultez.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAdultez.ForeColor = System.Drawing.Color.Black;
-            this.lblAdultez.Location = new System.Drawing.Point(690, 348);
+            this.lblAdultez.Location = new System.Drawing.Point(690, 381);
             this.lblAdultez.Name = "lblAdultez";
             this.lblAdultez.Size = new System.Drawing.Size(51, 16);
             this.lblAdultez.TabIndex = 147;
@@ -496,17 +347,17 @@
             // 
             // txtNiñez
             // 
-            this.txtNiñez.Location = new System.Drawing.Point(778, 276);
+            this.txtNiñez.Location = new System.Drawing.Point(778, 309);
             this.txtNiñez.Name = "txtNiñez";
             this.txtNiñez.Size = new System.Drawing.Size(147, 20);
-            this.txtNiñez.TabIndex = 146;
+            this.txtNiñez.TabIndex = 28;
             // 
             // lblAdolescencia
             // 
             this.lblAdolescencia.AutoSize = true;
             this.lblAdolescencia.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAdolescencia.ForeColor = System.Drawing.Color.Black;
-            this.lblAdolescencia.Location = new System.Drawing.Point(690, 311);
+            this.lblAdolescencia.Location = new System.Drawing.Point(690, 344);
             this.lblAdolescencia.Name = "lblAdolescencia";
             this.lblAdolescencia.Size = new System.Drawing.Size(84, 16);
             this.lblAdolescencia.TabIndex = 145;
@@ -517,7 +368,7 @@
             this.lblNiñez.AutoSize = true;
             this.lblNiñez.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNiñez.ForeColor = System.Drawing.Color.Black;
-            this.lblNiñez.Location = new System.Drawing.Point(690, 274);
+            this.lblNiñez.Location = new System.Drawing.Point(690, 307);
             this.lblNiñez.Name = "lblNiñez";
             this.lblNiñez.Size = new System.Drawing.Size(40, 16);
             this.lblNiñez.TabIndex = 144;
@@ -525,24 +376,24 @@
             // 
             // txtAntecedentesTarumaticos
             // 
-            this.txtAntecedentesTarumaticos.Location = new System.Drawing.Point(573, 344);
+            this.txtAntecedentesTarumaticos.Location = new System.Drawing.Point(573, 377);
             this.txtAntecedentesTarumaticos.Name = "txtAntecedentesTarumaticos";
             this.txtAntecedentesTarumaticos.Size = new System.Drawing.Size(100, 20);
-            this.txtAntecedentesTarumaticos.TabIndex = 143;
+            this.txtAntecedentesTarumaticos.TabIndex = 27;
             // 
             // txtAntecedentesMedicamentosos
             // 
-            this.txtAntecedentesMedicamentosos.Location = new System.Drawing.Point(573, 309);
+            this.txtAntecedentesMedicamentosos.Location = new System.Drawing.Point(573, 342);
             this.txtAntecedentesMedicamentosos.Name = "txtAntecedentesMedicamentosos";
             this.txtAntecedentesMedicamentosos.Size = new System.Drawing.Size(100, 20);
-            this.txtAntecedentesMedicamentosos.TabIndex = 142;
+            this.txtAntecedentesMedicamentosos.TabIndex = 26;
             // 
             // lblAntecedentesTraumaticos
             // 
             this.lblAntecedentesTraumaticos.AutoSize = true;
             this.lblAntecedentesTraumaticos.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAntecedentesTraumaticos.ForeColor = System.Drawing.Color.Black;
-            this.lblAntecedentesTraumaticos.Location = new System.Drawing.Point(388, 347);
+            this.lblAntecedentesTraumaticos.Location = new System.Drawing.Point(388, 380);
             this.lblAntecedentesTraumaticos.Name = "lblAntecedentesTraumaticos";
             this.lblAntecedentesTraumaticos.Size = new System.Drawing.Size(159, 16);
             this.lblAntecedentesTraumaticos.TabIndex = 141;
@@ -550,17 +401,17 @@
             // 
             // txtAntecedentesHospitalarios
             // 
-            this.txtAntecedentesHospitalarios.Location = new System.Drawing.Point(573, 274);
+            this.txtAntecedentesHospitalarios.Location = new System.Drawing.Point(573, 307);
             this.txtAntecedentesHospitalarios.Name = "txtAntecedentesHospitalarios";
             this.txtAntecedentesHospitalarios.Size = new System.Drawing.Size(100, 20);
-            this.txtAntecedentesHospitalarios.TabIndex = 140;
+            this.txtAntecedentesHospitalarios.TabIndex = 25;
             // 
             // lblAntecedentesMedicamentosos
             // 
             this.lblAntecedentesMedicamentosos.AutoSize = true;
             this.lblAntecedentesMedicamentosos.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAntecedentesMedicamentosos.ForeColor = System.Drawing.Color.Black;
-            this.lblAntecedentesMedicamentosos.Location = new System.Drawing.Point(388, 310);
+            this.lblAntecedentesMedicamentosos.Location = new System.Drawing.Point(388, 343);
             this.lblAntecedentesMedicamentosos.Name = "lblAntecedentesMedicamentosos";
             this.lblAntecedentesMedicamentosos.Size = new System.Drawing.Size(186, 16);
             this.lblAntecedentesMedicamentosos.TabIndex = 139;
@@ -571,7 +422,7 @@
             this.lblAntecedentesHospitalarios.AutoSize = true;
             this.lblAntecedentesHospitalarios.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAntecedentesHospitalarios.ForeColor = System.Drawing.Color.Black;
-            this.lblAntecedentesHospitalarios.Location = new System.Drawing.Point(388, 273);
+            this.lblAntecedentesHospitalarios.Location = new System.Drawing.Point(388, 306);
             this.lblAntecedentesHospitalarios.Name = "lblAntecedentesHospitalarios";
             this.lblAntecedentesHospitalarios.Size = new System.Drawing.Size(167, 16);
             this.lblAntecedentesHospitalarios.TabIndex = 138;
@@ -579,17 +430,17 @@
             // 
             // txtAntecedentesTransfucionales
             // 
-            this.txtAntecedentesTransfucionales.Location = new System.Drawing.Point(244, 346);
+            this.txtAntecedentesTransfucionales.Location = new System.Drawing.Point(244, 379);
             this.txtAntecedentesTransfucionales.Name = "txtAntecedentesTransfucionales";
             this.txtAntecedentesTransfucionales.Size = new System.Drawing.Size(123, 20);
-            this.txtAntecedentesTransfucionales.TabIndex = 137;
+            this.txtAntecedentesTransfucionales.TabIndex = 23;
             // 
             // txtAntecedentesQuirurgicos
             // 
-            this.txtAntecedentesQuirurgicos.Location = new System.Drawing.Point(244, 311);
+            this.txtAntecedentesQuirurgicos.Location = new System.Drawing.Point(244, 344);
             this.txtAntecedentesQuirurgicos.Name = "txtAntecedentesQuirurgicos";
             this.txtAntecedentesQuirurgicos.Size = new System.Drawing.Size(123, 20);
-            this.txtAntecedentesQuirurgicos.TabIndex = 136;
+            this.txtAntecedentesQuirurgicos.TabIndex = 22;
             // 
             // button3
             // 
@@ -604,7 +455,7 @@
             this.button3.Location = new System.Drawing.Point(761, 221);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(153, 35);
-            this.button3.TabIndex = 135;
+            this.button3.TabIndex = 21;
             this.button3.Text = "Mas informacion";
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
@@ -614,7 +465,7 @@
             this.txtResidencia.Location = new System.Drawing.Point(376, 59);
             this.txtResidencia.Name = "txtResidencia";
             this.txtResidencia.Size = new System.Drawing.Size(100, 20);
-            this.txtResidencia.TabIndex = 133;
+            this.txtResidencia.TabIndex = 7;
             // 
             // MtbTelefono
             // 
@@ -623,7 +474,7 @@
             this.MtbTelefono.Mask = "000-000-0000";
             this.MtbTelefono.Name = "MtbTelefono";
             this.MtbTelefono.Size = new System.Drawing.Size(100, 20);
-            this.MtbTelefono.TabIndex = 132;
+            this.MtbTelefono.TabIndex = 5;
             // 
             // lblDoctor
             // 
@@ -750,7 +601,7 @@
             this.txtEdad.Location = new System.Drawing.Point(376, 95);
             this.txtEdad.Name = "txtEdad";
             this.txtEdad.Size = new System.Drawing.Size(100, 20);
-            this.txtEdad.TabIndex = 119;
+            this.txtEdad.TabIndex = 8;
             // 
             // mtbTelefono2
             // 
@@ -759,14 +610,14 @@
             this.mtbTelefono2.Mask = "000-000-0000";
             this.mtbTelefono2.Name = "mtbTelefono2";
             this.mtbTelefono2.Size = new System.Drawing.Size(100, 20);
-            this.mtbTelefono2.TabIndex = 118;
+            this.mtbTelefono2.TabIndex = 10;
             // 
             // lblAntecedentesTransfucionales
             // 
             this.lblAntecedentesTransfucionales.AutoSize = true;
             this.lblAntecedentesTransfucionales.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAntecedentesTransfucionales.ForeColor = System.Drawing.Color.Black;
-            this.lblAntecedentesTransfucionales.Location = new System.Drawing.Point(59, 350);
+            this.lblAntecedentesTransfucionales.Location = new System.Drawing.Point(59, 383);
             this.lblAntecedentesTransfucionales.Name = "lblAntecedentesTransfucionales";
             this.lblAntecedentesTransfucionales.Size = new System.Drawing.Size(179, 16);
             this.lblAntecedentesTransfucionales.TabIndex = 117;
@@ -777,7 +628,7 @@
             this.lblAntecedentesQuirurgicos.AutoSize = true;
             this.lblAntecedentesQuirurgicos.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAntecedentesQuirurgicos.ForeColor = System.Drawing.Color.Black;
-            this.lblAntecedentesQuirurgicos.Location = new System.Drawing.Point(59, 313);
+            this.lblAntecedentesQuirurgicos.Location = new System.Drawing.Point(59, 346);
             this.lblAntecedentesQuirurgicos.Name = "lblAntecedentesQuirurgicos";
             this.lblAntecedentesQuirurgicos.Size = new System.Drawing.Size(157, 16);
             this.lblAntecedentesQuirurgicos.TabIndex = 115;
@@ -788,14 +639,14 @@
             this.txtRaza.Location = new System.Drawing.Point(812, 143);
             this.txtRaza.Name = "txtRaza";
             this.txtRaza.Size = new System.Drawing.Size(100, 20);
-            this.txtRaza.TabIndex = 114;
+            this.txtRaza.TabIndex = 16;
             // 
             // lblAntecedentesAlergicos
             // 
             this.lblAntecedentesAlergicos.AutoSize = true;
             this.lblAntecedentesAlergicos.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAntecedentesAlergicos.ForeColor = System.Drawing.Color.Black;
-            this.lblAntecedentesAlergicos.Location = new System.Drawing.Point(59, 276);
+            this.lblAntecedentesAlergicos.Location = new System.Drawing.Point(59, 309);
             this.lblAntecedentesAlergicos.Name = "lblAntecedentesAlergicos";
             this.lblAntecedentesAlergicos.Size = new System.Drawing.Size(144, 16);
             this.lblAntecedentesAlergicos.TabIndex = 113;
@@ -817,7 +668,7 @@
             this.txtEstadoCivil.Location = new System.Drawing.Point(812, 105);
             this.txtEstadoCivil.Name = "txtEstadoCivil";
             this.txtEstadoCivil.Size = new System.Drawing.Size(100, 20);
-            this.txtEstadoCivil.TabIndex = 111;
+            this.txtEstadoCivil.TabIndex = 15;
             // 
             // lblraza
             // 
@@ -835,7 +686,7 @@
             this.txtReligion.Location = new System.Drawing.Point(812, 64);
             this.txtReligion.Name = "txtReligion";
             this.txtReligion.Size = new System.Drawing.Size(100, 20);
-            this.txtReligion.TabIndex = 109;
+            this.txtReligion.TabIndex = 14;
             // 
             // lblReligion
             // 
@@ -853,7 +704,7 @@
             this.txtOcupacion.Location = new System.Drawing.Point(812, 21);
             this.txtOcupacion.Name = "txtOcupacion";
             this.txtOcupacion.Size = new System.Drawing.Size(100, 20);
-            this.txtOcupacion.TabIndex = 107;
+            this.txtOcupacion.TabIndex = 13;
             // 
             // lblOcupacion
             // 
@@ -882,7 +733,7 @@
             this.txtProcedencia.Location = new System.Drawing.Point(376, 23);
             this.txtProcedencia.Name = "txtProcedencia";
             this.txtProcedencia.Size = new System.Drawing.Size(100, 20);
-            this.txtProcedencia.TabIndex = 104;
+            this.txtProcedencia.TabIndex = 6;
             // 
             // lblApellidoP
             // 
@@ -900,7 +751,7 @@
             this.txtApellido.Location = new System.Drawing.Point(167, 86);
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(100, 20);
-            this.txtApellido.TabIndex = 101;
+            this.txtApellido.TabIndex = 2;
             // 
             // lblNombreP
             // 
@@ -918,14 +769,14 @@
             this.txtnombrep.Location = new System.Drawing.Point(167, 54);
             this.txtnombrep.Name = "txtnombrep";
             this.txtnombrep.Size = new System.Drawing.Size(100, 20);
-            this.txtnombrep.TabIndex = 99;
+            this.txtnombrep.TabIndex = 1;
             // 
             // txtAdultez
             // 
-            this.txtAdultez.Location = new System.Drawing.Point(778, 346);
+            this.txtAdultez.Location = new System.Drawing.Point(778, 379);
             this.txtAdultez.Name = "txtAdultez";
             this.txtAdultez.Size = new System.Drawing.Size(147, 20);
-            this.txtAdultez.TabIndex = 149;
+            this.txtAdultez.TabIndex = 30;
             // 
             // tabPage2
             // 
@@ -1127,24 +978,6 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
-            // button5
-            // 
-            this.button5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button5.BackColor = System.Drawing.Color.White;
-            this.button5.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.button5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkSlateBlue;
-            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SlateBlue;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.Black;
-            this.button5.Location = new System.Drawing.Point(119, 221);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(153, 35);
-            this.button5.TabIndex = 175;
-            this.button5.Text = "Exportar";
-            this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
             // FrmHistorialClinicocs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1221,14 +1054,6 @@
         private System.Windows.Forms.ComboBox cmbalergias;
         private System.Windows.Forms.ComboBox cmbDoctor;
         private System.Windows.Forms.ComboBox cmbsegurom;
-        private System.Windows.Forms.TextBox txtResonanciaMagnetica;
-        private System.Windows.Forms.Label lblResonanciaMagnetica;
-        private System.Windows.Forms.TextBox txtRadiografia;
-        private System.Windows.Forms.Label lblRadiografia;
-        private System.Windows.Forms.TextBox txtTomografiaComputarizada;
-        private System.Windows.Forms.Label lblTomografiaComputarizada;
-        private System.Windows.Forms.TextBox txtSonografia;
-        private System.Windows.Forms.Label lblSonografia;
         private System.Windows.Forms.MaskedTextBox mtbCedula;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnenviar;
@@ -1247,10 +1072,6 @@
         private System.Windows.Forms.Label lblasunto;
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.Label lblpara;
-        private System.Windows.Forms.Button BtnSonografia;
-        private System.Windows.Forms.Button BtnResonancia;
-        private System.Windows.Forms.Button BtnRadriografia;
-        private System.Windows.Forms.Button BtnTomografia;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button2;

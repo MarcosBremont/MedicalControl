@@ -80,9 +80,9 @@
             this.BtnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnCerrar.Font = new System.Drawing.Font("Bahnschrift", 10F);
             this.BtnCerrar.ForeColor = System.Drawing.Color.Black;
-            this.BtnCerrar.Location = new System.Drawing.Point(627, 379);
+            this.BtnCerrar.Location = new System.Drawing.Point(659, 379);
             this.BtnCerrar.Name = "BtnCerrar";
-            this.BtnCerrar.Size = new System.Drawing.Size(100, 37);
+            this.BtnCerrar.Size = new System.Drawing.Size(72, 37);
             this.BtnCerrar.TabIndex = 8;
             this.BtnCerrar.Text = "Cerrar";
             this.BtnCerrar.UseVisualStyleBackColor = false;

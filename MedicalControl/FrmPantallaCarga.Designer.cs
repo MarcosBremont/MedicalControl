@@ -41,7 +41,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.panelslide);
-            this.panel1.Location = new System.Drawing.Point(254, 264);
+            this.panel1.Location = new System.Drawing.Point(229, 286);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(270, 11);
             this.panel1.TabIndex = 1;
@@ -63,7 +63,7 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::MedicalControl.Properties.Resources.Diseño_sin_título__1__removebg_preview__1_;
-            this.pictureBox1.Location = new System.Drawing.Point(67, -26);
+            this.pictureBox1.Location = new System.Drawing.Point(42, -4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(617, 322);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -75,7 +75,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(107)))), ((int)(((byte)(165)))));
-            this.ClientSize = new System.Drawing.Size(780, 330);
+            this.ClientSize = new System.Drawing.Size(697, 330);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

@@ -26,7 +26,7 @@ namespace MedicalControl
             con = new MySqlConnection("Server=localhost; database=medicalcontrol; user=root; password=1234");
             Thread trd = new Thread(new ThreadStart(formRun));
             trd.Start();
-            Thread.Sleep(5000);
+            Thread.Sleep(1450);
             InitializeComponent();
             trd.Abort();
             

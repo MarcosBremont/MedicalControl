@@ -117,23 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="label2.Text" xml:space="preserve">
-    <value>Somos una empresa de transformación digital que acerca las tendencias tecnológicas a cualquier sector. 
-Nuestra misión es resolver las necesidades de nuestros clientes apoyándonos en las nuevas tecnologías 
-para adaptarlas a su entorno y potenciar su transformación digital. Nuestros esfuerzos van dirigidos a 
-crear soluciones concretas para problemas específicos, partiendo siempre de metodologías ágiles de 
-desarrollo.
-
-Los software que creamos son modulares y permiten su crecimiento, adaptación y cambios a 
-medio-largo plazo. Esta vía de ejecución ofrece un claro ahorro de costes a los clientes, solución de sus
- necesidades en cortos períodos de tiempo y la posibilidad de adaptarnos a nuevas necesidades en tiempo 
-real.
-
-En Zitelia sabemos que el futuro viene de la mano de la tecnología. Una herramienta clave para mejorar
- procesos, comunicar mejor, reducir costes y agilizar tareas. Las Tecnologías de la Información y la 
-Comunicación (TICC) nos permiten optimizar los procesos de las empresas y buscar respuestas concretas 
-y adaptadas a cada negocio. Nuestra forma de trabajo se basa en crear soluciones a medida para cada cliente 
-utilizando metodologías ágiles de desarrollo. Lo que implica que somos capaces de adaptarnos a las exigencias 
-de cualquier proyecto y empresa.</value>
-  </data>
 </root>

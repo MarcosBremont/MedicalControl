@@ -116,7 +116,7 @@
             this.txtnombrep.MaxLength = 30;
             this.txtnombrep.Name = "txtnombrep";
             this.txtnombrep.Size = new System.Drawing.Size(83, 23);
-            this.txtnombrep.TabIndex = 2;
+            this.txtnombrep.TabIndex = 0;
             this.txtnombrep.TextChanged += new System.EventHandler(this.txtnombrep_TextChanged);
             this.txtnombrep.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtnombrep_KeyPress);
             // 
@@ -128,7 +128,7 @@
             this.txtedadp.MaxLength = 3;
             this.txtedadp.Name = "txtedadp";
             this.txtedadp.Size = new System.Drawing.Size(48, 23);
-            this.txtedadp.TabIndex = 4;
+            this.txtedadp.TabIndex = 3;
             this.txtedadp.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtedadp_KeyPress);
             // 
             // txtapellidop
@@ -139,7 +139,7 @@
             this.txtapellidop.MaxLength = 30;
             this.txtapellidop.Name = "txtapellidop";
             this.txtapellidop.Size = new System.Drawing.Size(83, 23);
-            this.txtapellidop.TabIndex = 3;
+            this.txtapellidop.TabIndex = 1;
             this.txtapellidop.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtapellidop_KeyPress);
             // 
             // txtdireccionp
@@ -150,7 +150,7 @@
             this.txtdireccionp.MaxLength = 60;
             this.txtdireccionp.Name = "txtdireccionp";
             this.txtdireccionp.Size = new System.Drawing.Size(100, 23);
-            this.txtdireccionp.TabIndex = 6;
+            this.txtdireccionp.TabIndex = 5;
             // 
             // btninsertar
             // 
@@ -165,7 +165,7 @@
             this.btninsertar.Location = new System.Drawing.Point(439, 24);
             this.btninsertar.Name = "btninsertar";
             this.btninsertar.Size = new System.Drawing.Size(103, 35);
-            this.btninsertar.TabIndex = 10;
+            this.btninsertar.TabIndex = 12;
             this.btninsertar.Text = "Insertar";
             this.btninsertar.UseVisualStyleBackColor = false;
             this.btninsertar.Click += new System.EventHandler(this.btninsertar_Click);
@@ -183,7 +183,7 @@
             this.btnEliminar.Location = new System.Drawing.Point(555, 24);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(103, 35);
-            this.btnEliminar.TabIndex = 11;
+            this.btnEliminar.TabIndex = 13;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = false;
             this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
@@ -201,7 +201,7 @@
             this.btnactualizar.Location = new System.Drawing.Point(671, 24);
             this.btnactualizar.Name = "btnactualizar";
             this.btnactualizar.Size = new System.Drawing.Size(103, 35);
-            this.btnactualizar.TabIndex = 12;
+            this.btnactualizar.TabIndex = 14;
             this.btnactualizar.Text = "Actualizar";
             this.btnactualizar.UseVisualStyleBackColor = false;
             this.btnactualizar.Click += new System.EventHandler(this.btnactualizar_Click);
@@ -332,7 +332,7 @@
             this.dateTimePicker1.Location = new System.Drawing.Point(946, 74);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(105, 27);
-            this.dateTimePicker1.TabIndex = 25;
+            this.dateTimePicker1.TabIndex = 10;
             // 
             // cmbSexo
             // 
@@ -344,7 +344,7 @@
             this.cmbSexo.Location = new System.Drawing.Point(946, 104);
             this.cmbSexo.Name = "cmbSexo";
             this.cmbSexo.Size = new System.Drawing.Size(43, 27);
-            this.cmbSexo.TabIndex = 26;
+            this.cmbSexo.TabIndex = 11;
             // 
             // label3
             // 
@@ -365,7 +365,7 @@
             this.cmbAlergia.Location = new System.Drawing.Point(757, 133);
             this.cmbAlergia.Name = "cmbAlergia";
             this.cmbAlergia.Size = new System.Drawing.Size(100, 27);
-            this.cmbAlergia.TabIndex = 28;
+            this.cmbAlergia.TabIndex = 9;
             // 
             // label4
             // 
@@ -398,7 +398,7 @@
             this.cmbSeguro.Location = new System.Drawing.Point(329, 167);
             this.cmbSeguro.Name = "cmbSeguro";
             this.cmbSeguro.Size = new System.Drawing.Size(129, 27);
-            this.cmbSeguro.TabIndex = 30;
+            this.cmbSeguro.TabIndex = 2;
             // 
             // label6
             // 
@@ -419,7 +419,7 @@
             this.cmbDoctor.Location = new System.Drawing.Point(569, 166);
             this.cmbDoctor.Name = "cmbDoctor";
             this.cmbDoctor.Size = new System.Drawing.Size(100, 27);
-            this.cmbDoctor.TabIndex = 32;
+            this.cmbDoctor.TabIndex = 6;
             // 
             // mtxtCedula
             // 
@@ -428,7 +428,7 @@
             this.mtxtCedula.Mask = "000-0000000-0";
             this.mtxtCedula.Name = "mtxtCedula";
             this.mtxtCedula.Size = new System.Drawing.Size(100, 27);
-            this.mtxtCedula.TabIndex = 36;
+            this.mtxtCedula.TabIndex = 4;
             // 
             // mtxtTelefono
             // 
@@ -437,7 +437,7 @@
             this.mtxtTelefono.Mask = "000-000-0000";
             this.mtxtTelefono.Name = "mtxtTelefono";
             this.mtxtTelefono.Size = new System.Drawing.Size(100, 27);
-            this.mtxtTelefono.TabIndex = 37;
+            this.mtxtTelefono.TabIndex = 7;
             // 
             // mtxtTelefono2
             // 
@@ -446,7 +446,7 @@
             this.mtxtTelefono2.Mask = "000-000-0000";
             this.mtxtTelefono2.Name = "mtxtTelefono2";
             this.mtxtTelefono2.Size = new System.Drawing.Size(100, 27);
-            this.mtxtTelefono2.TabIndex = 38;
+            this.mtxtTelefono2.TabIndex = 8;
             // 
             // btnOtro
             // 
@@ -614,7 +614,7 @@
             this.button4.Location = new System.Drawing.Point(38, 129);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(207, 35);
-            this.button4.TabIndex = 51;
+            this.button4.TabIndex = 16;
             this.button4.Text = "Enviar a Historial Clinico";
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
@@ -632,7 +632,7 @@
             this.button3.Location = new System.Drawing.Point(38, 75);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(153, 35);
-            this.button3.TabIndex = 50;
+            this.button3.TabIndex = 15;
             this.button3.Text = "Exportar a Excel";
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);

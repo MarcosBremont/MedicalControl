@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.lbltelefono = new System.Windows.Forms.Label();
             this.lbldireccion = new System.Windows.Forms.Label();
@@ -50,9 +50,10 @@
             this.cmbnalergia = new System.Windows.Forms.ComboBox();
             this.cmbndoctor = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtnombrecompleto = new System.Windows.Forms.TextBox();
             this.button3 = new System.Windows.Forms.Button();
             this.gbprincipal = new System.Windows.Forms.GroupBox();
+            this.lblbuscar = new System.Windows.Forms.Label();
+            this.txtbuscar = new System.Windows.Forms.TextBox();
             this.dgvcitasmedicas = new System.Windows.Forms.DataGridView();
             this.IDCITAMEDICA = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HORACM = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -62,8 +63,7 @@
             this.ID2ALERG = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ID2DOCTOR = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NombreCompleto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lblbuscar = new System.Windows.Forms.Label();
-            this.txtbuscar = new System.Windows.Forms.TextBox();
+            this.txtnombrecompleto = new System.Windows.Forms.TextBox();
             this.gbprincipal.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvcitasmedicas)).BeginInit();
             this.SuspendLayout();
@@ -256,15 +256,6 @@
             this.label2.TabIndex = 50;
             this.label2.Text = "Nombre Completo";
             // 
-            // txtnombrecompleto
-            // 
-            this.txtnombrecompleto.Location = new System.Drawing.Point(230, 96);
-            this.txtnombrecompleto.MaxLength = 60;
-            this.txtnombrecompleto.Name = "txtnombrecompleto";
-            this.txtnombrecompleto.Size = new System.Drawing.Size(108, 27);
-            this.txtnombrecompleto.TabIndex = 51;
-            this.txtnombrecompleto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtnombrecompleto_KeyPress);
-            // 
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.White;
@@ -286,6 +277,7 @@
             // 
             this.gbprincipal.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.gbprincipal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(107)))), ((int)(((byte)(167)))));
+            this.gbprincipal.Controls.Add(this.txtnombrecompleto);
             this.gbprincipal.Controls.Add(this.lblbuscar);
             this.gbprincipal.Controls.Add(this.txtcomentario);
             this.gbprincipal.Controls.Add(this.txtbuscar);
@@ -293,7 +285,6 @@
             this.gbprincipal.Controls.Add(this.btnactualizar);
             this.gbprincipal.Controls.Add(this.lblid);
             this.gbprincipal.Controls.Add(this.btnEliminar);
-            this.gbprincipal.Controls.Add(this.txtnombrecompleto);
             this.gbprincipal.Controls.Add(this.btninsertar);
             this.gbprincipal.Controls.Add(this.lblnombre);
             this.gbprincipal.Controls.Add(this.label2);
@@ -317,6 +308,28 @@
             this.gbprincipal.TabIndex = 76;
             this.gbprincipal.TabStop = false;
             this.gbprincipal.Text = "Citas Medicas";
+            this.gbprincipal.Enter += new System.EventHandler(this.gbprincipal_Enter);
+            // 
+            // lblbuscar
+            // 
+            this.lblbuscar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.lblbuscar.AutoSize = true;
+            this.lblbuscar.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
+            this.lblbuscar.ForeColor = System.Drawing.Color.Black;
+            this.lblbuscar.Location = new System.Drawing.Point(77, 35);
+            this.lblbuscar.Name = "lblbuscar";
+            this.lblbuscar.Size = new System.Drawing.Size(49, 16);
+            this.lblbuscar.TabIndex = 79;
+            this.lblbuscar.Text = "Buscar";
+            // 
+            // txtbuscar
+            // 
+            this.txtbuscar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.txtbuscar.Location = new System.Drawing.Point(133, 30);
+            this.txtbuscar.Name = "txtbuscar";
+            this.txtbuscar.Size = new System.Drawing.Size(100, 27);
+            this.txtbuscar.TabIndex = 78;
+            this.txtbuscar.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtbuscar_KeyUp);
             // 
             // dgvcitasmedicas
             // 
@@ -330,14 +343,14 @@
             this.dgvcitasmedicas.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dgvcitasmedicas.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.dgvcitasmedicas.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(173)))), ((int)(((byte)(168)))));
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvcitasmedicas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(173)))), ((int)(((byte)(168)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvcitasmedicas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvcitasmedicas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvcitasmedicas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.IDCITAMEDICA,
@@ -349,14 +362,14 @@
             this.ID2DOCTOR,
             this.NombreCompleto});
             this.dgvcitasmedicas.Cursor = System.Windows.Forms.Cursors.Hand;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(173)))), ((int)(((byte)(168)))));
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvcitasmedicas.DefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(173)))), ((int)(((byte)(168)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvcitasmedicas.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvcitasmedicas.EnableHeadersVisualStyles = false;
             this.dgvcitasmedicas.GridColor = System.Drawing.Color.White;
             this.dgvcitasmedicas.Location = new System.Drawing.Point(35, 12);
@@ -364,22 +377,22 @@
             this.dgvcitasmedicas.Name = "dgvcitasmedicas";
             this.dgvcitasmedicas.ReadOnly = true;
             this.dgvcitasmedicas.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(173)))), ((int)(((byte)(168)))));
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvcitasmedicas.RowHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(173)))), ((int)(((byte)(168)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvcitasmedicas.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvcitasmedicas.RowHeadersVisible = false;
             this.dgvcitasmedicas.RowHeadersWidth = 10;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Bahnschrift SemiLight", 10F);
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.Black;
-            this.dgvcitasmedicas.RowsDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Bahnschrift SemiLight", 10F);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgvcitasmedicas.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvcitasmedicas.RowTemplate.Height = 30;
             this.dgvcitasmedicas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvcitasmedicas.Size = new System.Drawing.Size(1080, 330);
@@ -444,26 +457,15 @@
             this.NombreCompleto.Name = "NombreCompleto";
             this.NombreCompleto.ReadOnly = true;
             // 
-            // lblbuscar
+            // txtnombrecompleto
             // 
-            this.lblbuscar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.lblbuscar.AutoSize = true;
-            this.lblbuscar.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
-            this.lblbuscar.ForeColor = System.Drawing.Color.Black;
-            this.lblbuscar.Location = new System.Drawing.Point(77, 35);
-            this.lblbuscar.Name = "lblbuscar";
-            this.lblbuscar.Size = new System.Drawing.Size(49, 16);
-            this.lblbuscar.TabIndex = 79;
-            this.lblbuscar.Text = "Buscar";
-            // 
-            // txtbuscar
-            // 
-            this.txtbuscar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.txtbuscar.Location = new System.Drawing.Point(133, 30);
-            this.txtbuscar.Name = "txtbuscar";
-            this.txtbuscar.Size = new System.Drawing.Size(100, 27);
-            this.txtbuscar.TabIndex = 78;
-            this.txtbuscar.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtbuscar_KeyUp);
+            this.txtnombrecompleto.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.txtnombrecompleto.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtnombrecompleto.Location = new System.Drawing.Point(230, 96);
+            this.txtnombrecompleto.MaxLength = 30;
+            this.txtnombrecompleto.Name = "txtnombrecompleto";
+            this.txtnombrecompleto.Size = new System.Drawing.Size(108, 23);
+            this.txtnombrecompleto.TabIndex = 80;
             // 
             // FrmCitasMedicas
             // 
@@ -503,7 +505,6 @@
         private System.Windows.Forms.ComboBox cmbnalergia;
         private System.Windows.Forms.ComboBox cmbndoctor;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtnombrecompleto;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.GroupBox gbprincipal;
         private System.Windows.Forms.DataGridView dgvcitasmedicas;
@@ -517,5 +518,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn NombreCompleto;
         private System.Windows.Forms.Label lblbuscar;
         private System.Windows.Forms.TextBox txtbuscar;
+        private System.Windows.Forms.TextBox txtnombrecompleto;
     }
 }

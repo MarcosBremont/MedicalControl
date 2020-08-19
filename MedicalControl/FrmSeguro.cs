@@ -61,6 +61,7 @@ namespace MedicalControl
             con.Close();
             txtnombreseguro.Text = "";
             Refresh();
+            RefreshSeguro();
         }
 
         private void pictureBox1_MouseDown(object sender, MouseEventArgs e)

@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.txtnombremedicamento = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.cbproveedor = new System.Windows.Forms.ComboBox();
@@ -51,10 +51,10 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.gbprincipal = new System.Windows.Forms.GroupBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.TxtCantidad = new System.Windows.Forms.TextBox();
             this.lblbuscar = new System.Windows.Forms.Label();
             this.txtbuscar = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.TxtCantidad = new System.Windows.Forms.TextBox();
             this.dgvinventario = new System.Windows.Forms.DataGridView();
             this.idt_inventario = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NombreMedicamento = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -304,12 +304,31 @@
             this.gbprincipal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.gbprincipal.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbprincipal.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.gbprincipal.Location = new System.Drawing.Point(91, 337);
+            this.gbprincipal.Location = new System.Drawing.Point(91, 340);
             this.gbprincipal.Name = "gbprincipal";
             this.gbprincipal.Size = new System.Drawing.Size(947, 292);
             this.gbprincipal.TabIndex = 75;
             this.gbprincipal.TabStop = false;
             this.gbprincipal.Text = "Inventario";
+            // 
+            // lblbuscar
+            // 
+            this.lblbuscar.AutoSize = true;
+            this.lblbuscar.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
+            this.lblbuscar.ForeColor = System.Drawing.Color.Black;
+            this.lblbuscar.Location = new System.Drawing.Point(15, 30);
+            this.lblbuscar.Name = "lblbuscar";
+            this.lblbuscar.Size = new System.Drawing.Size(49, 16);
+            this.lblbuscar.TabIndex = 49;
+            this.lblbuscar.Text = "Buscar";
+            // 
+            // txtbuscar
+            // 
+            this.txtbuscar.Location = new System.Drawing.Point(70, 26);
+            this.txtbuscar.Name = "txtbuscar";
+            this.txtbuscar.Size = new System.Drawing.Size(100, 27);
+            this.txtbuscar.TabIndex = 48;
+            this.txtbuscar.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtbuscar_KeyUp);
             // 
             // label8
             // 
@@ -335,25 +354,6 @@
             this.TxtCantidad.Size = new System.Drawing.Size(45, 23);
             this.TxtCantidad.TabIndex = 46;
             // 
-            // lblbuscar
-            // 
-            this.lblbuscar.AutoSize = true;
-            this.lblbuscar.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
-            this.lblbuscar.ForeColor = System.Drawing.Color.Black;
-            this.lblbuscar.Location = new System.Drawing.Point(15, 30);
-            this.lblbuscar.Name = "lblbuscar";
-            this.lblbuscar.Size = new System.Drawing.Size(49, 16);
-            this.lblbuscar.TabIndex = 49;
-            this.lblbuscar.Text = "Buscar";
-            // 
-            // txtbuscar
-            // 
-            this.txtbuscar.Location = new System.Drawing.Point(70, 26);
-            this.txtbuscar.Name = "txtbuscar";
-            this.txtbuscar.Size = new System.Drawing.Size(100, 27);
-            this.txtbuscar.TabIndex = 48;
-            this.txtbuscar.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtbuscar_KeyUp);
-            // 
             // dgvinventario
             // 
             this.dgvinventario.AllowUserToAddRows = false;
@@ -366,14 +366,14 @@
             this.dgvinventario.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dgvinventario.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.dgvinventario.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(173)))), ((int)(((byte)(168)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvinventario.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(173)))), ((int)(((byte)(168)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvinventario.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvinventario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvinventario.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idt_inventario,
@@ -383,14 +383,14 @@
             this.Descripcion,
             this.Fecha});
             this.dgvinventario.Cursor = System.Windows.Forms.Cursors.Hand;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvinventario.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvinventario.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvinventario.EnableHeadersVisualStyles = false;
             this.dgvinventario.GridColor = System.Drawing.Color.White;
             this.dgvinventario.Location = new System.Drawing.Point(39, 40);
@@ -398,22 +398,22 @@
             this.dgvinventario.Name = "dgvinventario";
             this.dgvinventario.ReadOnly = true;
             this.dgvinventario.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(173)))), ((int)(((byte)(168)))));
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvinventario.RowHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(173)))), ((int)(((byte)(168)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvinventario.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvinventario.RowHeadersVisible = false;
             this.dgvinventario.RowHeadersWidth = 10;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Bahnschrift SemiLight", 10F);
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.Black;
-            this.dgvinventario.RowsDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Bahnschrift SemiLight", 10F);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgvinventario.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvinventario.RowTemplate.Height = 30;
             this.dgvinventario.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvinventario.Size = new System.Drawing.Size(1038, 291);

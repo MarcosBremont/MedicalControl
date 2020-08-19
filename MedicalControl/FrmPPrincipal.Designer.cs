@@ -73,7 +73,6 @@
             this.txtbuscar = new System.Windows.Forms.TextBox();
             this.lblbuscar = new System.Windows.Forms.Label();
             this.gbprincipal = new System.Windows.Forms.GroupBox();
-            this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.dgvprincipal = new System.Windows.Forms.DataGridView();
@@ -552,7 +551,6 @@
             // gbprincipal
             // 
             this.gbprincipal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(107)))), ((int)(((byte)(167)))));
-            this.gbprincipal.Controls.Add(this.button4);
             this.gbprincipal.Controls.Add(this.button3);
             this.gbprincipal.Controls.Add(this.lblid);
             this.gbprincipal.Controls.Add(this.lblbuscar);
@@ -601,24 +599,6 @@
             this.gbprincipal.Text = "Paciente";
             this.gbprincipal.Enter += new System.EventHandler(this.gbprincipal_Enter);
             // 
-            // button4
-            // 
-            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button4.BackColor = System.Drawing.Color.White;
-            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkSlateBlue;
-            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SlateBlue;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.Black;
-            this.button4.Location = new System.Drawing.Point(38, 129);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(207, 35);
-            this.button4.TabIndex = 16;
-            this.button4.Text = "Enviar a Historial Clinico";
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
             // button3
             // 
             this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
@@ -648,6 +628,7 @@
             this.dgvprincipal.AllowUserToOrderColumns = true;
             this.dgvprincipal.AllowUserToResizeColumns = false;
             this.dgvprincipal.AllowUserToResizeRows = false;
+            this.dgvprincipal.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.dgvprincipal.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvprincipal.BackgroundColor = System.Drawing.Color.White;
             this.dgvprincipal.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -858,6 +839,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn IDTALER;
         private System.Windows.Forms.DataGridViewTextBoxColumn IDTSEGURO;
         private System.Windows.Forms.DataGridViewTextBoxColumn IDTDOCTOR;
-        private System.Windows.Forms.Button button4;
     }
 }

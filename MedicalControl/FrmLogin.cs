@@ -17,25 +17,13 @@ namespace MedicalControl
 {
     public partial class FrmLogin : Form
     {
-        MySqlConnection con;
+       
         MySqlCommand cmd;
         MySqlDataReader dr;
-
+        MySqlConnection con = new MySqlConnection("Server=localhost; database=medicalcontrol; user=root; password=1234");
         public FrmLogin()
         {
-            con = new MySqlConnection("Server=localhost; database=medicalcontrol; user=root; password=1234");
-            Thread trd = new Thread(new ThreadStart(formRun));
-            trd.Start();
-            Thread.Sleep(1450);
             InitializeComponent();
-            trd.Abort();
-            
-
-        }
-
-        private void formRun()
-        {
-            Application.Run(new FrmPantallaCarga());
         }
 
 
@@ -56,31 +44,10 @@ namespace MedicalControl
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            
         }
 
-        private void btnEliminar_Click(object sender, EventArgs e)
-        {
-            string Nombre = txtnombreusuario.Text;
-            string Password = txtcontrasena.Text;
-            cmd = new MySqlCommand();
-            con.Open();
-            cmd.Connection = con;
-            cmd.CommandText = "SELECT * FROM Usuario where LoginName='" + txtnombreusuario.Text + "' AND Password='" + txtcontrasena.Text + "'";
-            dr = cmd.ExecuteReader();
-            if (dr.Read())
-            {
-                FrmBase form = new FrmBase();
-                this.Hide();
-                form.Show();
-            }
-            else
-            {
-                MessageBox.Show("Usuario o Contraseña Incorrectos");
-            }
-            con.Close();
-
-        }
+     
 
         private void btnminimizar_Click(object sender, EventArgs e)
         {
@@ -118,31 +85,7 @@ namespace MedicalControl
             }
         }
 
-        private void txtcontrasena_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (e.KeyChar == Convert.ToChar(Keys.Enter))
-            {
-                string Nombre = txtnombreusuario.Text;
-                string Contrasena = txtcontrasena.Text;
-                cmd = new MySqlCommand();
-                con.Open();
-                cmd.Connection = con;
-                cmd.CommandText = "SELECT * FROM Usuario where LoginName='" + txtnombreusuario.Text + "' AND Password='" + txtcontrasena.Text + "'";
-                dr = cmd.ExecuteReader();
-                if (dr.Read())
-                {
-                    FrmBase form = new FrmBase();
-                    this.Hide();
-                    form.Show();
-                }
-                else
-                {
-                    MessageBox.Show("Usuario o Contraseña Incorrectos");
-                }
-                con.Close();
-
-            }
-        }
+       
 
         private void txtnombreusuario_Leave(object sender, EventArgs e)
         {
@@ -155,14 +98,12 @@ namespace MedicalControl
 
         private void FrmLogin_MouseDown(object sender, MouseEventArgs e)
         {
-            ReleaseCapture();
-            SendMessage(this.Handle, 0x112, 0xf012, 0);
+            mover();
         }
 
         private void panel3_MouseDown(object sender, MouseEventArgs e)
         {
-            ReleaseCapture();
-            SendMessage(this.Handle, 0x112, 0xf012, 0);
+            mover();
         }
 
         private void btnregistrar_Click(object sender, EventArgs e)
@@ -173,6 +114,43 @@ namespace MedicalControl
         }
 
         private void pBLogoCall_MouseDown(object sender, MouseEventArgs e)
+        {
+            mover();
+        }
+
+        private void BtnSalir_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnIniciar_Click(object sender, EventArgs e)
+        {
+            Ingresar();
+        }
+
+        public void Ingresar()
+        {
+            string Nombre = txtnombreusuario.Text;
+            string Password = txtcontrasena.Text;
+            cmd = new MySqlCommand();
+            con.Open();
+            cmd.Connection = con;
+            cmd.CommandText = "SELECT * FROM usuario where LoginName='" + txtnombreusuario.Text + "' AND Password='" + txtcontrasena.Text + "'";
+            dr = cmd.ExecuteReader();
+            if (dr.Read())
+            {
+                FrmBase form = new FrmBase();
+                this.Hide();
+                form.Show();
+            }
+            else
+            {
+                MessageBox.Show("Usuario o Contraseña Incorrectos");
+            }
+            con.Close();
+        }
+
+        public void mover()
         {
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);

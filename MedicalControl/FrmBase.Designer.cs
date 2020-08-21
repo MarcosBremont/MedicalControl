@@ -52,8 +52,8 @@
             this.citaMedicaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contactanosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.informacionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.historialClinicoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnHome)).BeginInit();
@@ -76,7 +76,7 @@
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(220, 662);
+            this.panelMenu.Size = new System.Drawing.Size(220, 670);
             this.panelMenu.TabIndex = 0;
             this.panelMenu.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelMenu_MouseDown);
             // 
@@ -136,7 +136,7 @@
             this.ibsalir.IconColor = System.Drawing.Color.White;
             this.ibsalir.IconSize = 40;
             this.ibsalir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ibsalir.Location = new System.Drawing.Point(0, 591);
+            this.ibsalir.Location = new System.Drawing.Point(0, 599);
             this.ibsalir.Name = "ibsalir";
             this.ibsalir.Padding = new System.Windows.Forms.Padding(10, 0, 5, 0);
             this.ibsalir.Rotation = 0D;
@@ -223,7 +223,7 @@
             this.panelTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTitleBar.Location = new System.Drawing.Point(220, 0);
             this.panelTitleBar.Name = "panelTitleBar";
-            this.panelTitleBar.Size = new System.Drawing.Size(1050, 75);
+            this.panelTitleBar.Size = new System.Drawing.Size(1063, 75);
             this.panelTitleBar.TabIndex = 1;
             this.panelTitleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitleBar_MouseDown);
             // 
@@ -237,7 +237,7 @@
             this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.Backspace;
             this.iconButton3.IconColor = System.Drawing.Color.White;
             this.iconButton3.IconSize = 20;
-            this.iconButton3.Location = new System.Drawing.Point(1018, 2);
+            this.iconButton3.Location = new System.Drawing.Point(1031, 2);
             this.iconButton3.Name = "iconButton3";
             this.iconButton3.Rotation = 0D;
             this.iconButton3.Size = new System.Drawing.Size(29, 23);
@@ -255,7 +255,7 @@
             this.ibminimize.IconChar = FontAwesome.Sharp.IconChar.MinusCircle;
             this.ibminimize.IconColor = System.Drawing.Color.White;
             this.ibminimize.IconSize = 16;
-            this.ibminimize.Location = new System.Drawing.Point(952, 1);
+            this.ibminimize.Location = new System.Drawing.Point(965, 1);
             this.ibminimize.Name = "ibminimize";
             this.ibminimize.Rotation = 0D;
             this.ibminimize.Size = new System.Drawing.Size(29, 23);
@@ -273,7 +273,7 @@
             this.ibmaximize.IconChar = FontAwesome.Sharp.IconChar.PlusCircle;
             this.ibmaximize.IconColor = System.Drawing.Color.White;
             this.ibmaximize.IconSize = 16;
-            this.ibmaximize.Location = new System.Drawing.Point(985, 1);
+            this.ibmaximize.Location = new System.Drawing.Point(998, 1);
             this.ibmaximize.Name = "ibmaximize";
             this.ibmaximize.Rotation = 0D;
             this.ibmaximize.Size = new System.Drawing.Size(29, 23);
@@ -310,7 +310,7 @@
             this.panelShadow.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelShadow.Location = new System.Drawing.Point(220, 75);
             this.panelShadow.Name = "panelShadow";
-            this.panelShadow.Size = new System.Drawing.Size(1050, 9);
+            this.panelShadow.Size = new System.Drawing.Size(1063, 9);
             this.panelShadow.TabIndex = 2;
             // 
             // panelDesktop
@@ -321,7 +321,7 @@
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDesktop.Location = new System.Drawing.Point(220, 84);
             this.panelDesktop.Name = "panelDesktop";
-            this.panelDesktop.Size = new System.Drawing.Size(1050, 578);
+            this.panelDesktop.Size = new System.Drawing.Size(1063, 586);
             this.panelDesktop.TabIndex = 3;
             // 
             // menuStrip1
@@ -337,7 +337,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.ShowItemToolTips = true;
-            this.menuStrip1.Size = new System.Drawing.Size(1050, 26);
+            this.menuStrip1.Size = new System.Drawing.Size(1063, 26);
             this.menuStrip1.TabIndex = 37;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -355,28 +355,28 @@
             // doctorToolStripMenuItem
             // 
             this.doctorToolStripMenuItem.Name = "doctorToolStripMenuItem";
-            this.doctorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.doctorToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
             this.doctorToolStripMenuItem.Text = "Doctor";
             this.doctorToolStripMenuItem.Click += new System.EventHandler(this.doctorToolStripMenuItem_Click);
             // 
             // alergiaToolStripMenuItem
             // 
             this.alergiaToolStripMenuItem.Name = "alergiaToolStripMenuItem";
-            this.alergiaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.alergiaToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
             this.alergiaToolStripMenuItem.Text = "Alergia";
             this.alergiaToolStripMenuItem.Click += new System.EventHandler(this.alergiaToolStripMenuItem_Click);
             // 
             // seguroToolStripMenuItem
             // 
             this.seguroToolStripMenuItem.Name = "seguroToolStripMenuItem";
-            this.seguroToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.seguroToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
             this.seguroToolStripMenuItem.Text = "Seguro";
             this.seguroToolStripMenuItem.Click += new System.EventHandler(this.seguroToolStripMenuItem_Click);
             // 
             // citaMedicaToolStripMenuItem
             // 
             this.citaMedicaToolStripMenuItem.Name = "citaMedicaToolStripMenuItem";
-            this.citaMedicaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.citaMedicaToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
             this.citaMedicaToolStripMenuItem.Text = "Proveedor";
             this.citaMedicaToolStripMenuItem.Click += new System.EventHandler(this.citaMedicaToolStripMenuItem_Click);
             // 
@@ -394,18 +394,6 @@
             this.informacionToolStripMenuItem.Text = "Acerca de";
             this.informacionToolStripMenuItem.Click += new System.EventHandler(this.informacionToolStripMenuItem_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::MedicalControl.Properties.Resources.Diseño_sin_título__1__removebg_preview;
-            this.pictureBox1.Location = new System.Drawing.Point(362, 113);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(349, 353);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
             // historialClinicoToolStripMenuItem
             // 
             this.historialClinicoToolStripMenuItem.Name = "historialClinicoToolStripMenuItem";
@@ -413,16 +401,29 @@
             this.historialClinicoToolStripMenuItem.Text = "Historial Clinico";
             this.historialClinicoToolStripMenuItem.Click += new System.EventHandler(this.historialClinicoToolStripMenuItem_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = global::MedicalControl.Properties.Resources.Diseño_sin_título__1__removebg_preview;
+            this.pictureBox1.Location = new System.Drawing.Point(368, 117);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(349, 353);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
             // FrmBase
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1270, 662);
+            this.ClientSize = new System.Drawing.Size(1283, 670);
             this.Controls.Add(this.panelDesktop);
             this.Controls.Add(this.panelShadow);
             this.Controls.Add(this.panelTitleBar);
             this.Controls.Add(this.panelMenu);
-            this.MinimumSize = new System.Drawing.Size(1032, 680);
+            this.MaximumSize = new System.Drawing.Size(1540, 800);
+            this.MinimumSize = new System.Drawing.Size(1286, 701);
             this.Name = "FrmBase";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmHome";

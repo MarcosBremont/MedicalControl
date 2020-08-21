@@ -54,6 +54,8 @@
             this.informacionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.historialClinicoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lblpacientes = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnHome)).BeginInit();
@@ -215,6 +217,8 @@
             // panelTitleBar
             // 
             this.panelTitleBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(107)))), ((int)(((byte)(167)))));
+            this.panelTitleBar.Controls.Add(this.label1);
+            this.panelTitleBar.Controls.Add(this.lblpacientes);
             this.panelTitleBar.Controls.Add(this.iconButton3);
             this.panelTitleBar.Controls.Add(this.ibminimize);
             this.panelTitleBar.Controls.Add(this.ibmaximize);
@@ -413,6 +417,28 @@
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
+            // lblpacientes
+            // 
+            this.lblpacientes.AutoSize = true;
+            this.lblpacientes.Font = new System.Drawing.Font("Bahnschrift", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblpacientes.ForeColor = System.Drawing.Color.White;
+            this.lblpacientes.Location = new System.Drawing.Point(399, 12);
+            this.lblpacientes.Name = "lblpacientes";
+            this.lblpacientes.Size = new System.Drawing.Size(181, 45);
+            this.lblpacientes.TabIndex = 6;
+            this.lblpacientes.Text = "Pacientes";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Bahnschrift", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(399, 12);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(248, 45);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Citas Medicas";
+            // 
             // FrmBase
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -472,6 +498,8 @@
         private System.Windows.Forms.ToolStripMenuItem informacionToolStripMenuItem;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem historialClinicoToolStripMenuItem;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblpacientes;
     }
 }
 

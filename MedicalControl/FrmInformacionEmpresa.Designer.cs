@@ -75,6 +75,8 @@
             this.ClientSize = new System.Drawing.Size(800, 749);
             this.Controls.Add(this.Parriba);
             this.Controls.Add(this.pictureBox2);
+            this.MaximumSize = new System.Drawing.Size(816, 788);
+            this.MinimumSize = new System.Drawing.Size(816, 736);
             this.Name = "FrmInformacionEmpresa";
             this.Text = "Informacion";
             this.Load += new System.EventHandler(this.FrmInformacionProyecto_Load);

@@ -985,6 +985,8 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1034, 539);
             this.Controls.Add(this.tabControl1);
+            this.MaximumSize = new System.Drawing.Size(1050, 578);
+            this.MinimumSize = new System.Drawing.Size(1050, 578);
             this.Name = "FrmHistorialClinicocs";
             this.Text = "Historial Clinicocs";
             this.Load += new System.EventHandler(this.FrmHistorialClinicocs_Load);

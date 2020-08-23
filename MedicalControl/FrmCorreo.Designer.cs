@@ -244,6 +244,8 @@
             this.Controls.Add(this.lblasunto);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblpara);
+            this.MaximumSize = new System.Drawing.Size(903, 539);
+            this.MinimumSize = new System.Drawing.Size(903, 539);
             this.Name = "FrmCorreo";
             this.Text = "FrmCorreo";
             this.Load += new System.EventHandler(this.FrmCorreo_Load);

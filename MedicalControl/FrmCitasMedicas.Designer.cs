@@ -52,6 +52,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.gbprincipal = new System.Windows.Forms.GroupBox();
+            this.txtnombrecompleto = new System.Windows.Forms.TextBox();
             this.lblbuscar = new System.Windows.Forms.Label();
             this.txtbuscar = new System.Windows.Forms.TextBox();
             this.dgvcitasmedicas = new System.Windows.Forms.DataGridView();
@@ -63,7 +64,6 @@
             this.ID2ALERG = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ID2DOCTOR = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NombreCompleto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.txtnombrecompleto = new System.Windows.Forms.TextBox();
             this.gbprincipal.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvcitasmedicas)).BeginInit();
             this.SuspendLayout();
@@ -302,13 +302,23 @@
             this.gbprincipal.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.gbprincipal.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbprincipal.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.gbprincipal.Location = new System.Drawing.Point(155, 353);
+            this.gbprincipal.Location = new System.Drawing.Point(155, 356);
             this.gbprincipal.Name = "gbprincipal";
             this.gbprincipal.Size = new System.Drawing.Size(947, 280);
             this.gbprincipal.TabIndex = 76;
             this.gbprincipal.TabStop = false;
             this.gbprincipal.Text = "Citas Medicas";
             this.gbprincipal.Enter += new System.EventHandler(this.gbprincipal_Enter);
+            // 
+            // txtnombrecompleto
+            // 
+            this.txtnombrecompleto.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.txtnombrecompleto.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtnombrecompleto.Location = new System.Drawing.Point(230, 96);
+            this.txtnombrecompleto.MaxLength = 30;
+            this.txtnombrecompleto.Name = "txtnombrecompleto";
+            this.txtnombrecompleto.Size = new System.Drawing.Size(108, 23);
+            this.txtnombrecompleto.TabIndex = 80;
             // 
             // lblbuscar
             // 
@@ -457,16 +467,6 @@
             this.NombreCompleto.Name = "NombreCompleto";
             this.NombreCompleto.ReadOnly = true;
             // 
-            // txtnombrecompleto
-            // 
-            this.txtnombrecompleto.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.txtnombrecompleto.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtnombrecompleto.Location = new System.Drawing.Point(230, 96);
-            this.txtnombrecompleto.MaxLength = 30;
-            this.txtnombrecompleto.Name = "txtnombrecompleto";
-            this.txtnombrecompleto.Size = new System.Drawing.Size(108, 23);
-            this.txtnombrecompleto.TabIndex = 80;
-            // 
             // FrmCitasMedicas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -475,6 +475,8 @@
             this.ClientSize = new System.Drawing.Size(1258, 676);
             this.Controls.Add(this.dgvcitasmedicas);
             this.Controls.Add(this.gbprincipal);
+            this.MaximumSize = new System.Drawing.Size(1274, 715);
+            this.MinimumSize = new System.Drawing.Size(1274, 715);
             this.Name = "FrmCitasMedicas";
             this.Text = "Citas Medicas";
             this.Load += new System.EventHandler(this.FrmCitasMedicas_Load);

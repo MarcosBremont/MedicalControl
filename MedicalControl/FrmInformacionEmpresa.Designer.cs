@@ -42,7 +42,7 @@
             this.Parriba.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(107)))), ((int)(((byte)(167)))));
             this.Parriba.Controls.Add(this.pictureBox1);
             this.Parriba.ForeColor = System.Drawing.Color.Coral;
-            this.Parriba.Location = new System.Drawing.Point(-350, -2);
+            this.Parriba.Location = new System.Drawing.Point(-220, -2);
             this.Parriba.Name = "Parriba";
             this.Parriba.Size = new System.Drawing.Size(1500, 188);
             this.Parriba.TabIndex = 2;
@@ -72,10 +72,10 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(800, 749);
+            this.ClientSize = new System.Drawing.Size(1060, 749);
             this.Controls.Add(this.Parriba);
             this.Controls.Add(this.pictureBox2);
-            this.MaximumSize = new System.Drawing.Size(816, 788);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MinimumSize = new System.Drawing.Size(816, 736);
             this.Name = "FrmInformacionEmpresa";
             this.Text = "Informacion";

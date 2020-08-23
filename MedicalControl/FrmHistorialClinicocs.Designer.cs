@@ -88,7 +88,6 @@
             this.txtnombrep = new System.Windows.Forms.TextBox();
             this.txtAdultez = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnenviar = new System.Windows.Forms.Button();
             this.lblaadjunto = new System.Windows.Forms.Label();
             this.txtadjunto = new System.Windows.Forms.TextBox();
@@ -106,6 +105,7 @@
             this.label31 = new System.Windows.Forms.Label();
             this.lblpara = new System.Windows.Forms.Label();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -116,7 +116,7 @@
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(12, 12);
+            this.tabControl1.Location = new System.Drawing.Point(33, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(1050, 578);
@@ -805,22 +805,12 @@
             this.tabPage2.Text = "Correo";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::MedicalControl.Properties.Resources.gmail;
-            this.pictureBox1.Location = new System.Drawing.Point(388, 6);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(121, 70);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 104;
-            this.pictureBox1.TabStop = false;
-            // 
             // btnenviar
             // 
             this.btnenviar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(107)))), ((int)(((byte)(167)))));
             this.btnenviar.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnenviar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnenviar.Location = new System.Drawing.Point(406, 407);
+            this.btnenviar.Location = new System.Drawing.Point(446, 408);
             this.btnenviar.Name = "btnenviar";
             this.btnenviar.Size = new System.Drawing.Size(128, 48);
             this.btnenviar.TabIndex = 103;
@@ -832,7 +822,7 @@
             this.lblaadjunto.AutoSize = true;
             this.lblaadjunto.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblaadjunto.ForeColor = System.Drawing.Color.Black;
-            this.lblaadjunto.Location = new System.Drawing.Point(571, 188);
+            this.lblaadjunto.Location = new System.Drawing.Point(611, 189);
             this.lblaadjunto.Name = "lblaadjunto";
             this.lblaadjunto.Size = new System.Drawing.Size(82, 19);
             this.lblaadjunto.TabIndex = 102;
@@ -841,7 +831,7 @@
             // 
             // txtadjunto
             // 
-            this.txtadjunto.Location = new System.Drawing.Point(654, 187);
+            this.txtadjunto.Location = new System.Drawing.Point(694, 188);
             this.txtadjunto.Name = "txtadjunto";
             this.txtadjunto.Size = new System.Drawing.Size(186, 20);
             this.txtadjunto.TabIndex = 101;
@@ -853,7 +843,7 @@
             this.btnadjuntar.Font = new System.Drawing.Font("Bahnschrift", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnadjuntar.ForeColor = System.Drawing.Color.White;
             this.btnadjuntar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnadjuntar.Location = new System.Drawing.Point(847, 179);
+            this.btnadjuntar.Location = new System.Drawing.Point(887, 180);
             this.btnadjuntar.Name = "btnadjuntar";
             this.btnadjuntar.Size = new System.Drawing.Size(35, 37);
             this.btnadjuntar.TabIndex = 100;
@@ -866,7 +856,7 @@
             this.label27.AutoSize = true;
             this.label27.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label27.ForeColor = System.Drawing.Color.Black;
-            this.label27.Location = new System.Drawing.Point(85, 148);
+            this.label27.Location = new System.Drawing.Point(125, 149);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(93, 19);
             this.label27.TabIndex = 99;
@@ -877,7 +867,7 @@
             this.label28.AutoSize = true;
             this.label28.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label28.ForeColor = System.Drawing.Color.Black;
-            this.label28.Location = new System.Drawing.Point(85, 113);
+            this.label28.Location = new System.Drawing.Point(125, 114);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(83, 19);
             this.label28.TabIndex = 98;
@@ -885,7 +875,7 @@
             // 
             // txtpassword
             // 
-            this.txtpassword.Location = new System.Drawing.Point(187, 147);
+            this.txtpassword.Location = new System.Drawing.Point(227, 148);
             this.txtpassword.Name = "txtpassword";
             this.txtpassword.PasswordChar = '*';
             this.txtpassword.Size = new System.Drawing.Size(132, 20);
@@ -894,7 +884,7 @@
             // 
             // txtremitente
             // 
-            this.txtremitente.Location = new System.Drawing.Point(187, 112);
+            this.txtremitente.Location = new System.Drawing.Point(227, 113);
             this.txtremitente.Name = "txtremitente";
             this.txtremitente.Size = new System.Drawing.Size(132, 20);
             this.txtremitente.TabIndex = 96;
@@ -904,7 +894,7 @@
             this.label30.AutoSize = true;
             this.label30.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label30.ForeColor = System.Drawing.Color.Black;
-            this.label30.Location = new System.Drawing.Point(85, 247);
+            this.label30.Location = new System.Drawing.Point(125, 248);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(73, 19);
             this.label30.TabIndex = 94;
@@ -912,21 +902,21 @@
             // 
             // txtasunto
             // 
-            this.txtasunto.Location = new System.Drawing.Point(654, 147);
+            this.txtasunto.Location = new System.Drawing.Point(694, 148);
             this.txtasunto.Name = "txtasunto";
             this.txtasunto.Size = new System.Drawing.Size(186, 20);
             this.txtasunto.TabIndex = 93;
             // 
             // txtcc
             // 
-            this.txtcc.Location = new System.Drawing.Point(187, 187);
+            this.txtcc.Location = new System.Drawing.Point(227, 188);
             this.txtcc.Name = "txtcc";
             this.txtcc.Size = new System.Drawing.Size(186, 20);
             this.txtcc.TabIndex = 92;
             // 
             // rtbmensaje
             // 
-            this.rtbmensaje.Location = new System.Drawing.Point(89, 275);
+            this.rtbmensaje.Location = new System.Drawing.Point(129, 276);
             this.rtbmensaje.Multiline = true;
             this.rtbmensaje.Name = "rtbmensaje";
             this.rtbmensaje.Size = new System.Drawing.Size(751, 125);
@@ -934,7 +924,7 @@
             // 
             // txtpara
             // 
-            this.txtpara.Location = new System.Drawing.Point(654, 112);
+            this.txtpara.Location = new System.Drawing.Point(694, 113);
             this.txtpara.Name = "txtpara";
             this.txtpara.Size = new System.Drawing.Size(186, 20);
             this.txtpara.TabIndex = 90;
@@ -944,7 +934,7 @@
             this.lblasunto.AutoSize = true;
             this.lblasunto.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblasunto.ForeColor = System.Drawing.Color.Black;
-            this.lblasunto.Location = new System.Drawing.Point(571, 148);
+            this.lblasunto.Location = new System.Drawing.Point(611, 149);
             this.lblasunto.Name = "lblasunto";
             this.lblasunto.Size = new System.Drawing.Size(63, 19);
             this.lblasunto.TabIndex = 89;
@@ -956,7 +946,7 @@
             this.label31.AutoSize = true;
             this.label31.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label31.ForeColor = System.Drawing.Color.Black;
-            this.label31.Location = new System.Drawing.Point(85, 188);
+            this.label31.Location = new System.Drawing.Point(125, 189);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(33, 19);
             this.label31.TabIndex = 88;
@@ -967,7 +957,7 @@
             this.lblpara.AutoSize = true;
             this.lblpara.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblpara.ForeColor = System.Drawing.Color.Black;
-            this.lblpara.Location = new System.Drawing.Point(571, 113);
+            this.lblpara.Location = new System.Drawing.Point(611, 114);
             this.lblpara.Name = "lblpara";
             this.lblpara.Size = new System.Drawing.Size(48, 19);
             this.lblpara.TabIndex = 87;
@@ -978,14 +968,23 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::MedicalControl.Properties.Resources.gmail;
+            this.pictureBox1.Location = new System.Drawing.Point(428, 7);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(121, 70);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 104;
+            this.pictureBox1.TabStop = false;
+            // 
             // FrmHistorialClinicocs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1034, 539);
+            this.ClientSize = new System.Drawing.Size(1108, 598);
             this.Controls.Add(this.tabControl1);
-            this.MaximumSize = new System.Drawing.Size(1050, 578);
             this.MinimumSize = new System.Drawing.Size(1050, 578);
             this.Name = "FrmHistorialClinicocs";
             this.Text = "Historial Clinicocs";

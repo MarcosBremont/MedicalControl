@@ -34,16 +34,16 @@
             this.lblregistro = new System.Windows.Forms.Label();
             this.btnregistrar = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.btnEliminar = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.pBLogoCall = new System.Windows.Forms.PictureBox();
+            this.btnIniciar = new System.Windows.Forms.Button();
+            this.BtnSalir = new System.Windows.Forms.Button();
             this.btnminimizar = new System.Windows.Forms.Button();
             this.pBcontrasena = new System.Windows.Forms.PictureBox();
             this.pBusuario = new System.Windows.Forms.PictureBox();
-            this.pBLogoCall = new System.Windows.Forms.PictureBox();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pBLogoCall)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBcontrasena)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBusuario)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pBLogoCall)).BeginInit();
             this.SuspendLayout();
             // 
             // lbllogin
@@ -68,7 +68,6 @@
             this.txtcontrasena.TabIndex = 23;
             this.txtcontrasena.Text = "CONTRASENA";
             this.txtcontrasena.Enter += new System.EventHandler(this.txtcontrasena_Enter);
-            this.txtcontrasena.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtcontrasena_KeyPress);
             this.txtcontrasena.Leave += new System.EventHandler(this.txtcontrasena_Leave);
             // 
             // txtnombreusuario
@@ -123,31 +122,42 @@
             this.panel3.TabIndex = 15;
             this.panel3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel3_MouseDown);
             // 
-            // btnEliminar
+            // pBLogoCall
             // 
-            this.btnEliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(107)))), ((int)(((byte)(165)))));
-            this.btnEliminar.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnEliminar.Location = new System.Drawing.Point(372, 258);
-            this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(103, 35);
-            this.btnEliminar.TabIndex = 55;
-            this.btnEliminar.Text = "Iniciar";
-            this.btnEliminar.UseVisualStyleBackColor = false;
-            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
+            this.pBLogoCall.Image = global::MedicalControl.Properties.Resources.Diseño_sin_título__1__removebg_preview__1_;
+            this.pBLogoCall.Location = new System.Drawing.Point(-46, 13);
+            this.pBLogoCall.Name = "pBLogoCall";
+            this.pBLogoCall.Size = new System.Drawing.Size(335, 314);
+            this.pBLogoCall.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pBLogoCall.TabIndex = 13;
+            this.pBLogoCall.TabStop = false;
+            this.pBLogoCall.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pBLogoCall_MouseDown);
             // 
-            // button1
+            // btnIniciar
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(107)))), ((int)(((byte)(165)))));
-            this.button1.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button1.Location = new System.Drawing.Point(525, 258);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(103, 35);
-            this.button1.TabIndex = 56;
-            this.button1.Text = "Salir";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnIniciar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(107)))), ((int)(((byte)(165)))));
+            this.btnIniciar.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIniciar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnIniciar.Location = new System.Drawing.Point(372, 258);
+            this.btnIniciar.Name = "btnIniciar";
+            this.btnIniciar.Size = new System.Drawing.Size(103, 35);
+            this.btnIniciar.TabIndex = 55;
+            this.btnIniciar.Text = "Iniciar";
+            this.btnIniciar.UseVisualStyleBackColor = false;
+            this.btnIniciar.Click += new System.EventHandler(this.btnIniciar_Click);
+            // 
+            // BtnSalir
+            // 
+            this.BtnSalir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(107)))), ((int)(((byte)(165)))));
+            this.BtnSalir.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnSalir.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.BtnSalir.Location = new System.Drawing.Point(525, 258);
+            this.BtnSalir.Name = "BtnSalir";
+            this.BtnSalir.Size = new System.Drawing.Size(103, 35);
+            this.BtnSalir.TabIndex = 56;
+            this.BtnSalir.Text = "Salir";
+            this.BtnSalir.UseVisualStyleBackColor = false;
+            this.BtnSalir.Click += new System.EventHandler(this.BtnSalir_Click);
             // 
             // btnminimizar
             // 
@@ -184,17 +194,6 @@
             this.pBusuario.TabIndex = 20;
             this.pBusuario.TabStop = false;
             // 
-            // pBLogoCall
-            // 
-            this.pBLogoCall.Image = global::MedicalControl.Properties.Resources.Diseño_sin_título__1__removebg_preview__1_;
-            this.pBLogoCall.Location = new System.Drawing.Point(-46, 13);
-            this.pBLogoCall.Name = "pBLogoCall";
-            this.pBLogoCall.Size = new System.Drawing.Size(335, 314);
-            this.pBLogoCall.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pBLogoCall.TabIndex = 13;
-            this.pBLogoCall.TabStop = false;
-            this.pBLogoCall.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pBLogoCall_MouseDown);
-            // 
             // FrmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -202,8 +201,8 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(780, 330);
             this.Controls.Add(this.btnminimizar);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.btnEliminar);
+            this.Controls.Add(this.BtnSalir);
+            this.Controls.Add(this.btnIniciar);
             this.Controls.Add(this.lbllogin);
             this.Controls.Add(this.txtcontrasena);
             this.Controls.Add(this.txtnombreusuario);
@@ -219,9 +218,9 @@
             this.Load += new System.EventHandler(this.FrmLogin_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.FrmLogin_MouseDown);
             this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pBLogoCall)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBcontrasena)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBusuario)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pBLogoCall)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -238,8 +237,8 @@
         private System.Windows.Forms.Button btnregistrar;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.PictureBox pBLogoCall;
-        private System.Windows.Forms.Button btnEliminar;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnIniciar;
+        private System.Windows.Forms.Button BtnSalir;
         private System.Windows.Forms.Button btnminimizar;
     }
 }

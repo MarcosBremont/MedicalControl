@@ -162,12 +162,6 @@
     <Compile Include="FrmInventario.Designer.cs">
       <DependentUpon>FrmInventario.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmPantallaCarga.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmPantallaCarga.Designer.cs">
-      <DependentUpon>FrmPantallaCarga.cs</DependentUpon>
-    </Compile>
     <Compile Include="FrmPPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -267,9 +261,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmInventario.resx">
       <DependentUpon>FrmInventario.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmPantallaCarga.resx">
-      <DependentUpon>FrmPantallaCarga.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmPPrincipal.resx">
       <DependentUpon>FrmPPrincipal.cs</DependentUpon>

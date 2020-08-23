@@ -591,7 +591,7 @@
             this.gbprincipal.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.gbprincipal.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbprincipal.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.gbprincipal.Location = new System.Drawing.Point(30, 371);
+            this.gbprincipal.Location = new System.Drawing.Point(12, 359);
             this.gbprincipal.Name = "gbprincipal";
             this.gbprincipal.Size = new System.Drawing.Size(1104, 242);
             this.gbprincipal.TabIndex = 50;
@@ -628,7 +628,6 @@
             this.dgvprincipal.AllowUserToOrderColumns = true;
             this.dgvprincipal.AllowUserToResizeColumns = false;
             this.dgvprincipal.AllowUserToResizeRows = false;
-            this.dgvprincipal.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.dgvprincipal.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvprincipal.BackgroundColor = System.Drawing.Color.White;
             this.dgvprincipal.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -665,7 +664,7 @@
             this.dgvprincipal.DefaultCellStyle = dataGridViewCellStyle6;
             this.dgvprincipal.EnableHeadersVisualStyles = false;
             this.dgvprincipal.GridColor = System.Drawing.Color.White;
-            this.dgvprincipal.Location = new System.Drawing.Point(30, 23);
+            this.dgvprincipal.Location = new System.Drawing.Point(25, 12);
             this.dgvprincipal.MultiSelect = false;
             this.dgvprincipal.Name = "dgvprincipal";
             this.dgvprincipal.ReadOnly = true;
@@ -769,11 +768,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1218, 613);
+            this.ClientSize = new System.Drawing.Size(1270, 662);
             this.Controls.Add(this.dgvprincipal);
             this.Controls.Add(this.gbprincipal);
-            this.MaximumSize = new System.Drawing.Size(1234, 652);
-            this.MinimumSize = new System.Drawing.Size(1234, 652);
+            this.MaximumSize = new System.Drawing.Size(1286, 701);
+            this.MinimumSize = new System.Drawing.Size(1286, 701);
             this.Name = "FrmPPrincipal";
             this.Text = "Principal";
             this.Load += new System.EventHandler(this.FrmPPrincipal_Load);

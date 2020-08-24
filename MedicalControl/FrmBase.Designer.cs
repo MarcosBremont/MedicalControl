@@ -76,7 +76,7 @@
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(220, 729);
+            this.panelMenu.Size = new System.Drawing.Size(220, 749);
             this.panelMenu.TabIndex = 0;
             this.panelMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMenu_Paint);
             this.panelMenu.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelMenu_MouseDown);
@@ -137,7 +137,7 @@
             this.ibsalir.IconColor = System.Drawing.Color.White;
             this.ibsalir.IconSize = 40;
             this.ibsalir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ibsalir.Location = new System.Drawing.Point(0, 658);
+            this.ibsalir.Location = new System.Drawing.Point(0, 678);
             this.ibsalir.Name = "ibsalir";
             this.ibsalir.Padding = new System.Windows.Forms.Padding(10, 0, 5, 0);
             this.ibsalir.Rotation = 0D;
@@ -224,7 +224,7 @@
             this.panelTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTitleBar.Location = new System.Drawing.Point(220, 0);
             this.panelTitleBar.Name = "panelTitleBar";
-            this.panelTitleBar.Size = new System.Drawing.Size(788, 75);
+            this.panelTitleBar.Size = new System.Drawing.Size(851, 75);
             this.panelTitleBar.TabIndex = 1;
             this.panelTitleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitleBar_MouseDown);
             // 
@@ -238,7 +238,7 @@
             this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.Backspace;
             this.iconButton3.IconColor = System.Drawing.Color.White;
             this.iconButton3.IconSize = 20;
-            this.iconButton3.Location = new System.Drawing.Point(756, 2);
+            this.iconButton3.Location = new System.Drawing.Point(819, 2);
             this.iconButton3.Name = "iconButton3";
             this.iconButton3.Rotation = 0D;
             this.iconButton3.Size = new System.Drawing.Size(29, 23);
@@ -256,7 +256,7 @@
             this.ibminimize.IconChar = FontAwesome.Sharp.IconChar.MinusCircle;
             this.ibminimize.IconColor = System.Drawing.Color.White;
             this.ibminimize.IconSize = 16;
-            this.ibminimize.Location = new System.Drawing.Point(690, 1);
+            this.ibminimize.Location = new System.Drawing.Point(753, 1);
             this.ibminimize.Name = "ibminimize";
             this.ibminimize.Rotation = 0D;
             this.ibminimize.Size = new System.Drawing.Size(29, 23);
@@ -274,7 +274,7 @@
             this.ibmaximize.IconChar = FontAwesome.Sharp.IconChar.PlusCircle;
             this.ibmaximize.IconColor = System.Drawing.Color.White;
             this.ibmaximize.IconSize = 16;
-            this.ibmaximize.Location = new System.Drawing.Point(723, 1);
+            this.ibmaximize.Location = new System.Drawing.Point(786, 1);
             this.ibmaximize.Name = "ibmaximize";
             this.ibmaximize.Rotation = 0D;
             this.ibmaximize.Size = new System.Drawing.Size(29, 23);
@@ -311,7 +311,7 @@
             this.panelShadow.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelShadow.Location = new System.Drawing.Point(220, 75);
             this.panelShadow.Name = "panelShadow";
-            this.panelShadow.Size = new System.Drawing.Size(788, 9);
+            this.panelShadow.Size = new System.Drawing.Size(851, 9);
             this.panelShadow.TabIndex = 2;
             // 
             // panelDesktop
@@ -322,7 +322,7 @@
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDesktop.Location = new System.Drawing.Point(220, 84);
             this.panelDesktop.Name = "panelDesktop";
-            this.panelDesktop.Size = new System.Drawing.Size(788, 645);
+            this.panelDesktop.Size = new System.Drawing.Size(851, 665);
             this.panelDesktop.TabIndex = 3;
             // 
             // menuStrip1
@@ -338,7 +338,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.ShowItemToolTips = true;
-            this.menuStrip1.Size = new System.Drawing.Size(788, 26);
+            this.menuStrip1.Size = new System.Drawing.Size(851, 26);
             this.menuStrip1.TabIndex = 37;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -407,7 +407,7 @@
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::MedicalControl.Properties.Resources.Diseño_sin_título__1__removebg_preview;
-            this.pictureBox1.Location = new System.Drawing.Point(231, 146);
+            this.pictureBox1.Location = new System.Drawing.Point(262, 156);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(349, 353);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -418,12 +418,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1008, 729);
+            this.ClientSize = new System.Drawing.Size(1071, 749);
             this.Controls.Add(this.panelDesktop);
             this.Controls.Add(this.panelShadow);
             this.Controls.Add(this.panelTitleBar);
             this.Controls.Add(this.panelMenu);
-            this.MinimumSize = new System.Drawing.Size(1024, 768);
+            this.MinimumSize = new System.Drawing.Size(1087, 766);
             this.Name = "FrmBase";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmHome";

@@ -472,6 +472,9 @@
             this.ClientSize = new System.Drawing.Size(1339, 621);
             this.Controls.Add(this.dgvinventario);
             this.Controls.Add(this.gbprincipal);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MaximumSize = new System.Drawing.Size(1355, 660);
+            this.MinimumSize = new System.Drawing.Size(1355, 660);
             this.Name = "FrmInventario";
             this.Text = "Inventario";
             this.Load += new System.EventHandler(this.FrmInventario_Load);

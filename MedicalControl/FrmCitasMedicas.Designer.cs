@@ -275,7 +275,6 @@
             // 
             // gbprincipal
             // 
-            this.gbprincipal.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.gbprincipal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(107)))), ((int)(((byte)(167)))));
             this.gbprincipal.Controls.Add(this.txtnombrecompleto);
             this.gbprincipal.Controls.Add(this.lblbuscar);
@@ -472,11 +471,10 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1258, 676);
+            this.ClientSize = new System.Drawing.Size(1274, 715);
             this.Controls.Add(this.dgvcitasmedicas);
             this.Controls.Add(this.gbprincipal);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.MaximumSize = new System.Drawing.Size(1274, 715);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MinimumSize = new System.Drawing.Size(1274, 715);
             this.Name = "FrmCitasMedicas";
             this.Text = "Citas Medicas";

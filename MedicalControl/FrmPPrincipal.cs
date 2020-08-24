@@ -70,6 +70,10 @@ namespace MedicalControl
 
         }
 
+
+
+
+
         public void Refresh()
         {
             //  MySqlCommand comando = new MySqlCommand("Select * from T_Paciente", con);

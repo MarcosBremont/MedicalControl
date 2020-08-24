@@ -223,7 +223,7 @@
             this.panelTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTitleBar.Location = new System.Drawing.Point(220, 0);
             this.panelTitleBar.Name = "panelTitleBar";
-            this.panelTitleBar.Size = new System.Drawing.Size(1066, 75);
+            this.panelTitleBar.Size = new System.Drawing.Size(1063, 75);
             this.panelTitleBar.TabIndex = 1;
             this.panelTitleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitleBar_MouseDown);
             // 
@@ -237,7 +237,7 @@
             this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.Backspace;
             this.iconButton3.IconColor = System.Drawing.Color.White;
             this.iconButton3.IconSize = 20;
-            this.iconButton3.Location = new System.Drawing.Point(1034, 2);
+            this.iconButton3.Location = new System.Drawing.Point(1031, 2);
             this.iconButton3.Name = "iconButton3";
             this.iconButton3.Rotation = 0D;
             this.iconButton3.Size = new System.Drawing.Size(29, 23);
@@ -255,7 +255,7 @@
             this.ibminimize.IconChar = FontAwesome.Sharp.IconChar.MinusCircle;
             this.ibminimize.IconColor = System.Drawing.Color.White;
             this.ibminimize.IconSize = 16;
-            this.ibminimize.Location = new System.Drawing.Point(968, 1);
+            this.ibminimize.Location = new System.Drawing.Point(965, 1);
             this.ibminimize.Name = "ibminimize";
             this.ibminimize.Rotation = 0D;
             this.ibminimize.Size = new System.Drawing.Size(29, 23);
@@ -273,7 +273,7 @@
             this.ibmaximize.IconChar = FontAwesome.Sharp.IconChar.PlusCircle;
             this.ibmaximize.IconColor = System.Drawing.Color.White;
             this.ibmaximize.IconSize = 16;
-            this.ibmaximize.Location = new System.Drawing.Point(1001, 1);
+            this.ibmaximize.Location = new System.Drawing.Point(998, 1);
             this.ibmaximize.Name = "ibmaximize";
             this.ibmaximize.Rotation = 0D;
             this.ibmaximize.Size = new System.Drawing.Size(29, 23);
@@ -310,7 +310,7 @@
             this.panelShadow.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelShadow.Location = new System.Drawing.Point(220, 75);
             this.panelShadow.Name = "panelShadow";
-            this.panelShadow.Size = new System.Drawing.Size(1066, 9);
+            this.panelShadow.Size = new System.Drawing.Size(1063, 9);
             this.panelShadow.TabIndex = 2;
             // 
             // panelDesktop
@@ -321,7 +321,7 @@
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDesktop.Location = new System.Drawing.Point(220, 84);
             this.panelDesktop.Name = "panelDesktop";
-            this.panelDesktop.Size = new System.Drawing.Size(1066, 617);
+            this.panelDesktop.Size = new System.Drawing.Size(1063, 617);
             this.panelDesktop.TabIndex = 3;
             // 
             // menuStrip1
@@ -337,7 +337,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.ShowItemToolTips = true;
-            this.menuStrip1.Size = new System.Drawing.Size(1066, 26);
+            this.menuStrip1.Size = new System.Drawing.Size(1063, 26);
             this.menuStrip1.TabIndex = 37;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -406,7 +406,7 @@
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::MedicalControl.Properties.Resources.Diseño_sin_título__1__removebg_preview;
-            this.pictureBox1.Location = new System.Drawing.Point(370, 132);
+            this.pictureBox1.Location = new System.Drawing.Point(368, 132);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(349, 353);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -417,14 +417,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1283, 670);
+            this.ClientSize = new System.Drawing.Size(1283, 701);
             this.Controls.Add(this.panelDesktop);
             this.Controls.Add(this.panelShadow);
             this.Controls.Add(this.panelTitleBar);
             this.Controls.Add(this.panelMenu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximumSize = new System.Drawing.Size(1540, 800);
-            this.MinimumSize = new System.Drawing.Size(1286, 701);
+            this.MinimumSize = new System.Drawing.Size(1278, 701);
             this.Name = "FrmBase";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmHome";

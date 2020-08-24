@@ -32,8 +32,7 @@ namespace MedicalControl
             CARGARCOMBOXALERGIA();
             CARGARCOMBOXSEGURO();
             CARGARCOMBOXDOCTOR();
-
-
+            Refresh();
             lblAntecedentesAlergicos.Visible = false;
             lblAntecedentesHospitalarios.Visible = false;
             lblAntecedentesMedicamentosos.Visible = false;
@@ -54,6 +53,16 @@ namespace MedicalControl
             lblAntecedentesTransfucionales.Visible = false;
 
 
+        }
+
+        public void Refresh()
+        {
+            //  MySqlCommand comando = new MySqlCommand("Select * from T_Paciente", con);
+            MySqlDataAdapter adaptador = new MySqlDataAdapter("Select * from t_historialclinico", con);
+            // adaptador.SelectCommand = comando;
+            DataTable tabla = new DataTable();
+            adaptador.Fill(tabla);
+            dgvhistorialclinico.DataSource = tabla;
         }
 
 
@@ -203,8 +212,6 @@ namespace MedicalControl
 
 
         }
-
-       
 
         private void button2_Click(object sender, EventArgs e)
         {

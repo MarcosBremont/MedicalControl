@@ -93,7 +93,7 @@ namespace MedicalControl
         public void Refresh()
         {
             //  MySqlCommand comando = new MySqlCommand("Select * from T_Paciente", con);
-            MySqlDataAdapter adaptador = new MySqlDataAdapter("Select * from t_historialclinico", con);
+            MySqlDataAdapter adaptador = new MySqlDataAdapter("Select IDhistorialClinico as Codigo, NombreP as Nombre, ApellidoP as Apellido, Telefono as Telefono  from t_historialclinico", con);
             // adaptador.SelectCommand = comando;
             DataTable tabla = new DataTable();
             adaptador.Fill(tabla);
@@ -201,7 +201,70 @@ namespace MedicalControl
 
         }
 
-        private void button3_Click(object sender, EventArgs e)
+       
+
+        
+        private void SaveFile(SaveFileDialog sfd)
+        {
+            string path = sfd.FileName;
+            File.WriteAllText(path, string.Format("{0} {1} {2} {3} {4} {5} {6} {7} {8} {9} {10} {11} {12} {13} {14} {15} {16} {17} {18} {19} {20} {21} {22} {23} {24} {25} {26} {27} {28} {29} {30} {31} {32} {33} {34} {35} {36} {37} {38} {39} {40} {41} {42} {43} {44} {45} {46} {47} {48} {49}"
+            , "ID", txthistorialclinico.Text
+            , "Nombre", txtnombrep.Text
+            , "Apellido", txtApellido.Text
+            , "Fecha", dtPFecha.Text
+            , "Sexo", cmbSexo.Text
+            , "Telefono", MtbTelefono.Text
+            , "Procedencia", txtProcedencia.Text
+            , "Residencia", txtResidencia.Text
+            , "Edad", txtEdad.Text
+            , "Cedula", mtbCedula.Text
+            , "Telefono 2", mtbTelefono2.Text
+            , "Seguro", cmbsegurom.Text
+            , "Doctor/a", cmbDoctor.Text
+            , "Ocupacion", txtOcupacion.Text
+            , "Religion", txtReligion.Text
+            , "Estado Civil", txtEstadoCivil.Text
+            , "Raza", txtRaza.Text
+            , "Alergias", cmbalergias.Text
+            , "Antecedentes Quirurgicos", txtAntecedentesQuirurgicos.Text
+            , "Antecedentes Hospitalarios", txtAntecedentesHospitalarios.Text
+            , "Antecedentes Medicamentosos", txtAntecedentesMedicamentosos.Text
+            , "Antecedentes Traumaticos", txtAntecedentesTarumaticos.Text
+            , "Antecedentes sobre la niñez", txtNiñez.Text
+            , "Antecedentes sobre la adolescencia", txtAdolescencia.Text
+            , "Antecedentes sobre la adultez", txtAdultez.Text));
+
+
+        }
+
+      
+
+       
+
+        private void btnenviar_Click(object sender, EventArgs e)
+        {
+            enviar_correo("smtp.gmail.com", 587, txtremitente.Text, txtpassword.Text, txtasunto.Text, txtpara.Text, txtcc.Text, rtbmensaje.Text, txtadjunto.Text, rtbmensaje.Text);
+
+        }
+
+        private void btnadjuntar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.openFileDialog1.ShowDialog();
+                if (this.openFileDialog1.FileName.Equals("") == false)
+                {
+                    txtadjunto.Text = this.openFileDialog1.FileName;
+
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al cargar la ruta del archivo: " + ex.ToString());
+            }
+        }
+
+        private void button3_Click_1(object sender, EventArgs e)
         {
             lblAntecedentesAlergicos.Visible = true;
             lblAntecedentesHospitalarios.Visible = true;
@@ -226,7 +289,7 @@ namespace MedicalControl
             lblAntecedentesTransfucionales.Visible = true;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click_1(object sender, EventArgs e)
         {
             try
             {
@@ -259,7 +322,7 @@ namespace MedicalControl
                     comando.Parameters.AddWithValue("@Ninez", txtNiñez.Text);
                     comando.Parameters.AddWithValue("@Adolescencia", txtAdolescencia.Text);
                     comando.Parameters.AddWithValue("@Adultez", txtAdultez.Text);
-                    
+
                     comando.ExecuteNonQuery();
                     Refresh();
                     MessageBox.Show("Historial Clinico Agregado");
@@ -287,11 +350,19 @@ namespace MedicalControl
 
             }
 
-
-
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void BtnActualizar_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void BtnConsultar_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void BtnConsultar_Click_1(object sender, EventArgs e)
         {
             try
             {
@@ -328,7 +399,7 @@ namespace MedicalControl
                         txtNiñez.Text = reg["Ninez"].ToString();
                         txtAdolescencia.Text = reg["Adolescencia"].ToString();
                         txtAdultez.Text = reg["Adultez"].ToString();
-               
+
                         MessageBox.Show("Historial Clinico Encontrado");
                     }
                 }
@@ -343,59 +414,9 @@ namespace MedicalControl
             {
 
             }
-
-        }
-        private void SaveFile(SaveFileDialog sfd)
-        {
-            string path = sfd.FileName;
-            File.WriteAllText(path, string.Format("{0} {1} {2} {3} {4} {5} {6} {7} {8} {9} {10} {11} {12} {13} {14} {15} {16} {17} {18} {19} {20} {21} {22} {23} {24} {25} {26} {27} {28} {29} {30} {31} {32} {33} {34} {35} {36} {37} {38} {39} {40} {41} {42} {43} {44} {45} {46} {47} {48} {49}"
-            , "ID", txthistorialclinico.Text
-            , "Nombre", txtnombrep.Text
-            , "Apellido", txtApellido.Text
-            , "Fecha", dtPFecha.Text
-            , "Sexo", cmbSexo.Text
-            , "Telefono", MtbTelefono.Text
-            , "Procedencia", txtProcedencia.Text
-            , "Residencia", txtResidencia.Text
-            , "Edad", txtEdad.Text
-            , "Cedula", mtbCedula.Text
-            , "Telefono 2", mtbTelefono2.Text
-            , "Seguro", cmbsegurom.Text
-            , "Doctor/a", cmbDoctor.Text
-            , "Ocupacion", txtOcupacion.Text
-            , "Religion", txtReligion.Text
-            , "Estado Civil", txtEstadoCivil.Text
-            , "Raza", txtRaza.Text
-            , "Alergias", cmbalergias.Text
-            , "Antecedentes Quirurgicos", txtAntecedentesQuirurgicos.Text
-            , "Antecedentes Hospitalarios", txtAntecedentesHospitalarios.Text
-            , "Antecedentes Medicamentosos", txtAntecedentesMedicamentosos.Text
-            , "Antecedentes Traumaticos", txtAntecedentesTarumaticos.Text
-            , "Antecedentes sobre la niñez", txtNiñez.Text
-            , "Antecedentes sobre la adolescencia", txtAdolescencia.Text
-            , "Antecedentes sobre la adultez", txtAdultez.Text));
-            
-
         }
 
-        private void button5_Click(object sender, EventArgs e)
-        {
-          
-            using (SaveFileDialog sfd = new SaveFileDialog())
-            {
-                sfd.Filter = "Text Files|*.txt|Documents|*.doc";
-                sfd.CreatePrompt = true;
-                sfd.OverwritePrompt = false;
-                sfd.Title = "Save Text Document";
-                if (sfd.ShowDialog() == DialogResult.OK)
-                {
-                    SaveFile(sfd);
-                }
-            }
-          
-        }
-
-        private void button4_Click(object sender, EventArgs e)
+        private void BtnActualizar_Click_1(object sender, EventArgs e)
         {
             try
             {
@@ -423,7 +444,7 @@ namespace MedicalControl
                     comando.Parameters.AddWithValue("@Raza", txtRaza.Text);
                     comando.Parameters.AddWithValue("@AntAlrg", cmbalergias.SelectedValue);
                     comando.Parameters.AddWithValue("@AntQrg", txtAntecedentesQuirurgicos.Text);
-                    comando.Parameters.AddWithValue("@AntHops", txtAntecedentesHospitalarios.Text); 
+                    comando.Parameters.AddWithValue("@AntHops", txtAntecedentesHospitalarios.Text);
                     comando.Parameters.AddWithValue("@AntMed", txtAntecedentesMedicamentosos.Text);
                     comando.Parameters.AddWithValue("@AntTra", txtAntecedentesTarumaticos.Text);
                     comando.Parameters.AddWithValue("@Ninez", txtNiñez.Text);
@@ -445,30 +466,6 @@ namespace MedicalControl
 
             }
 
-
-        }
-
-        private void btnenviar_Click(object sender, EventArgs e)
-        {
-            enviar_correo("smtp.gmail.com", 587, txtremitente.Text, txtpassword.Text, txtasunto.Text, txtpara.Text, txtcc.Text, rtbmensaje.Text, txtadjunto.Text, rtbmensaje.Text);
-
-        }
-
-        private void btnadjuntar_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                this.openFileDialog1.ShowDialog();
-                if (this.openFileDialog1.FileName.Equals("") == false)
-                {
-                    txtadjunto.Text = this.openFileDialog1.FileName;
-
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error al cargar la ruta del archivo: " + ex.ToString());
-            }
         }
     }
 }

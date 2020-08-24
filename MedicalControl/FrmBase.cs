@@ -269,5 +269,10 @@ namespace MedicalControl
         {
             OpenChildForm(new FrmHistorialClinicocs());
         }
+
+        private void panelMenu_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

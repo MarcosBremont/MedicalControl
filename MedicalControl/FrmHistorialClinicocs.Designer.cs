@@ -28,22 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.txthistorialclinico = new System.Windows.Forms.TextBox();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.mtbCedula = new System.Windows.Forms.MaskedTextBox();
             this.cmbalergias = new System.Windows.Forms.ComboBox();
-            this.cmbDoctor = new System.Windows.Forms.ComboBox();
-            this.cmbsegurom = new System.Windows.Forms.ComboBox();
-            this.cmbSexo = new System.Windows.Forms.ComboBox();
-            this.dtPFecha = new System.Windows.Forms.DateTimePicker();
             this.txtAdolescencia = new System.Windows.Forms.TextBox();
             this.lblAdultez = new System.Windows.Forms.Label();
             this.txtNiñez = new System.Windows.Forms.TextBox();
@@ -57,7 +48,20 @@
             this.lblAntecedentesHospitalarios = new System.Windows.Forms.Label();
             this.txtAntecedentesTransfucionales = new System.Windows.Forms.TextBox();
             this.txtAntecedentesQuirurgicos = new System.Windows.Forms.TextBox();
-            this.button3 = new System.Windows.Forms.Button();
+            this.lblAntecedentesTransfucionales = new System.Windows.Forms.Label();
+            this.lblAntecedentesQuirurgicos = new System.Windows.Forms.Label();
+            this.lblAntecedentesAlergicos = new System.Windows.Forms.Label();
+            this.txtAdultez = new System.Windows.Forms.TextBox();
+            this.txthistorialclinico = new System.Windows.Forms.TextBox();
+            this.BtnActualizar = new System.Windows.Forms.Button();
+            this.BtnConsultar = new System.Windows.Forms.Button();
+            this.BtnInsertar = new System.Windows.Forms.Button();
+            this.mtbCedula = new System.Windows.Forms.MaskedTextBox();
+            this.cmbDoctor = new System.Windows.Forms.ComboBox();
+            this.cmbsegurom = new System.Windows.Forms.ComboBox();
+            this.cmbSexo = new System.Windows.Forms.ComboBox();
+            this.dtPFecha = new System.Windows.Forms.DateTimePicker();
+            this.BtnMasInformacion = new System.Windows.Forms.Button();
             this.txtResidencia = new System.Windows.Forms.TextBox();
             this.MtbTelefono = new System.Windows.Forms.MaskedTextBox();
             this.lblDoctor = new System.Windows.Forms.Label();
@@ -72,10 +76,7 @@
             this.lblFecha = new System.Windows.Forms.Label();
             this.txtEdad = new System.Windows.Forms.TextBox();
             this.mtbTelefono2 = new System.Windows.Forms.MaskedTextBox();
-            this.lblAntecedentesTransfucionales = new System.Windows.Forms.Label();
-            this.lblAntecedentesQuirurgicos = new System.Windows.Forms.Label();
             this.txtRaza = new System.Windows.Forms.TextBox();
-            this.lblAntecedentesAlergicos = new System.Windows.Forms.Label();
             this.lblEstadoCivil = new System.Windows.Forms.Label();
             this.txtEstadoCivil = new System.Windows.Forms.TextBox();
             this.lblraza = new System.Windows.Forms.Label();
@@ -89,7 +90,6 @@
             this.txtApellido = new System.Windows.Forms.TextBox();
             this.lblNombreP = new System.Windows.Forms.Label();
             this.txtnombrep = new System.Windows.Forms.TextBox();
-            this.txtAdultez = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnenviar = new System.Windows.Forms.Button();
@@ -109,31 +109,6 @@
             this.label31 = new System.Windows.Forms.Label();
             this.lblpara = new System.Windows.Forms.Label();
             this.dgvhistorialclinico = new System.Windows.Forms.DataGridView();
-            this.IDhistorialClinico = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NOMBREP = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.APELLIDOP = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Sexo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Telefono = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Procedencia = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Residencia = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Edad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Cedula = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Telefono2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Seguro = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Doctor = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Ocupacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Religion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.EstadoCivil = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Raza = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.AntAlrg = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.AntQrg = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.AntHops = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.AntMed = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.AntTra = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Ninez = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Adolescencia = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Adultez = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -149,22 +124,13 @@
             this.tabControl1.Location = new System.Drawing.Point(33, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1050, 525);
+            this.tabControl1.Size = new System.Drawing.Size(976, 471);
             this.tabControl1.TabIndex = 0;
             this.tabControl1.Click += new System.EventHandler(this.tabControl1_Click);
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.txthistorialclinico);
-            this.tabPage1.Controls.Add(this.button4);
-            this.tabPage1.Controls.Add(this.button2);
-            this.tabPage1.Controls.Add(this.button1);
-            this.tabPage1.Controls.Add(this.mtbCedula);
             this.tabPage1.Controls.Add(this.cmbalergias);
-            this.tabPage1.Controls.Add(this.cmbDoctor);
-            this.tabPage1.Controls.Add(this.cmbsegurom);
-            this.tabPage1.Controls.Add(this.cmbSexo);
-            this.tabPage1.Controls.Add(this.dtPFecha);
             this.tabPage1.Controls.Add(this.txtAdolescencia);
             this.tabPage1.Controls.Add(this.lblAdultez);
             this.tabPage1.Controls.Add(this.txtNiñez);
@@ -178,7 +144,20 @@
             this.tabPage1.Controls.Add(this.lblAntecedentesHospitalarios);
             this.tabPage1.Controls.Add(this.txtAntecedentesTransfucionales);
             this.tabPage1.Controls.Add(this.txtAntecedentesQuirurgicos);
-            this.tabPage1.Controls.Add(this.button3);
+            this.tabPage1.Controls.Add(this.lblAntecedentesTransfucionales);
+            this.tabPage1.Controls.Add(this.lblAntecedentesQuirurgicos);
+            this.tabPage1.Controls.Add(this.lblAntecedentesAlergicos);
+            this.tabPage1.Controls.Add(this.txtAdultez);
+            this.tabPage1.Controls.Add(this.txthistorialclinico);
+            this.tabPage1.Controls.Add(this.BtnActualizar);
+            this.tabPage1.Controls.Add(this.BtnConsultar);
+            this.tabPage1.Controls.Add(this.BtnInsertar);
+            this.tabPage1.Controls.Add(this.mtbCedula);
+            this.tabPage1.Controls.Add(this.cmbDoctor);
+            this.tabPage1.Controls.Add(this.cmbsegurom);
+            this.tabPage1.Controls.Add(this.cmbSexo);
+            this.tabPage1.Controls.Add(this.dtPFecha);
+            this.tabPage1.Controls.Add(this.BtnMasInformacion);
             this.tabPage1.Controls.Add(this.txtResidencia);
             this.tabPage1.Controls.Add(this.MtbTelefono);
             this.tabPage1.Controls.Add(this.lblDoctor);
@@ -193,10 +172,7 @@
             this.tabPage1.Controls.Add(this.lblFecha);
             this.tabPage1.Controls.Add(this.txtEdad);
             this.tabPage1.Controls.Add(this.mtbTelefono2);
-            this.tabPage1.Controls.Add(this.lblAntecedentesTransfucionales);
-            this.tabPage1.Controls.Add(this.lblAntecedentesQuirurgicos);
             this.tabPage1.Controls.Add(this.txtRaza);
-            this.tabPage1.Controls.Add(this.lblAntecedentesAlergicos);
             this.tabPage1.Controls.Add(this.lblEstadoCivil);
             this.tabPage1.Controls.Add(this.txtEstadoCivil);
             this.tabPage1.Controls.Add(this.lblraza);
@@ -210,112 +186,266 @@
             this.tabPage1.Controls.Add(this.txtApellido);
             this.tabPage1.Controls.Add(this.lblNombreP);
             this.tabPage1.Controls.Add(this.txtnombrep);
-            this.tabPage1.Controls.Add(this.txtAdultez);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1042, 499);
+            this.tabPage1.Size = new System.Drawing.Size(968, 445);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Historia Clinica";
             this.tabPage1.UseVisualStyleBackColor = true;
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
-            // txthistorialclinico
-            // 
-            this.txthistorialclinico.Location = new System.Drawing.Point(154, 26);
-            this.txthistorialclinico.Name = "txthistorialclinico";
-            this.txthistorialclinico.Size = new System.Drawing.Size(100, 20);
-            this.txthistorialclinico.TabIndex = 0;
-            // 
-            // button4
-            // 
-            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button4.BackColor = System.Drawing.Color.White;
-            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkSlateBlue;
-            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SlateBlue;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.Black;
-            this.button4.Location = new System.Drawing.Point(451, 211);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(153, 35);
-            this.button4.TabIndex = 20;
-            this.button4.Text = "Actualizar";
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // button2
-            // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button2.BackColor = System.Drawing.Color.White;
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkSlateBlue;
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SlateBlue;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.Black;
-            this.button2.Location = new System.Drawing.Point(130, 211);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(153, 35);
-            this.button2.TabIndex = 18;
-            this.button2.Text = "Consultar";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button1
-            // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button1.BackColor = System.Drawing.Color.White;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkSlateBlue;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SlateBlue;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(292, 211);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(153, 35);
-            this.button1.TabIndex = 19;
-            this.button1.Text = "Insertar";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // mtbCedula
-            // 
-            this.mtbCedula.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.mtbCedula.Location = new System.Drawing.Point(363, 123);
-            this.mtbCedula.Mask = "000-0000000-0";
-            this.mtbCedula.Name = "mtbCedula";
-            this.mtbCedula.Size = new System.Drawing.Size(100, 20);
-            this.mtbCedula.TabIndex = 9;
-            // 
             // cmbalergias
             // 
             this.cmbalergias.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.cmbalergias.FormattingEnabled = true;
-            this.cmbalergias.Location = new System.Drawing.Point(208, 288);
+            this.cmbalergias.Location = new System.Drawing.Point(219, 281);
             this.cmbalergias.Name = "cmbalergias";
             this.cmbalergias.Size = new System.Drawing.Size(126, 21);
-            this.cmbalergias.TabIndex = 24;
+            this.cmbalergias.TabIndex = 171;
+            // 
+            // txtAdolescencia
+            // 
+            this.txtAdolescencia.Location = new System.Drawing.Point(756, 317);
+            this.txtAdolescencia.Name = "txtAdolescencia";
+            this.txtAdolescencia.Size = new System.Drawing.Size(147, 20);
+            this.txtAdolescencia.TabIndex = 176;
+            // 
+            // lblAdultez
+            // 
+            this.lblAdultez.AutoSize = true;
+            this.lblAdultez.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAdultez.ForeColor = System.Drawing.Color.Black;
+            this.lblAdultez.Location = new System.Drawing.Point(668, 354);
+            this.lblAdultez.Name = "lblAdultez";
+            this.lblAdultez.Size = new System.Drawing.Size(51, 16);
+            this.lblAdultez.TabIndex = 203;
+            this.lblAdultez.Text = "Adultez";
+            // 
+            // txtNiñez
+            // 
+            this.txtNiñez.Location = new System.Drawing.Point(756, 282);
+            this.txtNiñez.Name = "txtNiñez";
+            this.txtNiñez.Size = new System.Drawing.Size(147, 20);
+            this.txtNiñez.TabIndex = 175;
+            // 
+            // lblAdolescencia
+            // 
+            this.lblAdolescencia.AutoSize = true;
+            this.lblAdolescencia.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAdolescencia.ForeColor = System.Drawing.Color.Black;
+            this.lblAdolescencia.Location = new System.Drawing.Point(668, 317);
+            this.lblAdolescencia.Name = "lblAdolescencia";
+            this.lblAdolescencia.Size = new System.Drawing.Size(84, 16);
+            this.lblAdolescencia.TabIndex = 202;
+            this.lblAdolescencia.Text = "Adolescencia";
+            // 
+            // lblNiñez
+            // 
+            this.lblNiñez.AutoSize = true;
+            this.lblNiñez.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNiñez.ForeColor = System.Drawing.Color.Black;
+            this.lblNiñez.Location = new System.Drawing.Point(668, 280);
+            this.lblNiñez.Name = "lblNiñez";
+            this.lblNiñez.Size = new System.Drawing.Size(40, 16);
+            this.lblNiñez.TabIndex = 201;
+            this.lblNiñez.Text = "Niñez";
+            // 
+            // txtAntecedentesTarumaticos
+            // 
+            this.txtAntecedentesTarumaticos.Location = new System.Drawing.Point(551, 350);
+            this.txtAntecedentesTarumaticos.Name = "txtAntecedentesTarumaticos";
+            this.txtAntecedentesTarumaticos.Size = new System.Drawing.Size(100, 20);
+            this.txtAntecedentesTarumaticos.TabIndex = 174;
+            // 
+            // txtAntecedentesMedicamentosos
+            // 
+            this.txtAntecedentesMedicamentosos.Location = new System.Drawing.Point(551, 315);
+            this.txtAntecedentesMedicamentosos.Name = "txtAntecedentesMedicamentosos";
+            this.txtAntecedentesMedicamentosos.Size = new System.Drawing.Size(100, 20);
+            this.txtAntecedentesMedicamentosos.TabIndex = 173;
+            // 
+            // lblAntecedentesTraumaticos
+            // 
+            this.lblAntecedentesTraumaticos.AutoSize = true;
+            this.lblAntecedentesTraumaticos.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAntecedentesTraumaticos.ForeColor = System.Drawing.Color.Black;
+            this.lblAntecedentesTraumaticos.Location = new System.Drawing.Point(366, 353);
+            this.lblAntecedentesTraumaticos.Name = "lblAntecedentesTraumaticos";
+            this.lblAntecedentesTraumaticos.Size = new System.Drawing.Size(159, 16);
+            this.lblAntecedentesTraumaticos.TabIndex = 200;
+            this.lblAntecedentesTraumaticos.Text = "Antecedentes Traumaticos";
+            // 
+            // txtAntecedentesHospitalarios
+            // 
+            this.txtAntecedentesHospitalarios.Location = new System.Drawing.Point(551, 280);
+            this.txtAntecedentesHospitalarios.Name = "txtAntecedentesHospitalarios";
+            this.txtAntecedentesHospitalarios.Size = new System.Drawing.Size(100, 20);
+            this.txtAntecedentesHospitalarios.TabIndex = 172;
+            // 
+            // lblAntecedentesMedicamentosos
+            // 
+            this.lblAntecedentesMedicamentosos.AutoSize = true;
+            this.lblAntecedentesMedicamentosos.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAntecedentesMedicamentosos.ForeColor = System.Drawing.Color.Black;
+            this.lblAntecedentesMedicamentosos.Location = new System.Drawing.Point(366, 316);
+            this.lblAntecedentesMedicamentosos.Name = "lblAntecedentesMedicamentosos";
+            this.lblAntecedentesMedicamentosos.Size = new System.Drawing.Size(186, 16);
+            this.lblAntecedentesMedicamentosos.TabIndex = 199;
+            this.lblAntecedentesMedicamentosos.Text = "Antecedentes Medicamentosos";
+            // 
+            // lblAntecedentesHospitalarios
+            // 
+            this.lblAntecedentesHospitalarios.AutoSize = true;
+            this.lblAntecedentesHospitalarios.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAntecedentesHospitalarios.ForeColor = System.Drawing.Color.Black;
+            this.lblAntecedentesHospitalarios.Location = new System.Drawing.Point(366, 279);
+            this.lblAntecedentesHospitalarios.Name = "lblAntecedentesHospitalarios";
+            this.lblAntecedentesHospitalarios.Size = new System.Drawing.Size(167, 16);
+            this.lblAntecedentesHospitalarios.TabIndex = 198;
+            this.lblAntecedentesHospitalarios.Text = "Antecedentes Hospitalarios";
+            // 
+            // txtAntecedentesTransfucionales
+            // 
+            this.txtAntecedentesTransfucionales.Location = new System.Drawing.Point(222, 352);
+            this.txtAntecedentesTransfucionales.Name = "txtAntecedentesTransfucionales";
+            this.txtAntecedentesTransfucionales.Size = new System.Drawing.Size(123, 20);
+            this.txtAntecedentesTransfucionales.TabIndex = 170;
+            // 
+            // txtAntecedentesQuirurgicos
+            // 
+            this.txtAntecedentesQuirurgicos.Location = new System.Drawing.Point(222, 317);
+            this.txtAntecedentesQuirurgicos.Name = "txtAntecedentesQuirurgicos";
+            this.txtAntecedentesQuirurgicos.Size = new System.Drawing.Size(123, 20);
+            this.txtAntecedentesQuirurgicos.TabIndex = 169;
+            // 
+            // lblAntecedentesTransfucionales
+            // 
+            this.lblAntecedentesTransfucionales.AutoSize = true;
+            this.lblAntecedentesTransfucionales.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAntecedentesTransfucionales.ForeColor = System.Drawing.Color.Black;
+            this.lblAntecedentesTransfucionales.Location = new System.Drawing.Point(37, 356);
+            this.lblAntecedentesTransfucionales.Name = "lblAntecedentesTransfucionales";
+            this.lblAntecedentesTransfucionales.Size = new System.Drawing.Size(179, 16);
+            this.lblAntecedentesTransfucionales.TabIndex = 187;
+            this.lblAntecedentesTransfucionales.Text = "Antecedentes transfucionales";
+            // 
+            // lblAntecedentesQuirurgicos
+            // 
+            this.lblAntecedentesQuirurgicos.AutoSize = true;
+            this.lblAntecedentesQuirurgicos.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAntecedentesQuirurgicos.ForeColor = System.Drawing.Color.Black;
+            this.lblAntecedentesQuirurgicos.Location = new System.Drawing.Point(37, 319);
+            this.lblAntecedentesQuirurgicos.Name = "lblAntecedentesQuirurgicos";
+            this.lblAntecedentesQuirurgicos.Size = new System.Drawing.Size(157, 16);
+            this.lblAntecedentesQuirurgicos.TabIndex = 186;
+            this.lblAntecedentesQuirurgicos.Text = "Antecedentes Quirurgicos";
+            // 
+            // lblAntecedentesAlergicos
+            // 
+            this.lblAntecedentesAlergicos.AutoSize = true;
+            this.lblAntecedentesAlergicos.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAntecedentesAlergicos.ForeColor = System.Drawing.Color.Black;
+            this.lblAntecedentesAlergicos.Location = new System.Drawing.Point(37, 282);
+            this.lblAntecedentesAlergicos.Name = "lblAntecedentesAlergicos";
+            this.lblAntecedentesAlergicos.Size = new System.Drawing.Size(144, 16);
+            this.lblAntecedentesAlergicos.TabIndex = 185;
+            this.lblAntecedentesAlergicos.Text = "Antecedentes Alergicos";
+            // 
+            // txtAdultez
+            // 
+            this.txtAdultez.Location = new System.Drawing.Point(756, 352);
+            this.txtAdultez.Name = "txtAdultez";
+            this.txtAdultez.Size = new System.Drawing.Size(147, 20);
+            this.txtAdultez.TabIndex = 177;
+            // 
+            // txthistorialclinico
+            // 
+            this.txthistorialclinico.Location = new System.Drawing.Point(165, 18);
+            this.txthistorialclinico.Name = "txthistorialclinico";
+            this.txthistorialclinico.Size = new System.Drawing.Size(100, 20);
+            this.txthistorialclinico.TabIndex = 148;
+            // 
+            // BtnActualizar
+            // 
+            this.BtnActualizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.BtnActualizar.BackColor = System.Drawing.Color.White;
+            this.BtnActualizar.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.BtnActualizar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkSlateBlue;
+            this.BtnActualizar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SlateBlue;
+            this.BtnActualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnActualizar.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnActualizar.ForeColor = System.Drawing.Color.Black;
+            this.BtnActualizar.Location = new System.Drawing.Point(462, 212);
+            this.BtnActualizar.Name = "BtnActualizar";
+            this.BtnActualizar.Size = new System.Drawing.Size(153, 35);
+            this.BtnActualizar.TabIndex = 167;
+            this.BtnActualizar.Text = "Actualizar";
+            this.BtnActualizar.UseVisualStyleBackColor = false;
+            this.BtnActualizar.Click += new System.EventHandler(this.BtnActualizar_Click_1);
+            // 
+            // BtnConsultar
+            // 
+            this.BtnConsultar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.BtnConsultar.BackColor = System.Drawing.Color.White;
+            this.BtnConsultar.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.BtnConsultar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkSlateBlue;
+            this.BtnConsultar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SlateBlue;
+            this.BtnConsultar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnConsultar.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnConsultar.ForeColor = System.Drawing.Color.Black;
+            this.BtnConsultar.Location = new System.Drawing.Point(141, 212);
+            this.BtnConsultar.Name = "BtnConsultar";
+            this.BtnConsultar.Size = new System.Drawing.Size(153, 35);
+            this.BtnConsultar.TabIndex = 165;
+            this.BtnConsultar.Text = "Consultar";
+            this.BtnConsultar.UseVisualStyleBackColor = false;
+            this.BtnConsultar.Click += new System.EventHandler(this.BtnConsultar_Click_1);
+            // 
+            // BtnInsertar
+            // 
+            this.BtnInsertar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.BtnInsertar.BackColor = System.Drawing.Color.White;
+            this.BtnInsertar.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.BtnInsertar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkSlateBlue;
+            this.BtnInsertar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SlateBlue;
+            this.BtnInsertar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnInsertar.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnInsertar.ForeColor = System.Drawing.Color.Black;
+            this.BtnInsertar.Location = new System.Drawing.Point(303, 212);
+            this.BtnInsertar.Name = "BtnInsertar";
+            this.BtnInsertar.Size = new System.Drawing.Size(153, 35);
+            this.BtnInsertar.TabIndex = 166;
+            this.BtnInsertar.Text = "Insertar";
+            this.BtnInsertar.UseVisualStyleBackColor = false;
+            this.BtnInsertar.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // mtbCedula
+            // 
+            this.mtbCedula.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.mtbCedula.Location = new System.Drawing.Point(369, 113);
+            this.mtbCedula.Mask = "000-0000000-0";
+            this.mtbCedula.Name = "mtbCedula";
+            this.mtbCedula.Size = new System.Drawing.Size(100, 20);
+            this.mtbCedula.TabIndex = 157;
             // 
             // cmbDoctor
             // 
             this.cmbDoctor.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.cmbDoctor.FormattingEnabled = true;
-            this.cmbDoctor.Location = new System.Drawing.Point(580, 65);
+            this.cmbDoctor.Location = new System.Drawing.Point(587, 60);
             this.cmbDoctor.Name = "cmbDoctor";
             this.cmbDoctor.Size = new System.Drawing.Size(100, 21);
-            this.cmbDoctor.TabIndex = 12;
+            this.cmbDoctor.TabIndex = 160;
             // 
             // cmbsegurom
             // 
             this.cmbsegurom.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.cmbsegurom.FormattingEnabled = true;
-            this.cmbsegurom.Location = new System.Drawing.Point(580, 30);
+            this.cmbsegurom.Location = new System.Drawing.Point(587, 25);
             this.cmbsegurom.Name = "cmbsegurom";
             this.cmbsegurom.Size = new System.Drawing.Size(100, 21);
-            this.cmbsegurom.TabIndex = 11;
+            this.cmbsegurom.TabIndex = 159;
             // 
             // cmbSexo
             // 
@@ -324,168 +454,53 @@
             this.cmbSexo.Items.AddRange(new object[] {
             "M",
             "F"});
-            this.cmbSexo.Location = new System.Drawing.Point(154, 171);
+            this.cmbSexo.Location = new System.Drawing.Point(165, 171);
             this.cmbSexo.Name = "cmbSexo";
             this.cmbSexo.Size = new System.Drawing.Size(43, 21);
-            this.cmbSexo.TabIndex = 4;
+            this.cmbSexo.TabIndex = 152;
             // 
             // dtPFecha
             // 
             this.dtPFecha.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.dtPFecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtPFecha.Location = new System.Drawing.Point(154, 113);
+            this.dtPFecha.Location = new System.Drawing.Point(165, 113);
             this.dtPFecha.Name = "dtPFecha";
             this.dtPFecha.Size = new System.Drawing.Size(100, 20);
-            this.dtPFecha.TabIndex = 3;
+            this.dtPFecha.TabIndex = 151;
             // 
-            // txtAdolescencia
+            // BtnMasInformacion
             // 
-            this.txtAdolescencia.Location = new System.Drawing.Point(745, 325);
-            this.txtAdolescencia.Name = "txtAdolescencia";
-            this.txtAdolescencia.Size = new System.Drawing.Size(147, 20);
-            this.txtAdolescencia.TabIndex = 29;
-            // 
-            // lblAdultez
-            // 
-            this.lblAdultez.AutoSize = true;
-            this.lblAdultez.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAdultez.ForeColor = System.Drawing.Color.Black;
-            this.lblAdultez.Location = new System.Drawing.Point(657, 362);
-            this.lblAdultez.Name = "lblAdultez";
-            this.lblAdultez.Size = new System.Drawing.Size(51, 16);
-            this.lblAdultez.TabIndex = 147;
-            this.lblAdultez.Text = "Adultez";
-            // 
-            // txtNiñez
-            // 
-            this.txtNiñez.Location = new System.Drawing.Point(745, 290);
-            this.txtNiñez.Name = "txtNiñez";
-            this.txtNiñez.Size = new System.Drawing.Size(147, 20);
-            this.txtNiñez.TabIndex = 28;
-            // 
-            // lblAdolescencia
-            // 
-            this.lblAdolescencia.AutoSize = true;
-            this.lblAdolescencia.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAdolescencia.ForeColor = System.Drawing.Color.Black;
-            this.lblAdolescencia.Location = new System.Drawing.Point(657, 325);
-            this.lblAdolescencia.Name = "lblAdolescencia";
-            this.lblAdolescencia.Size = new System.Drawing.Size(84, 16);
-            this.lblAdolescencia.TabIndex = 145;
-            this.lblAdolescencia.Text = "Adolescencia";
-            // 
-            // lblNiñez
-            // 
-            this.lblNiñez.AutoSize = true;
-            this.lblNiñez.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNiñez.ForeColor = System.Drawing.Color.Black;
-            this.lblNiñez.Location = new System.Drawing.Point(657, 288);
-            this.lblNiñez.Name = "lblNiñez";
-            this.lblNiñez.Size = new System.Drawing.Size(40, 16);
-            this.lblNiñez.TabIndex = 144;
-            this.lblNiñez.Text = "Niñez";
-            // 
-            // txtAntecedentesTarumaticos
-            // 
-            this.txtAntecedentesTarumaticos.Location = new System.Drawing.Point(540, 358);
-            this.txtAntecedentesTarumaticos.Name = "txtAntecedentesTarumaticos";
-            this.txtAntecedentesTarumaticos.Size = new System.Drawing.Size(100, 20);
-            this.txtAntecedentesTarumaticos.TabIndex = 27;
-            // 
-            // txtAntecedentesMedicamentosos
-            // 
-            this.txtAntecedentesMedicamentosos.Location = new System.Drawing.Point(540, 323);
-            this.txtAntecedentesMedicamentosos.Name = "txtAntecedentesMedicamentosos";
-            this.txtAntecedentesMedicamentosos.Size = new System.Drawing.Size(100, 20);
-            this.txtAntecedentesMedicamentosos.TabIndex = 26;
-            // 
-            // lblAntecedentesTraumaticos
-            // 
-            this.lblAntecedentesTraumaticos.AutoSize = true;
-            this.lblAntecedentesTraumaticos.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAntecedentesTraumaticos.ForeColor = System.Drawing.Color.Black;
-            this.lblAntecedentesTraumaticos.Location = new System.Drawing.Point(355, 361);
-            this.lblAntecedentesTraumaticos.Name = "lblAntecedentesTraumaticos";
-            this.lblAntecedentesTraumaticos.Size = new System.Drawing.Size(159, 16);
-            this.lblAntecedentesTraumaticos.TabIndex = 141;
-            this.lblAntecedentesTraumaticos.Text = "Antecedentes Traumaticos";
-            // 
-            // txtAntecedentesHospitalarios
-            // 
-            this.txtAntecedentesHospitalarios.Location = new System.Drawing.Point(540, 288);
-            this.txtAntecedentesHospitalarios.Name = "txtAntecedentesHospitalarios";
-            this.txtAntecedentesHospitalarios.Size = new System.Drawing.Size(100, 20);
-            this.txtAntecedentesHospitalarios.TabIndex = 25;
-            // 
-            // lblAntecedentesMedicamentosos
-            // 
-            this.lblAntecedentesMedicamentosos.AutoSize = true;
-            this.lblAntecedentesMedicamentosos.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAntecedentesMedicamentosos.ForeColor = System.Drawing.Color.Black;
-            this.lblAntecedentesMedicamentosos.Location = new System.Drawing.Point(355, 324);
-            this.lblAntecedentesMedicamentosos.Name = "lblAntecedentesMedicamentosos";
-            this.lblAntecedentesMedicamentosos.Size = new System.Drawing.Size(186, 16);
-            this.lblAntecedentesMedicamentosos.TabIndex = 139;
-            this.lblAntecedentesMedicamentosos.Text = "Antecedentes Medicamentosos";
-            // 
-            // lblAntecedentesHospitalarios
-            // 
-            this.lblAntecedentesHospitalarios.AutoSize = true;
-            this.lblAntecedentesHospitalarios.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAntecedentesHospitalarios.ForeColor = System.Drawing.Color.Black;
-            this.lblAntecedentesHospitalarios.Location = new System.Drawing.Point(355, 287);
-            this.lblAntecedentesHospitalarios.Name = "lblAntecedentesHospitalarios";
-            this.lblAntecedentesHospitalarios.Size = new System.Drawing.Size(167, 16);
-            this.lblAntecedentesHospitalarios.TabIndex = 138;
-            this.lblAntecedentesHospitalarios.Text = "Antecedentes Hospitalarios";
-            // 
-            // txtAntecedentesTransfucionales
-            // 
-            this.txtAntecedentesTransfucionales.Location = new System.Drawing.Point(211, 360);
-            this.txtAntecedentesTransfucionales.Name = "txtAntecedentesTransfucionales";
-            this.txtAntecedentesTransfucionales.Size = new System.Drawing.Size(123, 20);
-            this.txtAntecedentesTransfucionales.TabIndex = 23;
-            // 
-            // txtAntecedentesQuirurgicos
-            // 
-            this.txtAntecedentesQuirurgicos.Location = new System.Drawing.Point(211, 325);
-            this.txtAntecedentesQuirurgicos.Name = "txtAntecedentesQuirurgicos";
-            this.txtAntecedentesQuirurgicos.Size = new System.Drawing.Size(123, 20);
-            this.txtAntecedentesQuirurgicos.TabIndex = 22;
-            // 
-            // button3
-            // 
-            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button3.BackColor = System.Drawing.Color.White;
-            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkSlateBlue;
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SlateBlue;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.Black;
-            this.button3.Location = new System.Drawing.Point(613, 211);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(153, 35);
-            this.button3.TabIndex = 21;
-            this.button3.Text = "Mas informacion";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.BtnMasInformacion.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.BtnMasInformacion.BackColor = System.Drawing.Color.White;
+            this.BtnMasInformacion.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.BtnMasInformacion.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkSlateBlue;
+            this.BtnMasInformacion.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SlateBlue;
+            this.BtnMasInformacion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnMasInformacion.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnMasInformacion.ForeColor = System.Drawing.Color.Black;
+            this.BtnMasInformacion.Location = new System.Drawing.Point(624, 212);
+            this.BtnMasInformacion.Name = "BtnMasInformacion";
+            this.BtnMasInformacion.Size = new System.Drawing.Size(153, 35);
+            this.BtnMasInformacion.TabIndex = 168;
+            this.BtnMasInformacion.Text = "Mas informacion";
+            this.BtnMasInformacion.UseVisualStyleBackColor = false;
+            this.BtnMasInformacion.Click += new System.EventHandler(this.button3_Click_1);
             // 
             // txtResidencia
             // 
-            this.txtResidencia.Location = new System.Drawing.Point(363, 92);
+            this.txtResidencia.Location = new System.Drawing.Point(374, 84);
             this.txtResidencia.Name = "txtResidencia";
             this.txtResidencia.Size = new System.Drawing.Size(100, 20);
-            this.txtResidencia.TabIndex = 7;
+            this.txtResidencia.TabIndex = 155;
             // 
             // MtbTelefono
             // 
             this.MtbTelefono.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.MtbTelefono.Location = new System.Drawing.Point(154, 142);
+            this.MtbTelefono.Location = new System.Drawing.Point(165, 142);
             this.MtbTelefono.Mask = "000-000-0000";
             this.MtbTelefono.Name = "MtbTelefono";
             this.MtbTelefono.Size = new System.Drawing.Size(100, 20);
-            this.MtbTelefono.TabIndex = 5;
+            this.MtbTelefono.TabIndex = 153;
             // 
             // lblDoctor
             // 
@@ -493,10 +508,10 @@
             this.lblDoctor.AutoSize = true;
             this.lblDoctor.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
             this.lblDoctor.ForeColor = System.Drawing.Color.Black;
-            this.lblDoctor.Location = new System.Drawing.Point(495, 67);
+            this.lblDoctor.Location = new System.Drawing.Point(502, 62);
             this.lblDoctor.Name = "lblDoctor";
             this.lblDoctor.Size = new System.Drawing.Size(47, 16);
-            this.lblDoctor.TabIndex = 131;
+            this.lblDoctor.TabIndex = 197;
             this.lblDoctor.Text = "Doctor";
             // 
             // lblSeguro
@@ -505,10 +520,10 @@
             this.lblSeguro.AutoSize = true;
             this.lblSeguro.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
             this.lblSeguro.ForeColor = System.Drawing.Color.Black;
-            this.lblSeguro.Location = new System.Drawing.Point(495, 32);
+            this.lblSeguro.Location = new System.Drawing.Point(502, 27);
             this.lblSeguro.Name = "lblSeguro";
             this.lblSeguro.Size = new System.Drawing.Size(50, 16);
-            this.lblSeguro.TabIndex = 130;
+            this.lblSeguro.TabIndex = 196;
             this.lblSeguro.Text = "Seguro";
             // 
             // lbledad
@@ -517,10 +532,10 @@
             this.lbledad.AutoSize = true;
             this.lbledad.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
             this.lbledad.ForeColor = System.Drawing.Color.Black;
-            this.lbledad.Location = new System.Drawing.Point(278, 94);
+            this.lbledad.Location = new System.Drawing.Point(289, 88);
             this.lbledad.Name = "lbledad";
             this.lbledad.Size = new System.Drawing.Size(37, 16);
-            this.lbledad.TabIndex = 121;
+            this.lbledad.TabIndex = 188;
             this.lbledad.Text = "Edad";
             // 
             // lblcedula
@@ -529,10 +544,10 @@
             this.lblcedula.AutoSize = true;
             this.lblcedula.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
             this.lblcedula.ForeColor = System.Drawing.Color.Black;
-            this.lblcedula.Location = new System.Drawing.Point(278, 126);
+            this.lblcedula.Location = new System.Drawing.Point(284, 116);
             this.lblcedula.Name = "lblcedula";
             this.lblcedula.Size = new System.Drawing.Size(48, 16);
-            this.lblcedula.TabIndex = 122;
+            this.lblcedula.TabIndex = 189;
             this.lblcedula.Text = "Cedula";
             // 
             // lblProcedencia
@@ -541,10 +556,10 @@
             this.lblProcedencia.AutoSize = true;
             this.lblProcedencia.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
             this.lblProcedencia.ForeColor = System.Drawing.Color.Black;
-            this.lblProcedencia.Location = new System.Drawing.Point(278, 30);
+            this.lblProcedencia.Location = new System.Drawing.Point(289, 57);
             this.lblProcedencia.Name = "lblProcedencia";
             this.lblProcedencia.Size = new System.Drawing.Size(79, 16);
-            this.lblProcedencia.TabIndex = 123;
+            this.lblProcedencia.TabIndex = 190;
             this.lblProcedencia.Text = "Procedencia";
             // 
             // lbltelefono
@@ -553,10 +568,10 @@
             this.lbltelefono.AutoSize = true;
             this.lbltelefono.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
             this.lbltelefono.ForeColor = System.Drawing.Color.Black;
-            this.lbltelefono.Location = new System.Drawing.Point(45, 144);
+            this.lbltelefono.Location = new System.Drawing.Point(56, 144);
             this.lbltelefono.Name = "lbltelefono";
             this.lbltelefono.Size = new System.Drawing.Size(56, 16);
-            this.lbltelefono.TabIndex = 124;
+            this.lbltelefono.TabIndex = 191;
             this.lbltelefono.Text = "Telefono";
             // 
             // lblSexo
@@ -565,10 +580,10 @@
             this.lblSexo.AutoSize = true;
             this.lblSexo.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
             this.lblSexo.ForeColor = System.Drawing.Color.Black;
-            this.lblSexo.Location = new System.Drawing.Point(45, 173);
+            this.lblSexo.Location = new System.Drawing.Point(56, 173);
             this.lblSexo.Name = "lblSexo";
             this.lblSexo.Size = new System.Drawing.Size(37, 16);
-            this.lblSexo.TabIndex = 128;
+            this.lblSexo.TabIndex = 195;
             this.lblSexo.Text = "Sexo";
             // 
             // lbltelefono2
@@ -577,10 +592,10 @@
             this.lbltelefono2.AutoSize = true;
             this.lbltelefono2.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
             this.lbltelefono2.ForeColor = System.Drawing.Color.Black;
-            this.lbltelefono2.Location = new System.Drawing.Point(278, 158);
+            this.lbltelefono2.Location = new System.Drawing.Point(284, 148);
             this.lbltelefono2.Name = "lbltelefono2";
             this.lbltelefono2.Size = new System.Drawing.Size(66, 16);
-            this.lbltelefono2.TabIndex = 125;
+            this.lbltelefono2.TabIndex = 192;
             this.lbltelefono2.Text = "Telefono 2";
             // 
             // lblID
@@ -589,10 +604,10 @@
             this.lblID.AutoSize = true;
             this.lblID.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
             this.lblID.ForeColor = System.Drawing.Color.Black;
-            this.lblID.Location = new System.Drawing.Point(45, 28);
+            this.lblID.Location = new System.Drawing.Point(56, 22);
             this.lblID.Name = "lblID";
             this.lblID.Size = new System.Drawing.Size(73, 16);
-            this.lblID.TabIndex = 126;
+            this.lblID.TabIndex = 193;
             this.lblID.Text = "ID Paciente";
             // 
             // lblFecha
@@ -601,131 +616,98 @@
             this.lblFecha.AutoSize = true;
             this.lblFecha.Font = new System.Drawing.Font("Bahnschrift", 9.75F);
             this.lblFecha.ForeColor = System.Drawing.Color.Black;
-            this.lblFecha.Location = new System.Drawing.Point(45, 115);
+            this.lblFecha.Location = new System.Drawing.Point(56, 115);
             this.lblFecha.Name = "lblFecha";
             this.lblFecha.Size = new System.Drawing.Size(42, 16);
-            this.lblFecha.TabIndex = 127;
+            this.lblFecha.TabIndex = 194;
             this.lblFecha.Text = "Fecha";
             // 
             // txtEdad
             // 
-            this.txtEdad.Location = new System.Drawing.Point(363, 61);
+            this.txtEdad.Location = new System.Drawing.Point(374, 53);
             this.txtEdad.Name = "txtEdad";
             this.txtEdad.Size = new System.Drawing.Size(100, 20);
-            this.txtEdad.TabIndex = 8;
+            this.txtEdad.TabIndex = 156;
             // 
             // mtbTelefono2
             // 
             this.mtbTelefono2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.mtbTelefono2.Location = new System.Drawing.Point(363, 154);
+            this.mtbTelefono2.Location = new System.Drawing.Point(369, 144);
             this.mtbTelefono2.Mask = "000-000-0000";
             this.mtbTelefono2.Name = "mtbTelefono2";
             this.mtbTelefono2.Size = new System.Drawing.Size(100, 20);
-            this.mtbTelefono2.TabIndex = 10;
-            // 
-            // lblAntecedentesTransfucionales
-            // 
-            this.lblAntecedentesTransfucionales.AutoSize = true;
-            this.lblAntecedentesTransfucionales.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAntecedentesTransfucionales.ForeColor = System.Drawing.Color.Black;
-            this.lblAntecedentesTransfucionales.Location = new System.Drawing.Point(26, 364);
-            this.lblAntecedentesTransfucionales.Name = "lblAntecedentesTransfucionales";
-            this.lblAntecedentesTransfucionales.Size = new System.Drawing.Size(179, 16);
-            this.lblAntecedentesTransfucionales.TabIndex = 117;
-            this.lblAntecedentesTransfucionales.Text = "Antecedentes transfucionales";
-            // 
-            // lblAntecedentesQuirurgicos
-            // 
-            this.lblAntecedentesQuirurgicos.AutoSize = true;
-            this.lblAntecedentesQuirurgicos.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAntecedentesQuirurgicos.ForeColor = System.Drawing.Color.Black;
-            this.lblAntecedentesQuirurgicos.Location = new System.Drawing.Point(26, 327);
-            this.lblAntecedentesQuirurgicos.Name = "lblAntecedentesQuirurgicos";
-            this.lblAntecedentesQuirurgicos.Size = new System.Drawing.Size(157, 16);
-            this.lblAntecedentesQuirurgicos.TabIndex = 115;
-            this.lblAntecedentesQuirurgicos.Text = "Antecedentes Quirurgicos";
+            this.mtbTelefono2.TabIndex = 158;
             // 
             // txtRaza
             // 
-            this.txtRaza.Location = new System.Drawing.Point(792, 152);
+            this.txtRaza.Location = new System.Drawing.Point(803, 144);
             this.txtRaza.Name = "txtRaza";
             this.txtRaza.Size = new System.Drawing.Size(100, 20);
-            this.txtRaza.TabIndex = 16;
-            // 
-            // lblAntecedentesAlergicos
-            // 
-            this.lblAntecedentesAlergicos.AutoSize = true;
-            this.lblAntecedentesAlergicos.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAntecedentesAlergicos.ForeColor = System.Drawing.Color.Black;
-            this.lblAntecedentesAlergicos.Location = new System.Drawing.Point(26, 290);
-            this.lblAntecedentesAlergicos.Name = "lblAntecedentesAlergicos";
-            this.lblAntecedentesAlergicos.Size = new System.Drawing.Size(144, 16);
-            this.lblAntecedentesAlergicos.TabIndex = 113;
-            this.lblAntecedentesAlergicos.Text = "Antecedentes Alergicos";
+            this.txtRaza.TabIndex = 164;
             // 
             // lblEstadoCivil
             // 
             this.lblEstadoCivil.AutoSize = true;
             this.lblEstadoCivil.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEstadoCivil.ForeColor = System.Drawing.Color.Black;
-            this.lblEstadoCivil.Location = new System.Drawing.Point(712, 112);
+            this.lblEstadoCivil.Location = new System.Drawing.Point(723, 104);
             this.lblEstadoCivil.Name = "lblEstadoCivil";
             this.lblEstadoCivil.Size = new System.Drawing.Size(76, 16);
-            this.lblEstadoCivil.TabIndex = 112;
+            this.lblEstadoCivil.TabIndex = 184;
             this.lblEstadoCivil.Text = "Estado Civil";
             // 
             // txtEstadoCivil
             // 
-            this.txtEstadoCivil.Location = new System.Drawing.Point(792, 112);
+            this.txtEstadoCivil.Location = new System.Drawing.Point(803, 104);
             this.txtEstadoCivil.Name = "txtEstadoCivil";
             this.txtEstadoCivil.Size = new System.Drawing.Size(100, 20);
-            this.txtEstadoCivil.TabIndex = 15;
+            this.txtEstadoCivil.TabIndex = 163;
             // 
             // lblraza
             // 
             this.lblraza.AutoSize = true;
             this.lblraza.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblraza.ForeColor = System.Drawing.Color.Black;
-            this.lblraza.Location = new System.Drawing.Point(712, 151);
+            this.lblraza.Location = new System.Drawing.Point(723, 143);
             this.lblraza.Name = "lblraza";
             this.lblraza.Size = new System.Drawing.Size(36, 16);
-            this.lblraza.TabIndex = 110;
+            this.lblraza.TabIndex = 183;
             this.lblraza.Text = "Raza";
             // 
             // txtReligion
             // 
-            this.txtReligion.Location = new System.Drawing.Point(792, 72);
+            this.txtReligion.Location = new System.Drawing.Point(803, 64);
             this.txtReligion.Name = "txtReligion";
             this.txtReligion.Size = new System.Drawing.Size(100, 20);
-            this.txtReligion.TabIndex = 14;
+            this.txtReligion.TabIndex = 162;
             // 
             // lblReligion
             // 
             this.lblReligion.AutoSize = true;
             this.lblReligion.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblReligion.ForeColor = System.Drawing.Color.Black;
-            this.lblReligion.Location = new System.Drawing.Point(712, 73);
+            this.lblReligion.Location = new System.Drawing.Point(723, 65);
             this.lblReligion.Name = "lblReligion";
             this.lblReligion.Size = new System.Drawing.Size(54, 16);
-            this.lblReligion.TabIndex = 108;
+            this.lblReligion.TabIndex = 182;
             this.lblReligion.Text = "Religion";
             // 
             // txtOcupacion
             // 
-            this.txtOcupacion.Location = new System.Drawing.Point(792, 32);
+            this.txtOcupacion.Location = new System.Drawing.Point(803, 24);
             this.txtOcupacion.Name = "txtOcupacion";
             this.txtOcupacion.Size = new System.Drawing.Size(100, 20);
-            this.txtOcupacion.TabIndex = 13;
+            this.txtOcupacion.TabIndex = 161;
             // 
             // lblOcupacion
             // 
             this.lblOcupacion.AutoSize = true;
             this.lblOcupacion.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblOcupacion.ForeColor = System.Drawing.Color.Black;
-            this.lblOcupacion.Location = new System.Drawing.Point(712, 34);
+            this.lblOcupacion.Location = new System.Drawing.Point(723, 26);
             this.lblOcupacion.Name = "lblOcupacion";
             this.lblOcupacion.Size = new System.Drawing.Size(66, 16);
-            this.lblOcupacion.TabIndex = 106;
+            this.lblOcupacion.TabIndex = 181;
             this.lblOcupacion.Text = "Ocupacion";
             // 
             // lblResidencia
@@ -733,61 +715,54 @@
             this.lblResidencia.AutoSize = true;
             this.lblResidencia.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblResidencia.ForeColor = System.Drawing.Color.Black;
-            this.lblResidencia.Location = new System.Drawing.Point(278, 62);
+            this.lblResidencia.Location = new System.Drawing.Point(289, 26);
             this.lblResidencia.Name = "lblResidencia";
             this.lblResidencia.Size = new System.Drawing.Size(70, 16);
-            this.lblResidencia.TabIndex = 105;
+            this.lblResidencia.TabIndex = 180;
             this.lblResidencia.Text = "Residencia";
             // 
             // txtProcedencia
             // 
-            this.txtProcedencia.Location = new System.Drawing.Point(363, 30);
+            this.txtProcedencia.Location = new System.Drawing.Point(374, 22);
             this.txtProcedencia.Name = "txtProcedencia";
             this.txtProcedencia.Size = new System.Drawing.Size(100, 20);
-            this.txtProcedencia.TabIndex = 6;
+            this.txtProcedencia.TabIndex = 154;
             // 
             // lblApellidoP
             // 
             this.lblApellidoP.AutoSize = true;
             this.lblApellidoP.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblApellidoP.ForeColor = System.Drawing.Color.Black;
-            this.lblApellidoP.Location = new System.Drawing.Point(45, 86);
+            this.lblApellidoP.Location = new System.Drawing.Point(56, 78);
             this.lblApellidoP.Name = "lblApellidoP";
             this.lblApellidoP.Size = new System.Drawing.Size(107, 16);
-            this.lblApellidoP.TabIndex = 102;
+            this.lblApellidoP.TabIndex = 179;
             this.lblApellidoP.Text = "Apellido Paciente";
             // 
             // txtApellido
             // 
-            this.txtApellido.Location = new System.Drawing.Point(154, 84);
+            this.txtApellido.Location = new System.Drawing.Point(165, 76);
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(100, 20);
-            this.txtApellido.TabIndex = 2;
+            this.txtApellido.TabIndex = 150;
             // 
             // lblNombreP
             // 
             this.lblNombreP.AutoSize = true;
             this.lblNombreP.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNombreP.ForeColor = System.Drawing.Color.Black;
-            this.lblNombreP.Location = new System.Drawing.Point(45, 57);
+            this.lblNombreP.Location = new System.Drawing.Point(56, 49);
             this.lblNombreP.Name = "lblNombreP";
             this.lblNombreP.Size = new System.Drawing.Size(107, 16);
-            this.lblNombreP.TabIndex = 100;
+            this.lblNombreP.TabIndex = 178;
             this.lblNombreP.Text = "Nombre Paciente";
             // 
             // txtnombrep
             // 
-            this.txtnombrep.Location = new System.Drawing.Point(154, 55);
+            this.txtnombrep.Location = new System.Drawing.Point(165, 47);
             this.txtnombrep.Name = "txtnombrep";
             this.txtnombrep.Size = new System.Drawing.Size(100, 20);
-            this.txtnombrep.TabIndex = 1;
-            // 
-            // txtAdultez
-            // 
-            this.txtAdultez.Location = new System.Drawing.Point(745, 360);
-            this.txtAdultez.Name = "txtAdultez";
-            this.txtAdultez.Size = new System.Drawing.Size(147, 20);
-            this.txtAdultez.TabIndex = 30;
+            this.txtnombrep.TabIndex = 149;
             // 
             // tabPage2
             // 
@@ -811,7 +786,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1042, 499);
+            this.tabPage2.Size = new System.Drawing.Size(968, 445);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Correo";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -831,7 +806,7 @@
             this.btnenviar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(107)))), ((int)(((byte)(167)))));
             this.btnenviar.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnenviar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnenviar.Location = new System.Drawing.Point(446, 408);
+            this.btnenviar.Location = new System.Drawing.Point(446, 391);
             this.btnenviar.Name = "btnenviar";
             this.btnenviar.Size = new System.Drawing.Size(128, 48);
             this.btnenviar.TabIndex = 103;
@@ -942,7 +917,7 @@
             this.rtbmensaje.Location = new System.Drawing.Point(129, 276);
             this.rtbmensaje.Multiline = true;
             this.rtbmensaje.Name = "rtbmensaje";
-            this.rtbmensaje.Size = new System.Drawing.Size(751, 125);
+            this.rtbmensaje.Size = new System.Drawing.Size(751, 93);
             this.rtbmensaje.TabIndex = 91;
             // 
             // txtpara
@@ -999,254 +974,51 @@
             this.dgvhistorialclinico.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dgvhistorialclinico.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.dgvhistorialclinico.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(173)))), ((int)(((byte)(168)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvhistorialclinico.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(173)))), ((int)(((byte)(168)))));
+            dataGridViewCellStyle17.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvhistorialclinico.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle17;
             this.dgvhistorialclinico.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvhistorialclinico.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.IDhistorialClinico,
-            this.NOMBREP,
-            this.APELLIDOP,
-            this.Fecha,
-            this.Sexo,
-            this.Telefono,
-            this.Procedencia,
-            this.Residencia,
-            this.Edad,
-            this.Cedula,
-            this.Telefono2,
-            this.Seguro,
-            this.Doctor,
-            this.Ocupacion,
-            this.Religion,
-            this.EstadoCivil,
-            this.Raza,
-            this.AntAlrg,
-            this.AntQrg,
-            this.AntHops,
-            this.AntMed,
-            this.AntTra,
-            this.Ninez,
-            this.Adolescencia,
-            this.Adultez});
             this.dgvhistorialclinico.Cursor = System.Windows.Forms.Cursors.Hand;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(173)))), ((int)(((byte)(168)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvhistorialclinico.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle18.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle18.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(173)))), ((int)(((byte)(168)))));
+            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvhistorialclinico.DefaultCellStyle = dataGridViewCellStyle18;
             this.dgvhistorialclinico.EnableHeadersVisualStyles = false;
             this.dgvhistorialclinico.GridColor = System.Drawing.Color.White;
-            this.dgvhistorialclinico.Location = new System.Drawing.Point(33, 543);
+            this.dgvhistorialclinico.Location = new System.Drawing.Point(163, 515);
             this.dgvhistorialclinico.MultiSelect = false;
             this.dgvhistorialclinico.Name = "dgvhistorialclinico";
             this.dgvhistorialclinico.ReadOnly = true;
             this.dgvhistorialclinico.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(173)))), ((int)(((byte)(168)))));
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvhistorialclinico.RowHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle19.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle19.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(173)))), ((int)(((byte)(168)))));
+            dataGridViewCellStyle19.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle19.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvhistorialclinico.RowHeadersDefaultCellStyle = dataGridViewCellStyle19;
             this.dgvhistorialclinico.RowHeadersVisible = false;
             this.dgvhistorialclinico.RowHeadersWidth = 10;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Bahnschrift SemiLight", 10F);
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.Black;
-            this.dgvhistorialclinico.RowsDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle20.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle20.Font = new System.Drawing.Font("Bahnschrift SemiLight", 10F);
+            dataGridViewCellStyle20.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle20.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle20.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgvhistorialclinico.RowsDefaultCellStyle = dataGridViewCellStyle20;
             this.dgvhistorialclinico.RowTemplate.Height = 30;
             this.dgvhistorialclinico.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvhistorialclinico.Size = new System.Drawing.Size(2185, 104);
+            this.dgvhistorialclinico.Size = new System.Drawing.Size(733, 135);
             this.dgvhistorialclinico.TabIndex = 148;
-            // 
-            // IDhistorialClinico
-            // 
-            this.IDhistorialClinico.DataPropertyName = "IDhistorialClinico";
-            this.IDhistorialClinico.FillWeight = 76.14214F;
-            this.IDhistorialClinico.HeaderText = "Codigo";
-            this.IDhistorialClinico.Name = "IDhistorialClinico";
-            this.IDhistorialClinico.ReadOnly = true;
-            // 
-            // NOMBREP
-            // 
-            this.NOMBREP.DataPropertyName = "NOMBREP";
-            this.NOMBREP.FillWeight = 111.9289F;
-            this.NOMBREP.HeaderText = "Nombre Paciente";
-            this.NOMBREP.Name = "NOMBREP";
-            this.NOMBREP.ReadOnly = true;
-            // 
-            // APELLIDOP
-            // 
-            this.APELLIDOP.DataPropertyName = "APELLIDOP";
-            this.APELLIDOP.HeaderText = "Apellido Paciente";
-            this.APELLIDOP.Name = "APELLIDOP";
-            this.APELLIDOP.ReadOnly = true;
-            // 
-            // Fecha
-            // 
-            this.Fecha.DataPropertyName = "Fecha";
-            this.Fecha.HeaderText = "Fecha";
-            this.Fecha.Name = "Fecha";
-            this.Fecha.ReadOnly = true;
-            // 
-            // Sexo
-            // 
-            this.Sexo.DataPropertyName = "Sexo";
-            this.Sexo.HeaderText = "Sexo ";
-            this.Sexo.Name = "Sexo";
-            this.Sexo.ReadOnly = true;
-            // 
-            // Telefono
-            // 
-            this.Telefono.DataPropertyName = "Telefono";
-            this.Telefono.HeaderText = "Telefono";
-            this.Telefono.Name = "Telefono";
-            this.Telefono.ReadOnly = true;
-            // 
-            // Procedencia
-            // 
-            this.Procedencia.DataPropertyName = "Procedencia";
-            this.Procedencia.HeaderText = "Procedencia";
-            this.Procedencia.Name = "Procedencia";
-            this.Procedencia.ReadOnly = true;
-            // 
-            // Residencia
-            // 
-            this.Residencia.DataPropertyName = "Residencia";
-            this.Residencia.HeaderText = "Residencia";
-            this.Residencia.Name = "Residencia";
-            this.Residencia.ReadOnly = true;
-            // 
-            // Edad
-            // 
-            this.Edad.DataPropertyName = "Edad";
-            this.Edad.HeaderText = "Edad";
-            this.Edad.Name = "Edad";
-            this.Edad.ReadOnly = true;
-            // 
-            // Cedula
-            // 
-            this.Cedula.DataPropertyName = "Cedula";
-            this.Cedula.HeaderText = "Cedula";
-            this.Cedula.Name = "Cedula";
-            this.Cedula.ReadOnly = true;
-            // 
-            // Telefono2
-            // 
-            this.Telefono2.DataPropertyName = "Telefono2";
-            this.Telefono2.HeaderText = "Telefono2";
-            this.Telefono2.Name = "Telefono2";
-            this.Telefono2.ReadOnly = true;
-            // 
-            // Seguro
-            // 
-            this.Seguro.DataPropertyName = "Seguro";
-            this.Seguro.HeaderText = "Seguro";
-            this.Seguro.Name = "Seguro";
-            this.Seguro.ReadOnly = true;
-            // 
-            // Doctor
-            // 
-            this.Doctor.DataPropertyName = "Doctor";
-            this.Doctor.HeaderText = "Doctor";
-            this.Doctor.Name = "Doctor";
-            this.Doctor.ReadOnly = true;
-            // 
-            // Ocupacion
-            // 
-            this.Ocupacion.DataPropertyName = "Ocupacion";
-            this.Ocupacion.HeaderText = "Ocupacion";
-            this.Ocupacion.Name = "Ocupacion";
-            this.Ocupacion.ReadOnly = true;
-            // 
-            // Religion
-            // 
-            this.Religion.DataPropertyName = "Religion";
-            this.Religion.HeaderText = "Religion";
-            this.Religion.Name = "Religion";
-            this.Religion.ReadOnly = true;
-            // 
-            // EstadoCivil
-            // 
-            this.EstadoCivil.DataPropertyName = "EstadoCivil";
-            this.EstadoCivil.HeaderText = "EstadoCivil";
-            this.EstadoCivil.Name = "EstadoCivil";
-            this.EstadoCivil.ReadOnly = true;
-            // 
-            // Raza
-            // 
-            this.Raza.DataPropertyName = "Raza";
-            this.Raza.HeaderText = "Raza";
-            this.Raza.Name = "Raza";
-            this.Raza.ReadOnly = true;
-            // 
-            // AntAlrg
-            // 
-            this.AntAlrg.DataPropertyName = "AntAlrg";
-            this.AntAlrg.HeaderText = "AntAlrg";
-            this.AntAlrg.Name = "AntAlrg";
-            this.AntAlrg.ReadOnly = true;
-            // 
-            // AntQrg
-            // 
-            this.AntQrg.DataPropertyName = "AntQrg";
-            this.AntQrg.HeaderText = "AntQrg";
-            this.AntQrg.Name = "AntQrg";
-            this.AntQrg.ReadOnly = true;
-            // 
-            // AntHops
-            // 
-            this.AntHops.DataPropertyName = "AntHops";
-            this.AntHops.HeaderText = "AntHops";
-            this.AntHops.Name = "AntHops";
-            this.AntHops.ReadOnly = true;
-            // 
-            // AntMed
-            // 
-            this.AntMed.DataPropertyName = "AntMed";
-            this.AntMed.HeaderText = "AntMed";
-            this.AntMed.Name = "AntMed";
-            this.AntMed.ReadOnly = true;
-            // 
-            // AntTra
-            // 
-            this.AntTra.DataPropertyName = "AntTra";
-            this.AntTra.HeaderText = "AntTra";
-            this.AntTra.Name = "AntTra";
-            this.AntTra.ReadOnly = true;
-            // 
-            // Ninez
-            // 
-            this.Ninez.DataPropertyName = "Ninez";
-            this.Ninez.HeaderText = "Ninez";
-            this.Ninez.Name = "Ninez";
-            this.Ninez.ReadOnly = true;
-            // 
-            // Adolescencia
-            // 
-            this.Adolescencia.DataPropertyName = "Adolescencia";
-            this.Adolescencia.HeaderText = "Adolescencia";
-            this.Adolescencia.Name = "Adolescencia";
-            this.Adolescencia.ReadOnly = true;
-            // 
-            // Adultez
-            // 
-            this.Adultez.DataPropertyName = "Adultez";
-            this.Adultez.HeaderText = "Adultez";
-            this.Adultez.Name = "Adultez";
-            this.Adultez.ReadOnly = true;
             // 
             // openFileDialog1
             // 
@@ -1280,6 +1052,36 @@
 
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btnenviar;
+        private System.Windows.Forms.Label lblaadjunto;
+        public System.Windows.Forms.TextBox txtadjunto;
+        private System.Windows.Forms.Button btnadjuntar;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label label28;
+        public System.Windows.Forms.TextBox txtpassword;
+        public System.Windows.Forms.TextBox txtremitente;
+        private System.Windows.Forms.Label label30;
+        public System.Windows.Forms.TextBox txtasunto;
+        public System.Windows.Forms.TextBox txtcc;
+        public System.Windows.Forms.TextBox rtbmensaje;
+        public System.Windows.Forms.TextBox txtpara;
+        private System.Windows.Forms.Label lblasunto;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.Label lblpara;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.DataGridView dgvhistorialclinico;
+        private System.Windows.Forms.TextBox txthistorialclinico;
+        private System.Windows.Forms.Button BtnActualizar;
+        private System.Windows.Forms.Button BtnConsultar;
+        private System.Windows.Forms.Button BtnInsertar;
+        private System.Windows.Forms.MaskedTextBox mtbCedula;
+        private System.Windows.Forms.ComboBox cmbalergias;
+        private System.Windows.Forms.ComboBox cmbDoctor;
+        private System.Windows.Forms.ComboBox cmbsegurom;
+        private System.Windows.Forms.ComboBox cmbSexo;
+        private System.Windows.Forms.DateTimePicker dtPFecha;
         private System.Windows.Forms.TextBox txtAdolescencia;
         private System.Windows.Forms.Label lblAdultez;
         private System.Windows.Forms.TextBox txtNiñez;
@@ -1293,7 +1095,7 @@
         private System.Windows.Forms.Label lblAntecedentesHospitalarios;
         private System.Windows.Forms.TextBox txtAntecedentesTransfucionales;
         private System.Windows.Forms.TextBox txtAntecedentesQuirurgicos;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button BtnMasInformacion;
         private System.Windows.Forms.TextBox txtResidencia;
         private System.Windows.Forms.MaskedTextBox MtbTelefono;
         private System.Windows.Forms.Label lblDoctor;
@@ -1326,60 +1128,5 @@
         private System.Windows.Forms.Label lblNombreP;
         private System.Windows.Forms.TextBox txtnombrep;
         private System.Windows.Forms.TextBox txtAdultez;
-        private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.DateTimePicker dtPFecha;
-        private System.Windows.Forms.ComboBox cmbSexo;
-        private System.Windows.Forms.ComboBox cmbalergias;
-        private System.Windows.Forms.ComboBox cmbDoctor;
-        private System.Windows.Forms.ComboBox cmbsegurom;
-        private System.Windows.Forms.MaskedTextBox mtbCedula;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button btnenviar;
-        private System.Windows.Forms.Label lblaadjunto;
-        public System.Windows.Forms.TextBox txtadjunto;
-        private System.Windows.Forms.Button btnadjuntar;
-        private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.Label label28;
-        public System.Windows.Forms.TextBox txtpassword;
-        public System.Windows.Forms.TextBox txtremitente;
-        private System.Windows.Forms.Label label30;
-        public System.Windows.Forms.TextBox txtasunto;
-        public System.Windows.Forms.TextBox txtcc;
-        public System.Windows.Forms.TextBox rtbmensaje;
-        public System.Windows.Forms.TextBox txtpara;
-        private System.Windows.Forms.Label lblasunto;
-        private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.Label lblpara;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.OpenFileDialog openFileDialog1;
-        private System.Windows.Forms.TextBox txthistorialclinico;
-        private System.Windows.Forms.DataGridView dgvhistorialclinico;
-        private System.Windows.Forms.DataGridViewTextBoxColumn IDhistorialClinico;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NOMBREP;
-        private System.Windows.Forms.DataGridViewTextBoxColumn APELLIDOP;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Fecha;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Sexo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Telefono;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Procedencia;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Residencia;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Edad;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Cedula;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Telefono2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Seguro;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Doctor;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Ocupacion;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Religion;
-        private System.Windows.Forms.DataGridViewTextBoxColumn EstadoCivil;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Raza;
-        private System.Windows.Forms.DataGridViewTextBoxColumn AntAlrg;
-        private System.Windows.Forms.DataGridViewTextBoxColumn AntQrg;
-        private System.Windows.Forms.DataGridViewTextBoxColumn AntHops;
-        private System.Windows.Forms.DataGridViewTextBoxColumn AntMed;
-        private System.Windows.Forms.DataGridViewTextBoxColumn AntTra;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Ninez;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Adolescencia;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Adultez;
     }
 }

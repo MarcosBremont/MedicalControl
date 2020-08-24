@@ -176,6 +176,18 @@ namespace MedicalControl
                     comando.ExecuteNonQuery();
                     Refresh();
                     MessageBox.Show("Historial Clinico Agregado");
+
+                    using (SaveFileDialog sfd = new SaveFileDialog())
+                    {
+                        sfd.Filter = "Text Files|*.txt|Documents|*.doc";
+                        sfd.CreatePrompt = true;
+                        sfd.OverwritePrompt = false;
+                        sfd.Title = "Save Text Document";
+                        if (sfd.ShowDialog() == DialogResult.OK)
+                        {
+                            SaveFile(sfd);
+                        }
+                    }
                 }
                 else
                 {
@@ -251,7 +263,11 @@ namespace MedicalControl
         private void SaveFile(SaveFileDialog sfd)
         {
             string path = sfd.FileName;
-            File.WriteAllText(path, string.Format("{0} {1} {2} {3} {4} {5} {6} {7} {8} {9} {10} {11} {12} {13} {14} {15} {16} {17} {18} {19} {20} {21} {22} {23} {24} {25} {26} {25} {26} {27} {28} {29} {30} {31} {32} {33} {34} {35} {36} {37} {38} {39} {40} {41} {42} {43} {44} {45} {46} {47} ", "Nombre", txtnombrep.Text, "Apellido", txtApellido.Text, "Fecha", dtPFecha.Text
+            File.WriteAllText(path, string.Format("{0} {1} {2} {3} {4} {5} {6} {7} {8} {9} {10} {11} {12} {13} {14} {15} {16} {17} {18} {19} {20} {21} {22} {23} {24} {25} {26} {25} {26} {27} {28} {29} {30} {31} {32} {33} {34} {35} {36} {37} {38} {39} {40} {41} {42} {43} {44} {45} {46} {47} "
+            , "ID", txthistorialclinico.Text
+            , "Nombre", txtnombrep.Text
+            , "Apellido", txtApellido.Text
+            , "Fecha", dtPFecha.Text
             , "Sexo", cmbSexo.Text
             , "Telefono", MtbTelefono.Text
             , "Procedencia", txtProcedencia.Text

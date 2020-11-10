@@ -87,26 +87,7 @@ namespace MedicalControl
         private void btninsertar_Click(object sender, EventArgs e)
         {
 
-            con.Open();
-            string query = "INSERT INTO T_Paciente (NombreP, ApellidoP, EdadP, CedulaP, DireccionP, TelefonoP, Telefonop2, SexoP, IDTALER, IDTSEGURO, IDTDOCTOR  ) values (@NombreP, @ApellidoP, @EdadP, @CedulaP, @DireccionP, @TelefonoP, @Telefonop2, @SexoP, @IDTALER, @IDTSEGURO, @IDTDOCTOR)";
-            MySqlCommand comando = new MySqlCommand(query, con);
-            comando.Parameters.AddWithValue("@NombreP", txtnombrep.Text);
-            comando.Parameters.AddWithValue("@ApellidoP", txtapellidop.Text);
-            comando.Parameters.AddWithValue("@EdadP", txtedadp.Text);
-            comando.Parameters.AddWithValue("@CedulaP", mtxtCedula.Text);
-            comando.Parameters.AddWithValue("@DireccionP", txtdireccionp.Text);
-            comando.Parameters.AddWithValue("@TelefonoP", mtxtTelefono.Text);
-            comando.Parameters.AddWithValue("@Telefonop2", mtxtTelefono2.Text);
-            comando.Parameters.AddWithValue("@SEXOP", cmbSexo.Text);
-            comando.Parameters.AddWithValue("@IDTALER", cmbAlergia.SelectedValue);
-            comando.Parameters.AddWithValue("@IDTSEGURO", cmbSeguro.SelectedValue);
-            comando.Parameters.AddWithValue("@IDTDOCTOR", cmbDoctor.SelectedValue);
-            comando.ExecuteNonQuery();
-            Refresh();
-            MessageBox.Show("Paciente Agregado");
-            con.Close();
-            clear();
-            this.TxtCantidad.Text = this.dgvprincipal.Rows.Count.ToString("N0");
+           
 
 
 
@@ -118,16 +99,7 @@ namespace MedicalControl
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            con.Open();
-            string query = "DELETE FROM T_Paciente Where IDPaciente = @IDPaciente";
-            MySqlCommand comando = new MySqlCommand(query, con);
-            comando.Parameters.AddWithValue("@IDPaciente", lblid.Text);
-            comando.ExecuteNonQuery();
-            Refresh();
-            MessageBox.Show("Paciente Eliminado");
-            con.Close();
-            clear();
-            this.TxtCantidad.Text = this.dgvprincipal.Rows.Count.ToString("N0");
+            
 
 
 
@@ -153,27 +125,7 @@ namespace MedicalControl
 
         private void btnactualizar_Click(object sender, EventArgs e)
         {
-            con.Open();
-            string query = "UPDATE T_Paciente SET NombreP = @NombreP, ApellidoP = @ApellidoP, EdadP = @EdadP, CedulaP = @CedulaP, DireccionP = @DireccionP, TelefonoP = @TelefonoP, TelefonoP2 = @TelefonoP2, SexoP=@SexoP, IDTALER = @IDTALER, IDTSEGURO = @IDTSEGURO, IDTDOCTOR = @IDTDOCTOR where IDPaciente=@IDPaciente";
-            MySqlCommand comando = new MySqlCommand(query, con);
-            comando.Parameters.AddWithValue("@IDPaciente", lblid.Text);
-            comando.Parameters.AddWithValue("@NombreP", txtnombrep.Text);
-            comando.Parameters.AddWithValue("@ApellidoP", txtapellidop.Text);
-            comando.Parameters.AddWithValue("@EdadP", txtedadp.Text);
-            comando.Parameters.AddWithValue("@CedulaP", mtxtCedula.Text);
-            comando.Parameters.AddWithValue("@DireccionP", txtdireccionp.Text);
-            comando.Parameters.AddWithValue("@TelefonoP", mtxtTelefono.Text);
-            comando.Parameters.AddWithValue("@TelefonoP2", mtxtTelefono2.Text);
-            comando.Parameters.AddWithValue("@SexoP", cmbSexo.Text);
-            comando.Parameters.AddWithValue("@IDTALER", cmbAlergia.SelectedValue);
-            comando.Parameters.AddWithValue("@IDTSEGURO", cmbSeguro.SelectedValue);
-            comando.Parameters.AddWithValue("@IDTDOCTOR", cmbDoctor.SelectedValue);
-            comando.ExecuteNonQuery();
-            Refresh();
-            MessageBox.Show("Paciente Actualizado");
-            con.Close();
-            clear();
-
+           
         }
 
         private void txtnombrep_TextChanged(object sender, EventArgs e)
@@ -188,9 +140,7 @@ namespace MedicalControl
 
         private void btnOtro_Click(object sender, EventArgs e)
         {
-            FrmDoctorcs form = new FrmDoctorcs();
-            form.ShowDialog();
-            CARGARCOMBOXDOCTOR();
+           
         }
 
         private void Cargar()
@@ -215,37 +165,18 @@ namespace MedicalControl
 
         private void button2_Click(object sender, EventArgs e)
         {
-            FrmAlergia form = new FrmAlergia();
-            form.ShowDialog();
-            CARGARCOMBOXALERGIA();
+        
         }
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            FrmSeguro form = new FrmSeguro();
-            form.ShowDialog();
-            CARGARCOMBOXSEGURO();
+           
 
         }
 
         private void txtbuscar_KeyUp(object sender, KeyEventArgs e)
         {
-            con.Open();
-
-            MySqlCommand cmd = con.CreateCommand();
-
-            cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "SELECT * FROM t_paciente where NombreP like ('" + txtbuscar.Text + "%')";
-            cmd.ExecuteNonQuery();
-
-            DataTable dt = new DataTable();
-            MySqlDataAdapter da = new MySqlDataAdapter(cmd);
-
-            da.Fill(dt);
-
-            dgvprincipal.DataSource = dt;
-
-            con.Close();
+           
         }
 
         public void exportaraexcel(DataGridView tabla)
@@ -373,6 +304,115 @@ namespace MedicalControl
         private void gbprincipal_Enter(object sender, EventArgs e)
         {
 
+        }
+
+        private void btninsertar_Click_1(object sender, EventArgs e)
+        {
+            con.Open();
+            string query = "INSERT INTO T_Paciente (NombreP, ApellidoP, EdadP, CedulaP, DireccionP, TelefonoP, Telefonop2, SexoP, IDTALER, IDTSEGURO, IDTDOCTOR  ) values (@NombreP, @ApellidoP, @EdadP, @CedulaP, @DireccionP, @TelefonoP, @Telefonop2, @SexoP, @IDTALER, @IDTSEGURO, @IDTDOCTOR)";
+            MySqlCommand comando = new MySqlCommand(query, con);
+            comando.Parameters.AddWithValue("@NombreP", txtnombrep.Text);
+            comando.Parameters.AddWithValue("@ApellidoP", txtapellidop.Text);
+            comando.Parameters.AddWithValue("@EdadP", txtedadp.Text);
+            comando.Parameters.AddWithValue("@CedulaP", mtxtCedula.Text);
+            comando.Parameters.AddWithValue("@DireccionP", txtdireccionp.Text);
+            comando.Parameters.AddWithValue("@TelefonoP", mtxtTelefono.Text);
+            comando.Parameters.AddWithValue("@Telefonop2", mtxtTelefono2.Text);
+            comando.Parameters.AddWithValue("@SEXOP", cmbSexo.Text);
+            comando.Parameters.AddWithValue("@IDTALER", cmbAlergia.SelectedValue);
+            comando.Parameters.AddWithValue("@IDTSEGURO", cmbSeguro.SelectedValue);
+            comando.Parameters.AddWithValue("@IDTDOCTOR", cmbDoctor.SelectedValue);
+            comando.ExecuteNonQuery();
+            Refresh();
+            MessageBox.Show("Paciente Agregado");
+            con.Close();
+            clear();
+            this.TxtCantidad.Text = this.dgvprincipal.Rows.Count.ToString("N0");
+        }
+
+        private void btnEliminar_Click_1(object sender, EventArgs e)
+        {
+            con.Open();
+            string query = "DELETE FROM T_Paciente Where IDPaciente = @IDPaciente";
+            MySqlCommand comando = new MySqlCommand(query, con);
+            comando.Parameters.AddWithValue("@IDPaciente", lblid.Text);
+            comando.ExecuteNonQuery();
+            Refresh();
+            MessageBox.Show("Paciente Eliminado");
+            con.Close();
+            clear();
+            this.TxtCantidad.Text = this.dgvprincipal.Rows.Count.ToString("N0");
+        }
+
+        private void btnactualizar_Click_1(object sender, EventArgs e)
+        {
+            con.Open();
+            string query = "UPDATE T_Paciente SET NombreP = @NombreP, ApellidoP = @ApellidoP, EdadP = @EdadP, CedulaP = @CedulaP, DireccionP = @DireccionP, TelefonoP = @TelefonoP, TelefonoP2 = @TelefonoP2, SexoP=@SexoP, IDTALER = @IDTALER, IDTSEGURO = @IDTSEGURO, IDTDOCTOR = @IDTDOCTOR where IDPaciente=@IDPaciente";
+            MySqlCommand comando = new MySqlCommand(query, con);
+            comando.Parameters.AddWithValue("@IDPaciente", lblid.Text);
+            comando.Parameters.AddWithValue("@NombreP", txtnombrep.Text);
+            comando.Parameters.AddWithValue("@ApellidoP", txtapellidop.Text);
+            comando.Parameters.AddWithValue("@EdadP", txtedadp.Text);
+            comando.Parameters.AddWithValue("@CedulaP", mtxtCedula.Text);
+            comando.Parameters.AddWithValue("@DireccionP", txtdireccionp.Text);
+            comando.Parameters.AddWithValue("@TelefonoP", mtxtTelefono.Text);
+            comando.Parameters.AddWithValue("@TelefonoP2", mtxtTelefono2.Text);
+            comando.Parameters.AddWithValue("@SexoP", cmbSexo.Text);
+            comando.Parameters.AddWithValue("@IDTALER", cmbAlergia.SelectedValue);
+            comando.Parameters.AddWithValue("@IDTSEGURO", cmbSeguro.SelectedValue);
+            comando.Parameters.AddWithValue("@IDTDOCTOR", cmbDoctor.SelectedValue);
+            comando.ExecuteNonQuery();
+            Refresh();
+            MessageBox.Show("Paciente Actualizado");
+            con.Close();
+            clear();
+
+        }
+
+        private void btnOtro_Click_1(object sender, EventArgs e)
+        {
+            FrmDoctorcs form = new FrmDoctorcs();
+            form.ShowDialog();
+            CARGARCOMBOXDOCTOR();
+        }
+
+        private void button1_Click_2(object sender, EventArgs e)
+        {
+            FrmSeguro form = new FrmSeguro();
+            form.ShowDialog();
+            CARGARCOMBOXSEGURO();
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            FrmAlergia form = new FrmAlergia();
+            form.ShowDialog();
+            CARGARCOMBOXALERGIA();
+        }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            exportaraexcel(dgvprincipal);
+        }
+
+        private void txtbuscar_KeyUp_1(object sender, KeyEventArgs e)
+        {
+            con.Open();
+
+            MySqlCommand cmd = con.CreateCommand();
+
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "SELECT * FROM t_paciente where NombreP like ('" + txtbuscar.Text + "%')";
+            cmd.ExecuteNonQuery();
+
+            DataTable dt = new DataTable();
+            MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+
+            da.Fill(dt);
+
+            dgvprincipal.DataSource = dt;
+
+            con.Close();
         }
     }
 }

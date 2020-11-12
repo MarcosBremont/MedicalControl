@@ -274,5 +274,10 @@ namespace MedicalControl
         {
 
         }
+
+        private void panelDesktop_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

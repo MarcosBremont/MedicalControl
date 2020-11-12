@@ -289,7 +289,7 @@
             this.lblTitleChildForm.ForeColor = System.Drawing.SystemColors.ButtonShadow;
             this.lblTitleChildForm.Location = new System.Drawing.Point(63, 30);
             this.lblTitleChildForm.Name = "lblTitleChildForm";
-            this.lblTitleChildForm.Size = new System.Drawing.Size(44, 23);
+            this.lblTitleChildForm.Size = new System.Drawing.Size(55, 23);
             this.lblTitleChildForm.TabIndex = 1;
             this.lblTitleChildForm.Text = "Inicio";
             // 
@@ -324,6 +324,7 @@
             this.panelDesktop.Name = "panelDesktop";
             this.panelDesktop.Size = new System.Drawing.Size(851, 665);
             this.panelDesktop.TabIndex = 3;
+            this.panelDesktop.Paint += new System.Windows.Forms.PaintEventHandler(this.panelDesktop_Paint);
             // 
             // menuStrip1
             // 
@@ -350,55 +351,55 @@
             this.seguroToolStripMenuItem,
             this.citaMedicaToolStripMenuItem});
             this.agregarToolStripMenuItem.Name = "agregarToolStripMenuItem";
-            this.agregarToolStripMenuItem.Size = new System.Drawing.Size(68, 22);
+            this.agregarToolStripMenuItem.Size = new System.Drawing.Size(74, 22);
             this.agregarToolStripMenuItem.Text = "Agregar";
             // 
             // doctorToolStripMenuItem
             // 
             this.doctorToolStripMenuItem.Name = "doctorToolStripMenuItem";
-            this.doctorToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
+            this.doctorToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
             this.doctorToolStripMenuItem.Text = "Doctor";
             this.doctorToolStripMenuItem.Click += new System.EventHandler(this.doctorToolStripMenuItem_Click);
             // 
             // alergiaToolStripMenuItem
             // 
             this.alergiaToolStripMenuItem.Name = "alergiaToolStripMenuItem";
-            this.alergiaToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
+            this.alergiaToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
             this.alergiaToolStripMenuItem.Text = "Alergia";
             this.alergiaToolStripMenuItem.Click += new System.EventHandler(this.alergiaToolStripMenuItem_Click);
             // 
             // seguroToolStripMenuItem
             // 
             this.seguroToolStripMenuItem.Name = "seguroToolStripMenuItem";
-            this.seguroToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
+            this.seguroToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
             this.seguroToolStripMenuItem.Text = "Seguro";
             this.seguroToolStripMenuItem.Click += new System.EventHandler(this.seguroToolStripMenuItem_Click);
             // 
             // citaMedicaToolStripMenuItem
             // 
             this.citaMedicaToolStripMenuItem.Name = "citaMedicaToolStripMenuItem";
-            this.citaMedicaToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
+            this.citaMedicaToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
             this.citaMedicaToolStripMenuItem.Text = "Proveedor";
             this.citaMedicaToolStripMenuItem.Click += new System.EventHandler(this.citaMedicaToolStripMenuItem_Click);
             // 
             // contactanosToolStripMenuItem
             // 
             this.contactanosToolStripMenuItem.Name = "contactanosToolStripMenuItem";
-            this.contactanosToolStripMenuItem.Size = new System.Drawing.Size(89, 22);
+            this.contactanosToolStripMenuItem.Size = new System.Drawing.Size(99, 22);
             this.contactanosToolStripMenuItem.Text = "Informacion";
             this.contactanosToolStripMenuItem.Click += new System.EventHandler(this.contactanosToolStripMenuItem_Click);
             // 
             // informacionToolStripMenuItem
             // 
             this.informacionToolStripMenuItem.Name = "informacionToolStripMenuItem";
-            this.informacionToolStripMenuItem.Size = new System.Drawing.Size(80, 22);
+            this.informacionToolStripMenuItem.Size = new System.Drawing.Size(86, 22);
             this.informacionToolStripMenuItem.Text = "Acerca de";
             this.informacionToolStripMenuItem.Click += new System.EventHandler(this.informacionToolStripMenuItem_Click);
             // 
             // historialClinicoToolStripMenuItem
             // 
             this.historialClinicoToolStripMenuItem.Name = "historialClinicoToolStripMenuItem";
-            this.historialClinicoToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
+            this.historialClinicoToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
             this.historialClinicoToolStripMenuItem.Text = "Historial Clinico";
             this.historialClinicoToolStripMenuItem.Click += new System.EventHandler(this.historialClinicoToolStripMenuItem_Click);
             // 

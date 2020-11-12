@@ -68,6 +68,7 @@
             this.txtcontrasena.TabIndex = 23;
             this.txtcontrasena.Text = "CONTRASENA";
             this.txtcontrasena.Enter += new System.EventHandler(this.txtcontrasena_Enter);
+            this.txtcontrasena.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtcontrasena_KeyDown);
             this.txtcontrasena.Leave += new System.EventHandler(this.txtcontrasena_Leave);
             // 
             // txtnombreusuario
